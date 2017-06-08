@@ -12,7 +12,7 @@ $section_title = $form->title;
 ?>
 <?php if ($form_active && $all_forms_active) { ?>
 <div class="rule"></div>
-<section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section with-header">
+<section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section">
 	
 	<div class="container">
 		

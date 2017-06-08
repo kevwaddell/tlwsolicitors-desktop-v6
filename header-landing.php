@@ -52,3 +52,4 @@ $tag_line = get_field('tag_line', 'options');
 		</div>
 				
 	</header>
+	<div class="rule"></div>

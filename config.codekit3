@@ -1421,6 +1421,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/footer-landing.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/footer-landing.php",
+		"oF": 0
+		},
 	"\/footer.php": {
 		"ft": 8192,
 		"oA": 2,

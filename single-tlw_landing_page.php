@@ -55,4 +55,4 @@ $all_forms_active = get_field('all_forms_active', 'option');
 <?php get_template_part( 'parts/landingPage/contact', 'form' ); ?>		
 <?php } ?>
 
-<?php get_template_part( 'parts/footers/footer', 'landing-page' ); ?>
+<?php get_footer('landing'); ?>

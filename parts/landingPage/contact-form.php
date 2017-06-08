@@ -19,9 +19,13 @@ jQuery.noConflict();
 
   });
 </script>
+<div class="rule"></div>
+<section id="lp-form" class="pg-section">
+	<a name="claim-today" id="claim-today"></a>
+	<div class="container">
 	
-<div class="lp-form">
-
+	<h2 class="section-header">Make your claim today</h2>
+	
 	<?php gravity_form($form->id, false, true, false, '', false); ?>
-
-</div>	
+	</div>
+</section>	
