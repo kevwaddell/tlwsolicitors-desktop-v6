@@ -6,10 +6,10 @@ $all_forms_active = get_field('all_forms_active', 'option');
 
 $form = get_field('hp_form', 'option');	
 ?>
-<div class="rule"></div>
 <section id="hp-form" class="pg-section">
 	<div class="container">
 		<?php gravity_form($form->id, false, true, false, '', false); ?>
 	</div>
 </section>
+<?php get_template_part( 'parts/global/color', 'strip' ); ?>
 <?php } ?>

@@ -13,7 +13,7 @@ $feedback_pg_icon = get_field('page_icon', $feedback_pg->ID);
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-9">
-				<div class="entry wide-entry">
+				<div class="entry">
 					<div class="main-txt home">
 					<?php the_content(); ?>
 					</div>								
@@ -28,5 +28,4 @@ $feedback_pg_icon = get_field('page_icon', $feedback_pg->ID);
 			</div>
 		</div>
 	</div>
-	
 </article>

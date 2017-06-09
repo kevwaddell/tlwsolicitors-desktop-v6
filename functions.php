@@ -216,6 +216,13 @@ include (STYLESHEETPATH . '/_/functions/afc_save_post.php');
 /* SEND NEWSLETTER TO DOTMAILER */
 include (STYLESHEETPATH . '/_/functions/submit_newsletter.php');
 
+function new_submenu_class($menu) {    
+    $menu = preg_replace('/ class="sub-menu"/','/ class="sub-menu list-unstyled" /',$menu);        
+    return $menu;      
+}
+
+add_filter('wp_nav_menu','new_submenu_class'); 
+
 function add_gf_cap() {	
    $id = 2;
    $role = new WP_User( $id );

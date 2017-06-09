@@ -77,19 +77,48 @@
 		*/
 		
 		$('body').on(event_type,'button#nav-btn', function(){
+			
+			var inner_h = $('#top-nav').find('.nav-wrapper').outerHeight();
+				
+			$('#top-nav').animate({height: inner_h+"px"}, 300, function(){
+				
+				$('body').toggleClass('nav-closed nav-open');
+				$(this).toggleClass('nav-closed nav-open').removeAttr('style');	
+				
+			});
 						
 			return false;
 			
 		});
 		
 		$('#top-nav').on(event_type,'button#close-nav', function(){
-						
+			
+			$('#top-nav').animate({height: "0px"}, 300, function(){
+				
+				$('body').toggleClass('nav-open nav-closed');
+				$(this).toggleClass('nav-open nav-closed').removeAttr('style');	
+				$('li.with-sub-nav').removeClass('sub-open').addClass('sub-closed');
+				
+			});
+			
 			return false;
 			
 		});
 		
 		
 		$('#top-nav').on('click', "li.with-sub-nav > a", function(){
+			var parent = $(this).parent();
+			var siblings = $(parent).siblings();
+			
+			$(parent).siblings().removeClass('sub-open').addClass('sub-closed');
+			
+			if ($(siblings).find('.sub-open').length > 0) {
+			$(siblings).find('.sub-open').removeClass('sub-open').addClass('sub-closed');		
+			}
+			
+			//console.log($(siblings).find('.sub-open').length);
+			
+			$(parent).toggleClass('sub-open sub-closed');
 			return false;	
 		});
 		
@@ -100,12 +129,29 @@
 		*/
 		
 		$('body').on(event_type,'button#search-btn', function(){
-		
+				
+			$('#search-pop-up').toggleClass('off on');
+			$('body').addClass('search-open');
+			
 			return false;
 			
 		});
 		
-		$('body').on(event_type,'button#close-search', function(){			
+		$('body').on(event_type,'button#close-search', function(){	
+			
+			if ( $('#search-pop-up').hasClass('on') ) {
+				
+				$('#search-pop-up').removeClass('on').addClass('turn-off');
+				
+				$('.turn-off').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			
+					$(this).removeClass('turn-off').addClass('off');	
+					$('body').removeClass('search-open');
+					
+				});
+	
+			} 
+					
 			return false;
 		});
 		
@@ -375,6 +421,14 @@
 		$(window).bind('load',function(){
 			
 			$('.full-bg-img').each(function(index, Element) {
+				var src = $(Element).data('src');
+				//console.log(src);
+				if (src !== undefined) {
+				$(Element).css('background-image', 'url(' +src+ ')');
+	  			}
+			});
+			
+			$('.has-bg-img').each(function(index, Element) {
 				var src = $(Element).data('src');
 				//console.log(src);
 				if (src !== undefined) {

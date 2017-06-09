@@ -3,11 +3,6 @@
 	
 }
 
-//QUICK LINKS FLOATING SIDE NAVIGATION
-#quick-links {
-
-}
-
 //BANNER SECTION
 section#post-top-banner {
 
@@ -19,6 +14,80 @@ section#slim-top-banner {
 
 section#top-banner {
 	
+	.banner-links-imgs {
+	.rel;	
+	.mag-bot(0);
+		li {
+		width: calc(~"100% / 3");
+		.h(35);
+		.mag-bot(0);
+		.pad-left(0.2);
+		.pad-right(0.2);
+		}
+		
+		span.img {
+		.abs;
+		.top(0);
+		.left(0);
+		.right(0);
+		.bottom(0);
+		.bg-size;
+		.bg-repeat(no-repeat);
+		background-position: center center;	
+		.transition;	
+		}
+		
+		span.title {
+		.abs;
+		.top((35 - 9));
+		.left(0);
+		.right(0);
+		.bottom(0);	
+		.trans-bg(@wht; 0.8);
+		.line-h(9);
+		.caps;
+		.pad(0;2;0;2);
+		.txt-col-grayDk;
+		.transition;
+			span {
+			.in-block;
+			vertical-align: middle;
+			.line-h(2);	
+			}	
+		}
+
+		a {
+		.block;
+		height: 100%;
+		.font-slab-serif;
+		.no-text-dec;
+		.animated;
+		.rel;
+		.font-size(2);
+		.over-hide;
+			&:hover, &:active, &:focus {
+				span.img {
+				.top(-2);
+				.left(-2);
+				.right(-2);
+				.bottom(-2);
+				-webkit-filter: blur(5px);
+				-moz-filter: blur(5px);
+				-o-filter: blur(5px);
+				-ms-filter: blur(5px);
+				filter: blur(5px);	
+				}
+				span.title {
+				.line-h(35);
+				.top(0);	
+				.trans-bg(@red; 0.8);
+				.txt-col-wht;
+				}
+			}
+		}	
+		
+						
+	}
 }
 
 section#testimonial-slider {
@@ -52,6 +121,45 @@ article.content-section {
 //GLOBAL FREEPHONE TELEPHONE NUMBER STYLE
 #global-tel-num {
 	
+	.container {
+	.rel;	
+	}
+	
+	i {
+	.abs;
+	.top(0);
+	.w(10);
+	.line-h(14);
+	.font-size(8);
+	.txt-col-gray;	
+	.animated;
+		&.fa-whatsapp {
+		.left(1.5);
+		.bounceInLeft;	
+		}
+		
+		&.fa-comments {
+		.right(1.5);
+		.bounceInRight;	
+		.text-right;
+		}
+	}
+	
+	.number {
+	.font-size(7);
+	.line-h(14);	
+	.col(@grayDk);
+	.pad(0;10;0;10);	
+		a {
+		.txt-col-orange;	
+		.bold;
+		.no-text-dec;
+			&:hover, &:active, &:focus {
+			.txt-col-red;
+			}
+		}
+	}
+
 }
 
 //Video Viewer 

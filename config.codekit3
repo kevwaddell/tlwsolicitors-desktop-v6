@@ -533,34 +533,14 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/_\/css\/merged-style-ck.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/_\/css\/merged-style-ck-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/_\/css\/merged-style-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/_\/css\/merged-style-min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/_\/css\/merged-style.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/_\/css\/merged-style-min.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
 	"\/_\/css\/offline.css": {
@@ -733,8 +713,8 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/_\/js\/min\/functions-min.js",
-		"oF": 0,
+		"oAP": "\/_\/js\/functions-min.js",
+		"oF": 2,
 		"sC": 0,
 		"tS": 0
 		},
@@ -761,15 +741,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/_\/js\/min\/map-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/_\/js\/min\/functions-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/_\/js\/min\/min\/functions-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0

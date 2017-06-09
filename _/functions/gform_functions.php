@@ -88,5 +88,4 @@ function custom_gf_class($classes, $field, $form) {
     return $classes;
 }	
 add_filter("gform_field_css_class", "custom_gf_class", 10, 3);
-
 ?>
