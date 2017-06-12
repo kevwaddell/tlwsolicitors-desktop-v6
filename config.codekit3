@@ -258,6 +258,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/_\/css\/img\/feefo-stars.png": {
+		"ft": 32768,
+		"iS": 4254,
+		"oA": 0,
+		"oAP": "\/_\/css\/img\/feefo-stars.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_\/css\/img\/feefo_logo.png": {
+		"ft": 32768,
+		"iS": 11184,
+		"oA": 0,
+		"oAP": "\/_\/css\/img\/feefo_logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/_\/css\/img\/headway-logo-2016.png": {
 		"ft": 32768,
 		"iS": 31172,
@@ -2034,7 +2056,7 @@
 	"creationDate": 518437403,
 	"displayValue": "tlwsolicitors-desktop-v6",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-angryPicard"
+	"iconImageName": "meme-yesBaby"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

@@ -7,7 +7,7 @@ $feedback_args = array(
 $testimonials = get_posts($feedback_args); 
 $testimonials_total = count($testimonials);	
 ?>
-<section id="feedback-section" class="pg-section feedback-slider">
+<section id="feedback-section" class="pg-section">
 			
 	<div class="container">
 		<?php
