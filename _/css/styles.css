@@ -12296,6 +12296,9 @@ Copyright (c) 2014 Daniel Eden
   height: 1px;
   position: relative;
 }
+.rule.mag-top-80 {
+  margin-top: 80px;
+}
 .rule:before,
 .rule:after {
   content: "";
@@ -13168,6 +13171,12 @@ article.tlw_landing_page hr {
   height: 1px;
   position: relative;
 }
+article.page hr.mag-top-80,
+article.post hr.mag-top-80,
+article.tlw_vacancies_cpt hr.mag-top-80,
+article.tlw_landing_page hr.mag-top-80 {
+  margin-top: 80px;
+}
 article.page hr:before,
 article.post hr:before,
 article.tlw_vacancies_cpt hr:before,
@@ -13797,9 +13806,6 @@ section#top-banner .banner-links-imgs a:focus span.title {
 .hp-sidebar a.btn:focus {
   background-color: #918F8F;
 }
-.pg-section#feedback-section {
-  padding-bottom: 40px;
-}
 .pg-section#feedback-section .feedback-quote {
   padding-left: 205px;
   min-height: 140px;
@@ -14101,6 +14107,118 @@ body#login .login .tml-action-links a:focus {
 /** --------------------------- /
 /* Footer */
 /* --------------------------- */
+#footer-info {
+  padding-bottom: 40px;
+}
+#footer-info h3 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+#footer-info .footer-nav {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+#footer-info .footer-nav a {
+  color: #4b4b4b;
+}
+#footer-info .footer-nav a:hover,
+#footer-info .footer-nav a:active,
+#footer-info .footer-nav a:focus {
+  color: #C60751;
+}
+#footer-info .legal-nav {
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 40px;
+}
+#footer-info .legal-nav li {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 1px solid #4b4b4b;
+}
+#footer-info .legal-nav li:first-child {
+  border: none;
+}
+#footer-info .legal-nav a {
+  color: #4b4b4b;
+}
+#footer-info .legal-nav a:hover,
+#footer-info .legal-nav a:active,
+#footer-info .legal-nav a:focus {
+  color: #C60751;
+}
+#footer-info .copyright #footer-logo {
+  height: 60px;
+  width: 330px;
+  margin: 0px auto 10px auto;
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/tlw-logo-wide.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+#footer-info .copyright .compliance-notice {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 25px;
+}
+#footer-info .copyright .compliance-notice a {
+  color: #4b4b4b;
+}
+#footer-info .copyright .compliance-notice a:hover,
+#footer-info .copyright .compliance-notice a:active,
+#footer-info .copyright .compliance-notice a:focus {
+  color: #C60751;
+}
+#footer-info .copyright .compliance-notice p {
+  font-size: 12px;
+  line-height: 14px;
+}
+#footer-info .social-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #4b4b4b;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #4b4b4b;
+}
+#footer-info .social-links a i {
+  display: block;
+  line-height: 38px;
+  font-size: 20px;
+  text-align: center;
+}
+#footer-info .social-links a span.fontawesome-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+#footer-info .social-links a:hover,
+#footer-info .social-links a:active,
+#footer-info .social-links a:focus {
+  background-color: transparent;
+}
+#footer-info .social-links a:hover i,
+#footer-info .social-links a:active i,
+#footer-info .social-links a:focus i {
+  color: #4b4b4b;
+}
+html.svg #footer-info .copyright #footer-logo {
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/tlw-logo-wide.svg);
+}
 /** --------------------------- /
 /* Accessability */
 /* --------------------------- */

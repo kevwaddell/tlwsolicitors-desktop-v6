@@ -7203,6 +7203,9 @@ button.close {
   height: 1px;
   position: relative;
 }
+.rule.mag-top-80 {
+  margin-top: 80px;
+}
 .rule:before,
 .rule:after {
   content: "";
@@ -7302,6 +7305,9 @@ hr {
   margin-bottom: 40px;
   height: 1px;
   position: relative;
+}
+hr.mag-top-80 {
+  margin-top: 80px;
 }
 hr:before,
 hr:after {

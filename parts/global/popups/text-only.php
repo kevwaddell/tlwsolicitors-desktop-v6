@@ -1,3 +1,4 @@
+<?php if (is_single() || is_page() && !is_front_page() ) { ?>
 <div id="txt-only-content" class="closed">
 	<div class="container">
 		<div class="row">
@@ -15,3 +16,4 @@
 		</div>
 	</div>
 </div>
+<?php } ?>
