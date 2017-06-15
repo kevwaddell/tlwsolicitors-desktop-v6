@@ -9,12 +9,16 @@ if (!empty($exclude_quotes)) {
 $feedback_args['exclude'] = $exclude_quotes;
 }
 $feedback_quotes = get_posts($feedback_args); 
+$section_title = "Client Feedback";	
 			
 if ($feedback_quotes) { ?>
 
 <!-- TEAM PROFILES SECTION -->
 <section id="feedback-section" class="pg-section feedback-list">
-	
+	<div class="container">
+		
+		<h2 class="section-header"><?php echo $section_title; ?></h2>	
+		
 		<?php foreach ($feedback_quotes as $k => $fb) { 
 		$name = get_field('client_name', $fb->ID);	
 		$location = get_field('location', $fb->ID);	
@@ -26,19 +30,17 @@ if ($feedback_quotes) { ?>
 		}
 		?>
 		
-		<div class="item">
-		
-			<div class="container feedback-quote">
-				<div id="quote-id-<?php echo $k; ?>" class="feedback-quote">
-					<blockquote class="no-border"><?php echo $quote; ?></blockquote>
-					<span class="quote-name"><?php echo $name; ?>, <?php echo $location; ?></span>
-				</div>
-			</div>
-		
+
+		<div id="quote-id-<?php echo $k; ?>" class="feedback-quote">
+			<blockquote class="no-border"><?php echo $quote; ?></blockquote>
+			<span class="quote-name"><?php echo $name; ?>, <?php echo $location; ?></span>
 		</div>
-
+		<?php if ($k+1 < count($feedback_quotes)) { ?>
+		<div class="rule"></div>
+		<?php } ?>
+		
 		<?php } ?>		
-
+	</div>
 </section>
 <!-- TEAM PROFILES SECTION -->
 
