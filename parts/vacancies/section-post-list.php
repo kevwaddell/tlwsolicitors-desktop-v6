@@ -41,18 +41,18 @@ $found_posts = $wp_query->found_posts;
 			<div class="col-xs-6">
 				<article <?php post_class(); ?>>
 					<div class="close-date text-center">Closing date: <?php echo (empty($job_closing_date)) ? "TBA": date('d.m.Y', strtotime($job_closing_date) ); ?></div>
-					<h4><?php echo $job_title; ?></h4>
+					<h4 class="font-slab-serif txt-col-gray"><?php echo $job_title; ?></h4>
 					<div class="ref">[ref: <?php echo $job_ref; ?>]</div>
 					<div class="description">
 						<?php echo $short_description; ?>
 					</div>
-					<a href="<?php esc_url( the_permalink() ); ?>" class="btn btn-default btn-block" title="View: <?php the_title_attribute(); ?> vacancy" rel="bookmark">View vacancy</a>
+					<a href="<?php esc_url( the_permalink() ); ?>" class="btn btn-default btn-block font-slab-serif caps" title="View: <?php the_title_attribute(); ?> vacancy" rel="bookmark">View vacancy</a>
 				</article>
 			</div>
 			<?php endwhile; ?>
 
 		<?php else: ?>
-				<div class="col-xs-6 col-xs-offset-3">
+				<div class="col-xs-6">
 					<div class="well well-lg">
 						<h3 class="text-center">There are no positions available at the moment</h3>
 						<p class="text-center">Please send us your CV and we will keep you on file for when a relevant post comes available.</p>

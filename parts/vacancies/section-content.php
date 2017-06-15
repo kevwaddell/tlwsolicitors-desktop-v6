@@ -33,7 +33,7 @@ $job_display_to_date = get_field( 'job_display_to_date');
 						Position closed
 					</span>
 					<?php } else { ?>
-					<span class="label label-primary font-slab-serif caps">
+					<span class="label label-success font-slab-serif caps">
 						Position open
 					</span>
 					<?php } ?>
@@ -68,7 +68,7 @@ $job_display_to_date = get_field( 'job_display_to_date');
 		</div>
 		
 		<?php if (!empty($post_content['extended'])) { ?>
-		<button id="continue-read-btn" class="btn btn-default btn-block"><?php echo $more_btn_text; ?><i class="fa fa-plus-circle"></i></button>
+		<button id="continue-read-btn" class="btn btn-default btn-block caps font-slab-serif"><?php echo $more_btn_text; ?><i class="fa fa-plus-circle"></i></button>
 		<?php } ?>
 		
 	</div>

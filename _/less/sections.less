@@ -258,6 +258,14 @@ article.content-section {
 	.line-h(5);	
 	.mag-bot(3);
 	}	
+	
+	.well {
+	.bg-col-grayLt;
+	.border-col(@red);
+		h3 {
+		.txt-col-red;
+		}	
+	}
 }
 
 // FEEDBACK SECTION STYLES
@@ -459,6 +467,61 @@ article.content-section {
 		.mag-bot(1);	
 		}
 	}	
+}
+
+//VACANCIES LIST SECTION STYLES
+#vacancies-section {
+	article.hentry {
+	.pad-all(2);
+	.border(@grayDk; 0.1);
+		.close-date {
+		.bg-col-red;
+		.txt-col-wht;
+		.line-h(2.5);
+		.mag-bot(1);	
+		}
+		
+		h4 {
+		.font-size(2.5);
+		.line-h(2.7);	
+		}
+		
+		.ref {
+		.bold;
+		.txt-col-grayDk;
+		.caps;	
+		}
+		
+		.description {
+		.mag-bot(1.5);	
+		}
+		
+		a {
+		.no-rounded;
+		.border(@grayDk; 0.1);
+		.rel;
+		.pad-all(0);
+		.line-h(4);
+		.font-size(2);
+			&:after {
+			.abs;
+			.right(0);
+			.top(0);
+			height: 100%;
+			.line-h(4);
+			.pad-right(2);
+			.font-size(2);
+			font-family: FontAwesome;
+			content: "\f105";
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col-grayDk;
+			.txt-col-wht;
+			}
+		}
+			
+	}
 }
 
 //BLOG POSTS SECTION

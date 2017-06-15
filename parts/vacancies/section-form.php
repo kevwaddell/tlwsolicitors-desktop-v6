@@ -1,4 +1,5 @@
 <?php
+global $jobs_pg;
 if (is_post_type_archive()) {
 $form = get_field('form', $jobs_pg->ID);	
 $section_title = get_field('form_section_title', $jobs_pg->ID);

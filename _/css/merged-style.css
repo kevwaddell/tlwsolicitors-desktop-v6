@@ -13149,6 +13149,18 @@ article.tlw_landing_page .label {
   line-height: 30px;
   margin-bottom: 15px;
 }
+article.page .label.label-success,
+article.post .label.label-success,
+article.tlw_vacancies_cpt .label.label-success,
+article.tlw_landing_page .label.label-success {
+  background-color: #698037;
+}
+article.page .label.label-danger,
+article.post .label.label-danger,
+article.tlw_vacancies_cpt .label.label-danger,
+article.tlw_landing_page .label.label-danger {
+  background-color: #7A1039;
+}
 article.page .vacancy-details,
 article.post .vacancy-details,
 article.tlw_vacancies_cpt .vacancy-details,
@@ -13156,7 +13168,7 @@ article.tlw_landing_page .vacancy-details {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  border: none;
+  border: 1px solid #4b4b4b;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -13168,17 +13180,18 @@ article.tlw_landing_page .vacancy-details .panel-heading {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  background-color: #918F8F;
+  background-color: #4b4b4b;
   color: white;
   font-size: 20px;
-  border-bottom: 4px solid white;
+  border-bottom: 1px solid #4b4b4b;
 }
 article.page .vacancy-details .table-bordered,
 article.post .vacancy-details .table-bordered,
 article.tlw_vacancies_cpt .vacancy-details .table-bordered,
 article.tlw_landing_page .vacancy-details .table-bordered {
   border: none;
-  background-color: #E9E9E9;
+  background-color: white;
+  color: #4b4b4b;
 }
 article.page .vacancy-details .table-bordered:last-child,
 article.post .vacancy-details .table-bordered:last-child,
@@ -13196,7 +13209,7 @@ article.page .vacancy-details .table-bordered td,
 article.post .vacancy-details .table-bordered td,
 article.tlw_vacancies_cpt .vacancy-details .table-bordered td,
 article.tlw_landing_page .vacancy-details .table-bordered td {
-  border: 4px solid white;
+  border: 1px solid #4b4b4b;
 }
 article.page .entry p,
 article.post .entry p,
@@ -13417,13 +13430,6 @@ article.tlw_landing_page .main-txt .well h3.icon-header {
   -moz-border-radius: 4px;
   border-radius: 4px;
   background-color: #918F8F;
-}
-article.page .main-txt .well.striped-bg,
-article.post .main-txt .well.striped-bg,
-article.tlw_vacancies_cpt .main-txt .well.striped-bg,
-article.tlw_landing_page .main-txt .well.striped-bg {
-  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/striped-img-overlay.png);
-  background-blend-mode: color-burn;
 }
 article.page .main-txt .thank-you-message,
 article.post .main-txt .thank-you-message,
@@ -14141,6 +14147,13 @@ section#top-banner .banner-links-imgs a:focus span.title {
   line-height: 50px;
   margin-bottom: 30px;
 }
+.pg-section .well {
+  background-color: #E9E9E9;
+  border-color: #C60751;
+}
+.pg-section .well h3 {
+  color: #C60751;
+}
 #feedback-section .feedback-quote {
   padding-left: 205px;
   min-height: 140px;
@@ -14335,6 +14348,55 @@ section#top-banner .banner-links-imgs a:focus span.title {
   font-size: 16px;
   line-height: 16px;
   margin-bottom: 10px;
+}
+#vacancies-section article.hentry {
+  padding: 20px;
+  border: 1px solid #4b4b4b;
+}
+#vacancies-section article.hentry .close-date {
+  background-color: #C60751;
+  color: white;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+#vacancies-section article.hentry h4 {
+  font-size: 25px;
+  line-height: 27px;
+}
+#vacancies-section article.hentry .ref {
+  font-weight: bold;
+  color: #4b4b4b;
+  text-transform: uppercase;
+}
+#vacancies-section article.hentry .description {
+  margin-bottom: 15px;
+}
+#vacancies-section article.hentry a {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: 1px solid #4b4b4b;
+  position: relative;
+  padding: 0px;
+  line-height: 40px;
+  font-size: 20px;
+}
+#vacancies-section article.hentry a:after {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 100%;
+  line-height: 40px;
+  padding-right: 20px;
+  font-size: 20px;
+  font-family: FontAwesome;
+  content: "\f105";
+}
+#vacancies-section article.hentry a:hover,
+#vacancies-section article.hentry a:active,
+#vacancies-section article.hentry a:focus {
+  background-color: #4b4b4b;
+  color: white;
 }
 #blog-posts .posts-grid {
   margin-bottom: 40px;

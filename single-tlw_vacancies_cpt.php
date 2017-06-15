@@ -1,16 +1,24 @@
 <?php get_header(); ?>
 
 			<?php if ( have_posts() ): while ( have_posts() ) : the_post(); 
+			$jobs_pg = get_page_by_title( "Vacancies" );
 			$all_forms_active = get_field('all_forms_active', 'option');
-			$form_active = get_field('add_form');	
+			$form_active = get_field('add_form');
 			
-			$quick_links = array();
+			if ( has_post_thumbnail($jobs_pg->ID) ) {
+			$img_post = $jobs_pg;
+			}	
 			?>	
 			<!-- MAIN CONTENT START -->
 			
 			<main id="main-content">
-				
-				<?php include (STYLESHEETPATH . '/_/inc/vacancies/sections/main-content-section.inc'); ?>
+				<?php if (has_post_thumbnail($jobs_pg->ID)) { ?>
+					<?php get_template_part( 'parts/vacancies/banner', 'img' ); ?>	
+					<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
+					<?php get_template_part( 'parts/global/color', 'strip' ); ?>	
+				<?php } ?>	
+	
+				<?php get_template_part( 'parts/vacancies/section', 'content' ); ?>
 				
 				<?php if ($form_active && $all_forms_active) { ?>
 				<?php get_template_part( 'parts/vacancies/section', 'form' ); ?>
