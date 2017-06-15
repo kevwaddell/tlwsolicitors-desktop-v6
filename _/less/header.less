@@ -1,5 +1,81 @@
 header[role="banner"] {
+.pad-top(4);	
+	.logo {
+	.mag-all(0);
+	.max-w(30);
+	//.w(35);
+		a {
+		.block;
+		.h(6);
+		.bg-img("tlw-logo-wide.png");
+		.bg-repeat(no-repeat);
+		.bg-size;
+		background-position: left center;
+		
+			&:hover, &:active, &:focus{
+			.opacity(0.5);	
+			}
+			
+		}
+			
+	}
 	
+	.header-action-btns {
+	.block;
+	.fright;
+	
+		.btn {
+		.no-rounded;
+		.border(@grayDk; 0.1);
+		.col(@grayDk);
+		.bg-col(@trans);	
+		.h(5.8);
+		.w(5.8);
+		.pad-all(0);
+		outline: none;
+		.font-size(1.6);
+		.line-h(5.8);
+		.mag-left(2);
+		.rel;
+		
+			i {	
+			.block;
+			.line-h(5.8);
+			text-align: center;
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col(@grayDk);
+			.col(@wht);
+			}
+		}
+	}
+	
+	.info-links {
+	text-align: center;	
+	.mag-bot(0);
+		
+		li {
+		.line-h(6);
+			&:first-child a {
+			border-left: none;	
+			}
+		}
+		
+		a {
+		.txt-col-grayDk;
+		.no-text-dec;
+		.pad-left(1);	
+		.font-size(1.4);
+		.line-h(1.4);
+		.border-left(@grayDk; 0.1);
+			&:hover, &:active, &:focus {
+			.txt-col-red;
+			}
+			
+		}
+	}
+
 }
 
 html.svg {

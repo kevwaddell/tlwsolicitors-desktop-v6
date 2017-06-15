@@ -11,16 +11,11 @@
 	<main id="main-content">
 		
 		<!-- BANNER SECTION -->
-		<?php if ($banner_active) { 
-		$hp_banner_type = get_field('hp_banner_type', 'option');	
-		?>
-			<?php if ($hp_banner_type == "video") { ?>
-			<?php get_template_part( 'parts/banners/home/banner', 'video' ); ?>		
-			<?php } ?>
-			<?php if ($hp_banner_type == "img") { ?>
-			<?php get_template_part( 'parts/banners/home/banner', 'img' ); ?>	
-			<?php } ?>		
+		<?php if ($banner_active) { ?>
+		<?php get_template_part( 'parts/banners/home/banner', 'img' ); ?>		
 		<?php } ?>
+		
+		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
 		
 		<!-- HOME PAGE FORM SECTION -->
 		<?php get_template_part( 'parts/sections/home/section', 'form' ); ?>	

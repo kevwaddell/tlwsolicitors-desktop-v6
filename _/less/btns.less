@@ -2,35 +2,41 @@
 	
 }
 
-a.icon-btn {
+#continue-read-btn {
+.no-rounded;
+.border(@grayDk; 0.1);
+.pad-all(2.5);
+.font-size(3);
+.line-h(3);	
+.txt-col-red;
+	i {
+	.fright;
+	.font-size(3);
+	.line-h(3);	
+	.txt-col-gray-lt;	
+	}
 	
+	&:hover, &:active, &:focus {
+	.bg-col-grayDk;
+	.txt-col-wht;
+		i {
+		.txt-col-gray;	
+		}
+	}
 }
 
-button.btn-col-red, a.btn-col-red {
-	
-}
-
-button.btn-col-purple, a.btn-col-purple  {
-
-}
-
-button.btn-col-green, a.btn-col-green  {
-	
-}
-
-button.btn-col-pink, a.btn-col-pink {
-	
-}
-
-button.btn-col-orange, a.btn-col-orange {
-
-}
-
-button.btn-col-blue, a.btn-col-blue {
-
-}
-
-#catapult-cookie-bar {
-
+#close-content-extra-btn {
+.rounded(100%);
+.abs;
+.right(-9);
+.bottom(0);	
+.w(6);
+.h(6);
+.border(@grayDk; 0.1);
+.font-size(3);
+	&:hover, &:active, &:focus {
+	.bg-col-grayDk;
+	.txt-col-wht;
+	}
 }
 

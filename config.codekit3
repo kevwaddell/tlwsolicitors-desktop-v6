@@ -258,6 +258,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/_\/css\/img\/feefo-stars.png": {
+		"ft": 32768,
+		"iS": 3881,
+		"oA": 0,
+		"oAP": "\/_\/css\/img\/feefo-stars.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_\/css\/img\/feefo_logo.png": {
+		"ft": 32768,
+		"iS": 11184,
+		"oA": 0,
+		"oAP": "\/_\/css\/img\/feefo_logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/_\/css\/img\/headway-logo-2016.png": {
 		"ft": 32768,
 		"iS": 31172,
@@ -533,26 +555,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/_\/css\/merged-style-ck.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/_\/css\/merged-style-ck-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/_\/css\/merged-style-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/_\/css\/merged-style-min-min.css",
-		"oF": 0,
-		"oS": 0
-		},
 	"\/_\/css\/merged-style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -761,15 +763,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/_\/js\/min\/map-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/_\/js\/min\/functions-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/_\/js\/min\/min\/functions-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1719,6 +1712,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/global\/main-masthead.php",
+		"oF": 0
+		},
+	"\/parts\/global\/page-breadcrumbs.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/global\/page-breadcrumbs.php",
 		"oF": 0
 		},
 	"\/parts\/global\/page-tools.php": {

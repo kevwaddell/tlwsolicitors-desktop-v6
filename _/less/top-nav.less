@@ -1,3 +1,178 @@
 #top-nav {
+overflow: hidden;
+.rel;
+.bg-col(@wht);	
+.min-w(117);
+
+	&.nav-closed {
+	height: 0px;
+	}
+
+	&.nav-open {
+	height: auto;
+	}
+
+	.nav-wrapper {
+	.rel;
+	.clearfix;
+	.pad-top(3);
+	.pad-bot(5);
+	.border-bot(@redMid; 1);
+	}
 	
+	button#close-nav {
+	.pad-all(0);	
+	.abs;
+	left: 50%;
+	.bottom(-1.5);
+	.mag-left(-2.5);
+	.h(5);
+	.w(5);
+	.border-radius(100%, 0, 0, 100%);
+	.bg-col-red-dk;
+	.txt-col-wht;
+	outline: none;
+	.transition(0.3s, ease-in-out);
+		i {
+		.mag-top(-1);	
+		}
+		&:hover, &:active, &:focus {
+		.bottom(-0.5);
+		}
+	}
+	
+	.top-nav-icon-links {
+	.mag-bot(3);
+		
+		a {
+		.block;
+		.txt-col-grayDk;
+		.no-text-dec;
+		.w(6);
+		.h(6);
+		.border(@grayDk; 0.1);
+		.rounded(100%);
+		
+			i {
+			.block;
+			.line-h(5.8);
+			.font-size(2.5);
+			text-align: center;
+			}
+			
+			span.fontawesome-text {
+			.sr-only;
+			}	
+			
+			&:hover, &:active, &:focus {
+			.bg-col-grayDk;
+				i {
+				.txt-col-wht;	
+				}
+			}
+		}
+	}
+	
+	#menu-hidden-navigation {
+	width: 40%;
+	.rel;
+		a {
+		.block;	
+		.rel;
+		text-align: center;
+		.txt-col-grayDk;
+		.font-slab-serif;
+		.no-text-dec;
+		.caps;
+		.font-size(2.5);
+		.line-h(3.5);
+		.pad-all(2);
+		.border(@grayDk; 0.1);
+		.transition;
+			&:hover, &:active, &:focus {
+			.txt-col-red;
+			}
+		}
+		
+		li {
+		.mag-bot(1);	
+		//.rel;
+			&.with-sub-nav > a:after {
+			content: "\f055";	
+			font-family: FontAwesome;	
+			.abs;
+			.right(2);
+			.top(0);
+			.txt-col-gray-lt;
+			.font-size(4);
+			.line-h(7.7);	
+			}
+		}
+		
+		ul.sub-menu {
+		.abs;
+		.bg-col(@wht);
+		left: 103%;
+		top: 0px;
+		width: 80%;	
+			a {
+			text-transform: none;
+			.font-size(2);
+			.line-h(2);	
+			.pad-all(2);
+			}
+			
+			li {
+				&.with-sub-nav > a:after {
+				content: "\f055";	
+				font-family: FontAwesome;	
+				.abs;
+				.right(2);
+				.top(0);
+				.txt-col-gray-lt;
+				.font-size(3);
+				.line-h(6.2);	
+				}	
+			}
+			
+			ul.sub-menu {
+			left: 104%;
+				a {
+				.font-size(1.6);	
+				.pad-all(1);
+				}
+			}
+		}
+		
+				
+		li.sub-open { 
+			
+			& > a {
+			.mag-right(-0.8);	
+			.mag-left(0.8);
+			.txt-col-red;
+				&:after {
+				content: "\f056";	
+				}
+			}
+
+			ul.sub-menu {
+			height: auto;
+			.animated;
+			.fadeInDown;
+				
+				li.sub-open ul.sub-menu {
+				.animated;
+				.fadeInRight;	
+				}	
+			}	
+		}
+		
+		li.sub-closed {
+			ul.sub-menu {
+			.h(0);
+			.over-hide;	
+			}	
+		}
+	}		
 }

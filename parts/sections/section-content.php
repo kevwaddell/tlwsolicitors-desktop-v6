@@ -15,6 +15,8 @@ $more_btn_text = "Continue Reading";
 ?>
 <article <?php post_class("content-section"); ?>>
 	
+	<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
+	
 	<div class="container">
 					
 		<?php if ($post->post_parent != 0 ) { ?>
@@ -33,7 +35,7 @@ $more_btn_text = "Continue Reading";
 						<div id="content-extra" class="closed">
 							<div id="content-extra-inner">
 								<?php echo $content_extended;  ?>
-								<button id="close-content-extra-btn" class="btn btn-default"><i class="fa fa-times-circle"></i><span class="sr-only">Close</span></button>
+								<button id="close-content-extra-btn" class="btn btn-default"><i class="fa fa-times"></i><span class="sr-only">Close</span></button>
 							</div>
 						</div>
 						
@@ -53,7 +55,7 @@ $more_btn_text = "Continue Reading";
 		</div>
 		
 		<?php if (!empty($post_content['extended'])) { ?>
-		<button id="continue-read-btn" class="btn btn-default btn-block"><?php echo $more_btn_text; ?><i class="fa fa-plus-circle"></i></button>
+		<button id="continue-read-btn" class="btn btn-default btn-block font-slab-serif caps"><?php echo $more_btn_text; ?><i class="fa fa-plus-circle"></i></button>
 		<?php } ?>
 									
 	</div>

@@ -27,7 +27,7 @@ Template Name: Thank page template
 							<div class="well well-lg text-center thank-you-message">
 								<h1>Thank you for contacting us.</h1>
 								<p>A member of our team will contact you shortly.</p>
-								<a href="<?php echo get_permalink($return_id) ; ?>" class="btn btn-block icon-btn">Continue</a>
+								<a href="<?php echo get_permalink($return_id) ; ?>" class="btn btn-block">Continue</a>
 							</div>
 							
 						</div>

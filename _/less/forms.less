@@ -3,7 +3,74 @@
 }
 	
 .gform_wrapper {
+max-width: 100% !important;
+.mag-all(0) !important;	
 	
+	input[type=text],
+	input[type=url],
+	input[type=email],
+	input[type=tel],
+	input[type=number],
+	input[type=password],
+	input[type=file] {
+	.font-size(1.4)!important;
+	.border(@grayDk, 0.1);
+	width: 100% !important;
+		&:focus {
+		.border-col(@red);	
+		}	
+	}
+	
+	textarea {
+	.font-size(1.4)!important;
+	.border(@grayDk, 0.1);
+	width: 100% !important;
+		&:focus {
+		.border-col(@red);	
+		}
+	}
+	
+	select {
+	.font-size(1.4)!important;	
+	width: 100% !important;	
+		&:focus {
+		.border-col(@red);	
+		}
+	}
+	
+	.gfield_radio input[type=radio] {
+	height: auto;
+	.mag-left(0.1);
+	.mag-top(0.6) !important;
+	}
+
+	hr {
+	.mag-top(3);
+	.border-top(@gray, 0.2);	
+	}
+
+	ul li.fleft {
+	clear: none !important;
+	width: 49%;
+	float: left;
+	.mag-bot(2);
+	
+		select {
+		width: 100% !important;	
+		}
+	}
+	
+	ul li.fright {
+	clear: none !important;
+	width: 49%;
+	float: right;
+	
+		select {
+		width: 100% !important;	
+		}
+
+	}
+
 }
 
 #search-form {
@@ -15,5 +82,273 @@ form.route-finder {
 }
 
 #form-section {
+	.gform_description {
+	.txt-col-gray;	
+	.pad-top(0);
+	.bold;
+	.font-size(2.5);
+	.mag-bot(1);
+	}
 	
+	.gform_wrapper input[type="text"],
+	.gform_wrapper input[type="email"],
+	.gform_wrapper input[type="tel"],
+	.gform_wrapper input[type="file"] {
+	.h(6);	
+	.font-size(2) !important;
+	.pad-all(1);
+	.border-col(@grayDk);
+	.bg-col(@wht);
+	}
+	
+	.gform_wrapper .name_first label,
+	.gform_wrapper .name_last label {
+	.font-size(1.6);	
+	.txt-col-gray;
+	.pad-top(0.5);
+	}
+	
+	.gform_wrapper #extensions_message {
+	.font-size(1.6);
+	.block;	
+	.txt-col-gray;
+	.bold;
+	}
+	
+	.bootstrap-select.btn-group .dropdown-menu li.selected a {
+	.bg-col-grayDk;
+	.col(white);
+	}
+	
+	.bootstrap-select.btn-group .dropdown-menu li.selected a span.check-mark {
+		.fright;
+		display: inline-block;
+		.col(white);
+	}
+	
+	.bootstrap-select.btn-group .dropdown-menu li {
+	.mag-bot(1);	
+	}
+	
+	.gform_wrapper textarea.large {
+		//.h(18.7);
+		.h(29);
+		.pad-all(2);
+		.font-size(2);
+		.border-col(@grayDk);
+	}
+	
+	.bootstrap-select button {
+	.h(6);	
+	.font-size(2);
+	.pad-all(1);
+	.border-col(@grayDk);
+	}
+	
+	.gform_wrapper label {
+	.font-size(2);	
+	}
+	
+	.captcha label {
+	.none;	
+	}
+	
+	.ginput_recaptcha > div {
+	margin: auto;	
+	}
+	
+	.gform_wrapper label, .gform_wrapper .gfield_no_follows_desc {
+	.txt-col-grayDk;	
+	}
+	
+	.radio_marketing, .radio_updates {
+	.pad-top(2);
+	.border-top(@gray; 0.1);
+	
+		.gfield_label {
+		.font-size(3);	
+		.mag-bot(1);
+		.bold !important;
+		}
+	}
+	
+	.gfield_no_follows_desc {
+	.pad-top(4.7);
+	.mag-bot(0);	
+	}
+	
+	.gform_wrapper .gsection {
+	.no-border;
+	.pad-all(0);	
+	.mag-all(0);
+	}
+	
+	.gform_wrapper .gform_body {
+	.clearfix;
+	}
+	
+	.gform_wrapper .gform_footer {
+	.mag-top(3);
+	.pad-all(0);
+	.rel;
+	//width: 50%;
+	//.fright;	
+		button.gform_button {
+		.rel;
+		.no-border;
+		.no-rounded;
+		.bg-col-red-dk;
+		.txt-col-wht;
+		.h(6);
+		.font-size(2.6);
+		.line-h(2.6);
+		.caps;
+		width: 100%;
+		.font-slab-serif;
+			
+			i {
+			.abs;
+			.right(0);
+			.top(0);
+			.pad-right(2);
+			.block;
+			.txt-col-wht;	
+			.font-size(3);
+			height: 100%;
+			font-style: normal;
+				&:after {
+				font-family: FontAwesome;
+				content: "\f105";	
+				.line-h(6);
+				}
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col-red;
+			}
+		}
+	}
+	
+	.validation_error {
+	text-align: center;	
+	}
+		
+	.gform_confirmation_wrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	.pad-top(5);	
+	}
+	
+	.gform_confirmation_message {
+	.pad-all(3);
+	.rounded(20px);
+	.drop-shadow(0, 3px, 10px, 0.5);
+	.bg-col-red-dk;
+	.border(@red; 0.2);
+	.txt-col-wht;
+	.font-slab-serif;
+		p {
+		.font-size(3);
+		.line-h(4);		
+		}
+	}
+
+	
+}
+
+#hp-form {
+.mag-bot(4);	
+}
+
+#hp-form .gform_wrapper {
+overflow: hidden;
+
+	.gform_heading {
+	.text-center;
+		span.gform_description {
+		.bold;	
+		.font-size(2);
+			span {
+			.txt-col-red;	
+			.font-size(1.4);
+			}
+		}
+	}
+	
+	.gfield_label {
+	.sr-only;	
+	}
+	
+	.gform_body, .gform_footer {
+	.fleft;	
+	}
+	
+	.gform_body {
+	width: 95%;
+	}
+	
+	ul.gform_fields {
+		li {
+		.in-block;	
+		.pad-right(3);
+		.w(38);
+		.mag-bot(0);
+		.mag-top(0);
+		
+			&:nth-child(3) {
+			.w(29.5);
+			.pad-right(0);
+			}
+			
+			.ginput_container {
+			.mag-top(0);	
+			}
+		}
+		
+		input[type="text"],
+		input[type="email"],
+		input[type="tel"],
+		input[type="file"] {
+		.h(6);	
+		.font-size(2) !important;
+		.pad-all(1);
+		.bg-col(@wht);
+		}
+		
+		.validation_message {
+		.pad-bot(1);	
+		}
+	}
+	
+	.gform_footer {
+	.mag-all(0);
+	.pad-all(0);
+	width: 5%;
+	overflow: hidden;
+	clear: none;
+		
+		button {
+		.no-border;
+		.h(6);
+		.pad-all(0);
+		width: 100%;
+		.bg-col-red;
+		.txt-col-wht;
+			span {
+			.sr-only;	
+			}
+			i:after {
+			font-style: normal;
+			.block;
+			font-family: FontAwesome;
+			content: "\f105";	
+			.txt-col-wht;
+			.font-size(4);
+			}
+			&:hover, &:active, &:focus {
+			.bg-col-red;
+			}
+		}	
+	}
 }

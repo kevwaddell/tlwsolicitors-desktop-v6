@@ -32,26 +32,10 @@ Template Name: Team Profiles Page
 	<main id="main-content">
 		
 		<!-- BANNER SECTION -->
-		<?php if ($banner_active) { 
-		$banner_type = get_field('banner_type');	
-		?>
-
-		<?php if ($banner_type == 'slider') { ?>
-		<?php get_template_part( 'parts/banners/banner', 'feedback' ); ?>				
-		<?php } ?>
-		
-		<?php if ($banner_type == 'slim-img') { ?>
-		<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>			
-		<?php } ?>	
-		
-		<?php if ($banner_type == "video") { ?>
-		<?php get_template_part( 'parts/banners/banner', 'video' ); ?>		
-		<?php } ?>
-		
-		<?php if ($banner_type == "img") { ?>
-		<?php get_template_part( 'parts/banners/banner', 'img' ); ?>			
-		<?php } ?>	
-			
+		<?php if ($banner_active) { ?>
+		<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>
+		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
+		<?php get_template_part( 'parts/global/color', 'strip' ); ?>			
 		<?php } ?>		
 				
 		<!-- MAIN TEXT SECTION -->

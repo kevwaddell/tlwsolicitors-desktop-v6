@@ -8,9 +8,9 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, h2 {
-.font-size(4);	
-.line-h(4.4);
-.mag-bot(3);
+.font-size(7);	
+.line-h(8);
+.mag-bot(5);
 .font-lite;	
 	small {
 	.font-size(3);	
@@ -23,28 +23,11 @@ p, ul, ol {
 }
 
 p {
-.mag-bot(2);
-	&.intro {
-	.bold;
-	.col(lighten(@grayDk, 10%));	
-	}
+.mag-bot(3);
 	
 	&:last-child {
 	.mag-bot(0);	
-	}
-	
-	&.lead {
-	.col(@gray);
 	}	
-}
-
-p.intro.lrg {
-.normal;
-.pad-bot(5);
-.font-size(2.5);
-.line-h(3);
-.mag-bot(0);
-.col(@gray);
 }
 
 time.date-today {
@@ -67,6 +50,12 @@ article.page,
 article.post, 
 article.tlw_vacancies_cpt,
 article.tlw_landing_page {
+	
+	.service-label {
+	.font-size(3);
+	.line-h(3);	
+	.mag-bot(2);	
+	}
 	
 	.label {
 	.in-block;
@@ -102,8 +91,14 @@ article.tlw_landing_page {
 	}
 	
 	.entry {
-		&.wide-entry {
-		.mag-left(-3);	
+		
+		p, ul, ol {
+		.font-size(2.5);
+		.line-h(3.5);	
+		.mag-bot(4);
+			&:last-child {
+			.mag-bot(0);	
+			}
 		}
 		
 		img.alignleft {
@@ -130,6 +125,29 @@ article.tlw_landing_page {
 	}
 	
 	.main-txt {
+		
+		&.home {
+			h1 {
+			.font-size(5);	
+			.line-h(6);
+			}	
+		}
+		
+		i.txt-icon {
+		.block;
+		.fleft;
+		.mag-right(3);
+		.mag-bot(1);
+		.w(15);
+		.line-h(15);
+		.rounded(100%);	
+		.bg-col-red;
+		.text-center;
+		.txt-col-wht;
+		.font-slab-serif;
+		.font-size(10);
+		font-style: normal;
+		}
 		
 		.video-container {
 			.rel;
@@ -275,17 +293,33 @@ article.tlw_landing_page {
 		}
 		
 		h2, h3 {
-		.font-size(2.5);
-		.line-h(2.5);
+		.font-size(3.5);
+		.line-h(3.5);
 		.font-lite;	
 		.caps;
 		.mag-bot(2);
+		.txt-col-gray;
 		}
 		
 		h4, h5 {
 		.font-size(1.8);
 		}
 		
+	}
+	
+	#content-extra {
+		&.closed {
+		.h(0);
+		.over-hide;	
+		}
+		
+		&.open {
+		height: auto;	
+		}
+		
+		#content-extra-inner {	
+		.rel;
+		}
 	}
 	
 }//Article styles

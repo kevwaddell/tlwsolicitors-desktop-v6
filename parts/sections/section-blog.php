@@ -16,7 +16,7 @@ $recent_posts_args = array (
 'category__in'	=> $blog_categories,
 );
 
-if ( date("n") >= 4 ) {
+if ( date("n") >= 6 ) {
 $recent_posts_args['year'] = date("Y");
 }
 
@@ -24,7 +24,7 @@ $recent_posts_args['year'] = date("Y");
 
 $recent_posts = get_posts($recent_posts_args);
 
-//echo '<pre class="debug">';print_r($recent_posts);echo '</pre>';
+//echo '<pre>';print_r($recent_posts);echo '</pre>';
 ?>
 <?php if (!empty($recent_posts) ) { 
 $cats_args = array(
@@ -47,26 +47,20 @@ $archives = wp_get_archives($archives_args);
 <section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section">
 	<div class="container">
 		<h2 class="section-header"><?php echo $section_title; ?></h2>
-	</div>
-	<div id="posts-list-carousel" class="posts-list carousel slide" data-ride="carousel">
-		<div class="carousel-inner" role="listbox">
+		<div class="row posts-grid">
 			<?php foreach ($recent_posts as $k => $rpost) { 
 			$ID = $rpost->ID;
-			$date = get_the_date('F jS Y', $ID);
+			$thumb_id = get_post_thumbnail_id($ID);
+			$bg_src = wp_get_attachment_image_src($thumb_id, 'medium' );
 			?>
-			<div class="item<?php echo ($k === 0) ? " active":""; ?>">
-				<div class="container">
-					<div class="recent-post">
-						<time class="article-date" datetime="<?php get_the_date( 'Y-m-d',  $ID); ?>"><?php echo $date; ?></time>
-						<h3><a href="<?php echo get_permalink($ID); ?>"><?php echo get_the_title($ID); ?></a></h3>
-						<a href="<?php echo get_permalink($ID); ?>" class="view-post-btn">View Article</a>
-					</div>
-				</div>
+			<div class="col-xs-4">
+				<a href="<?php echo get_permalink($ID); ?>" class="post-link" title="<?php echo the_title_attribute( array('before' => 'View article: ', 'post'=> $ID)); ?>">
+					<span class="link-bg-img" style="background-image: url(<?php echo $bg_src[0]; ?>)"></span>
+					<span class="title"><span><?php echo get_the_title($ID); ?></span></span>
+				</a>
 			</div>
 			<?php } ?>
 		</div>
-	</div>
-	<div class="container">
 		<div class="row blog-dropdowns">
 				<div class="col-xs-6">
 					<?php if ($cats) { ?>
