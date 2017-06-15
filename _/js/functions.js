@@ -164,16 +164,35 @@
 	    */
 	    
 		$('body').on('click','button#continue-read-btn', function(){
+			
+			var inner_h = $('#content-extra-inner').outerHeight();
 				
+			$('button#continue-read-btn').addClass('hidden');
+			
+			$('html, body').animate({scrollTop: ($('#content-extra-inner').offset().top - 20)}, 500);
+			
+			$('#content-extra').animate({height: inner_h+"px"}, 500, function(){
+				$('#content-extra').removeClass('closed').addClass('open').removeAttr('style');
+			});
+	
 			return false;
 			
 		});
 		
 		$('body').on('click','button#close-content-extra-btn', function(){
-		
+			
+			$('button#continue-read-btn').removeClass('hidden');
+			
+			$('html, body').animate({scrollTop: ($('.main-txt').offset().top - 200)}, 500);
+				
+			$('#content-extra').animate({height: "0px"}, 500, function(){
+				$('#content-extra').removeClass('open').addClass('closed').removeAttr('style');	
+			});	
+			
 			return false;
 			
 		});
+		
 		
 		/* END OF CONTINUE READING FUNCTIONS */
 	
@@ -226,17 +245,6 @@
 						
 			return false;
 		});
-			
-		/* PAGE BANNER TAG SCROLLER */
-		function startTagInterval() {
-		tagInterval = setInterval(changeTag, 7000);
-		}
-	
-		function changeTag() {	
-			//console.log(nextTag);
-		}
-		
-		startTagInterval();
 		
 		/* PAGE FEEDBACK SCROLLER */
 		function startFeedbackInterval() {
@@ -250,11 +258,15 @@
 		if ($('.feedback-section-wrapper').length === 1) {
 		startFeedbackInterval();
 		}
+		
+		/* PAGE FEEDBACK SCROLLER */
 			
 			/* QUICK LINKS BUTTONS 
 				Buttons fixed on the right side of the page 
 				that animate a jump to the different sections	
 			*/
+			
+
 			
 			$('body').on(event_type,'button#quick-links-btn-show', function(){
 					    		     	     			
@@ -382,8 +394,44 @@
 			which shows and hides the answer to the question
 		    */
 		    
-		     $('body').on(event_type,'button.view-faq-btn', function(){  
-		    	      			
+		     $('body').on(event_type,'.faq-nav > button', function(){  
+			     
+			    var faq_id = $(this).data().src;
+			    var prev_id;
+			    var next_id;
+			    
+			    $('.faq-item.active').animate({top: '100%', opacity: 0}, 300, function(){
+					$(this).removeClass('active');    
+			    });
+			    
+			    $('#'+faq_id).animate({top: '0%', opacity: 1}, 300, function(){
+					$('#'+faq_id).addClass('active');     
+			    });
+			    
+			    if ($('#'+faq_id).prev().length === 1) {
+				prev_id = $('#'+faq_id).prev().attr('id');
+			    } else {
+				prev_id = $('.faq-item').last().attr('id');   
+			    }
+			    
+			    if ($('#'+faq_id).next().length === 1) {
+				next_id = $('#'+faq_id).next().attr('id');
+			    } else {
+				next_id = $('.faq-item').first().attr('id');    
+			    }
+			    
+			    $('button#prev-faq').attr('data-src', prev_id); 
+			    $('button#prev-faq').data('src', prev_id); 
+			    $('button#next-faq').attr('data-src', next_id); 
+				$('button#next-faq').data('src', next_id); 
+			    
+				/*
+				console.log($('#'+faq_id).prev().length);
+			    console.log(prev_id); 
+			    console.log($('#'+faq_id).next().length);
+			    console.log(next_id); 
+				*/
+				
 				return false;
 				
 			});

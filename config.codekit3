@@ -1714,6 +1714,12 @@
 		"oAP": "\/parts\/global\/main-masthead.php",
 		"oF": 0
 		},
+	"\/parts\/global\/page-breadcrumbs.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/global\/page-breadcrumbs.php",
+		"oF": 0
+		},
 	"\/parts\/global\/page-tools.php": {
 		"ft": 8192,
 		"oA": 2,

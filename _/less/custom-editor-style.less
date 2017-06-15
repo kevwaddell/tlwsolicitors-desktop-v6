@@ -14,8 +14,8 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-.font-size(7);
-.line-h(8);	
+.font-size(5);
+.line-h(6);	
 .font-lite;
 .txt-col-grayDk;
 .mag-bot(3);
@@ -23,9 +23,10 @@ h1 {
 
 h3, h2 {
 .font-size(3.5);
-.line-h(4.5);
+.line-h(3.5) !important;
 .mag-bot(2);	
 .font-lite;
+.txt-col-gray;
 .caps;	
 }
 
@@ -54,14 +55,6 @@ p {
 	
 	&.bold {
 	.bold;	
-	}
-	
-	&.lrg {
-	.pad-bot(5);
-	.font-size(2.5);
-	.line-h(3);
-	.mag-bot(0);
-	.col(@gray);
 	}
 	
 	&:last-child {
@@ -163,32 +156,19 @@ text-decoration: underline;
 	}
 }
 
-.tk-banner-panel {
-	
-	i.txt-icon {
-	.block;
-	.w(12);
-	.h(12);
-	.line-h(11.2);
-	.border(white; 0.4);
-	.rounded(100%);
-	text-align: center;	
-	.font-size(9);
-	.font-slab-serif;
-	font-style: normal;
-	margin: 0px auto 20px;
-	.bg-col-gray;
-	.drop-shadow(0, 3px, 20px, 0.7);
-	.col(@grayLt);
-	}
-	
-	h2 {
-	.font-cond;	
-	.caps;
-	.font-size(2);
-	.line-h(2);
-	.mag-bot(1);
-	.col(@gray);
-	}
-	
+
+i.txt-icon {
+.block;
+.fleft;
+.mag-right(3);
+.mag-bot(1);
+.w(15);
+.line-h(15);
+.rounded(100%);	
+.bg-col-red;
+.text-center;
+.txt-col-wht;
+.font-slab-serif;
+.font-size(10);
+font-style: normal;
 }

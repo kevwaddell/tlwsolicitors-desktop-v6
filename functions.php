@@ -149,7 +149,7 @@ add_filter( 'image_downsize', 'change_featured_image_size_in_admin_28512', 10, 3
 function add_banner_feat_img( $post ) {	
 		
 	$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
-	$wide_banner_img = wp_get_attachment_image_src($post_thumbnail_id, 'wide-banner-img' );
+	$wide_banner_img = wp_get_attachment_image_src($post_thumbnail_id, 'feat-img-ex-wide' );
 	
 	echo $wide_banner_img[0];
 	
@@ -247,14 +247,6 @@ function truncate($string,$length=100,$append="&hellip;") {
   return $string;
 }
 
-function adjust_my_breadcrumbs( $linksarray ) {
-	if( is_array( $linksarray ) && count( $linksarray ) > 0 && is_single() ) {
-		array_pop( $linksarray );
-	}
-	return $linksarray;
-}
-add_filter( 'wpseo_breadcrumb_links', 'adjust_my_breadcrumbs' );
-
 add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
 function my_mce_buttons_2( $buttons ) {
 	//echo '<pre>';print_r($buttons);echo '</pre>';
@@ -322,6 +314,7 @@ add_filter('ysacf_exclude_fields', function(){
     );
 });
 
-show_admin_bar(false);
+/* Disable WordPress Admin Bar for all users but admins. */
+ add_filter('show_admin_bar', '__return_false');
 
  ?>

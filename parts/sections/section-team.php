@@ -1,6 +1,7 @@
 <?php 
 global $profiles;
 $profiles_total = count($profiles);
+$section_title = "Our Team";
 //echo '<pre class="debug">';print_r($profiles);echo '</pre>';
 ?>
 <div class="rule"></div>
@@ -8,7 +9,7 @@ $profiles_total = count($profiles);
 	<div class="container">
 		<h2 class="section-header"><?php echo $section_title; ?></h2>
 	
-		<div class="our-team-wrapper">
+		<div class="row">
 			<?php foreach ($profiles as $post) : ?>
 			<?php
 			setup_postdata($post);	 
@@ -17,26 +18,17 @@ $profiles_total = count($profiles);
 			$departments = get_field('departments');
 			$profile_img = get_field('profile_img'); 
 			?>
-			<article class="team-profile txt-closed">
-				<div class="profile-inner">
+			<div class="col-xs-6">
+				<div class="profile">
 					<div class="profile-img" style="background-image: url(<?php echo $profile_img['sizes']['profile-thumb']; ?>);"></div>
-					<header class="profile-info">
+					<div class="profile-txt">
 						<h3><?php the_title(); ?></h3>
 						<div class="email"><a href="mailto: <?php echo $email; ?>"><?php echo $email; ?></a></div>
-					</header>
-					<div class="profile-txt txt-hide">
-						<div class="position caps font-slab-serif">
-							<?php if ($position != "Senior Partner") { ?>
-							<span>Department</span>
-							<?php } ?>
-	
-							<?php echo $position; ?>
-						</div>
+						<div class="position caps font-slab-serif"><?php echo $position; ?></div>
 						<?php the_content(); ?>
-						<button class="btn profile-info-btn"><span class="sr-only">View bio</span></button>
 					</div>
 				</div>
-			</article>
+			</div>
 			<?php endforeach; ?>	
 			<?php wp_reset_postdata(); ?>	
 		</div>

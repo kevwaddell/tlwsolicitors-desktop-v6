@@ -9,7 +9,45 @@ section#post-top-banner {
 }
 
 section#slim-top-banner {
+.h(30);
+.rel;
+.over-hide;
+	.container {
+	height: 100%;	
+	.rel;
+	}
 	
+	.banner-title {
+	.rel;
+	z-index: 2;
+	.in-block;
+	.pad(1;2;1;2);	
+	.bg-col(@wht);
+	.font-size(2.5);
+	.line-h(2.5);
+	.txt-col-gray;
+	.mag-top(-2.25);
+	}
+	
+	.img {
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	top: 0px;
+	height: 100%;
+	.bg-size;
+	.bg-repeat(no-repeat);
+	background-position: center center;	
+	}
+	
+	i {
+	position: absolute;
+	.right(3);
+	.top(0);
+	.font-size(35);
+	.opacity(0.5);
+	.txt-col-wht;
+	}
 }
 
 section#top-banner {
@@ -23,6 +61,16 @@ section#top-banner {
 		.mag-bot(0);
 		.pad-left(0.2);
 		.pad-right(0.2);
+		}
+		
+		&.links-total-4 li {
+		width: calc(~"100% / 2");		
+		}
+		
+		&.links-total-5 {
+			li:first-child, li:nth-child(2) {
+			width: calc(~"100% / 2");	
+			}	
 		}
 		
 		span.img {
@@ -203,7 +251,17 @@ article.content-section {
 
 // GENERAL PAGE SECTION STYLES
 .pg-section {
-	&#feedback-section {
+	h2.section-header {
+	.font-slab-serif;
+	.txt-col-red;
+	.font-size(5);
+	.line-h(5);	
+	.mag-bot(3);
+	}	
+}
+
+// FEEDBACK SECTION STYLES
+#feedback-section {
 		.feedback-quote {
 		.pad-left(20.5);
 		.min-h(14);
@@ -228,51 +286,298 @@ article.content-section {
 		}	
 	}
 	
-	&#credits-section {
-		h2 {
-		position: relative;
-		z-index: 2;
+// CREDITS SECTION STYLES	
+#credits-section {
+	h2.section-header {
+	position: relative;
+	text-align: center;
+	z-index: 2;
+	.caps;
+	.font-size(2.5);
+	.line-h(2.5);
+	.pad-all(1);
+	.w(39);
+	.border(@gray; 0.1);	
+	margin: -62px auto 20px auto;
+	.bg-col(@wht);
+	.txt-col-grayDk;
+	}
+	
+	.credit-items {
+	text-align: center;	
+	}
+	
+	.credit {
+	.in-block;
+	width: 20%; 	
+	.pad-left(1.5);
+	.pad-right(1.5);
+		a {
+		.no-text-dec;
 		.caps;
-		.font-size(2.5);
-		.line-h(2.5);
-		.pad-all(1);
-		.w(36.5);
-		.border(@gray; 0.1);	
-		margin: -62px auto 20px auto;
-		.bg-col(@wht);
+		.txt-col-grayDk;	
 		}
-		
-		.credit-items {
+		span.logo {
+		.block;
+		.h(23);
+		.bg-repeat(no-repeat);
+		background-position: center center;
+		.bg-size(contain);	
+		.opacity(1);
+		.transition;
+		}
+		span.description {
+		.block;
 		text-align: center;	
+		.font-size(1.4);
+		.line-h(1.4);
 		}
 		
-		.credit {
-		.in-block;
-		width: 20%; 	
-		.pad-left(1.5);
-		.pad-right(1.5);
-			a {
-			.no-text-dec;
-			.caps;
-			.txt-col-grayDk;	
-			}
+		&:hover, &:active, &:focus {
 			span.logo {
-			.block;
-			.h(23);
-			.bg-repeat(no-repeat);
-			background-position: center center;
-			.bg-size(contain);	
-			}
-			span.description {
-			.block;
-			text-align: center;	
-			.font-size(1.4);
-			.line-h(1.4);
+			.opacity(0.5);	
 			}
 		}
 	}
 }
 
+// FAQ'S SECTION STYLES
+#faqs-section {
+	.faq-items {
+	overflow: hidden;	
+	.rel;
+	}
+	
+	.faq-item {
+	position: absolute;
+	top: 100%;
+	left: 0px;
+		
+		&.active {
+		position: relative;
+		top: auto;
+		left: auto;	
+		z-index: 2;
+		}
+		
+		.pg-marker {
+		.in-block;
+		.caps;
+		.txt-col-wht;	
+		.pad(0.5;1;0.5;1);
+		.bg-col-gray;
+		.font-size(1.4);
+		.line-h(1.6);
+		.mag-bot(1);
+		}
+		
+		.question {
+		.font-size(5);
+		.line-h(6);
+		.txt-col-gray;
+		.mag-bot(4);
+		.font-lite;
+		}	
+		
+		.answer p {
+		.font-size(2.5);
+		.line-h(3.5);
+		.mag-bot(4);
+			&:last-child {
+			.mag-bot(0);	
+			}
+		}
+	}
+	
+	.faq-nav {
+		button {
+		.rounded(100%);
+		.border(@grayDk; 0.1);
+		.txt-col-grayDk;
+		.w(6);
+		.h(6);	
+			&:first-child {
+			.mag-bot(4);	
+			}
+			
+			i {
+			.font-size(3);	
+			.block;
+			.text-center;
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col-grayDk;
+			.txt-col-wht;
+			}
+		}	
+	}
+}
+
+// OUR TEAM SECTION STYLES
+#our-team-section {
+	h2 {
+	.mag-bot(1);	
+	}
+	.profile {
+	.h(35);
+	.rel;
+	.mag-top(3);
+		.profile-img, .profile-txt {
+		width: 50%;
+		.h(35);
+		.abs;
+		.top(0);
+		}
+		.profile-img {
+		.left(0);
+		.bg-size;
+		.bg-repeat(no-repeat);
+		background-position: center top;		
+		}	
+		
+		.profile-txt {
+		.right(0);	
+		.bg-col-grayLt;
+		.pad-all(2);
+			h3 {
+			.mag-top(0);
+			.txt-col-red;	
+			}
+			
+			a {
+			.txt-col-gray;
+				&:hover, &:active, &:focus {
+				.txt-col-red;
+				}	
+			}
+		}
+		
+		.position {
+		.font-size(1.6);
+		.line-h(1.6);
+		.mag-bot(1);	
+		}
+	}	
+}
+
+//BLOG POSTS SECTION
+#blog-posts {
+	.posts-grid {
+	.mag-bot(4);
+		a {
+		.block;
+		.h(27);
+		.rel;
+		.no-text-dec;
+		.over-hide;
+			
+			span.link-bg-img {
+			.abs;
+			.top(0);
+			.left(0);
+			.right(0);
+			.bottom(0);
+			.bg-size;
+			.bg-repeat(no-repeat);
+			background-position: center center;	
+			.transition;	
+			}	
+				
+			span.title {
+			.abs;
+			.top(0);
+			.left(0);
+			.right(0);
+			.bottom(0);	
+			.trans-bg(@wht; 0.8);
+			.pad(0;2;0;2);
+			.txt-col-grayDk;
+			.transition;
+			.text-center;
+			.line-h(27);
+			.font-size(3);
+			.font-slab-serif;
+				span {
+				.in-block;
+				vertical-align: middle;
+				.line-h(3);	
+				}	
+			}
+			
+			&:hover, &:active, &:focus {
+				span.link-bg-img {
+				.top(-2);
+				.left(-2);
+				.right(-2);
+				.bottom(-2);
+				-webkit-filter: blur(5px);
+				-moz-filter: blur(5px);
+				-o-filter: blur(5px);
+				-ms-filter: blur(5px);
+				filter: blur(5px);	
+				}
+				
+				span.title {
+				.trans-bg(@red; 0.8);
+				.txt-col-wht;	
+				}
+			}
+
+		}
+	}
+	
+	.bootstrap-select .btn:focus {
+		outline: none !important;	
+		}
+		
+		.dropdown-menu {
+			a {
+			.col(@grayDk);
+				&:hover, &:active, &:focus {
+				.col(@red);
+				}	
+			}		
+		}
+		
+		.bootstrap-select button {
+		.pad-all(0);
+		.line-h(5);
+		.pad-left(2);
+		.border(@grayDk; 0.1);
+		.no-rounded;
+		.bg-col(@wht);
+		.txt-col-grayDk;
+		.caps;
+		.font-slab-serif;
+		.font-size(2);
+		
+			.caret {
+			.none;	
+			}
+			
+			&:after {
+			content: "\f107";	
+			font-family: FontAwesome;	
+			.abs;
+			.right(0);
+			.top(0);
+			.txt-col-grayDk;
+			.line-h(5);
+			.pad-right(2);
+			.font-size(2);	
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col-grayDk;
+			.txt-col-wht;
+				&:after {
+				.txt-col-wht;	
+				}
+			}
+		}
+
+}
 // LOCATION MAP SECTION
 #wide-map {
 	

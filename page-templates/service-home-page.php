@@ -6,6 +6,7 @@ Template Name: Service Home page
 
 <?php get_header(); ?>	
 	
+	<!-- MAIN CONTENT START -->
 	<main id="main-content">
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 	<?php 
@@ -19,31 +20,12 @@ Template Name: Service Home page
 		$img_post = get_the_ID();
 		}
 	?>	
-	
-	<!-- MAIN CONTENT START -->
 
-		
 		<!-- BANNER SECTION -->
-		<?php if ($banner_active) { 
-		$banner_type = get_field('banner_type');	
-		?>
-		
-			<?php if ($banner_type == 'slider') { ?>
-			<?php get_template_part( 'parts/banners/banner', 'feedback' ); ?>				
-			<?php } ?>
-			
-			<?php if ($banner_type == 'slim-img') { ?>
-			<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>			
-			<?php } ?>	
-			
-			<?php if ($banner_type == "video") { ?>
-			<?php get_template_part( 'parts/banners/banner', 'video' ); ?>		
-			<?php } ?>
-			
-			<?php if ($banner_type == "img") { ?>
-			<?php get_template_part( 'parts/banners/banner', 'img' ); ?>			
-			<?php } ?>
-			
+		<?php if ($banner_active) { ?>
+		<?php get_template_part( 'parts/banners/banner', 'img' ); ?>
+		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
+		<?php get_template_part( 'parts/global/color', 'strip' ); ?>			
 		<?php } ?>		
 		
 		
