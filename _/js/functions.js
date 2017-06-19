@@ -46,7 +46,7 @@
 	      size: 5
 		  });
 		  
-		 $('.selectpicker').find('select').selectpicker({
+		$('.selectpicker').find('select').selectpicker({
 			style: 'btn btn-group btn-default', 
 			width: '100%'
 		});
@@ -186,21 +186,7 @@
 		
 		
 		/* END OF CONTINUE READING FUNCTIONS */
-	
-	     /* TOOLKIT SCROLLER 
-		Adds new styled scroll bars to media feeds   
-	   */
-	   
-	   $('.scrollable-txt').slimScroll({
-	        height: '470px',
-	        size: '15px',
-	        position: 'left',
-	        alwaysVisible: true,
-	        railVisible: true,
-	        railColor: '#D7D7D7',
-	        color: '#4b4b4b'
-	    });
-	    
+		    
 	    /* ACCESSABILITY FUNCTIONS 
 		   Button actions to control the text size
 	    */
@@ -208,18 +194,7 @@
 		$('body').on(event_type,'#txt-only-content button.access-btn', function(){
 			
 		});	
-			
-		/* TOOLKIT SLIDER NAVIGATION 
-			Functions for the toolkit buttons to 
-			move to next slide.	
-		*/
-			
-		$('body').on(event_type, '.tk-slider-nav a', function(){
-				
-			return false;
-			
-		});
-			
+		
 		/* PAGE TOOLS BTNS */
 		
 		$('body').on(event_type, 'button#print-pg-btn', function(){
@@ -228,62 +203,40 @@
 		
 		/* TEXT ONLY FUNCTION */
 		$('body').on(event_type, 'button#txt-only-btn', function(){
-						
+			
+			var main_txt = $('.content-section').find('.main-txt');
+			var title_txt = $('.banner-title .container').text();
+	
+			var txt_copy = $(main_txt).clone();
+			var scroller_h = $('#txt-only-content').innerHeight() - 170;
+			
+			if (title_txt) {
+			var title_copy = '<div class="title-header">'+ title_txt +'</div>';	
+			$(title_copy).appendTo('#txt-only-wrapper');
+			}
+			
+			$(txt_copy).appendTo('#txt-only-wrapper').slimScroll({height: scroller_h+'px'});
+			
+			$('#txt-only-wrapper').fadeIn('fast');
+			$('body').addClass('txt-only-open');
+			
+			$('#txt-only-content').removeClass('closed').addClass('open');
+			
 			return false;
 		});
 		
 		$('body').on(event_type, 'button#close-txt-only-btn', function(){
-						
+			
+			$('#txt-only-wrapper').fadeOut('fast').empty();
+			
+			$('#txt-only-content').removeClass('open').addClass('closed');
+			
+			$('body').removeClass('txt-only-open');
+			
 			return false;
 		});
-		
-		/* PAGE FEEDBACK SCROLLER */
-		
-		/* PAGE FEEDBACK SCROLLER */
-			
-			/* QUICK LINKS BUTTONS 
-				Buttons fixed on the right side of the page 
-				that animate a jump to the different sections	
-			*/
-			
-
-			
-			$('body').on(event_type,'button#quick-links-btn-show', function(){
-					    		     	     			
-				return false;
-			
-			});
-			
-			
-			$('body').on(event_type,'.ql-section-links a', function(){
-											
-				return false;
-			
-			});
 						
-			$('body').on(event_type,'button#quick-links-btn-up', function() {
-	
-					return false;
-			
-			});
-			
-			$('body').on(event_type,'button#quick-links-btn-dwn', function(){
-				
-			return false;
-			
-			});
-				
 			/* POP UP FUNCTIONS */
-				
-			/* Law Awards Pop up Function
-			 This function controls the Xmas pop up box
-		    */
-		    	
-			$('body').on(event_type,'button#close-awards-btn', function(){
-		    	      			
-				return false;
-				
-			});
 				
 			/* XMAS Pop up Function
 			This function controls the Xmas pop up box
@@ -335,66 +288,35 @@
 			
 			/* END OF XMAS POP UP FUNCTIONS */	
 			
-			/* FAQ's BUTTON ACTIONS
-			This function controls the FAQ's answers button
-			which shows and hides the answer to the question
-		    */
-		    
-		     $('body').on(event_type,'.faq-nav > button', function(){  
-			     
-			    var faq_id = $(this).data().src;
-			    var prev_id;
-			    var next_id;
-			    
-			    $('.faq-item.active').animate({top: '100%', opacity: 0}, 300, function(){
-					$(this).removeClass('active');    
-			    });
-			    
-			    $('#'+faq_id).animate({top: '0%', opacity: 1}, 300, function(){
-					$('#'+faq_id).addClass('active');     
-			    });
-			    
-			    if ($('#'+faq_id).prev().length === 1) {
-				prev_id = $('#'+faq_id).prev().attr('id');
-			    } else {
-				prev_id = $('.faq-item').last().attr('id');   
-			    }
-			    
-			    if ($('#'+faq_id).next().length === 1) {
-				next_id = $('#'+faq_id).next().attr('id');
-			    } else {
-				next_id = $('.faq-item').first().attr('id');    
-			    }
-			    
-			    $('button#prev-faq').attr('data-src', prev_id); 
-			    $('button#prev-faq').data('src', prev_id); 
-			    $('button#next-faq').attr('data-src', next_id); 
-				$('button#next-faq').data('src', next_id); 
-			    
-				/*
-				console.log($('#'+faq_id).prev().length);
-			    console.log(prev_id); 
-			    console.log($('#'+faq_id).next().length);
-			    console.log(next_id); 
-				*/
-				
-				return false;
-				
-			});
-			
 			/* VIDEO LINK FUNCTION */
 			
-			/* FAQ's BUTTON ACTIONS
+			/* VIDEO LINKS BUTTON ACTIONS
 			These functions control the pop up videos
 			that show that embed the your Tube video into the pop up inner wrapper
 		    */
-		    
-			$('a.video-link').on(event_type, function(){
+		  
+		  $('a.video-link').on(event_type, function(){
+				var video_id = $(this).attr('href');
+				var video = $(video_id).find('iframe');
+				
+				$('body').addClass('video-open');
+				
+				$('#video-viewer').animate({top: '0px', opacity: 1}, 500, function(){
+					$(this).toggleClass('viewer-closed viewer-open').removeAttr('style');
+					$(video).clone().attr('src', $(video).attr('src') + '&autoplay=1').appendTo('.video-viewer-inner');
+					
+				});
 				
 				return false;
 			});
 			
-			$('button#close-video').on(event_type, function(){
+		  $('button#close-video').on(event_type, function(){
+				
+				$(this).parent().animate({top: '100%', opacity: 0}, 500, function(){
+					$(this).toggleClass('viewer-open viewer-closed').removeAttr('style');
+					$(this).find('.video-viewer-inner').empty();
+					$('body').removeClass('video-open');
+				});
 				
 				return false;
 
@@ -402,9 +324,21 @@
 			
 			/* POST GALLERY FUNCTION */
 			
-			$('body').on(event_type,'a.gallery-img-link', function(){				
+			$('body').on(event_type,'a.gallery-img-link', function(){
+				
+				$(this).parent().siblings().removeClass('active');
+				$(this).parent().addClass('active');
+				var path = $(this).attr('href');
+				var target = $('.gallery-items-viewer');
+				var img = new Image();
+				$(target).empty();
+				
+				$(img).attr('src', path).addClass('animated fadeIn').appendTo(target);
+				
+				console.log(img);
+				
 			
-				return false;
+			return false;
 			
 			});
 		

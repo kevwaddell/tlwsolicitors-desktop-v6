@@ -13,15 +13,15 @@ $download_section_files = $section['download_section_files'];
 	<div class="container">
 		<h2 class="section-header"><?php echo $section_title; ?></h2>	
 		
-		<div class="download-items">
+		<div class="row">
 		
 			<?php foreach ($download_section_files as $k => $file) { 
 			$img = wp_get_attachment_image_src($file['file_image'], 'medium' );	
 			?>
-			<div class="text-center download-item">
-				<a href="<?php echo $file['file_download']; ?>" target="_blank">
-					<span class="cover-img"><img src="<?php echo $img[0]; ?>" height="120" /></span>
-					<span class="dwnload-title"><?php echo $file['file_title']; ?></span>
+			<div class="col-xs-3">
+				<a href="<?php echo $file['file_download']; ?>" class="download-link" target="_blank">
+					<span class="bg-img"><span class="inner" style="background-image: url(<?php echo $img[0]; ?>)"></span></span>
+					<span class="title"><span><?php echo $file['file_title']; ?></span></span>
 				</a>
 			</div>
 			<?php } ?>

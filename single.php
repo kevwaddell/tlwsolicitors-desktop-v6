@@ -11,9 +11,13 @@
 			<!-- MAIN CONTENT START -->
 			
 			<main id="main-content">
+				
 				<?php if (has_post_thumbnail()) { ?>	
 				<?php get_template_part( 'parts/blog/banner', 'single' ); ?>
 				<?php } ?>
+				
+				<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
+				<?php get_template_part( 'parts/global/color', 'strip' ); ?>
 				
 				<?php get_template_part( 'parts/blog/sections/section', 'content' ); ?>
 				

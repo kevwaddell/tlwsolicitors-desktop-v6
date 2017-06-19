@@ -1,4 +1,9 @@
-<?php get_header(); ?>	
+<?php 
+/*
+Template Name: Toolkits archive page
+*/
+ ?>
+ <?php get_header(); ?>	
 	
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 	<?php 
@@ -27,6 +32,10 @@
 		
 		<!-- MAIN TEXT SECTION -->
 		<?php get_template_part( 'parts/sections/section', 'content' ); ?>
+		
+		<!-- TOOLKITS GRID -->
+		<?php get_template_part( 'parts/sections/section', 'toolkits' ); ?>
+		
 		
 		<?php if ($sections_active) { 
 		$sections = get_field('sections'); 
@@ -62,11 +71,6 @@
 				<?php if ($section['acf_fc_layout'] == 'downloads-section') { ?>
 				<!-- DOWNLOADS SECTION -->
 					<?php get_template_part( 'parts/sections/section', 'downloads' ); ?>			
-				<?php } ?>
-				
-				<?php if ($section['acf_fc_layout'] == 'toolkit-section') { ?>
-				<!-- TOOLKIT SECTION -->
-					<?php get_template_part( 'parts/sections/section', 'toolkit' ); ?>	
 				<?php } ?>
 	
 			<?php } ?>

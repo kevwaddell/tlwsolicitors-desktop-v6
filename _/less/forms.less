@@ -403,6 +403,39 @@ form.route-finder {
 		}
 	}
 	
+	.gform_wrapper .gsurvey-survey-field {
+	.pad-right(0);
+	.mag-bot(3);
+		.gfield_label {
+		.txt-col-red;
+		.font-slab-serif;
+		.font-size(2);
+		.line-h(2.5);	
+		}
+	}
+	
+	.gform_wrapper table.gsurvey-likert {
+		.border(@wht; 0.2);
+		th.gsurvey-likert-choice-label {
+		.bg-col-red-dk;
+		.txt-col-wht;	
+		.border-left(@wht; 0.2);
+		}
+		
+		td.gsurvey-likert-choice {
+		.bg-img('active0.svg');	
+		.border-top(@wht; 0.2);
+		.border-right(@wht; 0.2);
+		.h(5);
+		.bg-col-gray;
+		cursor: pointer;
+			&.gsurvey-likert-selected {
+			.bg-img('active1.svg');
+			.bg-col-green;	
+			}
+		}
+	}
+	
 }
 
 #hp-form {

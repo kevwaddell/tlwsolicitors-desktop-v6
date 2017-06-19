@@ -49,10 +49,10 @@ $banner_feat_img = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail' )
 	 }
 	</script>
 	
+	<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
+	
 	<div class="container">
 		
-		<time class="date" datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php echo $date; ?></time>	
-			
 		<div class="row">
 			
 			<div class="col-xs-11">

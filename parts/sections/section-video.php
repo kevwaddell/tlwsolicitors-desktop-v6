@@ -21,7 +21,7 @@ $videos = $section['videos'];
 			$poster_thumb_src = wp_get_attachment_image_src($poster['poster_img'], 'thumbnail' );	
 			$video = $video['video'];
 			?>
-			<div class="col-xs-<?php echo (count($videos) > 1) ? '6':'6 col-xs-offset-3'; ?>">
+			<div class="col-xs-6">
 				<a href="#video-<?php echo ($k+1); ?>" class="video-link full-bg-img poster-img" style="background-image: url(<?php echo $poster_thumb_src[0]; ?>)" data-src="<?php echo $poster_full_src[0]; ?>"></a>
 			</div>
 			<?php } ?>

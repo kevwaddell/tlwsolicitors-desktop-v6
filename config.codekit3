@@ -193,6 +193,26 @@
 		"oAP": "\/_\/css\/fonts\/OpenSans-Light-webfont.woff2",
 		"oF": 0
 		},
+	"\/_\/css\/img\/active0.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_\/css\/img\/active0.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_\/css\/img\/active1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_\/css\/img\/active1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/_\/css\/img\/bg-icon-logo-grey.png": {
 		"ft": 32768,
 		"iS": 43504,
@@ -1490,6 +1510,12 @@
 		"oAP": "\/page-templates\/contact-us-page.php",
 		"oF": 0
 		},
+	"\/page-templates\/downloads-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-templates\/downloads-page.php",
+		"oF": 0
+		},
 	"\/page-templates\/general-service-page.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1544,10 +1570,22 @@
 		"oAP": "\/page-templates\/toolkit-page.php",
 		"oF": 0
 		},
+	"\/page-templates\/toolkits-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-templates\/toolkits-page.php",
+		"oF": 0
+		},
 	"\/page-templates\/user-page.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page-templates\/user-page.php",
+		"oF": 0
+		},
+	"\/page-templates\/videos-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-templates\/videos-page.php",
 		"oF": 0
 		},
 	"\/page.php": {
@@ -1956,6 +1994,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/sections\/section-toolkit.php",
+		"oF": 0
+		},
+	"\/parts\/sections\/section-toolkits.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/sections\/section-toolkits.php",
 		"oF": 0
 		},
 	"\/parts\/sections\/section-video.php": {

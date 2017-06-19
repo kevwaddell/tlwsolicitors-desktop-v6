@@ -1,4 +1,10 @@
-<?php get_header(); ?>	
+<?php 
+/*
+Template Name: Downloads archive page template
+*/
+ ?>
+ 
+ <?php get_header(); ?>	
 	
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 	<?php 
@@ -15,18 +21,17 @@
 	
 	<!-- MAIN CONTENT START -->
 	<main id="main-content">
-		
 		<!-- BANNER SECTION -->
-		<?php if ($banner_active) { 	?>
+		<?php if ($banner_active) { ?>
+
+			<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>			
+			<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
+			<?php get_template_part( 'parts/global/color', 'strip' ); ?>
 			
-		<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>	
-		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
-		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
-			
-		<?php } ?>		
+		<?php } ?>			
 		
 		<!-- MAIN TEXT SECTION -->
-		<?php get_template_part( 'parts/sections/section', 'content' ); ?>
+		<?php get_template_part( 'parts/sections/section', 'content' ); ?>	
 		
 		<?php if ($sections_active) { 
 		$sections = get_field('sections'); 

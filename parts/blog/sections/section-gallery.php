@@ -13,7 +13,7 @@ $gallery_imgs = get_field( "gallery_imgs");
 			<div class="gallery-items-inner">
 				<?php foreach ($gallery_imgs as $k => $file) { ?>
 				<div class="gallery-item <?php echo ($k == 0) ? ' active':''; ?>">
-					<a href="<?php echo $file['sizes']['medium']; ?>" class="gallery-img-link block" style="background-image: url(<?php echo $file['sizes']['post-list-img']; ?>)"><i class="fa fa-plus"></i></a>
+					<a href="<?php echo $file['sizes']['medium']; ?>" class="gallery-img-link block" style="background-image: url(<?php echo $file['sizes']['post-list-img']; ?>)"><i class="fa fa-search-plus"></i></a>
 				</div>
 				<?php } ?>
 			</div>
