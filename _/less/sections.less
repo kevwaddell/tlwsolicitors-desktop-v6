@@ -380,17 +380,17 @@ article.content-section {
 		}
 		
 		.question {
-		.font-size(5);
-		.line-h(6);
+		.font-size(4);
+		.line-h(4);
 		.txt-col-gray;
-		.mag-bot(4);
+		.mag-bot(2);
 		.font-lite;
 		}	
 		
 		.answer p {
-		.font-size(2.5);
-		.line-h(3.5);
-		.mag-bot(4);
+		.font-size(2);
+		.line-h(3);
+		.mag-bot(3);
 			&:last-child {
 			.mag-bot(0);	
 			}
@@ -428,9 +428,11 @@ article.content-section {
 	.mag-bot(1);	
 	}
 	.profile {
-	.h(35);
+	.h(35.2);
 	.rel;
 	.mag-top(3);
+	.border(@grayDk; 0.1);
+	
 		.profile-img, .profile-txt {
 		width: 50%;
 		.h(35);
@@ -441,12 +443,12 @@ article.content-section {
 		.left(0);
 		.bg-size;
 		.bg-repeat(no-repeat);
-		background-position: center top;		
+		background-position: center top;	
+		.border-right(@grayDk; 0.1);	
 		}	
 		
 		.profile-txt {
 		.right(0);	
-		.bg-col-grayLt;
 		.pad-all(2);
 			h3 {
 			.mag-top(0);
@@ -590,7 +592,7 @@ article.content-section {
 		}
 	}
 	
-	.bootstrap-select .btn:focus {
+		.bootstrap-select .btn:focus {
 		outline: none !important;	
 		}
 		

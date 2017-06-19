@@ -2,23 +2,9 @@
 		//var previousScroll = 0;
 		//var console;
 		//var alert;
-		var tagInterval;
 		//var current_section = "#top";
-		var current_section_id;
-		var section_targets;
-		var ot_target = 0;
-		var ot_wrapper_pos = parseInt($('#our-team-wrapper-inner').css('left'));
-		var ot_outer_w = $('.our-team-wrapper').outerWidth();
-		var ot_inner_w = $('#our-team-wrapper-inner').outerWidth();
 		
 		var event_type = 'click';	
-	
-		function getUrlVars() {
-		    var hash;
-		    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-		}
-		
-		getUrlVars();
 		
 		function printPage() {
 	    window.print();
@@ -30,18 +16,6 @@
 		    return false;
 		}
 		
-		function isScrolledIntoView(elem) {
-		    var $win = $(window);
-	
-		    var docViewTop = $win.scrollTop();
-		    var docViewBottom = docViewTop + $win.height();
-		
-		    var elemTop = $(elem).offset().top;
-		    var elemBottom = elemTop + $(elem).height();
-		   
-			return ( (elemBottom <= docViewBottom) && (elemTop >= docViewTop) );       
-		}
-		
 			
 		$(window).on("resize", function(){
 			
@@ -50,6 +24,20 @@
 		$(document).ready(function(){
 			
 		$.getScript("https://api.feefo.com/api/javascript/tlw-solicitors");
+		
+		$(document).bind('gform_page_loaded', function(event, form_id, current_page){
+        // code to be trigger when next/previous page is loaded
+	        if ( form_id == 22 && current_page == 12) {
+		      // alert(current_page);
+		       
+		        $('.selectpicker').find('select').selectpicker({
+				style: 'btn btn-group btn-default', 
+				width: '100%'
+				});
+
+	        }
+		});
+
 			
 		//console.log($(window).scrollTop());
 
@@ -65,8 +53,11 @@
 		
 		//Scroll to button
 		
-		$('body').on(event_type,'a.scroll-to', function(){
+		$('body').on(event_type,'button#jump-2-form', function(){
+	
+			$('html, body').animate({scrollTop: ($("section#form-section").offset().top)}, 500);	
 			
+			return false;
 			
 		});
 		
@@ -247,17 +238,6 @@
 		});
 		
 		/* PAGE FEEDBACK SCROLLER */
-		function startFeedbackInterval() {
-		tagInterval = setInterval(changeQuote, 7000);
-		}
-		
-		function changeQuote() {
-			
-		}
-		
-		if ($('.feedback-section-wrapper').length === 1) {
-		startFeedbackInterval();
-		}
 		
 		/* PAGE FEEDBACK SCROLLER */
 			
@@ -292,40 +272,6 @@
 			return false;
 			
 			});
-			
-			/* EMD OF QUICK LINKS BUTTON FUNCTIONS */
-	
-			/* SCROLL TO SECTION BUTTON */
-			
-			$('body').on(event_type,'a.jump-2-link', function(){  
-	    		  			
-				return false;
-			
-			});
-			
-			/*
-			OUR TEAM FUNCTIONS
-			Button to show profile biog.
-			Team section scrolling functions
-			*/
-			
-			$('.team-profile').on(event_type, 'button.profile-info-btn', function(){
-
-				return false;
-			});
-			
-			function teamScroll(dir) {
-				var direction = dir;
-				var move = Math.abs(ot_outer_w / 4);
-			
-			}
-			
-			$('.scroll-btns').on(event_type, 'button.btn', function(){
-				
-				return false;
-			});
-			
-			/* END OF OUR TEAM FUNCTIONS */
 				
 			/* POP UP FUNCTIONS */
 				

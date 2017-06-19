@@ -86,7 +86,7 @@ form.route-finder {
 	.txt-col-gray;	
 	.pad-top(0);
 	.bold;
-	.font-size(2.5);
+	.font-size(2);
 	.mag-bot(1);
 	}
 	
@@ -113,6 +113,10 @@ form.route-finder {
 	.block;	
 	.txt-col-gray;
 	.bold;
+	}
+	
+	.gform_wrapper select {
+	.h(6);	
 	}
 	
 	.bootstrap-select.btn-group .dropdown-menu li.selected a {
@@ -172,8 +176,11 @@ form.route-finder {
 		}
 	}
 	
+	.gf_progressbar_wrapper {
+	.mag-bot(0);	
+	}
+	
 	.gfield_no_follows_desc {
-	.pad-top(4.7);
 	.mag-bot(0);	
 	}
 	
@@ -193,6 +200,62 @@ form.route-finder {
 	.rel;
 	//width: 50%;
 	//.fright;	
+		
+		button.gform_button {
+		.rel;
+		.no-border;
+		.no-rounded;
+		.bg-col-red-dk;
+		.txt-col-wht;
+		.h(6);
+		.font-size(2.6);
+		.line-h(2.6);
+		.caps;
+		width: 100%;
+		.font-slab-serif;
+			
+			i {
+			.abs;
+			.right(0);
+			.top(0);
+			.pad-right(2);
+			.block;
+			.txt-col-wht;	
+			.font-size(3);
+			height: 100%;
+			font-style: normal;
+				&:after {
+				font-family: FontAwesome;
+				content: "\f105";	
+				.line-h(6);
+				}
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col-red;
+			}
+		}
+	}
+	
+	.gform_wrapper .gform_page_footer {
+		
+		.gform_previous_button, .gform_next_button {
+		.no-border;
+		.bg-col-red;
+		.txt-col-wht;	
+		.w(15);	
+		.font-slab-serif;
+		.caps;
+		.mag-bot(2);
+			&:hover, &:active, &:focus {
+			.bg-col-red-dk;
+			}
+		}
+		
+		.gform_next_button {
+		.fright;
+		}
+		
 		button.gform_button {
 		.rel;
 		.no-border;
@@ -253,7 +316,92 @@ form.route-finder {
 		.line-h(4);		
 		}
 	}
+	
+	.form-disclaimer {
+	.mag-top(6);
+	}
+	
+	h2.gsection_title {
+	.normal;
+	.font-slab-serif;
+	.txt-col-gray;
+	.caps;	
+	.font-size(3);
+	.border-bot(@grayDk; 0.1);
+	}
+	
+	.gsection_description {
+	.txt-col-gray;	
+	.pad-top(1);
+	.bold;
+	.font-size(2);
+	.line-h(2.5);
+		a.btn {
+		.rel;
+		.no-border;
+		.no-rounded;
+		.bg-col-red-dk;
+		.txt-col-wht;
+		.h(6);
+		.pad-all(0);
+		.line-h(6);
+		.font-size(2.6);
+		.caps;
+		width: 100%;
+		.font-slab-serif;
+			
+			i {
+			.abs;
+			.right(0);
+			.top(0);
+			.pad-right(2);
+			.block;
+			.txt-col-wht;	
+			.font-size(3);
+			height: 100%;
+			font-style: normal;
+				&:after {
+				font-family: FontAwesome;
+				content: "\f105";	
+				.line-h(6);
+				}
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col-red;
+			}
+		}
 
+	}
+	
+	.alert {
+	.font-size(1.6);
+	.line-h(2);	
+	width: 50%;
+	}
+	
+	.form-question label.gfield_label {
+	.font-size(3);	
+	.font-slab-serif;
+	.txt-col-red-dk;
+	}
+	
+	.gform_wrapper .sorry-message {
+	.mag-top(1);
+	.pad-all(2);
+	.border(@grayDk; 0.1);	
+	.text-center;
+		h2 {
+		.txt-col-red;	
+		.no-border;
+		}
+		
+		.gsection_description p {
+		.font-size(2.5);
+		.line-h(3.5);
+		.txt-col-grayDk;	
+		}
+	}
 	
 }
 

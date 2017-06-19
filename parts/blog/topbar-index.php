@@ -1,3 +1,5 @@
+<div class="rule"></div>
+
 <div class="posts-top-bar">
 	<div class="container">
 	

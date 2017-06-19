@@ -1,8 +1,5 @@
 <?php  
-global $hide_title;
-global $children;
-global $post;
-global $banner_type;	
+global $post;	
 $post_content = get_extended( $post->post_content );
 $content_main = apply_filters('the_content', $post_content['main'] );
 $content_extended = apply_filters('the_content', $post_content['extended'] );
@@ -13,15 +10,10 @@ $more_btn_text = $post_content['more_text'];
 $more_btn_text = "Continue Reading";	
 }
 ?>
+
 <article <?php post_class("content-section"); ?>>
 	
-	<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
-	
 	<div class="container">
-					
-		<?php if ($post->post_parent != 0 ) { ?>
-		<div class="service-label font-slab-serif caps txt-col-gray"><?php the_title(); ?></div>		
-		<?php } ?>
 			
 		<div class="row">
 
@@ -60,16 +52,4 @@ $more_btn_text = "Continue Reading";
 									
 	</div>
 	
-	<?php if (!empty($children)) { ?>
-	<div class="rule"></div>
-	<nav class="child-page-links">
-		<div class="container">
-		<?php foreach ($children as $child) { ?>
-			<a href="<?php echo get_permalink($child->ID); ?>" class="btn btn-default"><?php echo get_the_title($child->ID); ?></a>
-		<?php } ?>
-		</div>
-	</nav>		
-	<?php } ?>
-
-	
-</article>
+</article>	

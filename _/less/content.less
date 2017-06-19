@@ -9,8 +9,8 @@ h1, h2, h3, h4, h5 {
 
 h1, h2 {
 .font-size(7);	
-.line-h(8);
-.mag-bot(5);
+.line-h(7);
+.mag-bot(3);
 .font-lite;	
 	small {
 	.font-size(3);	
@@ -101,9 +101,9 @@ article.tlw_landing_page {
 	.entry {
 		
 		p, ul, ol {
-		.font-size(2.5);
-		.line-h(3.5);	
-		.mag-bot(4);
+		.font-size(2);
+		.line-h(3);	
+		.mag-bot(3);
 			&:last-child {
 			.mag-bot(0);	
 			}
@@ -134,10 +134,16 @@ article.tlw_landing_page {
 	
 	.main-txt {
 		
+		p {
+			&:last-child {
+			.mag-bot(0);	
+			}
+		}
+		
 		&.home {
 			h1 {
 			.font-size(5);	
-			.line-h(6);
+			.line-h(5);
 			}	
 		}
 		
@@ -206,7 +212,6 @@ article.tlw_landing_page {
 			.mag-bot(1);
 			.pad-all(0.5);	
 			}
-			.bg-col(@grayLt);
 			
 			h3.icon-header {
 				.line-h(5);

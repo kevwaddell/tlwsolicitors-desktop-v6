@@ -1,39 +1,35 @@
 <?php
 global $form_active;
 global $all_forms_active;
-global $how_it_works_active;
-global $color;
 $sb_plug_text_active = get_field('sb_plug_text_active');
-$sb_plug_txt = get_field('sb_plug_txt');
 ?>
 
-<aside class="scroll-sidebar sidebar lp-sidebar">
-	
-	<?php if ($sb_plug_text_active) { 
-	$sb_plug_txt = get_field('sb_plug_txt');	
-	?>
-	<div class="sb-plug text-center font-slab-serif bg-col-<?php echo (!empty($color)) ? $color : 'red'; ?>-dk">
-		<div class="sb-plug-inner">
-		<?php echo $sb_plug_txt; ?>
+<aside class="lp-sidebar">
+	<div class="container">
+		<div class="row">
+			<?php if ($sb_plug_text_active) { 
+			$sb_plug_txt = get_field('sb_plug_txt');	
+			?>
+			<div class="col-xs-6">
+				<div class="sb-plug sb-panel text-center">
+					<i class="panel-icon fa fa-comments"></i>
+					<span class="header caps block">Contact us today</span>
+					<div class="panel-txt"><?php echo $sb_plug_txt; ?></div>
+				</div>
+			</div>
+			<?php } ?>
+			
+			<?php if ($form_active && $all_forms_active) { ?>
+			<div class="col-xs-6">
+				<div class="sb-plug-btn sb-panel text-center">
+					<i class="panel-icon fa fa-check"></i>
+					<span class="header caps block">Fill in our simple form</span>
+					<div class="panel-txt">and one of our experts will contact you.</div>
+					<button id="jump-2-form" type="button" class="btn btn-default btn-block btn-lg">Claim Today</button>
+				</div>
+			</div>
+			<?php } ?>
 		</div>
 	</div>
-	<?php } ?>
-	
-	<?php if ($form_active && $all_forms_active) { ?>
-	<div class="sb-plug-btn">
-		<div class="plug-label">Fill in our simple form</div>
-		<button type="button" class="btn btn-default btn-block btn-lg" data-toggle="modal" data-target="#contact-form-modal"><i class="fa fa-check-square fa-lg"></i> Claim Today</button>
-	</div>
-	<?php } ?>
-	
-	<?php if ($how_it_works_active) { ?>	
-	<div class="how-it-works-link">
-		<a href="#how-it-works" class="hiw-link">
-			<span class="txt-mid">The Claims Process</span>
-			<span class="txt-lg">How it Works</span>
-			<span class="txt-sml">Click here for more information</span>
-		</a>
-	</div>
-	<?php } ?>
-	
 </aside>
+<div class="rule"></div>

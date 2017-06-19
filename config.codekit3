@@ -745,9 +745,9 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/_\/js\/min\/functions-min.js",
-		"oF": 0,
-		"sC": 1,
+		"oAP": "\/_\/js\/functions-min.js",
+		"oF": 2,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/_\/js\/loadCSS-min.js": {
@@ -1802,6 +1802,12 @@
 		"oAP": "\/parts\/headers\/header-user.php",
 		"oF": 0
 		},
+	"\/parts\/landingPage\/banner-img.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/landingPage\/banner-img.php",
+		"oF": 0
+		},
 	"\/parts\/landingPage\/contact-form.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1812,6 +1818,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/landingPage\/panels-sidebar.php",
+		"oF": 0
+		},
+	"\/parts\/landingPage\/section-content.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/landingPage\/section-content.php",
 		"oF": 0
 		},
 	"\/parts\/navigation\/nav-main.php": {
