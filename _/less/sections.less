@@ -149,11 +149,6 @@ z-index: 9999996;
 	}
 }
 
-//BANNER SECTION
-section#post-top-banner {
-
-}
-
 section#slim-top-banner {
 .h(30);
 .rel;
@@ -192,7 +187,7 @@ section#slim-top-banner {
 	.top(0);
 	.font-size(35);
 	.opacity(0.5);
-	.txt-col-wht;
+	.txt-col-grayDk;
 	}
 }
 
@@ -284,12 +279,95 @@ section#top-banner {
 	}
 }
 
-section#testimonial-slider {
+section#contact-us-banner {
 	
-}
-
-section.contact-links {
+	.container {
+	height: 100%;	
+	.rel;
+	}
 	
+	.banner-title {
+	.rel;
+	z-index: 2;
+	.in-block;
+	.pad(1;2;1;2);	
+	.bg-col(@wht);
+	.font-size(2.5);
+	.line-h(2.5);
+	.txt-col-gray;
+	.mag-top(-2.25);
+	}
+	
+	.img {
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	top: 0px;
+	height: 100%;
+	.bg-size;
+	.bg-repeat(no-repeat);
+	background-position: center center;	
+	}
+	
+	.intro {
+	.rel;
+	z-index: 2;
+	.txt-col-wht;
+	.mag-bot(8);
+	.pad-top(8);
+	
+			p {
+			.font-size(3.5);
+			.line-h(4);	
+			}
+			
+			p.header {
+			.font-slab-serif;
+			.font-size(6);
+			.line-h(6);
+			.caps;
+			.mag-bot(2);	
+			}	
+	}
+	
+	.contact-info {
+	.rel;
+	z-index: 2;
+	.pad-bot(4);
+		.contact-info-label, a.contact-info-link {
+		.txt-col-grayDk;
+		text-align: center;	
+		.font-size(3);
+		.font-slab-serif;
+		.h(7);
+		.line-h(7);
+		.rel;
+		.mag-bot(2);
+		.pad-left(6);
+		.trans-bg(@wht; 0.8);
+		.border(@grayDk; 0.1);
+		
+			i {
+			.abs;
+			.top(0);
+			.left(0);
+			.w(7);
+			.h(7);
+			.line-h(7);
+			.font-size(3);
+			}
+		}	
+		
+		a.contact-info-link {
+		.block;	
+		.no-text-dec;
+			&:hover, &:active, &:focus {
+			.bg-col-grayDk;
+			.txt-col-wht;
+			}
+		}
+		
+	}
 }
 
 // HOME PAGE SIDEBAR
@@ -390,11 +468,6 @@ section.contact-links {
 	}	
 }
 
-// ARTICLE SECTION
-article.content-section {
-	
-}
-
 // GENERAL PAGE SECTION STYLES
 .pg-section {
 	h2.section-header {
@@ -411,6 +484,39 @@ article.content-section {
 		h3 {
 		.txt-col-red;
 		}	
+	}
+
+}
+
+.child-page-links {
+
+	a.btn {
+	.font-slab-serif;
+	.caps;
+	.no-rounded;
+	.font-size(2);	
+	.pad(0;6;0;2);
+	.line-h(4);
+	.bg-col(@wht);
+	.txt-col-grayDk;
+	.border(@grayDk; 0.1);
+	.rel;
+	.mag-right(1);
+	.mag-bot(1);
+		&:after {
+		content: "\f105";	
+		font-family: FontAwesome;	
+		.abs;
+		.right(0);
+		.top(0);
+		.line-h(4);
+		.pad-right(2);	
+		}
+		
+		&:hover, &:active, &:focus {
+		.bg-col-grayDk;
+		.txt-col-wht;
+		}
 	}
 }
 
@@ -599,6 +705,11 @@ article.content-section {
 			h3 {
 			.mag-top(0);
 			.txt-col-red;	
+			}
+			
+			p {
+			.font-size(1.5);
+			.line-h(2);	
 			}
 			
 			a {
@@ -1006,12 +1117,158 @@ article.content-section {
 
 // LOCATION MAP SECTION
 #wide-map {
+
+	.container {
+	.rel;	
+	}
+
+	#wide-map-canvas {
+	width: 100%;
+	.h(44);	
+	width: 100%;
+	}
 	
+	.google-maps {
+	width: 100%;	
+	}
+	
+	.location-box {
+	.abs;
+	.right(4);
+	.top(0);
+	.trans-bg(@wht; 0.8);
+	.border(@grayDk; 0.1);
+	
+		address {
+		.pad-all(2);
+		.font-size(2);	
+		.line-h(2.5);
+		.mag-bot(0);
+		.rel;
+		}
+		
+		button.btn {
+		.no-rounded;
+		.pad(0; 0; 0; 1);
+		.h(5);
+		.bg-col(@wht);
+		.txt-col-grayDk;
+		.rel;
+		.font-size(2);
+		text-align: left;
+		outline: none;
+		.caps;
+		.font-slab-serif;
+		.border-top(@grayDk; 0.1);
+		
+			i {
+			.abs;
+			.right(0);
+			.top(0);
+			.h(5);
+			.w(5);
+			.font-size(2);
+			text-align: center;
+			.line-h(5);
+			}	
+			
+			&:hover, &:active, &:focus {
+			.bg-col(@grayDk);
+			.txt-col-wht;
+			}
+		}
+	}
 	
 }
 
 #route-finder-modal {
+	.modal-header {
+	.bg-col-grayDk;
+	.rel;
+		h4 {
+		.col(@wht);
+		.pad-left(4);	
+		.rel;
+		.caps;
+		.font-slab-serif;
+			i {
+			.abs;
+			.left(-0.5);
+			.top(-0.5);
+			.h(3.6);
+			.w(3.6);
+			.line-h(2.8);
+			.rounded(100%);
+			.border(@wht; 0.4);
+			.font-size(1.4);
+			text-align: center;
+			}
+		}	
+		
+		button.close-btn {
+		.abs;
+		.pad-all(0);
+		.right(1);
+		.top(1);
+		.h(3.6);
+		.w(3.6);
+		.font-size(2.4);
+		.line-h(3.6);
+		text-align: center;
+		.trans-bg(@wht; 0.3);
+		.col(@grayDk);
+		.rounded(100%);	
+		.transition(0.2s);
+		.no-border;
+			i {
+			.font-size(2);	
+			.line-h(3.6);
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col(@gray);
+			.col(@wht);
+			}
+		}
+	}
 	
+	.modal-body {
+		
+		.btn {
+		.pad-all(0);
+		.pad-left(2);
+		.h(7);
+		.bg-col(@red);
+		.col(@wht);
+		.rel;
+		.font-size(2);
+		text-align: left;
+		outline: none;	
+		.no-border;
+		.caps;
+		.font-slab-serif;
+			i {
+			.abs;
+			.right(1);
+			.top(1);
+			.h(5);
+			.w(5);
+			.border(@wht; 0.4);
+			.rounded(100%);	
+			text-align: center;
+			.line-h(4.2);
+			.font-size(2);
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col(@grayDk);
+				i {
+				.bg-col-red;
+				}
+			}
+			
+		}
+	}
 }
 
 //GLOBAL FREEPHONE TELEPHONE NUMBER STYLE

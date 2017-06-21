@@ -14,9 +14,11 @@
 			<main id="main-content">
 				<?php if (has_post_thumbnail($jobs_pg->ID)) { ?>
 					<?php get_template_part( 'parts/vacancies/banner', 'img' ); ?>	
-					<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
-					<?php get_template_part( 'parts/global/color', 'strip' ); ?>	
 				<?php } ?>	
+				
+				<!-- FREEPHONE NUMBER SECTION -->
+				<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
+				<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
 	
 				<?php get_template_part( 'parts/vacancies/section', 'content' ); ?>
 				

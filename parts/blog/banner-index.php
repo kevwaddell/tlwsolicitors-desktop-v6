@@ -11,6 +11,9 @@ global $page_icon;
 			<?php if (is_category()) { ?>
 			Category: <?php single_cat_title(); ?>
 			<?php } ?>
+			<?php if (is_tag()) { ?>
+			Tag: <?php single_tag_title(); ?>
+			<?php } ?>
 			<?php if (is_day()) { ?>
 			Archives: <?php echo get_the_date('M - j - Y'); ?>
 			<?php } ?>

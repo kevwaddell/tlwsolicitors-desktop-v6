@@ -29,22 +29,6 @@ p {
 	.mag-bot(0);	
 	}	
 }
-
-time.date-today {
-.block;
-.bg-col(lighten(@grayDk, 20%));
-.h(4);
-.line-h(4);
-.col(white);
-.mag-top(-4);
-	
-	i {
-	.pad-left(1);
-	.fleft;	
-	.line-h(4);
-	.col(lighten(@gray, 20%));
-	}	
-}
 	
 article.page, 
 article.post, 
@@ -52,9 +36,13 @@ article.tlw_vacancies_cpt,
 article.tlw_landing_page {
 	
 	.service-label {
-	.font-size(3);
-	.line-h(3);	
-	.mag-bot(2);	
+	.font-size(2.5);
+	.line-h(4);	
+	.mag-bot(2);
+	.border(@grayDk; 0.1);	
+	.in-block;
+	.pad-right(2);
+	.pad-left(2);
 	}
 	
 	.label {
@@ -118,13 +106,6 @@ article.tlw_landing_page {
 		.mag-left(1);	
 		.mag-bot(1);	
 		}
-	}
-	
-	time.date {
-	.block;
-	.col(@redMid);
-	.mag-bot(2);
-	.bold;	
 	}
 	
 	hr {
@@ -279,6 +260,10 @@ article.tlw_landing_page {
 			
 			&.cols-2 {
 			.columns(50%, 2, 30px, @trans, none, 0px);
+			}
+			
+			&:last-child {
+			.mag-bot(0);	
 			}
 			
 		}

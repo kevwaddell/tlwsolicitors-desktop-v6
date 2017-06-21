@@ -3,8 +3,8 @@ text-align: center;
 .pad-top(2);
 
 	input.form-control {
-	.rounded(8px);
-	.border-col(@gray);	
+	.no-rounded;
+	.border-col(@grayDk);	
 	margin-left: auto;
 	margin-right: auto;
 	.mag-bot(1);
@@ -14,99 +14,76 @@ text-align: center;
 	}
 	
 	.search-submit {
-	.rounded(8px);
+	.rel;
+	.no-rounded;
 	.font-slab-serif;
-	.no-border;
-	.bg-col(@grayDk);
-	.col(white);
+	.border(@grayDk; 0.1);
+	.txt-col-grayDk;
+	.bg-col(@wht);
 	.h(5);
 	.w(50);
 	.pad-all(0);
 	.mag-all(0);
-	
-		&:hover, &:active, &:focus {
-		.bg-col(@red);	
-		}
+	.font-size(2);
 		
-	}
-	
-	.search-btn-wrap {
-	.w(50);
-	.mag-auto;
-	.rel;
-		.btn-pointer {
+		i {
 		.abs;
 		.right(2);
 		.top(0);
 		.line-h(5);
-		.col(white);	
+		.font-size(2);	
 		}
+	
+		&:hover, &:active, &:focus {
+		.bg-col(@grayDk);	
+		.txt-col-wht;
+		}
+		
 	}
 	
 }
 
 #site-map-lists {
-.pad-top(4);
 	h3 {
 	.h(5);
 	.line-h(5);
-	.bg-col(@red);
-	.col(white);
+	.border(@grayDk; 0.1);
 	.font-size(2.5);
-	
-		a {
-		.block;
-		.bg-col(@red);
-		.col(white);	
-		.no-text-dec;
-			&:hover, &:active, &:focus {
-			.bg-col(@gray);	
-			}
-		}	
-		
-		i {
-		.h(5);
-		.w(5);
-		.line-h(5);	
-		.fright;
-		text-align: center;
-		
-			&.icon {
-			.fleft;	
-			}
-		}
+	.font-slab-serif;
+	.pad-left(2);
+	.txt-col-grayDk;
+	.mag-bot(2);
 	}
 	
-	h4 {
-	.h(4);
-	.line-h(4);
-	.col(white);
-	.font-size(2);
-		
-		a {
-		.block;
-		.bg-col(@redMid);
-		.col(white);	
-		.no-text-dec;
-			&:hover, &:active, &:focus {
-			.bg-col(@gray);	
-			}
-		}	
-		
-		i {
-		.h(4);
-		.w(4);
-		.line-h(4);	
-		.fright;
-		text-align: center;
-		
-			&.icon {
-			.fleft;	
-			}
+	a.header-link {
+	.rel;
+	.block;
+	.h(5);
+	.line-h(5);
+	.font-size(2.5);
+	.font-slab-serif;
+	.border(@grayDk; 0.1);	
+	.txt-col-grayDk;
+	.no-text-dec;
+	.pad-left(2);
+	.mag-bot(2);
+		&:after {
+		.abs;
+		.right(2);
+		.top(0);
+		.line-h(5);
+		font-family: FontAwesome;
+		content: "\f105";	
+		.font-size(3);	
+		}
+		&:hover, &:active, &:focus {
+		.bg-col-grayDk;
+		.txt-col-wht;
 		}
 	}	
 	
 	.list-block ul {
+	.mag-bot(2);
 		a {
 		.font-size(2);	
 		.line-h(3);	

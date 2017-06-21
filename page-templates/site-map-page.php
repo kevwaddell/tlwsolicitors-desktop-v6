@@ -6,44 +6,51 @@ Template Name: Sitemap page
 
 <?php get_header(); ?>
 
-<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>				 
+<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
+<?php 
+$page_icon = get_field('page_icon');	
+?>			 
  <main id="main-content">
-
+ 
 		<?php if (has_post_thumbnail()) { ?>
 			<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>			
 		<?php } ?>	
 		
+		<!-- FREEPHONE NUMBER SECTION -->
+		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
+		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
+
+
 		<article <?php post_class("content-section"); ?>>
 	
 			<div class="container">
 			
-			<div class="entry wide-entry">
-				<div class="main-txt">	
-					<h1 class="text-center"><?php the_title(); ?></h1>
-				
-					<?php the_content(); ?>	
+				<div class="entry wide-entry">
+					<div class="main-txt">	
+						<?php the_content(); ?>	
+					</div>
 				</div>
+				
+				<div class="search-form-wrap text-center">
+				<?php get_search_form(); ?>
+				</div>
+			
 			</div>
 			
-			<div class="search-form-wrap text-center">
-			<?php get_search_form(); ?>
-			</div>
-	
+			<div class="rule"></div>
 			<section id="site-map-lists">
-	
-				<div class="row">
-				<!-- Left -->
-				<?php get_template_part( 'parts/sitemap/column', 'left' ); ?>
-				
-				<!-- Right -->
-				<?php get_template_part( 'parts/sitemap/column', 'right' ); ?>
-				
+				<div class="container">
+					<div class="row">
+					<!-- Left -->
+					<?php get_template_part( 'parts/sitemap/column', 'left' ); ?>
+					
+					<!-- Right -->
+					<?php get_template_part( 'parts/sitemap/column', 'right' ); ?>
+					
+					</div>
 				</div>
-	
 			</section>
 
-			</div>
-			</div>
 		</article>
 
 

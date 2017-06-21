@@ -8,7 +8,11 @@
 	//echo '<pre>';print_r($posts);echo '</pre>';
 	?>
 	<main id="main-content">
-	 
+	 		
+	 		<!-- FREEPHONE NUMBER SECTION -->
+	 		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
+	 		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
+
 			<article class="page search-results">
 				<h1 class="text-center" style="margin-top: 20px;">Search Results</h1>
 				<p class="intro text-center">You Searched for: "<?php the_search_query(); ?>"<br> Results: <?php echo $search_count; ?></p>

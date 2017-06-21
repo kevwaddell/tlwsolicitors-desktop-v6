@@ -38,6 +38,7 @@
 	<?php
 	$sections_active = get_field('sections_active'); 
 	$all_forms_active = get_field('all_forms_active', 'option');
+	$hp_form_active = get_field('hp_form_active', 'option');
 	$form_active = get_field('add_form');	
 	
 	if ($sections_active && $all_forms_active) {
@@ -59,18 +60,9 @@
 		gravity_form_enqueue_scripts( $form->id );		
 	}
 	
-	if (is_front_page() && $all_forms_active) {
-	$hp_sections = get_field('hp_sections', 'option');
-		foreach ($hp_sections as $section) {
-			if ($section['acf_fc_layout'] == 'form-section') {
-			
-			$form_active = $section['form_active'];
-			$form = $section['form'];
-				if ($form_active) {
-				gravity_form_enqueue_scripts( $form->id );	
-				}		
-			}
-		}
+	if (is_front_page() && $all_forms_active && $hp_form_active) {
+	$form = get_field('hp_form', 'option');	
+	gravity_form_enqueue_scripts( $form->id );	
 	}
 	?>
 	

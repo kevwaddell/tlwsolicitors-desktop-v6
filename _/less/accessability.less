@@ -1,3 +1,59 @@
 .access-btns {
+	button.access-btn {
+	.no-rounded;
+	.border(@grayDk; 0.1);
+	.bg-col(@wht);
+	.txt-col-grayDk;
+	.w(4);
+	.h(4);
+	.pad-all(0);
+	.mag-bot(1);
+	-webkit-appearance: none;
 		
+		&#access-btn-sml {
+		.font-size(1.2);
+		}
+		
+		&#access-btn-md {
+		.font-size(1.6);
+		}
+		
+		&#access-btn-lg {
+		.font-size(2);
+		}
+		
+		&:hover, &:active, &:focus {
+		.bg-col-grayDk;
+		.txt-col-wht;
+		}
+		
+		&.active {
+		.bg-col-grayDk;	
+		.txt-col-wht;
+		}
+	}
+		
+}
+
+.page-tools {
+	.tool-btns-wrap {
+	.pad-left(0.4);
+	.pad-right(0.4);	
+	}	
+	
+	.btn {
+	.pad-all(0);
+	.w(4);
+	.h(4);
+	.no-rounded;
+	.border(@grayDk; 0.1);
+	.mag-bot(1.5);
+	.font-size(2);
+	.txt-col-grayDk;
+	-webkit-appearance: none;
+		&:hover, &:active, &:focus {
+		.bg-col-grayDk;
+		.txt-col-wht;
+		}
+	}
 }

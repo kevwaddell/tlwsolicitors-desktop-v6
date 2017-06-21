@@ -19,6 +19,8 @@ $job_display_to_date = get_field( 'job_display_to_date');
 ?>
 <article <?php post_class("content-section"); ?>>
 	
+	<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
+	
 	<div class="container">
 			
 		<div class="row">
@@ -48,7 +50,7 @@ $job_display_to_date = get_field( 'job_display_to_date');
 					<?php echo $content_main;  ?>
 					<div id="content-extra" class="closed">
 						<div id="content-extra-inner">
-							<button id="close-content-extra-btn" class="btn btn-default"><i class="fa fa-times-circle"></i><span class="sr-only">Close</span></button>
+							<button id="close-content-extra-btn" class="btn btn-default"><i class="fa fa-times"></i><span class="sr-only">Close</span></button>
 							<?php echo $content_extended;  ?>
 						</div>
 					</div>

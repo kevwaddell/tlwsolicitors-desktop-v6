@@ -9,7 +9,6 @@ Template Name: Contact Us Page
 
 <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 <?php 
-$color = get_field('page_colour');
 $sections_active = get_field('sections_active');
 
 if ( has_post_thumbnail() ) {
@@ -21,6 +20,10 @@ $img_post = get_the_ID();
 <main <?php post_class('page-col-red'); ?>>
 		
 	<?php get_template_part( 'parts/banners/contact/banner', 'intro' ); ?>	
+	
+	<!-- FREEPHONE NUMBER SECTION -->
+	<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
+	<?php get_template_part( 'parts/global/color', 'strip' ); ?>	
 	
 	<!-- MAIN TEXT SECTION -->
 	<?php get_template_part( 'parts/sections/section', 'content' ); ?>	

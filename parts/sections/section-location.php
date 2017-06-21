@@ -59,15 +59,14 @@ google.maps.event.addDomListener(window, 'load', wide_map_init);
 <div class="rule"></div>
 <section id="wide-map" class="pg-section">
 	<a id="find-us" name="find-us"></a>
+	
 	<div class="container">
+		
 		<h2 class="section-header"><?php echo $section_title; ?></h2>
-	</div>
-	<div id="wide-map-canvas"></div>
+	
+		<div id="wide-map-canvas"></div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-4">
-				<div class="location-box">
+		<div class="location-box">
 					<address>
 						<span class="company bold caps col-red font-size-25"><?php bloginfo('name'); ?></span><br>
 						<?php echo $address; ?>
@@ -76,8 +75,6 @@ google.maps.event.addDomListener(window, 'load', wide_map_init);
 					<button class="btn btn-block" data-toggle="modal" data-target="#route-finder-modal"><i class="fa fa-car"></i> Route finder</button>
 						
 				</div>
-			</div>
-		</div>
 		
 	</div>
 

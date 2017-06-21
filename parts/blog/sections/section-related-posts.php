@@ -23,29 +23,21 @@ $archives = wp_get_archives($archives_args);
 <section id="blog-posts" class="pg-section">
 	<div class="container">
 		<h2 class="section-header"><?php echo $section_title; ?></h2>
-	</div>
-	
-	<div id="posts-list-carousel" class="posts-list carousel slide" data-ride="carousel">
-		<div class="carousel-inner" role="listbox">
-			<?php foreach ($related_posts as $k => $rpost) { 
-			$ID = $rpost['related_article'];
-			$date = get_the_date('F jS Y', $ID);
-			?>
-			<div class="item<?php echo ($k === 0) ? " active":""; ?>">
-				<div class="container">
-					<div class="recent-post">
-						<time class="article-date" datetime="<?php get_the_date( 'Y-m-d',  $ID); ?>"><?php echo $date; ?></time>
-						<h3><a href="<?php echo get_permalink($ID); ?>"><?php echo get_the_title($ID); ?></a></h3>
-						<a href="<?php echo get_permalink($ID); ?>" class="view-post-btn">View Article</a>
-					</div>
-				</div>
+		<div class="row posts-grid">
+		<?php foreach ($related_posts as $k => $rpost) { 
+		$ID = $rpost['related_article'];
+		$thumb_id = get_post_thumbnail_id($ID);
+		$bg_src = wp_get_attachment_image_src($thumb_id, 'medium' );
+		?>
+			<div class="col-xs-4">
+				<a href="<?php echo get_permalink($ID); ?>" class="post-link" title="<?php echo the_title_attribute( array('before' => 'View article: ', 'post'=> $ID)); ?>">
+					<span class="link-bg-img" style="background-image: url(<?php echo $bg_src[0]; ?>)"></span>
+					<span class="title"><span><?php echo get_the_title($ID); ?></span></span>
+				</a>
 			</div>
-			<?php } ?>
+		<?php } ?>
 		</div>
-	</div>
-
-	<div class="container">
-			<div class="row blog-dropdowns">
+		<div class="row blog-dropdowns">
 				<div class="col-xs-6">
 					<?php if ($cats) { ?>
 					<select id="cats" class="selectpicker" data-width="100%">
@@ -94,6 +86,6 @@ $archives = wp_get_archives($archives_args);
 					<?php } ?>
 				</div>
 			</div>
-		</div>
+	</div>
 	
 </section>

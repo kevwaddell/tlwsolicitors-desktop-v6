@@ -61,7 +61,7 @@ $subjects = get_tags($subjects_args);
  ?>
 <div class="col-xs-6">
 	
-	<h3><a href="<?php echo get_permalink($company_page->ID); ?>"><?php echo $company_page->post_title; ?><i class="fa fa-angle-right fa-lg"></i></a></h3>
+	<a href="<?php echo get_permalink($company_page->ID); ?>" class="header-link"><?php echo $company_page->post_title; ?></a>
 	
 	<?php if ($company_pages) { 
 	$vacancies_pg = get_page_by_title( "Vacancies" );	
@@ -97,7 +97,7 @@ $subjects = get_tags($subjects_args);
 		</div>
 	<?php } ?>
 	
-	<h3><a href="<?php echo get_permalink($legal_page->ID); ?>"><?php echo $legal_page->post_title; ?></a></h3>
+	<a href="<?php echo get_permalink($legal_page->ID); ?>" class="header-link"><?php echo $legal_page->post_title; ?></a>
 	
 	<?php if ($legal_pages) { ?>
 		<div class="list-block">
@@ -115,7 +115,7 @@ $subjects = get_tags($subjects_args);
 	<?php } ?>
 	
 	<?php if ($topics) { ?>
-		<h3><a href="<?php echo get_permalink($news_page->ID); ?>"><?php echo $news_page->post_title; ?>: Categories</a></h3>
+		<a href="<?php echo get_permalink($news_page->ID); ?>" class="header-link"><?php echo $news_page->post_title; ?>: Categories</a>
 		
 		<div class="list-block">
 			<ul class="list-unstyled">
@@ -130,7 +130,7 @@ $subjects = get_tags($subjects_args);
 	<?php } ?>
 	
 	<?php if ($subjects) { ?>
-		<h3><?php echo $news_page->post_title; ?><i class="fa fa-angle-right fa-lg"></i>: Tags</h3>
+		<h3><?php echo $news_page->post_title; ?>: Tags</h3>
 		
 		<div class="list-block" style="text-transform: capitalize;">
 			<?php wp_tag_cloud('smallest=20&largest=20&unit=px&separator= | '); ?>
