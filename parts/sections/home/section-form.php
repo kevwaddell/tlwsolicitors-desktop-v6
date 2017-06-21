@@ -11,5 +11,4 @@ $form = get_field('hp_form', 'option');
 		<?php gravity_form($form->id, false, true, false, '', true); ?>
 	</div>
 </section>
-<?php get_template_part( 'parts/global/color', 'strip' ); ?>
 <?php } ?>
