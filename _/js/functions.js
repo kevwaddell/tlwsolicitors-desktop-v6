@@ -1,8 +1,4 @@
 (function($){
-		//var previousScroll = 0;
-		//var console;
-		//var alert;
-		//var current_section = "#top";
 		
 		var event_type = 'click';	
 		
@@ -15,11 +11,6 @@
 		    }
 		    return false;
 		}
-		
-			
-		$(window).on("resize", function(){
-			
-		});
 			
 		
 		$(document).ready(function(){	
@@ -147,6 +138,39 @@
 		});
 		
 		/* END OF HEADER SEARCH FUNCTIONS */
+		
+		/* 	ROUTE FINDER BUTTON 
+			Button functions for route finder pop up
+		*/
+		
+		$('body').on(event_type,'button#route-finder-btn', function(){
+				
+			$('#route-finder-pop-up').toggleClass('off on');
+			$('body').addClass('route-finder-open');
+			
+			return false;
+			
+		});
+		
+		$('body').on(event_type,'button#close-route-finder', function(){	
+			
+			if ( $('#route-finder-pop-up').hasClass('on') ) {
+				
+				$('#route-finder-pop-up').removeClass('on').addClass('turn-off');
+				
+				$('.turn-off').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			
+					$(this).removeClass('turn-off').addClass('off');	
+					$('body').removeClass('route-finder-open');
+					
+				});
+	
+			} 
+					
+			return false;
+		});
+		
+		/* END OF ROUTE FINDER BUTTON FUNCTIONS */
 			
 			
 	    /* POST CONTINUE READING BUTTONS
@@ -183,7 +207,6 @@
 			return false;
 			
 		});
-		
 		
 		/* END OF CONTINUE READING FUNCTIONS */
 		    
@@ -243,173 +266,165 @@
 			return false;
 		});
 						
-			/* POP UP FUNCTIONS */
+		/* POP UP FUNCTIONS */
+			
+		/* XMAS Pop up Function
+		This function controls the Xmas pop up box
+	    */
+	    
+		var xmasBox = function(){
+	
+			if ($('#xmas-popup-wrap').length === 1 && $('#xmas-popup-wrap').hasClass('pop-up-inactive')) {
 				
-			/* XMAS Pop up Function
-			This function controls the Xmas pop up box
-		    */
-		    
-			var xmasBox = function(){
+				$('#xmas-popup-btn-wrap').removeClass('pop-up-inactive').addClass('pop-up-active');
 		
-				if ($('#xmas-popup-wrap').length === 1 && $('#xmas-popup-wrap').hasClass('pop-up-inactive')) {
-					
-					$('#xmas-popup-btn-wrap').removeClass('pop-up-inactive').addClass('pop-up-active');
-			
-					$('#xmas-popup-wrap').fadeIn('slow', function(){
-					
-						$('.xmas-popup-inner').removeClass('hidden').addClass('animated slideInUp');
-					
-					});
+				$('#xmas-popup-wrap').fadeIn('slow', function(){
 				
-				}
-		
-			};
-		
-			//Transition end actions
-		    $('.xmas-popup-inner').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+					$('.xmas-popup-inner').removeClass('hidden').addClass('animated slideInUp');
 				
-				if ($(this).hasClass('bounceOutDown')) {
-				 $('#xmas-popup-wrap').fadeOut('fast').removeClass('pop-up-active').addClass('pop-up-inactive');	
-				 $('#xmas-popup-btn-wrap').removeClass('pop-up-active').addClass('pop-up-inactive');
-				 $(this).removeClass('animated bounceOutDown').addClass('hidden');
-				}
-			});
-			
-			//Button actions
-			
-			$('body').on(event_type,'button#xmas-popup-btn-open', function(){
-		    	
-		    	xmasBox();    			
-				return false;
-				
-			});
-		
-		    
-		    $('body').on(event_type,'button#close-xmas-popup', function(){
-			    
-			   $('.xmas-popup-inner').removeClass('slideInUp').addClass('bounceOutDown');   
-		    	      			
-				return false;
-				
-			});
-			
-			/* END OF XMAS POP UP FUNCTIONS */	
-			
-			/* FAQ's BUTTON ACTIONS
-			This function controls the FAQ's answers button
-			which shows and hides the answer to the question
-		    */
-		    
-		     $('body').on(event_type,'.faq-nav > button', function(){  
-			     
-			    var faq_id = $(this).data().src;
-			    var prev_id;
-			    var next_id;
-			    
-			    $('.faq-item.active').animate({top: '100%', opacity: 0}, 300, function(){
-					$(this).removeClass('active');    
-			    });
-			    
-			    $('#'+faq_id).animate({top: '0%', opacity: 1}, 300, function(){
-					$('#'+faq_id).addClass('active');     
-			    });
-			    
-			    if ($('#'+faq_id).prev().length === 1) {
-				prev_id = $('#'+faq_id).prev().attr('id');
-			    } else {
-				prev_id = $('.faq-item').last().attr('id');   
-			    }
-			    
-			    if ($('#'+faq_id).next().length === 1) {
-				next_id = $('#'+faq_id).next().attr('id');
-			    } else {
-				next_id = $('.faq-item').first().attr('id');    
-			    }
-			    
-			    $('button#prev-faq').attr('data-src', prev_id); 
-			    $('button#prev-faq').data('src', prev_id); 
-			    $('button#next-faq').attr('data-src', next_id); 
-				$('button#next-faq').data('src', next_id); 
-			    
-				/*
-				console.log($('#'+faq_id).prev().length);
-			    console.log(prev_id); 
-			    console.log($('#'+faq_id).next().length);
-			    console.log(next_id); 
-				*/
-				
-				return false;
-				
-			});
-			/* END FAQ's BUTTON ACTIONS
-
-			/* VIDEO LINK FUNCTION */
-			
-			/* VIDEO LINKS BUTTON ACTIONS
-			These functions control the pop up videos
-			that show that embed the your Tube video into the pop up inner wrapper
-		    */
-		  
-		  $('a.video-link').on(event_type, function(){
-				var video_id = $(this).attr('href');
-				var video = $(video_id).find('iframe');
-				
-				$('body').addClass('video-open');
-				
-				$('#video-viewer').animate({top: '0px', opacity: 1}, 500, function(){
-					$(this).toggleClass('viewer-closed viewer-open').removeAttr('style');
-					$(video).clone().attr('src', $(video).attr('src') + '&autoplay=1').appendTo('.video-viewer-inner');
-					
 				});
-				
-				return false;
-			});
 			
-		  $('button#close-video').on(event_type, function(){
-				
-				$(this).parent().animate({top: '100%', opacity: 0}, 500, function(){
-					$(this).toggleClass('viewer-open viewer-closed').removeAttr('style');
-					$(this).find('.video-viewer-inner').empty();
-					$('body').removeClass('video-open');
-				});
-				
-				return false;
-
-			});
+			}
+	
+		};
+	
+		//Transition end actions
+	    $('.xmas-popup-inner').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 			
-			/* POST GALLERY FUNCTION */
+			if ($(this).hasClass('bounceOutDown')) {
+			 $('#xmas-popup-wrap').fadeOut('fast').removeClass('pop-up-active').addClass('pop-up-inactive');	
+			 $('#xmas-popup-btn-wrap').removeClass('pop-up-active').addClass('pop-up-inactive');
+			 $(this).removeClass('animated bounceOutDown').addClass('hidden');
+			}
+		});
+		
+		//Button actions
+		
+		$('body').on(event_type,'button#xmas-popup-btn-open', function(){
+	    	
+	    	xmasBox();    			
+			return false;
 			
-			$('body').on(event_type,'a.gallery-img-link', function(){
-				
-				$(this).parent().siblings().removeClass('active');
-				$(this).parent().addClass('active');
-				var path = $(this).attr('href');
-				var target = $('.gallery-items-viewer');
-				var img = new Image();
-				$(target).empty();
-				
-				$(img).attr('src', path).addClass('animated fadeIn').appendTo(target);
-				
-				console.log(img);
-				
+		});
+	
+	    
+	    $('body').on(event_type,'button#close-xmas-popup', function(){
+		    
+		   $('.xmas-popup-inner').removeClass('slideInUp').addClass('bounceOutDown');   
+	    	      			
+			return false;
+			
+		});
+		
+		/* END OF XMAS POP UP FUNCTIONS */	
+			
+		/* FAQ's BUTTON ACTIONS
+		This function controls the FAQ's answers button
+		which shows and hides the answer to the question
+	    */
+	    
+	     $('body').on(event_type,'.faq-nav > button', function(){  
+		     
+		    var faq_id = $(this).data().src;
+		    var prev_id;
+		    var next_id;
+		    
+		    $('.faq-item.active').animate({top: '100%', opacity: 0}, 300, function(){
+				$(this).removeClass('active');    
+		    });
+		    
+		    $('#'+faq_id).animate({top: '0%', opacity: 1}, 300, function(){
+				$('#'+faq_id).addClass('active');     
+		    });
+		    
+		    if ($('#'+faq_id).prev().length === 1) {
+			prev_id = $('#'+faq_id).prev().attr('id');
+		    } else {
+			prev_id = $('.faq-item').last().attr('id');   
+		    }
+		    
+		    if ($('#'+faq_id).next().length === 1) {
+			next_id = $('#'+faq_id).next().attr('id');
+		    } else {
+			next_id = $('.faq-item').first().attr('id');    
+		    }
+		    
+		    $('button#prev-faq').attr('data-src', prev_id); 
+		    $('button#prev-faq').data('src', prev_id); 
+		    $('button#next-faq').attr('data-src', next_id); 
+			$('button#next-faq').data('src', next_id); 
+		    
+			/*
+			console.log($('#'+faq_id).prev().length);
+		    console.log(prev_id); 
+		    console.log($('#'+faq_id).next().length);
+		    console.log(next_id); 
+			*/
 			
 			return false;
 			
+		});
+		/* END FAQ's BUTTON ACTIONS
+
+		/* VIDEO LINK FUNCTION */
+		
+		/* VIDEO LINKS BUTTON ACTIONS
+		These functions control the pop up videos
+		that show that embed the your Tube video into the pop up inner wrapper
+	    */
+	  
+	  $('a.video-link').on(event_type, function(){
+			var video_id = $(this).attr('href');
+			var video = $(video_id).find('iframe');
+			
+			$('body').addClass('video-open');
+			
+			$('#video-viewer').animate({top: '0px', opacity: 1}, 500, function(){
+				$(this).toggleClass('viewer-closed viewer-open').removeAttr('style');
+				$(video).clone().attr('src', $(video).attr('src') + '&autoplay=1').appendTo('.video-viewer-inner');
+				
 			});
+			
+			return false;
+		});
+		
+	  $('button#close-video').on(event_type, function(){
+			
+			$(this).parent().animate({top: '100%', opacity: 0}, 500, function(){
+				$(this).toggleClass('viewer-open viewer-closed').removeAttr('style');
+				$(this).find('.video-viewer-inner').empty();
+				$('body').removeClass('video-open');
+			});
+			
+			return false;
+
+		});
+		
+		/* POST GALLERY FUNCTION */
+		
+		$('body').on(event_type,'a.gallery-img-link', function(){
+			
+			$(this).parent().siblings().removeClass('active');
+			$(this).parent().addClass('active');
+			var path = $(this).attr('href');
+			var target = $('.gallery-items-viewer');
+			var img = new Image();
+			$(target).empty();
+			
+			$(img).attr('src', path).addClass('animated fadeIn').appendTo(target);
+			
+			console.log(img);
+			
+		
+		return false;
 		
 		});
+	
+	});
 	
 		/* END DOC READY FUNCTION */
 		
 		$(window).bind('load',function(){
-			
-			$('.full-bg-img').each(function(index, Element) {
-				var src = $(Element).data('src');
-				//console.log(src);
-				if (src !== undefined) {
-				$(Element).css('background-image', 'url(' +src+ ')');
-	  			}
-			});
 			
 			$('.has-bg-img').each(function(index, Element) {
 				var src = $(Element).data('src');

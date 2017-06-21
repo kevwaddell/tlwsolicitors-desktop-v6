@@ -72,7 +72,7 @@ google.maps.event.addDomListener(window, 'load', wide_map_init);
 						<?php echo $address; ?>
 					</address>
 					
-					<button class="btn btn-block" data-toggle="modal" data-target="#route-finder-modal"><i class="fa fa-car"></i> Route finder</button>
+					<button id="route-finder-btn" class="btn btn-block"><i class="fa fa-car"></i> Route finder</button>
 						
 				</div>
 		
