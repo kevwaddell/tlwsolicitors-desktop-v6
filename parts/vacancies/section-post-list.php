@@ -26,11 +26,9 @@ $found_posts = $wp_query->found_posts;
 <section id="vacancies-section" class="pg-section">
 
 	<div class="container">
-		<h2 class="section-header"><?php echo $section_title; ?></h2>
-		
-		<div class="row">
 	<?php if ( have_posts() ): ?>
-			
+		<h2 class="section-header"><?php echo $section_title; ?></h2>
+		<div class="row">
 			<?php while ( have_posts() ) : the_post();
 				$date = get_the_date('l - jS F - Y');
 				$job_title = get_field('job_title');
@@ -52,7 +50,8 @@ $found_posts = $wp_query->found_posts;
 			<?php endwhile; ?>
 
 		<?php else: ?>
-				<div class="col-xs-6">
+		<div class="row">
+				<div class="col-xs-6 col-xs-offset-3">
 					<div class="well well-lg">
 						<h3 class="text-center">There are no positions available at the moment</h3>
 						<p class="text-center">Please send us your CV and we will keep you on file for when a relevant post comes available.</p>
