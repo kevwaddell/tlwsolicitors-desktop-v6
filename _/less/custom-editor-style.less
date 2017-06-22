@@ -23,7 +23,7 @@ body.mce-content-body {
 	
 	h3, h2 {
 	.font-size(3.5);
-	.line-h(3.5) !important;
+	.line-h(3.5);
 	.mag-bot(2);	
 	.font-lite;
 	.txt-col-gray;
@@ -32,9 +32,10 @@ body.mce-content-body {
 	
 	h4, h5 {
 	.caps;
-	.bold;
+	.font-lite;
 	.txt-col-gray;
 	.font-size(2.5);
+	.line-h(2.5);
 	}
 	
 	p, ul, ol {
@@ -88,6 +89,10 @@ body.mce-content-body {
 		
 		&.cols-2 {
 		.columns(50%, 2, 30px, @trans, none, 0px);
+		}
+		
+		&.cols-3 {
+		.columns(30%, 3, 30px, @trans, none, 0px);
 		}
 	}
 	

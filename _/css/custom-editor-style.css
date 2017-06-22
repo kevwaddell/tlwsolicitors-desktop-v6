@@ -7279,7 +7279,7 @@ body.mce-content-body h1 {
 body.mce-content-body h3,
 body.mce-content-body h2 {
   font-size: 35px;
-  line-height: 35px !important;
+  line-height: 35px;
   margin-bottom: 20px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 'open_sanslight', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
@@ -7290,9 +7290,12 @@ body.mce-content-body h2 {
 body.mce-content-body h4,
 body.mce-content-body h5 {
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 'open_sanslight', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
   color: #918F8F;
   font-size: 25px;
+  line-height: 25px;
 }
 body.mce-content-body p,
 body.mce-content-body ul,
@@ -7381,6 +7384,26 @@ body.mce-content-body ul.cols-2 {
   -webkit-column-rule-width: 0px;
   column-width: 50%;
   column-count: 2;
+  column-gap: 30px;
+  column-rule-color: transparent;
+  column-rule-style: none;
+  column-rule-width: 0px;
+}
+body.mce-content-body ul.cols-3 {
+  -moz-column-width: 30%;
+  -moz-column-count: 3;
+  -moz-column-gap: 30px;
+  -moz-column-rule-color: transparent;
+  -moz-column-rule-style: none;
+  -moz-column-rule-width: 0px;
+  -webkit-column-width: 30%;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 30px;
+  -webkit-column-rule-color: transparent;
+  -webkit-column-rule-style: none;
+  -webkit-column-rule-width: 0px;
+  column-width: 30%;
+  column-count: 3;
   column-gap: 30px;
   column-rule-color: transparent;
   column-rule-style: none;

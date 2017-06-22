@@ -13388,6 +13388,29 @@ article.tlw_landing_page .main-txt ul.cols-2 {
   column-rule-style: none;
   column-rule-width: 0px;
 }
+article.page .main-txt ul.cols-3,
+article.post .main-txt ul.cols-3,
+article.tlw_vacancies_cpt .main-txt ul.cols-3,
+article.tlw_landing_page .main-txt ul.cols-3 {
+  -moz-column-width: 30%;
+  -moz-column-count: 3;
+  -moz-column-gap: 30px;
+  -moz-column-rule-color: transparent;
+  -moz-column-rule-style: none;
+  -moz-column-rule-width: 0px;
+  -webkit-column-width: 30%;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 30px;
+  -webkit-column-rule-color: transparent;
+  -webkit-column-rule-style: none;
+  -webkit-column-rule-width: 0px;
+  column-width: 30%;
+  column-count: 3;
+  column-gap: 30px;
+  column-rule-color: transparent;
+  column-rule-style: none;
+  column-rule-width: 0px;
+}
 article.page .main-txt ul:last-child,
 article.post .main-txt ul:last-child,
 article.tlw_vacancies_cpt .main-txt ul:last-child,
@@ -13454,7 +13477,14 @@ article.page .main-txt h5,
 article.post .main-txt h5,
 article.tlw_vacancies_cpt .main-txt h5,
 article.tlw_landing_page .main-txt h5 {
-  font-size: 18px;
+  font-size: 25px;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 'open_sanslight', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-stretch: normal;
+  margin-bottom: 15px;
+  color: #918F8F;
 }
 article.page #content-extra.closed,
 article.post #content-extra.closed,
