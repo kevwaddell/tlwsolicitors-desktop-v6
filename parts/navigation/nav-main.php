@@ -5,9 +5,8 @@ $contact_pg = get_page_id( 'contact-us' );
 <nav id="top-nav" class="nav-closed">
 	
 	<div class="nav-wrapper">
-		
+		<button id="close-nav" class="btn"><i class="fa fa-angle-up fa-2x"></i><span class="sr-only">Close navigation</span></button>
 		<div class="container">
-			<button id="close-nav" class="btn"><i class="fa fa-angle-up fa-2x"></i><span class="sr-only">Close navigation</span></button>
 			
 			<div class="row">
 				<div class="col-xs-6">
