@@ -1,5 +1,5 @@
 <?php if (is_single() || is_page() && !is_front_page() ) { ?>
-<div id="txt-only-content" class="closed">
+<div id="txt-only-content" class="closed bg-white">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-1">
