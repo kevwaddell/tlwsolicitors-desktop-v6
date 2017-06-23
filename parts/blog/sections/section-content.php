@@ -69,7 +69,7 @@ $banner_feat_img = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail' )
 						<?php echo $content_main;  ?>
 						<div id="content-extra" class="closed">
 							<div id="content-extra-inner">
-								<button id="close-content-extra-btn" class="btn btn-default"><i class="fa fa-times-circle"></i><span class="sr-only">Close</span></button>
+								<button id="close-content-extra-btn" class="tn btn-default btn-block font-slab-serif caps"><i class="fa fa-times-circle"></i><span class="sr-only">Close</span></button>
 								<?php echo $content_extended;  ?>
 							</div>
 						</div>
