@@ -22,7 +22,7 @@ $videos = $section['videos'];
 			$video = $video['video'];
 			?>
 			<div class="col-xs-6">
-				<a href="#video-<?php echo ($k+1); ?>" class="video-link full-bg-img poster-img" style="background-image: url(<?php echo $poster_thumb_src[0]; ?>)" data-src="<?php echo $poster_full_src[0]; ?>"></a>
+				<a href="#video-<?php echo ($k+1); ?>" class="video-link has-bg-img poster-img" style="background-image: url(<?php echo $poster_thumb_src[0]; ?>)" data-src="<?php echo $poster_full_src[0]; ?>"></a>
 			</div>
 			<?php } ?>
 		</div>

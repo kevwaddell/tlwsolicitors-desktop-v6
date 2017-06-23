@@ -37,7 +37,7 @@ $section_title = "Toolkit";
 		?>
 		<a href="<?php echo get_permalink($tk_page->ID); ?>" class="toolkit-link link-col-<?php echo $pg_col; ?>">
 				
-				<div class="bg-img full-bg-img" data-src="<?php echo $feat_img[0];?>" style="background-image: url(<?php echo $feat_img_thumb[0] ; ?>)">
+				<div class="bg-img has-bg-img" data-src="<?php echo $feat_img[0];?>" style="background-image: url(<?php echo $feat_img_thumb[0] ; ?>)">
 					<div class="img-overlay"></div>
 				</div>
 				
