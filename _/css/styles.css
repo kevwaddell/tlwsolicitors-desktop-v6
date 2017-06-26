@@ -13792,6 +13792,153 @@ article.tlw_vacancies_cpt #content-extra #content-extra-inner,
 article.tlw_landing_page #content-extra #content-extra-inner {
   position: relative;
 }
+.post-list article.post,
+.post-list article.page,
+.post-list article.tlw_vacancies_cpt {
+  border-bottom: 1px solid #918F8F;
+}
+.post-list article.post:last-child,
+.post-list article.page:last-child,
+.post-list article.tlw_vacancies_cpt:last-child {
+  margin-bottom: 0px;
+  border: none;
+}
+.post-list article.post h4,
+.post-list article.page h4,
+.post-list article.tlw_vacancies_cpt h4 {
+  color: #4b4b4b;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 45px;
+}
+.post-list article.post p,
+.post-list article.page p,
+.post-list article.tlw_vacancies_cpt p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #4b4b4b;
+  margin-bottom: 0px;
+}
+.post-list article.post time,
+.post-list article.page time,
+.post-list article.tlw_vacancies_cpt time {
+  color: #C60751;
+  display: block;
+  margin-bottom: 10px;
+}
+.post-list article.post time span,
+.post-list article.page time span,
+.post-list article.tlw_vacancies_cpt time span {
+  display: block;
+}
+.post-list article.post time span.month,
+.post-list article.page time span.month,
+.post-list article.tlw_vacancies_cpt time span.month,
+.post-list article.post time span.year,
+.post-list article.page time span.year,
+.post-list article.tlw_vacancies_cpt time span.year {
+  background-color: #918F8F;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 20px;
+}
+.post-list article.post time span.day,
+.post-list article.page time span.day,
+.post-list article.tlw_vacancies_cpt time span.day {
+  background-color: #c4c2c2;
+  color: #7A1039;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 50px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+.post-list article.post a,
+.post-list article.page a,
+.post-list article.tlw_vacancies_cpt a {
+  position: relative;
+  text-decoration: none;
+  margin-top: 15px;
+  padding: 0px;
+  line-height: 50px;
+  text-align: left;
+  text-indent: 15px;
+  border: 1px solid #4b4b4b;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  background-color: white;
+  color: #4b4b4b;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.post-list article.post a i,
+.post-list article.page a i,
+.post-list article.tlw_vacancies_cpt a i {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  line-height: 50px;
+  padding-right: 15px;
+  font-size: 20px;
+}
+.post-list article.post a:hover,
+.post-list article.page a:hover,
+.post-list article.tlw_vacancies_cpt a:hover,
+.post-list article.post a:active,
+.post-list article.page a:active,
+.post-list article.tlw_vacancies_cpt a:active,
+.post-list article.post a:focus,
+.post-list article.page a:focus,
+.post-list article.tlw_vacancies_cpt a:focus {
+  background-color: #4b4b4b;
+  color: white;
+}
+.search-list article.post,
+.search-list article.page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.search-list article.post h4 span.search-everything-highlight-color,
+.search-list article.page h4 span.search-everything-highlight-color {
+  color: white;
+  padding: 0px 5px 0px 5px;
+  font-size: 30px;
+  line-height: 35px;
+}
+.search-list article.post time,
+.search-list article.page time {
+  text-align: left;
+}
+.search-list article.post p span.search-everything-highlight-color,
+.search-list article.page p span.search-everything-highlight-color {
+  color: white;
+  padding: 0px 2px 0px 2px;
+}
+.search-list .page-links {
+  border-bottom: none;
+}
+.posts-message {
+  background-color: white;
+  color: #4b4b4b;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: 1px solid #4b4b4b;
+}
+.posts-message h3 {
+  font-size: 50px;
+  line-height: 55px;
+  color: #C60751;
+}
+.posts-message p {
+  font-size: 20px;
+  line-height: 30px;
+}
 .posts-top-bar .bootstrap-select .btn:focus {
   outline: none !important;
 }

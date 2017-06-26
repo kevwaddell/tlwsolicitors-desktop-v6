@@ -37,23 +37,22 @@
 							<h4><?php the_title(); ?></h4>
 							
 							<?php if ($post->post_type == 'post') { ?>
-							<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><i class="fa fa-calendar"></i> <?php echo $date; ?></time>
+							<time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php echo $date; ?></time>
 							<?php } ?>
 							
 							<?php if ($post->post_type == 'tlw_vacancies_cpt') { 
 							$job_closing_date = get_field( 'job_closing_date', $post->ID);	
 							?>
-							<time><i class="fa fa-calendar"></i> Closing date: <?php echo (empty($job_closing_date)) ? "TBA": date('l - jS F - Y', strtotime($job_closing_date) ); ?></time>
+							<time>Closing date: <?php echo (empty($job_closing_date)) ? "TBA": date('l - jS F - Y', strtotime($job_closing_date) ); ?></time>
 							<?php } ?>
 									
 							<?php the_excerpt(); ?>	
 								
 							<a href="<?php esc_url( the_permalink() ); ?>" title="View <?php the_title_attribute(); ?> article" class="btn btn-default btn-block" rel="bookmark">
-								View <?php echo ($post->post_type == 'post') ? "Post":"Page"; ?> <i class="fa fa-arrow-circle-right fa-lg"></i>
+								View <?php echo ($post->post_type == 'post') ? "Post":"Page"; ?> <i class="fa fa-angle-right fa-lg"></i>
 							</a>
 							
 						</article>
-		
 						<?php endwhile; ?>
 					</div>	
 
