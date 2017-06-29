@@ -1802,6 +1802,12 @@
 		"oAP": "\/parts\/landingPage\/banner-img.php",
 		"oF": 0
 		},
+	"\/parts\/landingPage\/banner-video.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/landingPage\/banner-video.php",
+		"oF": 0
+		},
 	"\/parts\/landingPage\/contact-form.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1818,6 +1824,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/landingPage\/section-content.php",
+		"oF": 0
+		},
+	"\/parts\/landingPage\/video-viewer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/landingPage\/video-viewer.php",
 		"oF": 0
 		},
 	"\/parts\/navigation\/nav-main.php": {

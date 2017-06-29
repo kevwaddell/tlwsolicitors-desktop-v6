@@ -8,7 +8,7 @@ update_option('home','');
 add_action( 'after_setup_theme', 'editor_styles' );
 
 function editor_styles() {
-add_editor_style(get_stylesheet_directory_uri().'/_/css/custom-editor-style.css?v='.filemtime( get_stylesheet_directory().'/_/css/custom-editor-style.css' ) );	
+add_editor_style(get_template_directory_uri().'/_/css/custom-editor-style.css?v='.filemtime( get_template_directory().'/_/css/custom-editor-style.css' ) );	
 }
 
 if (!is_admin()) {
@@ -17,7 +17,7 @@ if (!is_admin()) {
 	
 		global $post;
 		// Load stylesheets.
-		wp_enqueue_style( 'print-styles', get_stylesheet_directory_uri().'/_/css/print-styles.css', null, filemtime( get_stylesheet_directory().'/_/css/print-styles.css' ), 'print' );
+		wp_enqueue_style( 'print-styles', get_template_directory_uri().'/_/css/print-styles.css', null, filemtime( get_template_directory().'/_/css/print-styles.css' ), 'print' );
 		//wp_enqueue_style( 'styles', get_stylesheet_directory_uri().'/_/css/styles.css', array('twitter-bootstrap'), filemtime( get_stylesheet_directory().'/_/css/styles.css' ), 'screen' );
 		wp_enqueue_style( 'styles', get_stylesheet_directory_uri().'/_/css/styles.css', null, filemtime( get_stylesheet_directory().'/_/css/styles.css' ), 'screen' );
 		
@@ -49,8 +49,8 @@ if (!is_admin()) {
 		wp_deregister_script('autoptimize-toolbar');
 		//wp_enqueue_script( 'jquery-ui-core' );
 	    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', array(), '2.2.4', true);
-		wp_enqueue_script( 'modernizr-min', get_stylesheet_directory_uri() . '/_/js/modernizr-min.js', array(), '2.8.3', true );
-		wp_enqueue_script( 'bootstrap-min', get_stylesheet_directory_uri() . '/_/js/bootstrap-min.js', array('jquery'), '2.8.3', true );
+		wp_enqueue_script( 'modernizr-min', get_template_directory_uri() . '/_/js/modernizr-min.js', array(), '2.8.3', true );
+		wp_enqueue_script( 'bootstrap-min', get_template_directory_uri() . '/_/js/bootstrap-min.js', array('jquery'), '2.8.3', true );
 		wp_enqueue_script( 'jquery-cookie', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js', array('jquery'), '1.4.1', true );
 		wp_enqueue_script( 'slim-scroll', 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.6/jquery.slimscroll.min.js', array('jquery'), '1.3.6', true );
 		wp_enqueue_script( 'bootstrap-select', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js', array('jquery'), '1.11.2', true );
@@ -61,13 +61,13 @@ if (!is_admin()) {
 }
 
 // MERGE ALL CSS INTO ONE FILE FUNCTIOM
-include (STYLESHEETPATH . '/_/functions/merge-styles-function.php');
+include (TEMPLATEPATH . '/_/functions/merge-styles-function.php');
 
 // Custom deque to force remove unwanted css
-include (STYLESHEETPATH . '/_/functions/async-scripts-function.php');
+include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
 
 //LoadCSS script function
-include (STYLESHEETPATH . '/_/functions/loadCSS-function.php');
+include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
 
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 	function ewp_remove_script_version( $src ){
@@ -184,37 +184,37 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 /* REGISTER FEEDBACK CPT */
-include (STYLESHEETPATH . '/_/functions/tlw_feedback_cpt.php');
+include (TEMPLATEPATH . '/_/functions/tlw_feedback_cpt.php');
 
 /* REGISTER TEAMS CPT */
-include (STYLESHEETPATH . '/_/functions/tlw_team_cpt.php');
+include (TEMPLATEPATH . '/_/functions/tlw_team_cpt.php');
 
 /* REGISTER LANDING PAGE CPT */
-include (STYLESHEETPATH . '/_/functions/tlw_landing_pages_cpt.php');
+include (TEMPLATEPATH . '/_/functions/tlw_landing_pages_cpt.php');
 
 /* REGISTER HOW IT WORKS CPT */
-include (STYLESHEETPATH . '/_/functions/tlw_how_it_works_cpt.php');
+include (TEMPLATEPATH . '/_/functions/tlw_how_it_works_cpt.php');
 
 /* REGISTER FAQ's CPT */
-include (STYLESHEETPATH . '/_/functions/tlw_faqs_cpt.php');
+include (TEMPLATEPATH . '/_/functions/tlw_faqs_cpt.php');
 
 /* REGISTER Vacancies CPT */
-include (STYLESHEETPATH . '/_/functions/tlw_jobs_cpt.php');
+include (TEMPLATEPATH . '/_/functions/tlw_jobs_cpt.php');
 
 /* REGISTER POSITIONS TAX */
-include (STYLESHEETPATH . '/_/functions/tlw_positions_tax.php');
+include (TEMPLATEPATH . '/_/functions/tlw_positions_tax.php');
 
 /* AFC OPTIONS FUNCTIONS */
-include (STYLESHEETPATH . '/_/functions/afc_options_functions.php');
+include (TEMPLATEPATH . '/_/functions/afc_options_functions.php');
 
 /* FORM ACTIONS */
-include (STYLESHEETPATH . '/_/functions/gform_functions.php');
+include (TEMPLATEPATH . '/_/functions/gform_functions.php');
 
 /* AFC SAVE FUNCTIONS */
-include (STYLESHEETPATH . '/_/functions/afc_save_post.php');
+include (TEMPLATEPATH . '/_/functions/afc_save_post.php');
 
 /* SEND NEWSLETTER TO DOTMAILER */
-include (STYLESHEETPATH . '/_/functions/submit_newsletter.php');
+include (TEMPLATEPATH . '/_/functions/submit_newsletter.php');
 
 function new_submenu_class($menu) {    
     $menu = preg_replace('/ class="sub-menu"/','/ class="sub-menu list-unstyled" /',$menu);        

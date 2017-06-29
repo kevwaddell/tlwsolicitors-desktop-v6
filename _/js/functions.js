@@ -414,7 +414,24 @@
 			
 			$('#video-viewer').animate({top: '0px', opacity: 1}, 500, function(){
 				$(this).toggleClass('viewer-closed viewer-open').removeAttr('style');
-				$(video).clone().attr('src', $(video).attr('src') + '&autoplay=1').appendTo('.video-viewer-inner');
+				var src_split = $(video).attr('src').split('?');
+				//console.log(src_split);
+				$(video).clone().attr('src', src_split[0] + '?start=0&feature=oembed&autoplay=1&rel=0&showinfo=0&controls=0').appendTo('.video-viewer-inner');
+				
+			});
+			
+			return false;
+		});
+		
+		$('button#view-video-btn').on(event_type, function(){
+			var video = $('#view-video').find('iframe');
+			
+			$('body').addClass('video-open');
+			
+			$('#video-viewer').animate({top: '0px', opacity: 1}, 500, function(){
+				$(this).toggleClass('viewer-closed viewer-open').removeAttr('style');
+				var src_split = $(video).attr('src').split('?');
+				$(video).clone().attr('src', src_split[0] + '?start=0&feature=oembed&autoplay=1&rel=0&showinfo=0&controls=0').appendTo('.video-viewer-inner');
 				
 			});
 			

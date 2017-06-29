@@ -7,9 +7,7 @@ Template Name: Sitemap page
 <?php get_header(); ?>
 
 <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
-<?php 
-$page_icon = get_field('page_icon');	
-?>			 
+		 
  <main id="main-content">
  
 		<?php if (has_post_thumbnail()) { ?>

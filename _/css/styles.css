@@ -14696,6 +14696,132 @@ section#slim-top-banner i {
   opacity: 0.5;
   color: #4b4b4b;
 }
+section#video-banner a.video-link {
+  display: block;
+  width: 100%;
+  height: 340px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  position: relative;
+  margin-bottom: 30px;
+}
+section#video-banner a.video-link:after {
+  content: "\f144";
+  font-family: FontAwesome;
+  font-size: 70px;
+  line-height: 340px;
+  text-align: center;
+  color: #4b4b4b;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  text-decoration: none;
+}
+section#video-banner a.video-link:hover:after,
+section#video-banner a.video-link:active:after,
+section#video-banner a.video-link:focus:after {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+}
+section#video-banner a.video-link:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+section#video-banner .banner-panel {
+  padding: 0px 30px 90px 30px;
+  min-height: 340px;
+  background-color: white;
+  border: 1px solid #4b4b4b;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+}
+section#video-banner .banner-panel span.header {
+  font-size: 30px;
+  line-height: 30px;
+  color: #C60751;
+  margin-bottom: 10px;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+}
+section#video-banner .banner-panel i.panel-icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 78px;
+  background-color: white;
+  border: 1px solid #4b4b4b;
+  font-size: 40px;
+  color: #C60751;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+section#video-banner .banner-panel .btn {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: none;
+  text-transform: uppercase;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  background-color: #C60751;
+  color: white;
+  padding: 0px;
+  line-height: 50px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  width: auto;
+  font-size: 20px;
+}
+section#video-banner .banner-panel .btn:after {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  line-height: 50px;
+  font-family: FontAwesome;
+  content: "\f06e";
+  font-size: 30px;
+  padding-right: 20px;
+}
+section#video-banner .banner-panel .btn:hover,
+section#video-banner .banner-panel .btn:active,
+section#video-banner .banner-panel .btn:focus {
+  background-color: #4b4b4b;
+}
+section#video-banner .banner-title {
+  background-color: #4b4b4b;
+  font-size: 30px;
+  line-height: 50px;
+  color: white;
+}
 section#top-banner .banner-links-imgs {
   position: relative;
   margin-bottom: 0px;
@@ -15664,31 +15790,31 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   height: 500px;
   width: auto;
 }
-.container {
+#wide-map .container {
   position: relative;
 }
-#wide-map-canvas {
+#wide-map #wide-map-canvas {
   height: 440px;
   width: 100%;
 }
-.google-maps {
+#wide-map .google-maps {
   width: 100%;
 }
-.location-box {
+#wide-map .location-box {
   position: absolute;
   right: 40px;
   top: 0px;
   background-color: white;
   border: 1px solid #4b4b4b;
 }
-.location-box address {
+#wide-map .location-box address {
   padding: 20px;
   font-size: 20px;
   line-height: 25px;
   margin-bottom: 0px;
   position: relative;
 }
-.location-box button.btn {
+#wide-map .location-box button.btn {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
@@ -15706,7 +15832,7 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   font-stretch: normal;
   border-top: 1px solid #4b4b4b;
 }
-.location-box button.btn i {
+#wide-map .location-box button.btn i {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -15716,9 +15842,9 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   text-align: center;
   line-height: 50px;
 }
-.location-box button.btn:hover,
-.location-box button.btn:active,
-.location-box button.btn:focus {
+#wide-map .location-box button.btn:hover,
+#wide-map .location-box button.btn:active,
+#wide-map .location-box button.btn:focus {
   background-color: #4b4b4b;
   color: white;
 }

@@ -160,6 +160,7 @@ z-index: 9999996;
 	}
 }
 
+//BANNERS
 section#slim-top-banner {
 .h(30);
 .rel;
@@ -199,6 +200,122 @@ section#slim-top-banner {
 	.font-size(35);
 	.opacity(0.5);
 	.txt-col-grayDk;
+	}
+}
+
+section#video-banner {
+	
+	a.video-link {
+	.block;
+	width: 100%;
+	.h(34);
+	.bg-repeat(no-repeat);
+	background-position: center center;
+	.bg-size();
+	.no-rounded;
+	.rel;
+	.mag-bot(3);
+	
+		&:after {
+		content: "\f144";	
+		font-family: FontAwesome;
+		.font-size(7);
+		.line-h(34);
+		text-align: center;
+		.txt-col-grayDk;
+		.abs;
+		.left(0);
+		.top(0);
+		width: 100%;
+		height: 100%;
+		.bg-col(@wht);
+		.opacity(0);
+		.transition(0.4s);
+		.no-text-dec;
+		}
+		
+		&:hover, &:active, &:focus {
+			
+			&:after {
+			.opacity(0.8);	
+			}
+		}
+		
+		&:active {
+		.no-shadow;
+		}
+		
+	}
+	
+	.banner-panel {
+		.pad(0;3;9;3);
+		.min-h(34);
+		.bg-col(@wht);
+		.border(@grayDk; 0.1);
+		.rel;
+		.font-size(2);	
+		.line-h(3);	
+		//.txt-col-wht;
+		.rel;
+		
+		span.header {
+		.font-size(3);	
+		.line-h(3);	
+		.txt-col-red;
+		.mag-bot(1);
+		.font-slab-serif;
+		}
+		
+		i.panel-icon {
+		.in-block;
+		.w(8);
+		.h(8);
+		.line-h(7.8);
+		.bg-col(@wht);
+		.border(@grayDk; 0.1);	
+		.font-size(4);
+		.txt-col-red;
+		.rounded(100%);
+		.mag-top(-2);
+		.mag-bot(2);
+		}
+		
+		.btn {
+		.no-rounded;
+		.no-border;
+		.caps;
+		.font-slab-serif;
+		.bg-col-red;
+		.txt-col-wht;	
+		.pad-all(0);
+		.line-h(5);
+		.abs;
+		.bottom(3);
+		.left(3);
+		.right(3);
+		width: auto;
+		.font-size(2);
+			&:after {
+			.abs;
+			.right(0);
+			.top(0);
+			.line-h(5);
+			font-family: FontAwesome;
+			content: "\f06e";	
+			.font-size(3);
+			.pad-right(2);	
+			}
+			&:hover, &:active, &:focus {
+			.bg-col-grayDk;
+			}
+		}
+	}
+	
+	.banner-title {
+	.bg-col-grayDk;
+	.font-size(3);
+	.line-h(5);
+	.txt-col-wht;
 	}
 }
 
@@ -1136,8 +1253,8 @@ section#contact-us-banner {
 		}
 	}
 
-// LOCATION M
-
+// LOCATION MAP
+#wide-map {
 	.container {
 	.rel;	
 	}
@@ -1198,9 +1315,7 @@ section#contact-us-banner {
 			}
 		}
 	}
-	
-AP SECTION
-#wide-map {}
+}
 
 //GLOBAL FREEPHONE TELEPHONE NUMBER STYLE
 #global-tel-num {
