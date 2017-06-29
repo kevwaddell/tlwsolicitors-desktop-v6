@@ -18,10 +18,7 @@ $banner_type = get_field('lp_banner_type');
 		<?php get_template_part( 'parts/landingPage/banner', 'video' ); ?>		
 	<?php } ?>
 				
-	<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
 	<?php get_template_part( 'parts/global/color', 'strip' ); ?>
-	
-	<?php get_template_part( 'parts/landingPage/panels', 'sidebar' ); ?>
 	
 	<!-- MAIN TEXT SECTION -->			 	
  	<?php get_template_part( 'parts/landingPage/section', 'content' ); ?>

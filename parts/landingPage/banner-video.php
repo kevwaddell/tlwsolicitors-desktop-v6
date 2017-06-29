@@ -11,23 +11,14 @@ $poster_thumb_src = wp_get_attachment_image_src($poster_img_id, 'thumbnail' );
 	<div class="container">
 
 		<div class="row">			
-			<div class="col-xs-6">
+			<div class="col-xs-8 col-xs-offset-2">
 				<a href="#view-video" class="video-link has-bg-img poster-img" style="background-image: url(<?php echo $poster_thumb_src[0]; ?>)" data-src="<?php echo $poster_full_src[0]; ?>"></a>
-			</div>
-			<div class="col-xs-6">
-				<div class="banner-panel text-center">
-					<i class="fa fa-film panel-icon"></i>
-					<span class="header caps block">Watch our short video</span>
-					<div class="panel-txt">TLW have created a simple information video which may help you with the decisions you have to make when dealing with a Mis-sold SIPP Pension Investments.</div>
-					<button id="view-video-btn" type="button" class="btn btn-default btn-block btn-lg">Watch now</button>
-				</div>
+				<header class ="banner-title font-slab-serif caps text-center">
+						<span><?php the_title(); ?></span>
+				</header>
 			</div>
 		</div>
-		
-		<header class ="banner-title font-slab-serif caps text-center">
-			<?php the_title(); ?>
-		</header>
-		
+
 	</div>
 	
 	<div class="hidden hidden-videos"><div id="view-video"><?php echo $video; ?></div></div>

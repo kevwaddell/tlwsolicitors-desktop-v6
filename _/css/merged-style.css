@@ -14723,7 +14723,7 @@ section#slim-top-banner i {
 section#video-banner a.video-link {
   display: block;
   width: 100%;
-  height: 340px;
+  height: 450px;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -14734,13 +14734,12 @@ section#video-banner a.video-link {
   -moz-border-radius: 0px;
   border-radius: 0px;
   position: relative;
-  margin-bottom: 30px;
 }
 section#video-banner a.video-link:after {
   content: "\f144";
   font-family: FontAwesome;
   font-size: 70px;
-  line-height: 340px;
+  line-height: 450px;
   text-align: center;
   color: #4b4b4b;
   position: absolute;
@@ -14841,10 +14840,15 @@ section#video-banner .banner-panel .btn:focus {
   background-color: #4b4b4b;
 }
 section#video-banner .banner-title {
-  background-color: #4b4b4b;
+  background-color: #C60751;
+  margin-top: 4px;
   font-size: 30px;
-  line-height: 50px;
+  line-height: 100px;
   color: white;
+  margin-bottom: 40px;
+}
+section#video-banner .banner-title span {
+  line-height: 30px;
 }
 section#top-banner .banner-links-imgs {
   position: relative;

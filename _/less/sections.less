@@ -208,19 +208,19 @@ section#video-banner {
 	a.video-link {
 	.block;
 	width: 100%;
-	.h(34);
+	.h(45);
 	.bg-repeat(no-repeat);
 	background-position: center center;
 	.bg-size();
 	.no-rounded;
 	.rel;
-	.mag-bot(3);
+	//.mag-bot(3);
 	
 		&:after {
 		content: "\f144";	
 		font-family: FontAwesome;
 		.font-size(7);
-		.line-h(34);
+		.line-h(45);
 		text-align: center;
 		.txt-col-grayDk;
 		.abs;
@@ -312,10 +312,15 @@ section#video-banner {
 	}
 	
 	.banner-title {
-	.bg-col-grayDk;
+	.bg-col-red;
+	.mag-top(0.4);
 	.font-size(3);
-	.line-h(5);
+	.line-h(10);
 	.txt-col-wht;
+	.mag-bot(4);
+		span {
+		.line-h(3);	
+		}
 	}
 }
 
