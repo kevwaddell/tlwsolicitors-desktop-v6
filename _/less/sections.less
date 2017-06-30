@@ -237,18 +237,35 @@ section#video-banner-v2 {
 		.abs;
 		top: 50%;
 		.pad-all(0);
-		.h(6);	
+		.line-h(6);	
 		.w(24);
 		.no-rounded;
 		.border(@grayDk; 0.1);
+		.font-size(2);
+		.txt-col-grayDk;
+			&:after {
+			font-family: FontAwesome;
+			.font-size(3);
+			.line-h(6);
+			text-align: center;
+			.abs;
+			.top(0);
+			}
 		}
 		
 		#view-video-btn {
 			.right(-0.1);	
+			text-align: left;
+			.indent(2);
+				&:after {
+				.right(2);	
+				content: "\f144";
+				}
 		}
 			
 		.youtube-btn {
-		.left(-0.1);	
+		.left(-0.1);
+		.h(6);	
 		}
 		
 		.video-still {

@@ -14731,18 +14731,36 @@ section#video-banner-v2 .video-banner-inner a.youtube-btn {
   position: absolute;
   top: 50%;
   padding: 0px;
-  height: 60px;
+  line-height: 60px;
   width: 240px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
   border: 1px solid #4b4b4b;
+  font-size: 20px;
+  color: #4b4b4b;
+}
+section#video-banner-v2 .video-banner-inner button#view-video-btn:after,
+section#video-banner-v2 .video-banner-inner a.youtube-btn:after {
+  font-family: FontAwesome;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+  position: absolute;
+  top: 0px;
 }
 section#video-banner-v2 .video-banner-inner #view-video-btn {
   right: -1px;
+  text-align: left;
+  text-indent: 20px;
+}
+section#video-banner-v2 .video-banner-inner #view-video-btn:after {
+  right: 20px;
+  content: "\f144";
 }
 section#video-banner-v2 .video-banner-inner .youtube-btn {
   left: -1px;
+  height: 60px;
 }
 section#video-banner-v2 .video-banner-inner .video-still {
   height: 340px;
