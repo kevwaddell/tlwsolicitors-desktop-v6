@@ -573,8 +573,8 @@
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/video-banner-bg.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1811,6 +1811,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/landingPage\/banner-img.php",
+		"oF": 0
+		},
+	"\/parts\/landingPage\/banner-video-v2.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/landingPage\/banner-video-v2.php",
 		"oF": 0
 		},
 	"\/parts\/landingPage\/banner-video.php": {

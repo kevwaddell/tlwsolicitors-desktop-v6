@@ -15,7 +15,7 @@ $banner_type = get_field('lp_banner_type');
 		<?php get_template_part( 'parts/landingPage/banner', 'img' ); ?>		
 	<?php } ?>
 	<?php if ($banner_type = 'video') { ?>
-		<?php get_template_part( 'parts/landingPage/banner', 'video' ); ?>		
+		<?php get_template_part( 'parts/landingPage/banner', 'video-v2' ); ?>		
 	<?php } ?>
 				
 	<?php get_template_part( 'parts/global/color', 'strip' ); ?>

@@ -6,7 +6,7 @@ $poster_img_id = get_field( 'lp_video_poster', $post->ID );
 $poster_full_src = wp_get_attachment_image_src($poster_img_id, 'full' );
 $poster_thumb_src = wp_get_attachment_image_src($poster_img_id, 'thumbnail' );
 ?>
-<section id="video-banner" class="top-banner-video">
+<section id="video-banner-v2" class="top-banner-video">
 	
 	<div class="container">
 

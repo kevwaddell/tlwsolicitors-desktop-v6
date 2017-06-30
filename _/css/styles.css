@@ -14696,8 +14696,126 @@ section#slim-top-banner i {
   opacity: 0.5;
   color: #4b4b4b;
 }
-section#video-banner .container {
+section#video-banner-v2 .video-banner-inner {
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/video-banner-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 40px;
   border: 1px solid #4b4b4b;
+  position: relative;
+  overflow: hidden;
+}
+section#video-banner-v2 .video-banner-inner .video-header {
+  font-size: 30px;
+  line-height: 60px;
+  padding: 0px 20px 0px 20px;
+  background-color: #4b4b4b;
+  background-color: rgba(75, 75, 75, 0.8);
+}
+section#video-banner-v2 .video-banner-inner .video-header .icons {
+  height: 60px;
+}
+section#video-banner-v2 .video-banner-inner .video-header i {
+  display: block;
+  float: left;
+  font-size: 20px;
+  line-height: 60px;
+  padding-left: 10px;
+}
+section#video-banner-v2 .video-banner-inner button#view-video-btn,
+section#video-banner-v2 .video-banner-inner a.youtube-btn {
+  position: absolute;
+  top: 50%;
+  padding: 0px;
+  height: 60px;
+  width: 240px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  border: 1px solid #4b4b4b;
+}
+section#video-banner-v2 .video-banner-inner #view-video-btn {
+  right: -1px;
+}
+section#video-banner-v2 .video-banner-inner .youtube-btn {
+  left: -1px;
+}
+section#video-banner-v2 .video-banner-inner .video-still {
+  height: 340px;
+  width: 600px;
+  margin: 30px auto 30px auto;
+  border: 1px solid #4b4b4b;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section#video-banner-v2 .video-banner-inner .video-still a.video-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: white;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  text-decoration: none;
+}
+section#video-banner-v2 .video-banner-inner .video-still a.video-link:after {
+  content: "\f144";
+  font-family: FontAwesome;
+  font-size: 70px;
+  line-height: 338px;
+  text-align: center;
+  color: #4b4b4b;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+section#video-banner-v2 .video-banner-inner .video-still a.video-link:hover,
+section#video-banner-v2 .video-banner-inner .video-still a.video-link:active,
+section#video-banner-v2 .video-banner-inner .video-still a.video-link:focus {
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+}
+section#video-banner-v2 .banner-title {
+  background-color: #C60751;
+  margin-top: 4px;
+  font-size: 30px;
+  line-height: 100px;
+  color: white;
+  margin-bottom: 40px;
+  overflow: hidden;
+  position: relative;
+}
+section#video-banner-v2 .banner-title i {
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  font-size: 130px;
+  line-height: 130px;
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  -webkit-opacity: 0.3;
+  opacity: 0.3;
+}
+section#video-banner-v2 .banner-title span {
+  line-height: 30px;
 }
 section#video-banner a.video-link {
   display: block;
