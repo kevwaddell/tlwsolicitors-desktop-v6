@@ -14696,6 +14696,9 @@ section#slim-top-banner i {
   opacity: 0.5;
   color: #4b4b4b;
 }
+section#video-banner .container {
+  border: 1px solid #4b4b4b;
+}
 section#video-banner a.video-link {
   display: block;
   width: 100%;
