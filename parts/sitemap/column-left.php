@@ -33,7 +33,8 @@ $services = get_posts($services_args);
 	$landing_pg_args = array(
 	'post_type'		=> 'tlw_landing_page',
 	'meta_key'	=> 'service_area',
-	'meta_value'=> $service->ID
+	'meta_value'=> $service->ID,
+	'order'			=> 'ASC'
 	);
 	$landing_pgs = get_posts($landing_pg_args);
 	
@@ -41,7 +42,7 @@ $services = get_posts($services_args);
 	
 	if (!empty($landing_pgs)) {
 		foreach ($landing_pgs as $lp) {
-		array_push($service_children, $lp);
+		array_unshift($service_children, $lp);
 		} 	
 	}
 	 ?>
