@@ -19,7 +19,7 @@ $more_btn_text = "Continue Reading";
 	
 	<div class="container">
 					
-		<?php if ($post->post_parent != 0 ) { ?>
+		<?php if ($post->post_parent != 0 && $banner_type != 'video') { ?>
 		<div class="service-label font-slab-serif caps txt-col-gray"><?php the_title(); ?></div>		
 		<?php } ?>
 			

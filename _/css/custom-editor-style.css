@@ -7268,34 +7268,24 @@ body.mce-content-body h5 {
   color: #4b4b4b;
 }
 body.mce-content-body h1 {
-  font-size: 70px;
-  line-height: 70px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 'open_sanslight', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  font-stretch: normal;
-  color: #4b4b4b;
+  font-size: 35px;
+  line-height: 40px;
   margin-bottom: 30px;
 }
-body.mce-content-body h3,
-body.mce-content-body h2 {
-  font-size: 35px;
-  line-height: 35px;
-  margin-bottom: 20px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 'open_sanslight', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  font-stretch: normal;
-  color: #918F8F;
-  text-transform: uppercase;
+body.mce-content-body h1 small {
+  font-size: 30px;
 }
+body.mce-content-body h2,
+body.mce-content-body h3,
 body.mce-content-body h4,
 body.mce-content-body h5 {
-  text-transform: uppercase;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 'open_sanslight', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-stretch: normal;
   color: #918F8F;
-  font-size: 25px;
-  line-height: 25px;
 }
 body.mce-content-body p,
 body.mce-content-body ul,

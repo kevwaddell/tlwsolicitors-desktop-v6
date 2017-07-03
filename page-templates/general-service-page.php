@@ -12,6 +12,7 @@ Template Name: General Service page
 		$page_icon = get_field('page_icon');
 		$sections_active = get_field('sections_active');
 		$banner_active = get_field('banner_active');	
+		$banner_type = get_field('banner_type');
 		$quick_links = array();
 		
 		if ( has_post_thumbnail() ) {
@@ -24,7 +25,13 @@ Template Name: General Service page
 		
 		<!-- BANNER SECTION -->
 		<?php if ($banner_active) { ?>
-		<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>		
+		
+		<?php if ($banner_type == "video") { ?>
+		<?php get_template_part( 'parts/banners/banner', 'video' ); ?>		
+		<?php } else { ?>
+		<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>	
+		<?php } ?>
+			
 		<?php } ?>		
 		
 		<!-- FREEPHONE NUMBER SECTION -->
