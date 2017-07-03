@@ -24,10 +24,6 @@
 				<?php get_template_part( 'parts/blog/sections/section', 'gallery' ); ?>
 				<?php } ?>
 				
-				<?php if ($download_active) { ?>
-				<?php get_template_part( 'parts/blog/sections/section', 'downloads' ); ?>
-				<?php } ?>
-				
 				<?php if ($form_active && $all_forms_active) { ?>
 				<?php get_template_part( 'parts/blog/sections/section', 'form' ); ?>
 				<?php } ?>
