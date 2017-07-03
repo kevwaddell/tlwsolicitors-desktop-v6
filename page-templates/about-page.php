@@ -27,8 +27,6 @@ Template Name: About page template
 
 		<?php } ?>	
 		
-		<!-- FREEPHONE NUMBER SECTION -->
-		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
 		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
 		
 		<!-- MAIN TEXT SECTION -->

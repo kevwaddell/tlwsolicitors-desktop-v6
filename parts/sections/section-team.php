@@ -4,10 +4,15 @@ $profiles_total = count($profiles);
 $section_title = "Our Team";
 //echo '<pre class="debug">';print_r($profiles);echo '</pre>';
 ?>
-<div class="rule"></div>
+<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
 <section id="our-team-section" class="pg-section">
 	<div class="container">
-		<h2 class="section-header"><?php echo $section_title; ?></h2>
+		
+		<div class="service-label font-slab-serif caps txt-col-gray"><?php the_title(); ?></div>		
+
+		<div class="intro-txt">
+			<?php the_content(); ?>
+		</div>
 	
 		<div class="row">
 			<?php foreach ($profiles as $post) : ?>

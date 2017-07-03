@@ -18,8 +18,6 @@ $form_active = get_field('add_form', $jobs_pg->ID);
 		<?php get_template_part( 'parts/vacancies/banner', 'img' ); ?>	
 	<?php } ?>	
 	
-	<!-- FREEPHONE NUMBER SECTION -->
-	<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
 	<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
 	
 	<!-- MAIN TEXT SECTION -->	

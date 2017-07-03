@@ -28,7 +28,6 @@ Template Name: General Service page
 		<?php } ?>		
 		
 		<!-- FREEPHONE NUMBER SECTION -->
-		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
 		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
 	
 		

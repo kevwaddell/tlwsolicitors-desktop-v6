@@ -29,19 +29,7 @@ Template Name: Team Profiles Page
 	?>	
 	
 	<!-- MAIN CONTENT START -->
-	<main id="main-content">
-		
-		<!-- BANNER SECTION -->
-		<?php if ($banner_active) { ?>
-		<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>			
-		<?php } ?>	
-		
-		<!-- FREEPHONE NUMBER SECTION -->
-		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
-		<?php get_template_part( 'parts/global/color', 'strip' ); ?>			
-				
-		<!-- MAIN TEXT SECTION -->
-		<?php get_template_part( 'parts/sections/section', 'content' ); ?>
+	<main id="main-content">	
 		
 		<?php if (!empty($profiles)) { ?>
 		<?php get_template_part( 'parts/sections/section', 'team' ); ?>		

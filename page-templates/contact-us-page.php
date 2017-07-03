@@ -21,8 +21,6 @@ $img_post = get_the_ID();
 		
 	<?php get_template_part( 'parts/banners/contact/banner', 'intro' ); ?>	
 	
-	<!-- FREEPHONE NUMBER SECTION -->
-	<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
 	<?php get_template_part( 'parts/global/color', 'strip' ); ?>	
 	
 	<!-- MAIN TEXT SECTION -->

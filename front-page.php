@@ -15,8 +15,6 @@
 		<?php get_template_part( 'parts/banners/home/banner', 'img' ); ?>		
 		<?php } ?>
 		
-		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
-		
 		<!-- HOME PAGE FORM SECTION -->
 		<?php get_template_part( 'parts/sections/home/section', 'form' ); ?>
 		

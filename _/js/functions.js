@@ -469,6 +469,22 @@
 		return false;
 		
 		});
+		
+		/* SCROLL TO SECTION BUTTON */
+			
+		$('body').on(event_type,'a.jump-2-link', function(){
+			
+			
+    		 
+    		var hash = $(this).attr('href');
+    		var scrollTarget = $(hash).offset().top - 40;
+    		//console.log($(hash));
+    		
+    		$('html, body').animate({ scrollTop: scrollTarget }, 500);	   
+    		  			
+			return false;
+		
+		});
 	
 	});
 	

@@ -18,8 +18,6 @@
 			<?php get_template_part( 'parts/blog/banner', 'index' ); ?>	
 			<?php } ?>	
 			
-			<!-- FREEPHONE NUMBER SECTION -->
-			<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
 			<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
 			
 			<!-- PAGE TOP BAR SECTION -->

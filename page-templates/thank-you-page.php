@@ -17,8 +17,6 @@ Template Name: Thank page template
 		}
 		?>
 		
-		<!-- FREEPHONE NUMBER SECTION -->
-		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
 		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
 
 			<article <?php post_class("content-section"); ?>>

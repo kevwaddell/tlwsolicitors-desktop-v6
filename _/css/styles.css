@@ -12922,6 +12922,11 @@ header[role="banner"] .info-links a:active,
 header[role="banner"] .info-links a:focus {
   color: #C60751;
 }
+header[role="banner"] .tel-num {
+  display: inline-block;
+  line-height: 62px;
+  float: right;
+}
 html.svg header[role="banner"] .logo a {
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/tlw-logo-wide.svg);
 }
@@ -13206,12 +13211,9 @@ h5 {
 }
 h1,
 h2 {
-  font-size: 70px;
-  line-height: 70px;
+  font-size: 35px;
+  line-height: 40px;
   margin-bottom: 30px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 'open_sanslight', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  font-stretch: normal;
 }
 h1 small,
 h2 small {
@@ -13228,6 +13230,12 @@ p {
 }
 p:last-child {
   margin-bottom: 0px;
+}
+p.lead {
+  font-weight: normal;
+  color: #918F8F;
+  font-size: 22px;
+  line-height: 27px;
 }
 article.page .service-label,
 article.post .service-label,
@@ -13412,13 +13420,6 @@ article.post .main-txt p:last-child,
 article.tlw_vacancies_cpt .main-txt p:last-child,
 article.tlw_landing_page .main-txt p:last-child {
   margin-bottom: 0px;
-}
-article.page .main-txt.home h1,
-article.post .main-txt.home h1,
-article.tlw_vacancies_cpt .main-txt.home h1,
-article.tlw_landing_page .main-txt.home h1 {
-  font-size: 50px;
-  line-height: 50px;
 }
 article.page .main-txt i.txt-icon,
 article.post .main-txt i.txt-icon,
@@ -13746,16 +13747,27 @@ article.tlw_landing_page .main-txt h2,
 article.page .main-txt h3,
 article.post .main-txt h3,
 article.tlw_vacancies_cpt .main-txt h3,
-article.tlw_landing_page .main-txt h3 {
-  font-size: 35px;
-  line-height: 35px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 'open_sanslight', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
+article.tlw_landing_page .main-txt h3,
+article.page .main-txt h4,
+article.post .main-txt h4,
+article.tlw_vacancies_cpt .main-txt h4,
+article.tlw_landing_page .main-txt h4,
+article.page .main-txt h5,
+article.post .main-txt h5,
+article.tlw_vacancies_cpt .main-txt h5,
+article.tlw_landing_page .main-txt h5 {
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-stretch: normal;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  color: #918F8F;
 }
+article.page .main-txt h2,
+article.post .main-txt h2,
+article.tlw_vacancies_cpt .main-txt h2,
+article.tlw_landing_page .main-txt h2,
+article.page .main-txt h3,
+article.post .main-txt h3,
+article.tlw_vacancies_cpt .main-txt h3,
+article.tlw_landing_page .main-txt h3,
 article.page .main-txt h4,
 article.post .main-txt h4,
 article.tlw_vacancies_cpt .main-txt h4,
@@ -13765,12 +13777,8 @@ article.post .main-txt h5,
 article.tlw_vacancies_cpt .main-txt h5,
 article.tlw_landing_page .main-txt h5 {
   font-size: 25px;
-  line-height: 25px;
-  text-transform: uppercase;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 'open_sanslight', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  font-stretch: normal;
-  margin-bottom: 15px;
+  line-height: 30px;
+  margin-bottom: 20px;
   color: #918F8F;
 }
 article.page #content-extra.closed,
@@ -14656,6 +14664,7 @@ section#slim-top-banner {
   height: 300px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 40px;
 }
 section#slim-top-banner .container {
   height: 100%;
@@ -14670,7 +14679,6 @@ section#slim-top-banner .banner-title {
   font-size: 25px;
   line-height: 25px;
   color: #918F8F;
-  margin-top: -22.5px;
 }
 section#slim-top-banner .img {
   position: absolute;
@@ -15059,6 +15067,9 @@ section#top-banner .banner-links-imgs a:focus span.title {
   background-color: rgba(198, 7, 81, 0.8);
   color: white;
 }
+section#contact-us-banner {
+  margin-bottom: 40px;
+}
 section#contact-us-banner .container {
   height: 100%;
   position: relative;
@@ -15072,7 +15083,6 @@ section#contact-us-banner .banner-title {
   font-size: 25px;
   line-height: 25px;
   color: #918F8F;
-  margin-top: -22.5px;
 }
 section#contact-us-banner .img {
   position: absolute;
@@ -15093,6 +15103,7 @@ section#contact-us-banner .intro {
   color: white;
   margin-bottom: 80px;
   padding-top: 80px;
+  padding-left: 30px;
 }
 section#contact-us-banner .intro p {
   font-size: 35px;
@@ -15111,37 +15122,38 @@ section#contact-us-banner .contact-info {
   position: relative;
   z-index: 2;
   padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
-section#contact-us-banner .contact-info .contact-info-label,
 section#contact-us-banner .contact-info a.contact-info-link {
   color: #4b4b4b;
   text-align: center;
-  font-size: 30px;
+  font-size: 22px;
   font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-stretch: normal;
   height: 70px;
   line-height: 70px;
   position: relative;
-  margin-bottom: 20px;
-  padding-left: 60px;
+  padding-left: 50px;
   background-color: white;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #4b4b4b;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 31%;
+  text-decoration: none;
 }
-section#contact-us-banner .contact-info .contact-info-label i,
 section#contact-us-banner .contact-info a.contact-info-link i {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 70px;
+  width: 60px;
   height: 70px;
   line-height: 70px;
-  font-size: 30px;
-}
-section#contact-us-banner .contact-info a.contact-info-link {
-  display: block;
-  text-decoration: none;
+  font-size: 25px;
 }
 section#contact-us-banner .contact-info a.contact-info-link:hover,
 section#contact-us-banner .contact-info a.contact-info-link:active,
@@ -17884,6 +17896,7 @@ figure.alignnone {
 }
 #hp-form .gform_wrapper .gform_heading {
   text-align: center;
+  padding-top: 30px;
 }
 #hp-form .gform_wrapper .gform_heading span.gform_description {
   font-weight: bold;

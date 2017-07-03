@@ -1,3 +1,6 @@
+<?php 
+$freephone_num = get_field('freephone_num', 'option');	
+?>
 <header class="header" role="banner">
 	
 		<div class="container">
@@ -9,7 +12,8 @@
 				</div>
 				
 				<div class="col-xs-6">
-					<?php wp_nav_menu(array( 'container' => '', 'theme_location' => 'top_bar_menu', 'menu_class'  => 'info-links list-inline','fallback_cb' => false ) ); ?>
+					<?php wp_nav_menu(array( 'container' => '', 'theme_location' => 'top_bar_menu', 'menu_class'  => 'pull-left info-links list-inline','fallback_cb' => false ) ); ?>
+					<div class="tel-num bold txt-col-red"><span class="caps txt-col-gray font-lite">Freephone: </span> <?php echo $freephone_num; ?></div>
 				</div>
 				
 				<div class="col-xs-2">

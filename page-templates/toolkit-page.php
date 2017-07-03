@@ -31,8 +31,6 @@ Template Name: Toolkit page
 					
 		<?php } ?>	
 		
-		<!-- FREEPHONE NUMBER SECTION -->
-		<?php get_template_part( 'parts/global/freephone', 'number' ); ?>
 		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
 		
 		<?php get_template_part( 'parts/sections/section', 'content' ); ?>	
