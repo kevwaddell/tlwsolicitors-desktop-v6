@@ -1,18 +1,24 @@
 <?php 
 global $post;
 $page_icon = get_field('page_icon', $post->ID);	
-$video = get_field( 'lp_video', $post->ID );
+$video_webm = get_field( 'lp_video_webm', $post->ID );
+$video_mp4 = get_field( 'lp_video_mp4', $post->ID );
 $poster_img_id = get_field( 'lp_video_poster', $post->ID );
 $poster_full_src = wp_get_attachment_image_src($poster_img_id, 'full' );
 $poster_thumb_src = wp_get_attachment_image_src($poster_img_id, 'thumbnail' );
+
 ?>
-<section id="video-banner-v2" class="top-banner-video">
+<section id="video-banner" class="top-banner-video">
 	
 	<div class="container">
 
 		<div class="row">			
-			<div class="col-xs-8 col-xs-offset-2">
-				<a href="#view-video" class="video-link has-bg-img poster-img" style="background-image: url(<?php echo $poster_thumb_src[0]; ?>)" data-src="<?php echo $poster_full_src[0]; ?>"></a>
+			<div class="col-xs-10 col-xs-offset-1">
+				<video controls preload="auto" id="service-video" poster="<?php echo $poster_full_src[0];?>">
+					<source src="<?php echo $video_webm; ?>" type="video/webm" />
+					<source src="<?php echo $video_mp4; ?>" type="video/mp4" />
+				</video>
+				
 				<header class ="banner-title font-slab-serif caps text-center">
 						<span><?php the_title(); ?></span>
 				</header>
@@ -20,7 +26,5 @@ $poster_thumb_src = wp_get_attachment_image_src($poster_img_id, 'thumbnail' );
 		</div>
 
 	</div>
-	
-	<div class="hidden hidden-videos"><div id="view-video"><?php echo $video; ?></div></div>
 	
 </section>
