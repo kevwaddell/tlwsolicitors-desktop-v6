@@ -14752,6 +14752,9 @@ section#video-banner .banner-title {
 section#video-banner .banner-title span {
   line-height: 30px;
 }
+section#top-banner {
+  margin-bottom: 40px;
+}
 section#top-banner .banner-links-imgs {
   position: relative;
   margin-bottom: 0px;
@@ -15071,7 +15074,6 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   margin-bottom: 40px;
   height: 1px;
   position: relative;
-  margin-bottom: 20px;
 }
 .pg-section .lg-intro hr.mag-top-80 {
   margin-top: 80px;
@@ -15259,12 +15261,12 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   margin-bottom: 10px;
 }
 #faqs-section .faq-item .question {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 25px;
+  line-height: 30px;
   color: #918F8F;
   margin-bottom: 20px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", 'open_sanslight', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   font-stretch: normal;
 }
 #faqs-section .faq-item .answer p {

@@ -8,11 +8,14 @@ $pages = get_pages($args);
 //echo '<pre>';print_r($pages);echo '</pre>'; 
 ?>
 <?php if (!empty($pages)) { ?>
-<div class="rule"></div>
 <section id="toolkit-section" class="pg-section">
 	
 	<div class="container">
 		<h2 class="section-header"><?php the_title(); ?></h2>
+		<div class="lg-intro">
+			<?php the_content(); ?>
+		</div>
+		
 		<div class="row">
 		<?php foreach ($pages as $pg) { 
 		$page = get_page($link['page']);

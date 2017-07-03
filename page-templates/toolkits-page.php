@@ -11,17 +11,11 @@ Template Name: Toolkits archive page
 	?>	
 	
 	<!-- MAIN CONTENT START -->
-	<main id="main-content">
+	<main id="main-content">	
 		
-		<!-- BANNER SECTION -->
-		<?php if (has_post_thumbnail()) { 	?>
-		<?php get_template_part( 'parts/banners/banner', 'img' ); ?>			
-		<?php } ?>		
+		<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
 		
 		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
-		
-		<!-- MAIN TEXT SECTION -->
-		<?php get_template_part( 'parts/sections/section', 'content' ); ?>
 		
 		<!-- TOOLKITS GRID -->
 		<?php get_template_part( 'parts/sections/section', 'toolkits' ); ?>
