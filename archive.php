@@ -13,15 +13,15 @@ $img_post = $news_page;
 <!-- MAIN CONTENT START -->
 <main id="main-content">
 	
+	<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
+	
 	<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
-
-		
-	<!-- PAGE TOP BAR SECTION -->
-	<?php get_template_part( 'parts/blog/topbar', 'index' ); ?>	
 	
 	<!-- POSTS LIST -->
 	<?php get_template_part( 'parts/blog/posts', 'list' ); ?>		
 	
+	<!-- DROPDOWN SECTION -->
+	<?php get_template_part( 'parts/blog/index', 'dropdowns' ); ?>
 
 </main>
 <!-- MAIN CONTENT CONTAINER END -->

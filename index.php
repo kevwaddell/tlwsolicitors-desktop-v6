@@ -14,17 +14,15 @@
 	
 		<main id="main-content">
 			
-			<?php if ($img_post) { ?>
-			<?php get_template_part( 'parts/blog/banner', 'index' ); ?>	
-			<?php } ?>	
+			<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
 			
-			<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
-			
-			<!-- PAGE TOP BAR SECTION -->
-			<?php get_template_part( 'parts/blog/topbar', 'index' ); ?>		
+			<?php get_template_part( 'parts/global/color', 'strip' ); ?>			
 			
 			<!-- POSTS LIST -->
-			<?php get_template_part( 'parts/blog/posts', 'list' ); ?>		
+			<?php get_template_part( 'parts/blog/posts', 'list' ); ?>	
+			
+			<!-- DROPDOWN SECTION -->
+			<?php get_template_part( 'parts/blog/index', 'dropdowns' ); ?>		
 
 		</main><!-- CONTENT END -->
 

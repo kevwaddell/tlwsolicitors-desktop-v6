@@ -1,5 +1,5 @@
 <?php
-global $img_post;
+$img_post = get_the_ID();
 $post_thumbnail_id = get_post_thumbnail_id( $img_post );
 $banner_img = wp_get_attachment_image_src($post_thumbnail_id, 'large' );
 	

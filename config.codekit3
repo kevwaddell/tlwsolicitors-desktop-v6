@@ -1621,6 +1621,12 @@
 		"oAP": "\/parts\/blog\/category-dropdown.php",
 		"oF": 0
 		},
+	"\/parts\/blog\/index-dropdowns.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/blog\/index-dropdowns.php",
+		"oF": 0
+		},
 	"\/parts\/blog\/posts-list.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1655,12 +1661,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/blog\/sections\/section-related-posts.php",
-		"oF": 0
-		},
-	"\/parts\/blog\/topbar-index.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/blog\/topbar-index.php",
 		"oF": 0
 		},
 	"\/parts\/footers\/copyright-notice.php": {
@@ -1829,12 +1829,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/landingPage\/section-content.php",
-		"oF": 0
-		},
-	"\/parts\/landingPage\/video-viewer.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/landingPage\/video-viewer.php",
 		"oF": 0
 		},
 	"\/parts\/navigation\/nav-main.php": {

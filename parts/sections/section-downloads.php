@@ -8,10 +8,12 @@ $downloads_active = $section['downloads_active'];
 $section_title = $section['section_title'];	
 $download_section_files = $section['download_section_files'];
 ?>
-<div class="rule"></div>
 <section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section">
 	<div class="container">
 		<h2 class="section-header"><?php echo $section_title; ?></h2>	
+		<div class="lg-intro">
+			<?php the_content(); ?>
+		</div>
 		
 		<div class="row">
 		

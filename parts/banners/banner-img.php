@@ -1,6 +1,7 @@
 <?php 
 global $post;
 $page_icon = get_field('page_icon', $post->ID);	
+$img_post = get_the_ID();
 
 if (empty($page_icon)) {
 $page_icon = get_field('page_icon', $post->post_parent);	

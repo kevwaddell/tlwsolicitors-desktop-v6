@@ -21,13 +21,6 @@ Template Name: Legal pages template
 	}
 	
 	$children = get_pages($children_args);	
-	
-	//echo '<pre>';print_r($children);echo '</pre>';
-	
-	if ( has_post_thumbnail() ) {
-	$img_post = get_the_ID();
-	}
-	
 	?>	
 	<main id="main-content">
 		

@@ -1,10 +1,4 @@
 <?php if ( have_posts() ): ?>
-<div class="page-links top-page-links">
-	<div class="container">
-		<?php wp_pagenavi(); ?>
-	</div>
-</div>	
-<div class="rule"></div>
 <section class="page-content post-grid">	
 		<div class="container">
 			<div class="row">

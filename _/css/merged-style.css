@@ -15061,6 +15061,43 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   line-height: 50px;
   margin-bottom: 30px;
 }
+.pg-section .lg-intro p {
+  font-size: 25px;
+  line-height: 35px;
+}
+.pg-section .lg-intro hr {
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 1px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.pg-section .lg-intro hr.mag-top-80 {
+  margin-top: 80px;
+}
+.pg-section .lg-intro hr:before,
+.pg-section .lg-intro hr:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 50%;
+}
+.pg-section .lg-intro hr:before {
+  bottom: -1px;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(#918F8F));
+  background-image: -webkit-linear-gradient(left, transparent, #918F8F);
+  background-image: -moz-linear-gradient(left, transparent, #918F8F);
+  background-image: -o-linear-gradient(left, transparent, #918F8F);
+}
+.pg-section .lg-intro hr:after {
+  right: 0px;
+  bottom: -1px;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#918F8F), to(transparent));
+  background-image: -webkit-linear-gradient(left, #918F8F, transparent);
+  background-image: -moz-linear-gradient(left, #918F8F, transparent);
+  background-image: -o-linear-gradient(left, #918F8F, transparent);
+}
 .pg-section .well {
   background-color: #E9E9E9;
   border-color: #C60751;
@@ -15504,6 +15541,7 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   border-radius: 0px;
   position: relative;
   margin-top: 30px;
+  border: 1px solid #4b4b4b;
 }
 #video-section a.video-link:after {
   content: "\f144";
@@ -15895,10 +15933,9 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
   overflow: hidden;
 }
-#video-viewer .video-viewer-inner iframe {
-  display: block;
-  padding: 0px;
-  margin: 0px;
+#video-viewer .video-viewer-inner video {
+  width: 100%;
+  height: auto;
 }
 html.svg section.pg-section .with-icon-logo {
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/bg-icon-logo-wht.svg);

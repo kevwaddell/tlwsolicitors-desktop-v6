@@ -7,10 +7,8 @@ Template Name: Newsletter sign up template
 	<!-- MAIN CONTENT START -->
 
 			<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
-			<?php 
-			$all_forms_active = get_field('all_forms_active', 'option');
+			<?php
 			$sections_active = get_field('sections_active');
-			$color = get_field('page_colour');
 			 ?>	
 			 <main id="main-content">
 				 	
