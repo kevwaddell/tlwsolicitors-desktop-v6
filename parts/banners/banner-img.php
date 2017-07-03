@@ -1,30 +1,17 @@
-<?php  
-$banner_parts = get_field('banner_parts');
-//echo '<pre class="debug">';print_r($banner_parts);echo '</pre>';
+<?php 
+global $post;
+$page_icon = get_field('page_icon', $post->ID);	
+
+if (empty($page_icon)) {
+$page_icon = get_field('page_icon', $post->post_parent);	
+}
 ?>
-<section id="top-banner">
-	<?php foreach ($banner_parts as $bp) { ?>
-	<?php if ($bp['acf_fc_layout'] == "banner-links") { ?>
-	<?php 
-		$banner_service_links = $bp['banner_service_links'];
-		$links_total = count($banner_service_links);
-		?>
-	<div class="container">	
-		<ul class="text-center list-unstyled list-inline banner-links-imgs links-total-<?php echo $links_total; ?>">
-			<?php foreach ($banner_service_links as $bl) { 
-			$thumb_id = get_post_thumbnail_id($bl['link_page']);
-			$bg_full_src = wp_get_attachment_image_src($thumb_id, 'full' );
-			$bg_thumb_src = wp_get_attachment_image_src($thumb_id, 'thumbnail' );	
-			?>
-			<li>
-				<a href="<?php echo get_permalink($bl['link_page']); ?>" class="services-nav-link">
-					<span class="img has-bg-img" data-src="<?php echo $bg_full_src[0]; ?>" style="background-image: url(<?php echo $bg_thumb_src[0]; ?>)"></span>
-					<span class="title"><span><?php echo get_the_title($bl['link_page']); ?></span></span>
-				</a>
-			</li>
-			<?php } ?>
-		</ul>
+<section id="slim-top-banner" class="top-banner-img-slim">
+	<div class="container">
+		<header class ="banner-title font-slab-serif caps">
+			<?php echo get_the_title($post->post_parent); ?>
+		</header>
+		<div class="img" style="background-image: url(<?php add_banner_feat_img($img_post);?>)"></div>
+		<i class="fa <?php echo $page_icon; ?>"></i>
 	</div>
-	<?php } ?>
-	<?php } ?>
 </section>

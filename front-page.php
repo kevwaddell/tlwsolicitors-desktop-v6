@@ -12,7 +12,7 @@
 		
 		<!-- BANNER SECTION -->
 		<?php if ($banner_active) { ?>
-		<?php get_template_part( 'parts/banners/home/banner', 'img' ); ?>		
+		<?php get_template_part( 'parts/banners/home/banner', 'services' ); ?>		
 		<?php } ?>
 		
 		<!-- HOME PAGE FORM SECTION -->

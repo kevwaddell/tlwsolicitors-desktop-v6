@@ -24,7 +24,7 @@ Template Name: Downloads archive page template
 		<!-- BANNER SECTION -->
 		<?php if ($banner_active) { ?>
 
-			<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>			
+			<?php get_template_part( 'parts/banners/banner', 'img' ); ?>			
 			
 		<?php } ?>	
 		

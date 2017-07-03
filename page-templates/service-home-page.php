@@ -23,7 +23,7 @@ Template Name: Service Home page
 
 		<!-- BANNER SECTION -->
 		<?php if ($banner_active) { ?>
-		<?php get_template_part( 'parts/banners/banner', 'img' ); ?>			
+		<?php get_template_part( 'parts/banners/banner', 'services' ); ?>			
 		<?php } ?>		
 		
 		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		

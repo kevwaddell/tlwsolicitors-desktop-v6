@@ -11,7 +11,7 @@ Template Name: Sitemap page
  <main id="main-content">
  
 		<?php if (has_post_thumbnail()) { ?>
-			<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>			
+			<?php get_template_part( 'parts/banners/banner', 'img' ); ?>			
 		<?php } ?>	
 		
 		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		

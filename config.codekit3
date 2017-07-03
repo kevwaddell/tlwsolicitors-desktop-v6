@@ -1561,28 +1561,16 @@
 		"oAP": "\/page.php",
 		"oF": 0
 		},
-	"\/parts\/banners\/banner-feedback.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/banners\/banner-feedback.php",
-		"oF": 0
-		},
 	"\/parts\/banners\/banner-img.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/banners\/banner-img.php",
 		"oF": 0
 		},
-	"\/parts\/banners\/banner-slim-img.php": {
+	"\/parts\/banners\/banner-services.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/parts\/banners\/banner-slim-img.php",
-		"oF": 0
-		},
-	"\/parts\/banners\/banner-toolkit.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/banners\/banner-toolkit.php",
+		"oAP": "\/parts\/banners\/banner-services.php",
 		"oF": 0
 		},
 	"\/parts\/banners\/banner-video.php": {
@@ -1597,10 +1585,10 @@
 		"oAP": "\/parts\/banners\/contact\/banner-intro.php",
 		"oF": 0
 		},
-	"\/parts\/banners\/home\/banner-img.php": {
+	"\/parts\/banners\/home\/banner-services.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/parts\/banners\/home\/banner-img.php",
+		"oAP": "\/parts\/banners\/home\/banner-services.php",
 		"oF": 0
 		},
 	"\/parts\/banners\/home\/banner-video.php": {

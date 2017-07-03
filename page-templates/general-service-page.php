@@ -29,7 +29,7 @@ Template Name: General Service page
 		<?php if ($banner_type == "video") { ?>
 		<?php get_template_part( 'parts/banners/banner', 'video' ); ?>		
 		<?php } else { ?>
-		<?php get_template_part( 'parts/banners/banner', 'slim-img' ); ?>	
+		<?php get_template_part( 'parts/banners/banner', 'img' ); ?>	
 		<?php } ?>
 			
 		<?php } ?>		
