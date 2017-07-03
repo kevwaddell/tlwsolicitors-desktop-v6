@@ -1,6 +1,6 @@
 <?php
 $services_pgs = get_field('global_main_services', 'options');
-//echo '<pre>';print_r($services_for_you_pgs);echo '</pre>';
+//echo '<pre>';print_r($services_pgs);echo '</pre>';
 
 $services_args = array(
 'post_type'		=> 'page',
@@ -9,7 +9,8 @@ $services_args = array(
 'order'			=> 'ASC'
 );
 
-$services = get_posts($services_args);	
+$services = get_posts($services_args);
+//echo '<pre>';print_r($landing_pgs);echo '</pre>';
 ?>
 
 <div class="col-xs-6">
@@ -19,12 +20,6 @@ $services = get_posts($services_args);
 	<?php foreach ($services as $service) { ?>
 	
 	<?php 
-	$icon = get_field('page_icon', $service->ID);
-	
-	if (!empty($icon)) {
-	$icon_tag = '<i class="icon fa '.$icon.'"></i>';	
-	}
-	
 	$service_args = array(
 	'posts_per_page' => -1,
 	'post_type'		=> 'page',
@@ -34,6 +29,21 @@ $services = get_posts($services_args);
 	);
 	
 	$service_children = get_posts($service_args);
+	
+	$landing_pg_args = array(
+	'post_type'		=> 'tlw_landing_page',
+	'meta_key'	=> 'service_area',
+	'meta_value'=> $service->ID
+	);
+	$landing_pgs = get_posts($landing_pg_args);
+	
+	//echo '<pre>';print_r($landing_pgs);echo '</pre>';
+	
+	if (!empty($landing_pgs)) {
+		foreach ($landing_pgs as $lp) {
+		array_push($service_children, $lp);
+		} 	
+	}
 	 ?>
 	
 		<div class="list-block">
