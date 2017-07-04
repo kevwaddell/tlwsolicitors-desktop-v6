@@ -6,6 +6,7 @@ $form = get_field('lp_form');
 $form_active = get_field('lp_form_active');
 $all_forms_active = get_field('all_forms_active', 'option');
 $banner_type = get_field('lp_banner_type');
+//echo '<pre>';print_r($banner_type);echo '</pre>';
  ?>	
 	
 <main id="main-content" class="page-wrapper">
@@ -14,7 +15,8 @@ $banner_type = get_field('lp_banner_type');
 	<?php if ($banner_type == 'img') { ?>
 		<?php get_template_part( 'parts/landingPage/banner', 'img' ); ?>		
 	<?php } ?>
-	<?php if ($banner_type = 'video') { ?>
+	
+	<?php if ($banner_type == 'video') { ?>
 		<?php get_template_part( 'parts/landingPage/banner', 'video' ); ?>		
 	<?php } ?>
 				
