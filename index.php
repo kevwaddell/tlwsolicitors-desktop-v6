@@ -13,6 +13,9 @@
 		?>
 	
 		<main id="main-content">	
+			
+			<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
+			
 			<!-- POSTS LIST -->
 			<?php get_template_part( 'parts/blog/posts', 'list' ); ?>	
 			

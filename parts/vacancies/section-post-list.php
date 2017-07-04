@@ -1,4 +1,5 @@
 <?php 
+global $content;
 //echo '<pre class="debug">';print_r($wp_query);echo '</pre>';
 $post_type = get_query_var('post_type');
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -18,16 +19,18 @@ $args = array(
 	
 $wp_query = new WP_Query( $args );
 
-$section_title = "Positions available";	
+$section_title = "TLW Vacancies";	
 $post_count = $wp_query->post_count;
 $found_posts = $wp_query->found_posts;
 ?>
-<div class="rule"></div>
 <section id="vacancies-section" class="pg-section">
 
 	<div class="container">
+	<h2 class="section-header"><?php echo $section_title; ?></h2>	
+	<div class="lg-intro">
+		<?php echo $content; ?>
+	</div>
 	<?php if ( have_posts() ): ?>
-		<h2 class="section-header"><?php echo $section_title; ?></h2>
 		<div class="row">
 			<?php while ( have_posts() ) : the_post();
 				$date = get_the_date('l - jS F - Y');

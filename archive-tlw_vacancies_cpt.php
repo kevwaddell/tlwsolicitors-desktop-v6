@@ -12,14 +12,9 @@ $form_active = get_field('add_form', $jobs_pg->ID);
 ?>
 
 <!-- MAIN CONTENT START -->
-<main id="main-content">
+<main id="main-content">	
 	
-	<?php if (has_post_thumbnail($jobs_pg->ID)) { ?>
-		<?php get_template_part( 'parts/vacancies/banner', 'img' ); ?>	
-	<?php } ?>		
-	
-	<!-- MAIN TEXT SECTION -->	
-	<?php get_template_part( 'parts/vacancies/archive', 'content' ); ?>
+	<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
 	
 	<!-- VACANCIES LIST SECTION -->
 	<?php get_template_part( 'parts/vacancies/section', 'post-list' ); ?>	

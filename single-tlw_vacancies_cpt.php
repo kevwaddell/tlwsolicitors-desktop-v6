@@ -11,10 +11,7 @@
 			?>	
 			<!-- MAIN CONTENT START -->
 			
-			<main id="main-content">
-				<?php if (has_post_thumbnail($jobs_pg->ID)) { ?>
-					<?php get_template_part( 'parts/vacancies/banner', 'img' ); ?>	
-				<?php } ?>		
+			<main id="main-content">	
 	
 				<?php get_template_part( 'parts/vacancies/section', 'content' ); ?>
 				
