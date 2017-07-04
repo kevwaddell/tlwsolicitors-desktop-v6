@@ -236,6 +236,9 @@ section#video-banner {
 
 section#top-banner {
 .mag-bot(4);	
+	&.hp-banner {
+	.mag-bot(0);	
+	}
 	.banner-links-imgs {
 	.rel;	
 	.mag-bot(0);
@@ -493,6 +496,9 @@ section#contact-us-banner {
 	.font-slab-serif;
 	.font-size(2);
 	.line-h(2);
+		&:last-child {
+		.mag-bot(0);	
+		}
 		i {
 		.abs;
 		left: 50%;
@@ -1353,11 +1359,5 @@ overflow: hidden;
 		width: 100%;
 		height: auto;
 		}	
-	}
-}
-
-html.svg {
-	section.pg-section .with-icon-logo {
-	.bg-img("bg-icon-logo-wht.svg");	
 	}
 }

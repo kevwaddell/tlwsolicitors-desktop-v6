@@ -705,15 +705,17 @@ max-width: 100% !important;
 }
 
 #hp-form {
+.mag-top(4);
 .mag-bot(4);	
 }
 
 #hp-form .gform_wrapper {
 overflow: hidden;
-
+.border(@grayDk; 0.1);
+.pad-all(2);
 	.gform_heading {
 	.text-center;
-	.pad-top(3);
+	//.pad-top(3);
 		span.gform_description {
 		.bold;	
 		.font-size(2);
@@ -740,12 +742,12 @@ overflow: hidden;
 		li {
 		.in-block;	
 		.pad-right(3);
-		.w(38);
+		.w(37);
 		.mag-bot(0);
 		.mag-top(0);
 		
 			&:nth-child(3) {
-			.w(29.5);
+			.w(28.5);
 			.pad-right(0);
 			}
 			

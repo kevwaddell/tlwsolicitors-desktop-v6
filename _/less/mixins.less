@@ -158,53 +158,25 @@ background-color: @col;
 .bg-col-red-dk {
 .bg-col(@redMid);	
 }
-.bg-col-red-lt {
-.bg-col(lighten(@red, 20%));	
-}
-.bg-col-purple {
-.bg-col(@purple);	
-}
-.bg-col-purple-dk {
-.bg-col(@purple-dk);	
-}
-.bg-col-purple-lt {
-.bg-col(@purple-lt);	
-}
 .bg-col-green {
 .bg-col(@green);	
 }
 .bg-col-green-dk {
 .bg-col(@green-dk);	
 }
-.bg-col-green-lt {
-.bg-col(l@green-lt);
-}
-.bg-col-pink {
-.bg-col(@pink);	
-}
-.bg-col-pink-dk {
-.bg-col(@pink-dk);	
-}
-.bg-col-pink-lt {
-.bg-col(@pink-lt);
-}
+
 .bg-col-orange {
 .bg-col(@orange);	
 }
 .bg-col-orange-dk {
 .bg-col(@orange-dk);	
 }
-.bg-col-orange-lt {
-.bg-col(@orange-lt);	
-}
+
 .bg-col-blue {
 .bg-col(@blue);	
 }
 .bg-col-blue-dk {
 .bg-col(@blue-dk);	
-}
-.bg-col-blue-lt {
-.bg-col(@blue-lt);	
 }
 
 .bg-col-facebook {
@@ -422,10 +394,6 @@ border: none;
 border-color:  ~"@{borderCol}"; 
 }
 
-.wht-border-bottom {
-.border-bot(@wht; 0.4); 	
-}
-
 .shadow-inset-none {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -470,56 +438,6 @@ border-radius: 0px;
 	animation-delay: @delay;
 }
 
-.left-trans-gradient(@col) {
-	background-image: linear-gradient(to right, @col, @trans);		
-}
-
-.right-trans-gradient(@col) {
-	background-image: linear-gradient(to left, @col, @trans);		
-}
-
-.mid-gradient-red {
-background: @red; /* Old browsers */
-background: -moz-linear-gradient(left,  @red 0%, @redMid 50%, @red 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  @red 0%, @redMid 50%, @red 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  @red 0%, @redMid 50%, @red 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
-}
-
-.mid-gradient-purple {
-background: @purple; /* Old browsers */
-background: -moz-linear-gradient(left,  @purple 0%, @purple-dk 50%, @purple 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  @purple 0%, @purple-dk 50%, @purple 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  @purple 0%, @purple-dk 50%, @purple 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
-}
-
-.mid-gradient-green {
-background: @green; /* Old browsers */
-background: -moz-linear-gradient(left,  @green 0%, @green-dk 50%, @green 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  @green 0%, @green-dk 50%, @green 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  @green 0%, @green-dk 50%, @green 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
-}
-
-.mid-gradient-pink {
-background: @pink; /* Old browsers */
-background: -moz-linear-gradient(left,  @pink 0%, @pink-dk 50%, @pink 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  @pink 0%, @pink-dk 50%, @pink 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  @pink 0%, @pink-dk 50%, @pink 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
-}
-
-.mid-gradient-orange {
-background: @orange; /* Old browsers */
-background: -moz-linear-gradient(left,  @orange 0%, @orange-dk 50%, @orange 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  @orange 0%, @orange-dk 50%, @orange 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  @orange 0%, @orange-dk 50%, @orange 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
-}
-
-.mid-gradient-blue {
-background: @blue; /* Old browsers */
-background: -moz-linear-gradient(left,  @blue 0%, @blue-dk 50%, @blue 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left,  @blue 0%, @blue-dk 50%, @blue 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right,  @blue 0%, @blue-dk 50%, @blue 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */	
-}
-
 .rule {
 .mag-top(4);
 .mag-bot(4);
@@ -552,25 +470,6 @@ background: linear-gradient(to right,  @blue 0%, @blue-dk 50%, @blue 100%); /* W
 	background-image: -o-linear-gradient(left, @gray, transparent);
 	}
 
-}
-
-.striped-overlay {
-.abs;
-.left(0);
-.top(0);
-.right(0);
-height: 100%;
-.bg-img("striped-img-overlay.png");	
-background-blend-mode: color-burn;
-}
-
-.col-overlay {
-height: 100%;
-width: 100%;
-.abs;
-.left(0);
-.top(0);
-background-blend-mode: multiply;	
 }
 
 .clearfix {

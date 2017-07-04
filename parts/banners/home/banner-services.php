@@ -2,7 +2,7 @@
 //echo '<pre class="debug">';print_r($banner_bg_img);echo '</pre>';
 $hp_banner_quick_links = get_field('hp_banner_quick_links', 'option');	
 ?>
-<section id="top-banner">
+<section id="top-banner" class="hp-banner">
 
 	<div class="container">
 		<ul class="text-center list-unstyled list-inline banner-links-imgs">
