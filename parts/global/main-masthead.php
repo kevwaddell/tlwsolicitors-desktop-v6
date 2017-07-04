@@ -29,4 +29,4 @@ $freephone_num = get_field('freephone_num', 'option');
 			
 </header>
 
-<div class="rule"></div>
+<?php get_template_part( 'parts/global/color', 'strip' ); ?>

@@ -31,12 +31,8 @@ Template Name: General Service page
 		<?php get_template_part( 'parts/banners/banner', 'services' ); ?>	
 		<?php } ?>
 			
-		<?php } ?>		
-		
-		<!-- FREEPHONE NUMBER SECTION -->
-		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
+		<?php } ?>			
 	
-		
 		<!-- MAIN TEXT SECTION -->
 		<?php get_template_part( 'parts/sections/section', 'content' ); ?>
 		

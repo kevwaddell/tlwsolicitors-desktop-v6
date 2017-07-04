@@ -1,6 +1,26 @@
-<?php if ( have_posts() ): ?>
-<section class="page-content post-grid">	
+<?php if ( have_posts() ): 	?>
+<section class="pg-section post-grid">	
 		<div class="container">
+			<h2 class="section-header">
+			<?php if (is_home()) { ?>
+			Latest from <?php bloginfo('name'); ?>
+			<?php } ?>
+			<?php if (is_category()) { ?>
+			Category: <?php single_cat_title(); ?>
+			<?php } ?>
+			<?php if (is_tag()) { ?>
+			Tag: <?php single_tag_title(); ?>
+			<?php } ?>
+			<?php if (is_day()) { ?>
+			Archives: <?php echo get_the_date('M - j - Y'); ?>
+			<?php } ?>
+			<?php if (is_month()) { ?>
+			Archives: <?php echo get_the_date('F - Y'); ?>
+			<?php } ?>
+			<?php if (is_year()) { ?>
+			Archives: <?php echo get_the_date('Y'); ?>
+			<?php } ?>
+			</h2>
 			<div class="row">
 			<?php
 			$cols = array("purple", "green", "pink", "orange", "blue");	

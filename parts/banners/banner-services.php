@@ -28,3 +28,4 @@ $banner_parts = get_field('banner_parts');
 	<?php } ?>
 	<?php } ?>
 </section>
+<div class="rule"></div>

@@ -12834,6 +12834,7 @@ h5 {
   background-color: #7A1039;
 }
 .col-strip {
+  margin-top: 30px;
   margin-bottom: 40px;
   height: 10px;
   position: relative;
@@ -13232,6 +13233,7 @@ h4,
 h5 {
   margin-top: 0px;
   color: #4b4b4b;
+  overflow-wrap: break-word;
 }
 h1,
 h2 {
@@ -13256,10 +13258,10 @@ p:last-child {
   margin-bottom: 0px;
 }
 p.lead {
-  font-weight: normal;
-  color: #918F8F;
-  font-size: 22px;
-  line-height: 27px;
+  font-weight: bold;
+  color: #4b4b4b;
+  font-size: 20px;
+  line-height: 30px;
 }
 article.page .service-label,
 article.post .service-label,
@@ -14695,9 +14697,10 @@ section#slim-top-banner .container {
   position: relative;
 }
 section#slim-top-banner .banner-title {
-  position: relative;
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
   z-index: 2;
-  display: inline-block;
   padding: 10px 20px 10px 20px;
   background-color: white;
   font-size: 25px;
@@ -14747,7 +14750,6 @@ section#video-banner .banner-title {
   font-size: 30px;
   line-height: 100px;
   color: white;
-  margin-bottom: 40px;
 }
 section#video-banner .banner-title span {
   line-height: 30px;
@@ -16288,6 +16290,10 @@ html.svg #footer-info .copyright #footer-logo {
 .access-btns button.access-btn.active {
   background-color: #4b4b4b;
   color: white;
+}
+.page-tools {
+  width: 40px;
+  float: right;
 }
 .page-tools .tool-btns-wrap {
   padding-left: 4px;

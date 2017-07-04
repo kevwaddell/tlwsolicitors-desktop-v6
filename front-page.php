@@ -18,8 +18,6 @@
 		<!-- HOME PAGE FORM SECTION -->
 		<?php get_template_part( 'parts/sections/home/section', 'form' ); ?>
 		
-		<?php get_template_part( 'parts/global/color', 'strip' ); ?>	
-		
 		<!-- MAIN TEXT SECTION -->
 		
 		<?php get_template_part( 'parts/sections/home/section', 'content' ); ?>

@@ -19,9 +19,7 @@ Template Name: About page template
 
 			<?php get_template_part( 'parts/banners/banner', 'img' ); ?>			
 
-		<?php } ?>	
-		
-		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
+		<?php } ?>			
 		
 		<!-- MAIN TEXT SECTION -->
 		<?php get_template_part( 'parts/sections/section', 'content' ); ?>	

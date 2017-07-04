@@ -12,9 +12,7 @@ Template Name: Sitemap page
  
 		<?php if (has_post_thumbnail()) { ?>
 			<?php get_template_part( 'parts/banners/banner', 'img' ); ?>			
-		<?php } ?>	
-		
-		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
+		<?php } ?>		
 
 		<article <?php post_class("content-section"); ?>>
 	

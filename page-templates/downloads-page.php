@@ -12,11 +12,7 @@ Template Name: Downloads archive page template
 	?>	
 	
 	<!-- MAIN CONTENT START -->
-	<main id="main-content">
-
-		<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
-		
-		<?php get_template_part( 'parts/global/color', 'strip' ); ?>				
+	<main id="main-content">	
 		
 		<?php if ($sections_active) { 
 		$sections = get_field('sections'); 

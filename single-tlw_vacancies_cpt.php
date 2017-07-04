@@ -14,9 +14,7 @@
 			<main id="main-content">
 				<?php if (has_post_thumbnail($jobs_pg->ID)) { ?>
 					<?php get_template_part( 'parts/vacancies/banner', 'img' ); ?>	
-				<?php } ?>	
-				
-				<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
+				<?php } ?>		
 	
 				<?php get_template_part( 'parts/vacancies/section', 'content' ); ?>
 				

@@ -16,8 +16,6 @@
 				<?php get_template_part( 'parts/blog/banner', 'single' ); ?>
 				<?php } ?>
 				
-				<?php get_template_part( 'parts/global/color', 'strip' ); ?>
-				
 				<?php get_template_part( 'parts/blog/sections/section', 'content' ); ?>
 				
 				<?php if ($gallery_active) { ?>

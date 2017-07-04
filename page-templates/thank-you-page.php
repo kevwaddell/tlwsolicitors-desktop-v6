@@ -15,9 +15,7 @@ Template Name: Thank page template
 		} else {
 		$return_id = $post->post_parent;	
 		}
-		?>
-		
-		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
+		?>	
 
 			<article <?php post_class("content-section"); ?>>
 				

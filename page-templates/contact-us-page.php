@@ -17,8 +17,6 @@ $sections_active = get_field('sections_active');
 	<?php if (has_post_thumbnail()) { ?>
 	<?php get_template_part( 'parts/banners/contact/banner', 'intro' ); ?>				
 	<?php } ?>	
-
-	<?php get_template_part( 'parts/global/color', 'strip' ); ?>	
 	
 	<!-- MAIN TEXT SECTION -->
 	<?php get_template_part( 'parts/sections/section', 'content' ); ?>	

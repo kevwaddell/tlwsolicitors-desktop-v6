@@ -3,9 +3,7 @@
 	<?php
 	$site_map_page = get_page_by_title('Site map');
 	?>	
-	<main id="main-content">
-		
-		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
+	<main id="main-content">		
 		
 		<article <?php post_class("content-section"); ?>>
 		

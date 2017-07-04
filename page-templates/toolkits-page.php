@@ -12,11 +12,7 @@ Template Name: Toolkits archive page
 	
 	<!-- MAIN CONTENT START -->
 	<main id="main-content">	
-		
-		<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
-		
-		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
-		
+
 		<!-- TOOLKITS GRID -->
 		<?php get_template_part( 'parts/sections/section', 'toolkits' ); ?>
 		

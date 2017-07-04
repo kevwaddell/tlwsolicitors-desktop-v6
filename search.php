@@ -8,8 +8,6 @@
 	//echo '<pre>';print_r($posts);echo '</pre>';
 	?>
 	<main id="main-content">
-			 		
-	 		<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
 
 			<article class="page search-results">
 				<h1 class="text-center" style="margin-top: 20px;">Search Results</h1>

@@ -10,11 +10,7 @@ $img_post = $news_page;
 }
 ?>
 <!-- MAIN CONTENT START -->
-<main id="main-content">
-	
-	<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
-	
-	<?php get_template_part( 'parts/global/color', 'strip' ); ?>		
+<main id="main-content">	
 	
 	<!-- POSTS LIST -->
 	<?php get_template_part( 'parts/blog/posts', 'list' ); ?>	

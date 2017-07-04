@@ -11,3 +11,4 @@ $date = get_the_date('l - jS F - Y');
 		<div class="img" style="background-image: url(<?php add_banner_feat_img($img_post);?>)"></div>
 	</div>
 </section>
+<div class="rule"></div>

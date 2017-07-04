@@ -55,7 +55,7 @@ $banner_feat_img = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail' )
 		
 		<div class="row">
 			
-			<div class="col-xs-11">
+			<div class="col-xs-10">
 				
 				<div class="entry">
 				
@@ -83,7 +83,7 @@ $banner_feat_img = wp_get_attachment_image_src($post_thumbnail_id, 'thumbnail' )
 				
 			</div>
 			
-			<div class="col-xs-1">
+			<div class="col-xs-2">
 			<?php get_sidebar(); ?>
 			</div>
 			

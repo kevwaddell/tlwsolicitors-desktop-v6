@@ -19,8 +19,6 @@ $banner_type = get_field('lp_banner_type');
 	<?php if ($banner_type == 'video') { ?>
 		<?php get_template_part( 'parts/landingPage/banner', 'video' ); ?>		
 	<?php } ?>
-				
-	<?php get_template_part( 'parts/global/color', 'strip' ); ?>
 	
 	<!-- MAIN TEXT SECTION -->			 	
  	<?php get_template_part( 'parts/landingPage/section', 'content' ); ?>

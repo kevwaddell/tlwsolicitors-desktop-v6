@@ -816,6 +816,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/_\/js\/widowFix.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_\/js\/min\/widowFix.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/_\/less\/accessability.less": {
 		"aP": 0,
 		"bl": 0,

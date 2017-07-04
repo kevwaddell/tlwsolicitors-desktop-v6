@@ -16,6 +16,10 @@
 		$(document).ready(function(){	
 		$.getScript("https://api.feefo.com/api/javascript/tlw-solicitors");
 		
+		 $('.main-txt > p,h1,h2,h3,h4,h5,h6').widowFix({
+			 letterLimit: 10
+		 });
+		
 		$(document).bind('gform_page_loaded', function(event, form_id, current_page){
         // code to be trigger when next/previous page is loaded
 	        if ( form_id == 22 && current_page == 12) {

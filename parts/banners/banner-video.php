@@ -32,3 +32,4 @@ $banner_title_active = get_field('banner_title_active');
 	</div>
 	
 </section>
+<div class="rule"></div>

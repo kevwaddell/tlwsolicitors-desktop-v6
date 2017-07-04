@@ -30,3 +30,4 @@ $email = get_field('main_email', 'options');
 		</div>
 	</div>		
 </section>
+<div class="rule"></div>

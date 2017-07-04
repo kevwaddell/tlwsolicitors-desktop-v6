@@ -25,7 +25,7 @@ $more_btn_text = "Continue Reading";
 			
 		<div class="row">
 
-			<div class="col-xs-11">
+			<div class="col-xs-10">
 				
 				<div class="entry">
 					
@@ -48,7 +48,7 @@ $more_btn_text = "Continue Reading";
 				
 			</div>
 			
-			<div class="col-xs-1">
+			<div class="col-xs-2">
 			<?php get_sidebar(); ?>
 			</div>
 			
