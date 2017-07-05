@@ -1606,10 +1606,10 @@
 		"oAP": "\/parts\/banners\/home\/banner-video.php",
 		"oF": 0
 		},
-	"\/parts\/blog\/archive-dropdown.php": {
+	"\/parts\/blog\/archive-dropdowns.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/parts\/blog\/archive-dropdown.php",
+		"oAP": "\/parts\/blog\/archive-dropdowns.php",
 		"oF": 0
 		},
 	"\/parts\/blog\/banner-index.php": {
@@ -1630,10 +1630,10 @@
 		"oAP": "\/parts\/blog\/category-dropdown.php",
 		"oF": 0
 		},
-	"\/parts\/blog\/index-dropdowns.php": {
+	"\/parts\/blog\/date-dropdown.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/parts\/blog\/index-dropdowns.php",
+		"oAP": "\/parts\/blog\/date-dropdown.php",
 		"oF": 0
 		},
 	"\/parts\/blog\/posts-list.php": {

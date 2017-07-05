@@ -20,7 +20,7 @@
 			<?php get_template_part( 'parts/blog/posts', 'list' ); ?>	
 			
 			<!-- DROPDOWN SECTION -->
-			<?php get_template_part( 'parts/blog/index', 'dropdowns' ); ?>		
+			<?php get_template_part( 'parts/blog/archive', 'dropdowns' ); ?>		
 
 		</main><!-- CONTENT END -->
 

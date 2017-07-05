@@ -37,55 +37,8 @@ $archives = wp_get_archives($archives_args);
 			</div>
 		<?php } ?>
 		</div>
-		<div class="row blog-dropdowns">
-				<div class="col-xs-6">
-					<?php if ($cats) { ?>
-					<select id="cats" class="selectpicker" data-width="100%">
-						<option value="0" data-hidden="true">Blog Categories</option>
-						<?php foreach ($cats as $cat) { 
-						$category_id = 	$cat->term_id;
-						?>
-						<option value="<?php echo get_category_link( $category_id ); ?>"><?php echo get_cat_name($category_id); ?></option>
-						<?php } ?>
-					</select>
-					<script type="text/javascript">
-					<!--
-					var cats_dropdown = document.getElementById("cats");
-					function onCatsChange() {
-						if ( cats_dropdown.options[cats_dropdown.selectedIndex].value != 0 ) {
-							location.href = cats_dropdown.options[cats_dropdown.selectedIndex].value;
-						}
-					}
-					cats_dropdown.onchange = onCatsChange;
-					-->
-				</script>
-
-					<?php } ?>
-				</div>
-				<div class="col-xs-6">
-					<?php if ($archives) { ?>
-					<div class="cats-dropdown">
-						
-						<select id="archive-dd" class="selectpicker" data-width="100%">
-							<option value="0" data-hidden="true">Blog Archives</option>
-							<?php echo $archives; ?>
-						</select>
-						
-					</div>
-					<script type="text/javascript">
-						<!--
-						var dropdown = document.getElementById("archive-dd");
-						function onArchiveChange() {
-							if ( dropdown.options[dropdown.selectedIndex].value != 0 ) {
-								location.href = dropdown.options[dropdown.selectedIndex].value;
-							}
-						}
-						dropdown.onchange = onArchiveChange;
-						-->
-					</script>
-					<?php } ?>
-				</div>
-			</div>
 	</div>
+	<!-- DROPDOWN SECTION -->
+	<?php get_template_part( 'parts/blog/archive', 'dropdowns' ); ?>
 	
 </section>

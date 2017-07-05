@@ -13863,18 +13863,18 @@ article.tlw_landing_page #content-extra #content-extra-inner {
   font-size: 20px;
   line-height: 30px;
 }
-.posts-top-bar .bootstrap-select .btn:focus {
+.archive-dropdowns .bootstrap-select .btn:focus {
   outline: none !important;
 }
-.posts-top-bar .dropdown-menu a {
+.archive-dropdowns .dropdown-menu a {
   color: #4b4b4b;
 }
-.posts-top-bar .dropdown-menu a:hover,
-.posts-top-bar .dropdown-menu a:active,
-.posts-top-bar .dropdown-menu a:focus {
+.archive-dropdowns .dropdown-menu a:hover,
+.archive-dropdowns .dropdown-menu a:active,
+.archive-dropdowns .dropdown-menu a:focus {
   color: #C60751;
 }
-.posts-top-bar .bootstrap-select button {
+.archive-dropdowns .bootstrap-select button {
   padding: 0px;
   line-height: 50px;
   padding-left: 20px;
@@ -13890,10 +13890,10 @@ article.tlw_landing_page #content-extra #content-extra-inner {
   font-stretch: normal;
   font-size: 20px;
 }
-.posts-top-bar .bootstrap-select button .caret {
+.archive-dropdowns .bootstrap-select button .caret {
   display: none;
 }
-.posts-top-bar .bootstrap-select button:after {
+.archive-dropdowns .bootstrap-select button:after {
   content: "\f107";
   font-family: FontAwesome;
   position: absolute;
@@ -13904,15 +13904,15 @@ article.tlw_landing_page #content-extra #content-extra-inner {
   padding-right: 20px;
   font-size: 20px;
 }
-.posts-top-bar .bootstrap-select button:hover,
-.posts-top-bar .bootstrap-select button:active,
-.posts-top-bar .bootstrap-select button:focus {
+.archive-dropdowns .bootstrap-select button:hover,
+.archive-dropdowns .bootstrap-select button:active,
+.archive-dropdowns .bootstrap-select button:focus {
   background-color: #4b4b4b;
   color: white;
 }
-.posts-top-bar .bootstrap-select button:hover:after,
-.posts-top-bar .bootstrap-select button:active:after,
-.posts-top-bar .bootstrap-select button:focus:after {
+.archive-dropdowns .bootstrap-select button:hover:after,
+.archive-dropdowns .bootstrap-select button:active:after,
+.archive-dropdowns .bootstrap-select button:focus:after {
   color: white;
 }
 .post-grid .row {

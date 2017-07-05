@@ -21,7 +21,7 @@ $page_icon = get_field('page_icon', $news_page->ID);
 	<?php get_template_part( 'parts/blog/posts', 'list' ); ?>	
 	
 	<!-- DROPDOWN SECTION -->
-	<?php get_template_part( 'parts/blog/index', 'dropdowns' ); ?>
+	<?php get_template_part( 'parts/blog/archive', 'dropdowns' ); ?>
 
 </main>		
 <!-- MAIN CONTENT CONTAINER END -->
