@@ -14117,69 +14117,6 @@ article.tlw_landing_page #content-extra #content-extra-inner {
   font-size: 20px;
   line-height: 30px;
 }
-body#landing-page .lp-sidebar .sb-panel {
-  padding: 20px;
-  border: 1px solid #4b4b4b;
-  font-size: 20px;
-  line-height: 30px;
-}
-body#landing-page .lp-sidebar .sb-panel span.header {
-  font-size: 30px;
-  line-height: 30px;
-  color: #C60751;
-  margin-bottom: 10px;
-  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-stretch: normal;
-}
-body#landing-page .lp-sidebar .sb-panel i.panel-icon {
-  display: inline-block;
-  width: 80px;
-  line-height: 80px;
-  background-color: white;
-  border: 1px solid #4b4b4b;
-  font-size: 50px;
-  color: #C60751;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  margin-top: -60px;
-  margin-bottom: 20px;
-}
-body#landing-page .lp-sidebar .sb-plug-btn .panel-txt {
-  margin-bottom: 10px;
-}
-body#landing-page .lp-sidebar .sb-plug-btn .btn {
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
-  border: none;
-  text-transform: uppercase;
-  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-stretch: normal;
-  background-color: #C60751;
-  color: white;
-  padding: 0px;
-  line-height: 50px;
-  position: relative;
-  font-size: 20px;
-}
-body#landing-page .lp-sidebar .sb-plug-btn .btn:after {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  line-height: 50px;
-  font-family: FontAwesome;
-  content: "\f107";
-  font-size: 30px;
-  padding-right: 20px;
-}
-body#landing-page .lp-sidebar .sb-plug-btn .btn:hover,
-body#landing-page .lp-sidebar .sb-plug-btn .btn:active,
-body#landing-page .lp-sidebar .sb-plug-btn .btn:focus {
-  background-color: #4b4b4b;
-}
 .toolkit-info .tk-img {
   width: 100%;
   height: 263px;

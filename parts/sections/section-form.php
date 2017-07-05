@@ -18,7 +18,10 @@ $section_title = $form->title;
 		
 		<h2 class="section-header"><?php echo $section_title; ?></h2>
 		
-		<?php gravity_form($form->id, false, true, false, '', true); ?>
+		<?php 
+			gravity_form($form->id, false, true, false, '', true);
+			gravity_form_enqueue_scripts( $form->id );	
+		?>
 		
 	</div>
 

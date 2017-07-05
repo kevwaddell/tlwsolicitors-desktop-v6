@@ -11,3 +11,4 @@ $page_icon = get_field('page_icon', $post->ID);
 		<i class="fa <?php echo $page_icon; ?>"></i>
 	</div>
 </section>
+<div class="rule"></div>

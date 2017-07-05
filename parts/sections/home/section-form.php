@@ -8,7 +8,10 @@ $form = get_field('hp_form', 'option');
 ?>
 <section id="hp-form" class="pg-section">
 	<div class="container">
-		<?php gravity_form($form->id, false, true, false, '', true); ?>
+		<?php 
+		gravity_form($form->id, false, true, false, '', true);
+		gravity_form_enqueue_scripts( $form->id );	
+		 ?>
 	</div>
 </section>
 <?php } ?>
