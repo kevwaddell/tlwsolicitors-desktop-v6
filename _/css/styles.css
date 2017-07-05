@@ -14632,10 +14632,11 @@ section#top-banner .banner-links-imgs {
 }
 section#top-banner .banner-links-imgs li {
   width: calc(100% / 3);
-  height: 350px;
+  height: 300px;
   margin-bottom: 0px;
   padding-left: 2px;
   padding-right: 2px;
+  float: left;
 }
 section#top-banner .banner-links-imgs.links-total-4 li {
   width: calc(100% / 2);
@@ -14663,13 +14664,13 @@ section#top-banner .banner-links-imgs span.img {
 }
 section#top-banner .banner-links-imgs span.title {
   position: absolute;
-  top: 260px;
+  top: 230px;
   left: 0px;
   right: 0px;
   bottom: 0px;
   background-color: white;
   background-color: rgba(255, 255, 255, 0.8);
-  line-height: 90px;
+  line-height: 70px;
   text-transform: uppercase;
   padding: 0px 20px 0px 20px;
   color: #4b4b4b;
@@ -14714,7 +14715,7 @@ section#top-banner .banner-links-imgs a:focus span.img {
 section#top-banner .banner-links-imgs a:hover span.title,
 section#top-banner .banner-links-imgs a:active span.title,
 section#top-banner .banner-links-imgs a:focus span.title {
-  line-height: 350px;
+  line-height: 300px;
   top: 0px;
   background-color: #C60751;
   background-color: rgba(198, 7, 81, 0.8);

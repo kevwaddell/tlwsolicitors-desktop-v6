@@ -5,7 +5,7 @@ $hp_banner_quick_links = get_field('hp_banner_quick_links', 'option');
 <section id="top-banner" class="hp-banner">
 
 	<div class="container">
-		<ul class="text-center list-unstyled list-inline banner-links-imgs">
+		<ul class="text-center list-unstyled banner-links-imgs">
 		<?php foreach ($hp_banner_quick_links as $bl) { 
 		$thumb_id = get_post_thumbnail_id($bl['link_page']);
 		$bg_full_src = wp_get_attachment_image_src($thumb_id, 'full' );
