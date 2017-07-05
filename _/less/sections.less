@@ -165,7 +165,6 @@ section#slim-top-banner {
 .h(30);
 .rel;
 .over-hide;
-.mag-bot(4);
 
 	.container {
 	height: 100%;	
@@ -235,17 +234,18 @@ section#video-banner {
 }
 
 section#top-banner {
-.mag-bot(4);	
+.mag-bot(3.6);	
 	&.hp-banner {
 	.mag-bot(0);	
 	}
 	.banner-links-imgs {
 	.rel;	
+	.over-hide;
 	.mag-bot(0);
 		li {
 		width: calc(~"100% / 3");
-		.h(30);
-		.mag-bot(0);
+		.h(28);
+		.mag-bot(0.4);
 		.pad-left(0.2);
 		.pad-right(0.2);
 		.fleft;
@@ -275,7 +275,7 @@ section#top-banner {
 		
 		span.title {
 		.abs;
-		.top((30 - 7));
+		.top((28 - 7));
 		.left(0);
 		.right(0);
 		.bottom(0);	
@@ -314,7 +314,7 @@ section#top-banner {
 				filter: blur(5px);	
 				}
 				span.title {
-				.line-h(30);
+				.line-h(28);
 				.top(0);	
 				.trans-bg(@red; 0.8);
 				.txt-col-wht;
@@ -633,7 +633,7 @@ section#contact-us-banner {
 	.pad-all(1);
 	.w(39);
 	.border(@gray; 0.1);	
-	margin: -62px auto 20px auto;
+	margin: -52px auto 20px auto;
 	.bg-col(@wht);
 	.txt-col-grayDk;
 	}

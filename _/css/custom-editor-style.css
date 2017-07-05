@@ -7105,13 +7105,13 @@ button.close {
   transition: none;
 }
 .rule {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   height: 1px;
   position: relative;
 }
-.rule.mag-top-80 {
-  margin-top: 80px;
+.rule.mag-top-60 {
+  margin-top: 60px;
 }
 .rule:before,
 .rule:after {
@@ -7185,13 +7185,13 @@ body.mce-content-body ol {
 }
 body.mce-content-body hr {
   border: none;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   height: 1px;
   position: relative;
 }
-body.mce-content-body hr.mag-top-80 {
-  margin-top: 80px;
+body.mce-content-body hr.mag-top-60 {
+  margin-top: 60px;
 }
 body.mce-content-body hr:before,
 body.mce-content-body hr:after {

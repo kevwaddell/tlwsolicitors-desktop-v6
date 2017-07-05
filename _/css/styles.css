@@ -12509,13 +12509,13 @@ Copyright (c) 2014 Daniel Eden
   transition: none;
 }
 .rule {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   height: 1px;
   position: relative;
 }
-.rule.mag-top-80 {
-  margin-top: 80px;
+.rule.mag-top-60 {
+  margin-top: 60px;
 }
 .rule:before,
 .rule:after {
@@ -12700,8 +12700,8 @@ h5 {
   background-color: #7A1039;
 }
 .col-strip {
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 25px;
+  margin-bottom: 30px;
   height: 10px;
   position: relative;
 }
@@ -12734,7 +12734,7 @@ h5 {
 /* Header area */
 /* --------------------------- */
 header[role="banner"] {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 header[role="banner"] .logo {
   margin: 0px;
@@ -13262,16 +13262,16 @@ article.post hr,
 article.tlw_vacancies_cpt hr,
 article.tlw_landing_page hr {
   border: none;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   height: 1px;
   position: relative;
 }
-article.page hr.mag-top-80,
-article.post hr.mag-top-80,
-article.tlw_vacancies_cpt hr.mag-top-80,
-article.tlw_landing_page hr.mag-top-80 {
-  margin-top: 80px;
+article.page hr.mag-top-60,
+article.post hr.mag-top-60,
+article.tlw_vacancies_cpt hr.mag-top-60,
+article.tlw_landing_page hr.mag-top-60 {
+  margin-top: 60px;
 }
 article.page hr:before,
 article.post hr:before,
@@ -14556,7 +14556,6 @@ section#slim-top-banner {
   height: 300px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 40px;
 }
 section#slim-top-banner .container {
   height: 100%;
@@ -14621,19 +14620,20 @@ section#video-banner .banner-title span {
   line-height: 30px;
 }
 section#top-banner {
-  margin-bottom: 40px;
+  margin-bottom: 36px;
 }
 section#top-banner.hp-banner {
   margin-bottom: 0px;
 }
 section#top-banner .banner-links-imgs {
   position: relative;
+  overflow: hidden;
   margin-bottom: 0px;
 }
 section#top-banner .banner-links-imgs li {
   width: calc(100% / 3);
-  height: 300px;
-  margin-bottom: 0px;
+  height: 280px;
+  margin-bottom: 4px;
   padding-left: 2px;
   padding-right: 2px;
   float: left;
@@ -14664,7 +14664,7 @@ section#top-banner .banner-links-imgs span.img {
 }
 section#top-banner .banner-links-imgs span.title {
   position: absolute;
-  top: 230px;
+  top: 210px;
   left: 0px;
   right: 0px;
   bottom: 0px;
@@ -14715,7 +14715,7 @@ section#top-banner .banner-links-imgs a:focus span.img {
 section#top-banner .banner-links-imgs a:hover span.title,
 section#top-banner .banner-links-imgs a:active span.title,
 section#top-banner .banner-links-imgs a:focus span.title {
-  line-height: 300px;
+  line-height: 280px;
   top: 0px;
   background-color: #C60751;
   background-color: rgba(198, 7, 81, 0.8);
@@ -14945,13 +14945,13 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 }
 .pg-section .lg-intro hr {
   border: none;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   height: 1px;
   position: relative;
 }
-.pg-section .lg-intro hr.mag-top-80 {
-  margin-top: 80px;
+.pg-section .lg-intro hr.mag-top-60 {
+  margin-top: 60px;
 }
 .pg-section .lg-intro hr:before,
 .pg-section .lg-intro hr:after {
@@ -15060,7 +15060,7 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   padding: 10px;
   width: 390px;
   border: 1px solid #918F8F;
-  margin: -62px auto 20px auto;
+  margin: -52px auto 20px auto;
   background-color: white;
   color: #4b4b4b;
 }

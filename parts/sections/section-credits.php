@@ -5,7 +5,7 @@ $section_title = "Awards & Accreditations";
 //echo '<pre>';print_r($credits);echo '</pre>';
 ?>
 
-<div class="rule mag-top-80"></div>
+<div class="rule mag-top-60"></div>
 <section id="credits-section" class="pg-section">
 	<div class="container">
 		<h2 class="section-header"><?php echo $section_title; ?></h2>	
