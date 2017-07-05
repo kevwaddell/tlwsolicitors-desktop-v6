@@ -1097,23 +1097,6 @@
 		"sM": 0,
 		"sU": 0
 		},
-	"\/_\/less\/landing-page.less": {
-		"aP": 0,
-		"bl": 0,
-		"dJ": 0,
-		"ft": 1,
-		"ie": 1,
-		"iI": 0,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/_\/css\/landing-page.css",
-		"oF": 1,
-		"oS": 0,
-		"rU": 0,
-		"sI": 0,
-		"sM": 0,
-		"sU": 0
-		},
 	"\/_\/less\/mixins.less": {
 		"aP": 0,
 		"bl": 0,
@@ -1820,6 +1803,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/landingPage\/contact-form.php",
+		"oF": 0
+		},
+	"\/parts\/landingPage\/main-masthead.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/landingPage\/main-masthead.php",
 		"oF": 0
 		},
 	"\/parts\/landingPage\/panels-sidebar.php": {
