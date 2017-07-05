@@ -30,6 +30,7 @@ $found_posts = $wp_query->found_posts;
 	<div class="lg-intro">
 		<?php echo $content; ?>
 	</div>
+	<div class="rule"></div>
 	<?php if ( have_posts() ): ?>
 		<div class="row">
 			<?php while ( have_posts() ) : the_post();

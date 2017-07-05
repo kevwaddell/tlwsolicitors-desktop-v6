@@ -813,6 +813,7 @@ section#contact-us-banner {
 	article.hentry {
 	.pad-all(2);
 	.border(@grayDk; 0.1);
+	.mag-top(3);
 		.close-date {
 		.bg-col-red;
 		.txt-col-wht;
@@ -860,6 +861,11 @@ section#contact-us-banner {
 			}
 		}
 			
+	}
+	
+	.col-xs-6:first-child article.hentry, 
+	.col-xs-6:nth-child(2) article.hentry {
+	.mag-top(0);	
 	}
 }
 

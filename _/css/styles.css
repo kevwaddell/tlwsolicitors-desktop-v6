@@ -15168,6 +15168,7 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 #vacancies-section article.hentry {
   padding: 20px;
   border: 1px solid #4b4b4b;
+  margin-top: 30px;
 }
 #vacancies-section article.hentry .close-date {
   background-color: #C60751;
@@ -15213,6 +15214,10 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 #vacancies-section article.hentry a:focus {
   background-color: #4b4b4b;
   color: white;
+}
+#vacancies-section .col-xs-6:first-child article.hentry,
+#vacancies-section .col-xs-6:nth-child(2) article.hentry {
+  margin-top: 0px;
 }
 #blog-posts .posts-grid {
   margin-bottom: 40px;
