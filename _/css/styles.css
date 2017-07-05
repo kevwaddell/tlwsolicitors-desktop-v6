@@ -12814,9 +12814,7 @@ header[role="banner"] .info-links a:focus {
   color: #C60751;
 }
 header[role="banner"] .tel-num {
-  display: inline-block;
   line-height: 62px;
-  float: right;
 }
 html.svg header[role="banner"] .logo a {
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/tlw-logo-wide.svg);

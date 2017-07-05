@@ -1,6 +1,7 @@
 <?php 
 $email = get_field( 'main_email', 'options' );
 $contact_pg = get_page_id( 'contact-us' );
+$freephone_num = get_field('freephone_num', 'option');	
 ?>
 
 <header class="header" role="banner">
@@ -8,16 +9,14 @@ $contact_pg = get_page_id( 'contact-us' );
 	<div class="header-inner">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6">
+				<div class="col-xs-4">
 					<div class="text-hide logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></div>
 				</div>
-				<div class="col-xs-6">
-					<div class="header-action-btns pull-right">
-						<a href="<?php echo get_option('home'); ?>/" class="btn btn-default"><span class="sr-only"><?php bloginfo('name'); ?></span><i class="fa fa-home fa-lg"></i></a>
-						<a href="<?php echo get_permalink($contact_pg); ?>" class="btn btn-default"><span class="sr-only"><?php get_the_title($contact_pg); ?></span><i class="fa fa-paper-plane fa-lg"></i></a>
-						<a href="<?php echo get_permalink($contact_pg); ?>#find-us" class="btn btn-default"><span class="sr-only">Find us</span><i class="fa fa-map-marker fa-lg"></i></a>
-						<a href="mailto:<?php echo $email;?>" class="btn btn-default"><span class="sr-only">Email us</span><i class="fa fa-envelope fa-lg"></i></a>
-					</div>
+				<div class="col-xs-5">
+					<?php wp_nav_menu(array( 'container' => '', 'theme_location' => 'top_bar_menu', 'menu_class'  => 'info-links list-inline','fallback_cb' => false ) ); ?>
+				</div>
+				<div class="col-xs-3">
+					<div class="tel-num bold txt-col-red inline pull-right"><span class="caps txt-col-gray font-lite">Freephone: </span> <?php echo $freephone_num; ?></div>
 				</div>
 			</div>
 		</div>
