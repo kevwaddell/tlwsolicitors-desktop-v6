@@ -18,7 +18,7 @@ $videos = $section['videos'];
 		<div class="lg-intro">
 			<?php the_content(); ?>
 		</div>
-		
+		<div class="rule"></div>
 		<div class="row">
 			<?php foreach ($videos as $k => $poster) { 
 			$poster_full_src = wp_get_attachment_image_src($poster['poster_img'], 'full' );
@@ -40,7 +40,7 @@ $videos = $section['videos'];
 			$poster_src = wp_get_attachment_image_src($video_poster_id, 'full' );
 			?>
 			<div id="video-<?php echo ($k+1); ?>">
-				<video controls preload="auto" id="service-video" poster="<?php echo $poster_src[0];?>">
+				<video controls preload="auto" id="service-video-<?php echo ($k+1); ?>" poster="<?php echo $poster_src[0];?>">
 					<source src="<?php echo $video_webm; ?>" type="video/webm" />
 					<source src="<?php echo $video_mp4; ?>" type="video/mp4" />
 				</video>

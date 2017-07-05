@@ -15161,6 +15161,10 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   line-height: 16px;
   margin-bottom: 10px;
 }
+#our-team-section .col-xs-6:first-child .profile,
+#our-team-section .col-xs-6:nth-child(2) .profile {
+  margin-top: 0px;
+}
 #vacancies-section article.hentry {
   padding: 20px;
   border: 1px solid #4b4b4b;
@@ -15391,6 +15395,10 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+#video-section .col-xs-6:first-child a.video-link,
+#video-section .col-xs-6:nth-child(2) a.video-link {
+  margin-top: 0px;
+}
 #downloads-section h2 {
   margin-bottom: 10px;
 }
@@ -15509,6 +15517,12 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 #downloads-section a.download-link:focus span.title:after {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
+}
+#downloads-section .col-xs-3:first-child a.download-link,
+#downloads-section .col-xs-3:nth-child(2) a.download-link,
+#downloads-section .col-xs-3:nth-child(3) a.download-link,
+#downloads-section .col-xs-3:nth-child(4) a.download-link {
+  margin-top: 0px;
 }
 #gallery-section .gallery-items {
   z-index: 2;

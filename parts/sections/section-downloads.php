@@ -14,7 +14,7 @@ $download_section_files = $section['download_section_files'];
 		<div class="lg-intro">
 			<?php the_content(); ?>
 		</div>
-		
+		<div class="rule"></div>
 		<div class="row">
 		
 			<?php foreach ($download_section_files as $k => $file) { 

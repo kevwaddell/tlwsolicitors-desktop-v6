@@ -5,15 +5,18 @@ $section_title = "Our Team";
 //echo '<pre class="debug">';print_r($profiles);echo '</pre>';
 ?>
 <?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
+
 <section id="our-team-section" class="pg-section">
 	<div class="container">
 		
-		<div class="service-label font-slab-serif caps txt-col-gray"><?php the_title(); ?></div>		
+		<h2 class="section-header"><?php the_title(); ?></h2>		
 
 		<div class="intro-txt">
 			<?php the_content(); ?>
 		</div>
-	
+		
+		<div class="rule"></div>
+		
 		<div class="row">
 			<?php foreach ($profiles as $post) : ?>
 			<?php
