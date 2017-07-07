@@ -8,8 +8,6 @@ $all_forms_active = get_field('all_forms_active', 'option');
 $banner_type = get_field('lp_banner_type');
 //echo '<pre>';print_r($banner_type);echo '</pre>';
  ?>	
-	
-<main id="main-content" class="page-wrapper">
 	<!-- BANNER SECTION -->
 	
 	<?php if ($banner_type == 'img') { ?>
@@ -27,8 +25,7 @@ $banner_type = get_field('lp_banner_type');
 	<?php if ($form_active && $all_forms_active) { ?>
 	<?php get_template_part( 'parts/landingPage/contact', 'form' ); ?>		
 	<?php } ?>
-	
-</main>
+
 		
 <?php endwhile; ?>
 <?php endif; ?>

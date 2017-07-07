@@ -1,4 +1,6 @@
 body {
+width: 85%;
+padding: 50pt;
 	.col-xs-1, 
 	.col-xs-10, 
 	.col-xs-11, 
@@ -17,18 +19,25 @@ body {
 	padding-right: 0px;
 	}
 	
-	.container {
+	.container, .row {
+	min-width: 980px;
+	max-width: 980px;
 	padding-left: 0px;
 	padding-right: 0px;
+	}
+	
+	.row {
+	margin-left: 0px;
+	margin-right: 0px;	
 	}
 }
 
 .tlw-wrapper {
-	header[role=banner].header, header[role=banner].abs-header {
+	header[role=banner] {
 	display: block;
 	position: static;
 	padding: 0px;
-	margin: 0px 50px 0px 0px;
+	margin: 0px 0px 30px 0px;
 	border-bottom: 2px solid gray;
 		.logo {
 		font-family: sans-serif;
@@ -38,6 +47,8 @@ body {
 		text-align: left;
 		width: 100%;
 		line-height: 100px;
+		width: 100%;
+		max-width: 100%;
 			a {
 			pointer-events: none;
 			height: 100px;
@@ -50,7 +61,7 @@ body {
 		padding-right: 0px;
 		}
 		
-		.contact-links, .tag-line, .header-action-btns {
+		.info-links, .tel-num, .header-action-btns {
 		display: none;	
 		}
 	}
@@ -101,9 +112,21 @@ font-size: 20px;
 text-transform: uppercase;	
 }
 
+.rule {
+display: none;
+}
+
 .content, .content-section {
 font-family: sans-serif;
 border: none;
+padding-bottom: 100pt;
+
+	.rule {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	height: 1px;
+	border: 1px solid gray;	
+	}
 
 	h1 {
 	font-size: 60px;	
@@ -147,12 +170,6 @@ border: none;
 		}
 	}
 }
-
-#side-nav, #top-nav,.header-links, .banner-form, .nav-action, .contact-links, .footer-pg-info, .sidebar, .access-btns, .links-menu, 
-#footer-info, #search-pop-up, #catapult-cookie-bar, #breadcrumbs,
-#booklet-download-btn, #booklet-download,.feat-img-wide,.user-links, .banner-links, .tag-scroller, video,
-.pg-section, .page-tools, #quick-links, #scroll-down-btn, 
-.header-action-btns, #top-banner, #global-tel-num, #continue-read-btn, #close-content-extra-btn,
-#awards-pop-up, #quick-links-sml, #feefo-service-review-floating-widgetId {
+#top-nav,.col-strip , .top-banner-img-slim, .site-map-entry ,.nav-action, .contact-links, .footer-pg-info, .sidebar, .access-btns, .links-menu, #footer-info, #search-pop-up, #breadcrumbs,.feat-img-wide,.user-links, .banner-links, .tag-scroller, video, .pg-section, .page-tools, .header-action-btns, #top-banner, #continue-read-btn, #close-content-extra-btn, #searchform, #feefo-service-review-floating-widgetId {
 display: none;	
 	}

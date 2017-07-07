@@ -18,7 +18,7 @@ Template Name: Sitemap page
 	
 			<div class="container">
 			
-				<div class="entry wide-entry">
+				<div class="entry site-map-entry">
 					<div class="main-txt">	
 						<?php the_content(); ?>	
 					</div>

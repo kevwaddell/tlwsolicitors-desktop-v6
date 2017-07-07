@@ -25,3 +25,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
 	<!-- HEADER LOGO AND NAVIGATION -->
 	<?php get_template_part( 'parts/landingPage/main', 'masthead' ); ?>	
+	
+	<main id="main-content" class="page-wrapper">
