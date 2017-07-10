@@ -1812,6 +1812,12 @@
 		"oAP": "\/parts\/navigation\/nav-main.php",
 		"oF": 0
 		},
+	"\/parts\/newsletter\/section-form.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/newsletter\/section-form.php",
+		"oF": 0
+		},
 	"\/parts\/sections\/home\/section-blog.php": {
 		"ft": 8192,
 		"oA": 2,

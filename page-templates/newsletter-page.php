@@ -17,8 +17,7 @@ Template Name: Newsletter sign up template
 				<?php get_template_part( 'parts/banners/banner', 'img' ); ?>			
 				<?php } ?>			
 
-				<!-- MAIN TEXT SECTION -->
-				<?php get_template_part( 'parts/sections/section', 'content' ); ?>
+				<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>;
 					
 				
 					<?php if ($sections_active) { 
@@ -29,7 +28,7 @@ Template Name: Newsletter sign up template
 						
 						<?php if ($section['acf_fc_layout'] == 'form-section') { ?>
 						<!-- FORM SECTION -->
-							<?php get_template_part( 'parts/sections/section', 'form' ); ?>	
+							<?php get_template_part( 'parts/newsletter/section', 'form' ); ?>	
 						<?php } ?>
 						
 						<?php if ($section['acf_fc_layout'] == 'blog-posts') { ?>

@@ -6917,47 +6917,17 @@ button.close {
 .txt-col-purple {
   color: #A677B4;
 }
-.txt-col-purple-dk {
-  color: #6C4480;
-}
-.txt-col-purple-lt {
-  color: #d1b9d8;
-}
 .txt-col-green {
   color: #ACD15C;
-}
-.txt-col-green-dk {
-  color: #698037;
-}
-.txt-col-green-lt {
-  color: #d5e7ac;
 }
 .txt-col-pink {
   color: #EA5677;
 }
-.txt-col-pink-dk {
-  color: #B8445D;
-}
-.txt-col-pink-lt {
-  color: #f5b1c0;
-}
 .txt-col-orange {
   color: #FBAD4F;
 }
-.txt-col-orange-dk {
-  color: #AA7A39;
-}
-.txt-col-orange-lt {
-  color: #fddbb3;
-}
 .txt-col-blue {
   color: #2D7EA9;
-}
-.txt-col-blue-dk {
-  color: #184358;
-}
-.txt-col-blue-lt {
-  color: #66afd6;
 }
 .caps {
   text-transform: uppercase;
@@ -6997,20 +6967,11 @@ button.close {
 .bg-col-green {
   background-color: #ACD15C;
 }
-.bg-col-green-dk {
-  background-color: #698037;
-}
 .bg-col-orange {
   background-color: #FBAD4F;
 }
-.bg-col-orange-dk {
-  background-color: #AA7A39;
-}
 .bg-col-blue {
   background-color: #2D7EA9;
-}
-.bg-col-blue-dk {
-  background-color: #184358;
 }
 .bg-col-facebook {
   background-color: #3b5998;
