@@ -7179,9 +7179,6 @@ body.mce-content-body hr:after {
 body.mce-content-body p {
   margin-bottom: 20px;
 }
-body.mce-content-body p.intro {
-  color: #656565;
-}
 body.mce-content-body p.bold {
   font-weight: bold;
 }
@@ -7189,9 +7186,10 @@ body.mce-content-body p:last-child {
   margin-bottom: 0px;
 }
 body.mce-content-body p.lead {
-  font-size: 35px;
-  line-height: 45px;
-  color: #918F8F;
+  font-weight: bold;
+  color: #4b4b4b;
+  font-size: 20px;
+  line-height: 30px;
 }
 body.mce-content-body ul {
   list-style: none;
@@ -7290,7 +7288,35 @@ body.mce-content-body a:focus {
   color: #7A1039;
 }
 body.mce-content-body .well {
-  background-color: #E9E9E9;
+  background-color: white;
+  border: 1px solid #4b4b4b;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  margin-top: 50px;
+}
+body.mce-content-body .well span.label {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+body.mce-content-body .well h3.icon-header {
+  line-height: 50px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #4b4b4b;
+  color: #4b4b4b;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  width: 50%;
+  margin: -50px auto 30px auto;
 }
 body.mce-content-body .with-icon-img {
   position: relative;

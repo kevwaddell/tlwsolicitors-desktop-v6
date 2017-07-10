@@ -13391,6 +13391,7 @@ article.tlw_landing_page .main-txt .well h3.icon-header {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  text-transform: uppercase;
   width: 50%;
   margin: -50px auto 30px auto;
 }
