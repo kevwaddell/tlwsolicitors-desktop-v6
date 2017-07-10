@@ -7271,9 +7271,6 @@ body.mce-content-body blockquote {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-body.mce-content-body .caps {
-  text-transform: uppercase;
-}
 body.mce-content-body hr {
   border-color: #c4c2c2;
 }
