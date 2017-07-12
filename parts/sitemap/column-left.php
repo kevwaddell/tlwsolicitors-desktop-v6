@@ -11,10 +11,26 @@ $services_args = array(
 
 $services = get_posts($services_args);
 //echo '<pre>';print_r($landing_pgs);echo '</pre>';
+
+$videos_pg_id = get_page_id('videos');
+$downloads_pg_id = get_page_id('downloads');
 ?>
 
 <div class="col-xs-6">
 	
+	<h3>TLW Media</h3>
+
+	<div class="list-block">
+
+		<ul class="list-unstyled">
+		
+			<li><a href="<?php echo get_permalink($videos_pg_id); ?>"><?php echo get_the_title($videos_pg_id); ?></a></li>
+			<li><a href="<?php echo get_permalink($downloads_pg_id); ?>"><?php echo get_the_title($downloads_pg_id); ?></a></li>
+			
+		</ul>
+		
+	</div>
+
 	<?php if ($services) { ?>
 	
 	<?php foreach ($services as $service) { ?>
