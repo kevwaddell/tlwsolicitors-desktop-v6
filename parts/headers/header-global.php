@@ -12,6 +12,8 @@
 	<!-- End Google Tag Manager -->
 	<?php } ?>
 	<style>body{opacity: 0;}</style>
+	<style id="critical-css"><?php readfile(get_stylesheet_directory() . '/_/css/criticalCSS.css'); ?></style>
+	
 	<meta charset="UTF-8">
 	<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
 	
@@ -33,22 +35,27 @@
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	
-	<style><?php readfile(get_stylesheet_directory() . '/_/css/criticalCSS.css'); ?></style>
-	
 	<?php wp_head(); ?>
 	
 	<script>
 	  var loadDeferredStyles = function() {
 	    var addStylesNode = document.getElementById("deferred-styles");
 	    var replacement = document.createElement("div");
+	    var criticalCSS = document.getElementById("critical-css");
 	    replacement.innerHTML = addStylesNode.textContent;
 	    document.body.appendChild(replacement);
 	    addStylesNode.parentElement.removeChild(addStylesNode);
 	    document.body.classList.remove("atfc-desktop-css");
+	    criticalCSS.parentNode.removeChild(criticalCSS);
 	  };
 	  var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
-	  if (raf) { raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-	 } else { window.addEventListener('load', loadDeferredStyles); }
+	  if (raf) { 
+		  raf(function() { 
+		   window.setTimeout(loadDeferredStyles, 0); 
+			});
+	 	} else { 
+		 	window.addEventListener('load', loadDeferredStyles); 
+		 }
 	</script>
 	
     
