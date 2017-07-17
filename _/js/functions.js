@@ -480,6 +480,10 @@
 		
 		$(window).bind('load',function(){
 			
+			setTimeout(function(){
+				$('body').removeClass('loading');
+			}, 2000);
+			
 			$('.has-bg-img').each(function(index, Element) {
 				var src = $(Element).data('src');
 				//console.log(src);

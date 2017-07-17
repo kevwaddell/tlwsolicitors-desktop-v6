@@ -12547,14 +12547,16 @@ body.nav-open,
 body.modal-open,
 body.search-open,
 body.route-finder-open,
-body.video-open {
+body.video-open,
+body.loading {
   overflow: hidden;
 }
 body.nav-open .tlw-wrapper > *,
 body.modal-open .tlw-wrapper > *,
 body.search-open .tlw-wrapper > *,
 body.route-finder-open .tlw-wrapper > *,
-body.video-open .tlw-wrapper > * {
+body.video-open .tlw-wrapper > *,
+body.loading .tlw-wrapper > * {
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
