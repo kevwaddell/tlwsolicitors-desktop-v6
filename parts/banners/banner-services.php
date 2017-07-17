@@ -10,7 +10,7 @@ $banner_parts = get_field('banner_parts');
 		$links_total = count($banner_service_links);
 		?>
 	<div class="container">	
-		<ul class="text-center list-unstyled list-inline banner-links-imgs links-total-<?php echo $links_total; ?>">
+		<ul class="text-center list-unstyled banner-links-imgs links-total-<?php echo $links_total; ?>">
 			<?php foreach ($banner_service_links as $bl) { 
 			$thumb_id = get_post_thumbnail_id($bl['link_page']);
 			$bg_full_src = wp_get_attachment_image_src($thumb_id, 'full' );

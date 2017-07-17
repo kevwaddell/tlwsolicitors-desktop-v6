@@ -176,7 +176,7 @@ section#slim-top-banner {
 	.left(1.5);
 	.bottom(0);
 	z-index: 2;
-	.pad(1;2;1;2);	
+	.pad(1;2;0.1;2);	
 	.bg-col(@wht);
 	.font-size(2.5);
 	.line-h(2.5);
@@ -651,26 +651,27 @@ section#contact-us-banner {
 		.no-text-dec;
 		.caps;
 		.txt-col-grayDk;	
-		}
-		span.logo {
-		.block;
-		.h(23);
-		.bg-repeat(no-repeat);
-		background-position: center center;
-		.bg-size(contain);	
-		.opacity(1);
-		.transition;
-		}
-		span.description {
-		.block;
-		text-align: center;	
-		.font-size(1.4);
-		.line-h(1.4);
-		}
 		
-		&:hover, &:active, &:focus {
 			span.logo {
-			.opacity(0.5);	
+			.block;
+			.h(23);
+			.bg-repeat(no-repeat);
+			background-position: center center;
+			.bg-size(contain);	
+			.opacity(1);
+			.transition;
+			}
+			span.description {
+			.block;
+			text-align: center;	
+			.font-size(1.4);
+			.line-h(1.4);
+			}
+			
+			&:hover, &:active, &:focus {
+				span.logo {
+				.opacity(0.5);	
+				}
 			}
 		}
 	}

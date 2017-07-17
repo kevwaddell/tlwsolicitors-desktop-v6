@@ -29,10 +29,6 @@ if (!is_admin()) {
 		wp_dequeue_style('theme-my-login');
 		}
 		
-		if ( isset($_COOKIE['catAccCookies']) ) {
-		wp_dequeue_style('cookie-consent-style');
-		}
-		
 		// Load JS
 		$functions_dep = array(
 		'jquery',
