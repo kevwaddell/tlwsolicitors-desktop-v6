@@ -41,4 +41,18 @@ if( function_exists('acf_add_options_sub_page') ) {
 	
 }
 
+/*
+*  AFC Google API
+*/
+
+function my_acf_google_map_api( $api ){
+	
+	$api['key'] = 'AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo';
+	
+	return $api;
+	
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
  ?>
