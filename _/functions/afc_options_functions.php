@@ -45,14 +45,11 @@ if( function_exists('acf_add_options_sub_page') ) {
 *  AFC Google API
 */
 
-function my_acf_google_map_api( $api ){
+function my_acf_init() {
 	
-	$api['key'] = 'AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo';
-	
-	return $api;
-	
+	acf_update_setting('google_api_key', 'AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo');
 }
 
-add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+add_action('acf/init', 'my_acf_init');
 
  ?>
