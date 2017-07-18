@@ -1,5 +1,4 @@
 <?php 
-$email = get_field( 'main_email', 'options' );
 $contact_pg = get_page_id( 'contact-us' );
 ?>
 <nav id="top-nav" class="nav-closed">
@@ -12,7 +11,7 @@ $contact_pg = get_page_id( 'contact-us' );
 				<div class="col-xs-6">
 					<ul class="top-nav-icon-links list-inline">
 						<li><a href="<?php echo get_option('home'); ?>/"><i class="fa fa-home fa-2x"></i><span class="sr-only">Home</span></a></li>
-						<li><a href="mailto:<?php echo $email; ?>?subject=Enquiry from the <?php bloginfo('name'); ?> website"><i class="fa fa-envelope fa-2x"></i><span class="sr-only">Email Us</span></a></li>
+						<li><a href="<?php echo get_permalink($contact_pg); ?>"><i class="fa fa-envelope fa-2x"></i><span class="sr-only">Contact Us</span></a></li>
 						<li><a href="<?php echo get_permalink($contact_pg); ?>#find-us"><i class="fa fa-map-marker fa-2x"></i><span class="sr-only">Find us</span></a></li>
 					</ul>
 				</div>
