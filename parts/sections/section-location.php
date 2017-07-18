@@ -16,8 +16,8 @@ $map_active = $section['map_active'];
 	$map_marker = get_stylesheet_directory_uri()."/_/img/map-marker.png";
 	$quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'find-us'];	
 ?>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo"></script>
 <script>
+function wide_map_init() {
 var TLW_MAP_ID = 'TLW_style';
 	
 var wide_map;
@@ -35,10 +35,7 @@ var marker;
 	 // The anchor for this image is the base of the flagpole at 0,32.
 	 anchor: new google.maps.Point(30, 60)
 	 };
-	
-
-function wide_map_init() {
-
+	 
 var mapOptions = {
 	zoom: 12, 
 	center: myLatLang, 
@@ -50,12 +47,9 @@ var mapOptions = {
 wide_map = new google.maps.Map(document.getElementById('wide-map-canvas'), mapOptions);
 	
 marker = new google.maps.Marker({position: myLatLang,map: wide_map,icon: image,title: "TLW Solicitors"});
-	
 };
-
-google.maps.event.addDomListener(window, 'load', wide_map_init);
-
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo&callback=wide_map_init" async defer></script>
 <div class="rule"></div>
 <section id="wide-map" class="pg-section">
 	<a id="find-us" name="find-us"></a>
