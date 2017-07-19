@@ -5,12 +5,8 @@ $about_pg = get_page_by_title('About TLW Solicitors');
 $about_pg_icon = get_field('page_icon', $about_pg->ID);
 $team_pg = get_page_by_title('Our Team');
 $team_pg_icon = get_field('page_icon', $team_pg->ID);
-$feedback_pg = get_page_by_title('Why Choose TLW');
-$feedback_pg_icon = get_field('page_icon', $feedback_pg->ID);
-$videos_pg = get_page_by_title('Videos');
-$videos_pg_icon = get_field('page_icon', $videos_pg->ID);
-$downloads_pg = get_page_by_title('Downloads');
-$downloads_pg_icon = get_field('page_icon', $downloads_pg->ID);
+$community_pg = get_page_by_title('TLW in the Community');
+$community_pg_icon = get_field('page_icon', $community_pg->ID);
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -51,10 +47,8 @@ $percentage = ($rating * 100) / $rating_max;
 						</div>
 					</div>	
 					<a href="<?php echo get_permalink($about_pg->ID); ?>" class="btn btn-default btn-block"><i class="fa <?php echo $about_pg_icon; ?> fa-lg"></i>About us</a>	
-					<a href="<?php echo get_permalink($team_pg->ID); ?>" class="btn btn-default btn-block"><i class="fa <?php echo $team_pg_icon; ?> fa-lg"></i>Our Team</a>	
-					<a href="<?php echo get_permalink($feedback_pg->ID); ?>" class="btn btn-default btn-block"><i class="fa <?php echo $feedback_pg_icon; ?> fa-lg"></i>Client Feedback</a>
-					<a href="<?php echo get_permalink($videos_pg->ID); ?>" class="btn btn-default btn-block"><i class="fa <?php echo $videos_pg_icon; ?> fa-lg"></i><?php echo get_the_title($videos_pg->ID); ?></a>
-					<a href="<?php echo get_permalink($downloads_pg->ID); ?>" class="btn btn-default btn-block"><i class="fa <?php echo $downloads_pg_icon; ?> fa-lg"></i><?php echo get_the_title($downloads_pg->ID); ?></a>
+					<a href="<?php echo get_permalink($team_pg->ID); ?>" class="btn btn-default btn-block"><i class="fa <?php echo $team_pg_icon; ?> fa-lg"></i><?php echo get_the_title($team_pg->ID); ?></a>	
+					<a href="<?php echo get_permalink($community_pg->ID); ?>" class="btn btn-default btn-block"><i class="fa <?php echo $community_pg_icon; ?> fa-lg"></i>In the community</a>
 				</aside>		
 			</div>
 			
