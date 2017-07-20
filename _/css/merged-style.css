@@ -12579,6 +12579,14 @@ body {
     zoom: 80%;
   }
 }
+body #feefo-service-review-floating-widgetId {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
 body.nav-open,
 body.modal-open,
 body.search-open,
@@ -12600,6 +12608,15 @@ body.loading .tlw-wrapper > * {
   filter: blur(5px);
   overflow: hidden;
   pointer-events: none;
+}
+body.nav-open #feefo-service-review-floating-widgetId,
+body.modal-open #feefo-service-review-floating-widgetId,
+body.search-open #feefo-service-review-floating-widgetId,
+body.route-finder-open #feefo-service-review-floating-widgetId,
+body.video-open #feefo-service-review-floating-widgetId,
+body.loading #feefo-service-review-floating-widgetId {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
 }
 body.txt-only-open {
   overflow: hidden;
