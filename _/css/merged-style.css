@@ -17491,6 +17491,12 @@ figure.alignnone {
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/active1.svg);
   background-color: #ACD15C;
 }
+#form-section .gf_list_inline .gfield_radio li {
+  min-width: 200px;
+}
+#form-section .gf_list_inline .gfield_radio li label {
+  padding-left: 20px;
+}
 #hp-form {
   margin-top: 40px;
   margin-bottom: 40px;
