@@ -6,6 +6,4 @@
 
 <?php get_template_part( 'parts/global/popups/route', 'finder' ); ?>
 
-<?php get_template_part( 'parts/global/popups/video', 'viewer' ); ?>
-
 <?php get_template_part( 'parts/global/popups/xmas', 'popup' ); ?>

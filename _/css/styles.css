@@ -15337,6 +15337,23 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 #video-section h2 {
   margin-bottom: 10px;
 }
+#video-section .video-grid {
+  margin-top: -30px;
+}
+#video-section .video-wrapper {
+  height: 312px;
+  margin-top: 30px;
+  border: 1px solid #4b4b4b;
+  position: relative;
+  overflow: hidden;
+}
+#video-section .video-wrapper video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
 #video-section a.video-link {
   display: block;
   width: 100%;
@@ -15640,81 +15657,6 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 #wide-map .location-box button.btn:focus {
   background-color: #4b4b4b;
   color: white;
-}
-#video-viewer {
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  top: 0px;
-  background-color: #4b4b4b;
-  background-color: rgba(75, 75, 75, 0.8);
-  z-index: 11004002;
-  overflow: hidden;
-}
-#video-viewer.viewer-open {
-  top: 0px;
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  -webkit-opacity: 1;
-  opacity: 1;
-}
-#video-viewer.viewer-closed {
-  top: 100%;
-  -moz-opacity: 0;
-  -khtml-opacity: 0;
-  -webkit-opacity: 0;
-  opacity: 0;
-}
-#video-viewer #close-video {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  padding: 0px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  border: none;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #4b4b4b;
-}
-#video-viewer #close-video i {
-  display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  font-size: 20px;
-}
-#video-viewer #close-video:hover,
-#video-viewer #close-video:active,
-#video-viewer #close-video:focus {
-  color: #918F8F;
-  background-color: white;
-}
-#video-viewer .video-viewer-inner {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 450px;
-  background-color: #4b4b4b;
-  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
-  overflow: hidden;
-}
-#video-viewer .video-viewer-inner video {
-  width: 100%;
-  height: auto;
 }
 /** --------------------------- /
 /* User styles */
