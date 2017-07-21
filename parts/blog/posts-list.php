@@ -1,4 +1,5 @@
 <?php if ( have_posts() ): 	?>
+<div class="rule"></div>
 <section class="pg-section post-grid">	
 		<div class="container">
 			<h2 class="section-header">
