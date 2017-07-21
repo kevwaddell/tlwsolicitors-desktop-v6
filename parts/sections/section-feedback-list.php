@@ -18,6 +18,10 @@ if ($feedback_quotes) { ?>
 	<div class="container">
 		
 		<h2 class="section-header"><?php echo $section_title; ?></h2>	
+		<div class="lg-intro">
+			<?php the_content(); ?>
+		</div>
+		<div class="rule"></div>
 		
 		<?php foreach ($feedback_quotes as $k => $fb) { 
 		$name = get_field('client_name', $fb->ID);	

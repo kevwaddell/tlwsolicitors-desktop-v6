@@ -17,13 +17,7 @@ Template Name: Why Choose TLW page template
 	<!-- MAIN CONTENT START -->
 	<main id="main-content">
 		
-		<!-- BANNER SECTION -->
-		<?php if (has_post_thumbnail()) { ?>
-		<?php get_template_part( 'parts/banners/banner', 'img' ); ?>			
-		<?php } ?>			
-
-		<!-- MAIN TEXT SECTION -->
-		<?php get_template_part( 'parts/sections/section', 'content' ); ?>	
+		<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
 		
 		<?php if ($sections_active) { 
 		$sections = get_field('sections'); 

@@ -20,7 +20,10 @@
 
 	<?php get_template_part( 'parts/global/popups/all', 'popups' ); ?>	
 	
-	<div id="feefo-service-review-floating-widgetId"></div>
+	<?php if (!is_front_page()) { ?>
+	<div id="feefo-service-review-floating-widgetId"></div>			
+	<?php } ?>
+	
 	
 	<?php wp_footer(); ?>
     

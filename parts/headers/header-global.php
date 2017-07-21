@@ -57,7 +57,6 @@
 		 	window.addEventListener('load', loadDeferredStyles); 
 		 }
 	</script>
-	
     
 	<?php if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') { ?>
 	<!-- Adwords Call tracking -->

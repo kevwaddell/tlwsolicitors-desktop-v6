@@ -8,6 +8,7 @@ $downloads_active = $section['downloads_active'];
 $section_title = $section['section_title'];	
 $download_section_files = $section['download_section_files'];
 ?>
+<div class="rule"></div>
 <section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section">
 	<div class="container">
 		<h2 class="section-header"><?php echo $section_title; ?></h2>	
@@ -15,7 +16,7 @@ $download_section_files = $section['download_section_files'];
 			<?php the_content(); ?>
 		</div>
 		<div class="rule"></div>
-		<div class="row">
+		<div class="row download-grid">
 		
 			<?php foreach ($download_section_files as $k => $file) { 
 			$img = wp_get_attachment_image_src($file['file_image'], 'medium' );	

@@ -1931,6 +1931,12 @@
 		"oAP": "\/parts\/sections\/section-feedback.php",
 		"oF": 0
 		},
+	"\/parts\/sections\/section-feefo-carousel.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/sections\/section-feefo-carousel.php",
+		"oF": 0
+		},
 	"\/parts\/sections\/section-form.php": {
 		"ft": 8192,
 		"oA": 2,

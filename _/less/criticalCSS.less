@@ -5,7 +5,15 @@ html {
 width: 100%;
 height: 100%;	
 }
-
+	
+body.loading {
+-webkit-filter: blur(10px);
+-moz-filter: blur(10px);
+-o-filter: blur(10px);
+-ms-filter: blur(10px);
+filter: blur(10px);	
+}
+	
 body.atfc-desktop-css {
 	
 	font-family: @reg-font;
@@ -59,14 +67,6 @@ body.atfc-desktop-css {
 	border-radius: @radius;
   	}
 	
-	&.loading {
-	-webkit-filter: blur(10px);
-	-moz-filter: blur(10px);
-	-o-filter: blur(10px);
-	-ms-filter: blur(10px);
-	filter: blur(10px);	
-	}
-	
 	.tlw-wrapper {
 	position: relative;
 	min-width: 1170px;
@@ -89,12 +89,13 @@ body.atfc-desktop-css {
 	.header .header-action-btns,
 	.header .tel-num,
 	#continue-read-btn,
-	#route-finder-modal,
+	#route-finder-pop-up,
 	.addtoany_list,
 	#theme-my-login,
 	#wide-map-canvas,
 	.location-box,
-	#feefo-service-review-floating-widgetId {
+	#feefo-service-review-floating-widgetId,
+	#feefo-service-review-carousel-widgetId {
 	display: none;	
 	}
 	
@@ -141,12 +142,12 @@ body.atfc-desktop-css {
 	}
 	
 	#breadcrumbs {
-	color: @grayDk;
+	color: @gray;
 	font-size: 16px;
 	line-height: 16px;
 	margin-bottom: 30px;
 		a {
-		color: @grayDk;
+		color: @gray;
 		text-decoration: none;
 		}
 	}
@@ -262,12 +263,8 @@ body.atfc-desktop-css {
 		right: 15px;
 		top: 0px;
 		height: 100%;
-		-webkit-background-size: cover;
-		-moz-background-size:  cover;
-		-o-background-size:  cover;
-		background-size:  cover;	
-		background-repeat: no-repeat;
-		background-position: center center;	
+		background-image: none !important;
+		background-color: @grayLt;
 		}
 	
 		i {
@@ -290,12 +287,8 @@ body.atfc-desktop-css {
 		right: 15px;
 		top: 0px;
 		height: 100%;
-		-webkit-background-size: cover;
-		-moz-background-size:  cover;
-		-o-background-size:  cover;
-		background-size:  cover;	
-		background-repeat: no-repeat;
-		background-position: center center;	
+		background-image: none !important;
+		background-color: @grayLt;
 		}
 	
 		.intro, .contact-info, .banner-title {
@@ -315,7 +308,11 @@ body.atfc-desktop-css {
 			margin-bottom: 0px;
 			list-style: none;
 			padding-left: 0px;
-
+				&:after {
+				content: " ";
+				display: table;
+				}
+				
 				li {
 				width: calc(~"100% / 3");
 				height: 280px;
@@ -336,37 +333,17 @@ body.atfc-desktop-css {
 				}
 				
 				span.img {
-				position: absolute;
-				top: 0px;
-				left: 0px;
-				right: 0px;
-				bottom: 0px;
-				-webkit-background-size: cover;
-				-moz-background-size:  cover;
-				-o-background-size:  cover;
-				background-size:  cover;	
-				background-repeat: no-repeat;
-				background-position: center center;	
+				display: none;
 				}
 				
 				span.title {
-				position: absolute;
-				top: 210px;
-				left: 0px;
-				right: 0px;
-				bottom: 0px;
-				height: 70px;
-				background-color: hsla(hue(white), saturation(white), lightness(white), 0.8);
-					span {
-					display: none;
-					}
+				display: none;
 				}
 		
 				a {
 				display: block;
 				height: 100%;
-				overflow: hidden;
-				position: relative;
+				background-color: @grayLt;
 				}	
 								
 			}
@@ -398,8 +375,7 @@ body.atfc-desktop-css {
 	.hp-sidebar {
 	padding-top: 20px;
 		.feefo-panel {
-		border: 1px solid @grayDk;
-		margin-bottom: 50px;	
+		background-color: @grayLt;	
 		min-height: 196px;
 			i, h3, div {
 				display: none;
@@ -416,10 +392,10 @@ body.atfc-desktop-css {
 	font-size: 25px;
 	line-height: 40px;
 	margin-bottom: 20px;
-	border: 1px solid @grayDk;
+	background-color: @grayLt;
 	display: inline-block;
 	padding: 0px 20px 0px 20px;	
-	color: @gray;
+	color: @grayLt;
 	.font-slab-serif;
 	}
 		
@@ -457,7 +433,8 @@ body.atfc-desktop-css {
 		line-height: 40px;
 		margin-bottom: 30px;
 		margin-top: 0px;
-		color: @grayDk;
+		color: @grayLt;
+		background-color: @grayLt;
 		font-weight: normal;
 			small {
 			font-size: 30px;
@@ -472,18 +449,18 @@ body.atfc-desktop-css {
 		font-size: 25px;
 		line-height: 30px;
 		margin-bottom: 20px;
-		color: @gray;
+		color: @grayLt;
+		background-color: @grayLt;
 		}
 		
 		a {
-		color: @red;
+		color: @grayLt;
 		font-weight: bold;
-			&:hover, &:active, &:focus {
-			color: @redMid;
-			}
+		text-decoration: none;
 		}
 		
 		p {
+		background-color: @grayLt;
 			&.lead {
 			font-weight: bold;
 			}
@@ -494,7 +471,7 @@ body.atfc-desktop-css {
 		font-size: 20px;
 		line-height: 30px;
 		margin-bottom: 30px;
-		color: @grayDk;
+		color: @grayLt;
 			&:last-child {
 			margin-bottom: 0px;	
 			}	
@@ -508,7 +485,7 @@ body.atfc-desktop-css {
 		width: 150px;
 		line-height: 150px;
 		.rounded(100%);	
-		.bg-col-red;
+		background-color: @gray;
 		text-align: center;
 		color: white;
 		.font-slab-serif;
@@ -626,12 +603,7 @@ body.atfc-desktop-css {
 			position: relative;
 			width: 100%;
 			height: 263px;
-			background-repeat: no-repeat;
-			background-position: center center;
-			-webkit-background-size: cover;
-			-moz-background-size:  cover;
-			-o-background-size:  cover;
-			background-size:  cover;	
+			background-image: none !important;
 			.rounded(100%);	
 			margin-top: 20px;
 				
@@ -643,30 +615,21 @@ body.atfc-desktop-css {
 				top: -10px;
 				bottom: -10px;
 				.rounded(100%);
-				background-color: white;
-				opacity: 0.5;	
-				}
-				
-				&:after {
-				content: "";
-				position: absolute;
-				left: -20px;
-				right: -20px;
-				top: -20px;
-				bottom: -20px;
-				border: 1px solid @grayDk;
-				.rounded(100%);
+				background-color: @grayLt;	
 				}
 		}
 		
 		.tk-info-txt {
 			
 			a {
-			color: red;
+			color: @grayLt;
 			font-weight: bold;
+			text-decoration: none;
 			}
 			
 			p, ul, ol {
+			color: @grayLt;
+			background-color: @grayLt;
 			font-size: 20px;
 			line-height: 30px;
 			margin-bottom: 30px;
@@ -677,8 +640,9 @@ body.atfc-desktop-css {
 			
 			blockquote {
 			font-style: italic;
-			color: @gray;
-			border-color: lighten(@grayDk, 20%);
+			color: @grayLt;
+			background-color: @grayLt;
+			border-color: @grayLt;
 			padding: 5px 0px 5px 0px;	
 			}
 			
@@ -686,11 +650,14 @@ body.atfc-desktop-css {
 			font-size: 50px;
 			line-height: 60px;
 			margin-bottom: 40px;
-			color: @red;
+			color: @grayLt;
+			background-color: @grayLt;
 			}
 			
 			h4, h5 {
 			font-size: 20px;
+			color: @grayLt;
+			background-color: @grayLt;
 			}	
 		}
 	}
@@ -700,7 +667,7 @@ body.atfc-desktop-css {
 	
 		h2.section-header {
 		.font-slab-serif;
-		color: @red;
+		color: @gray;
 		font-size: 50px;
 		line-height: 50px;
 		margin-bottom: 30px;
@@ -710,7 +677,8 @@ body.atfc-desktop-css {
 	
 		.lg-intro {
 		font-family: @reg-font;
-		color: @grayDk;
+		color: @gray;
+		font-weight: bold;
 			p {
 			font-size: 25px;
 			line-height: 35px;
@@ -718,6 +686,11 @@ body.atfc-desktop-css {
 			hr {
 			border: none;
 			.rule;	
+			}
+			a {
+			color: @grayDk;
+			font-weight: bold;
+			text-decoration: none;
 			}	
 		}
 		.gallery-items, .faq-items, .faq-nav {
@@ -762,35 +735,94 @@ body.atfc-desktop-css {
 			}	
 			
 			.credit-items {
-			text-align: center;	
+			height: 245px;	
 			}
 	
 			.credit {
-			display: inline-block;
-			width: 20%; 
-			padding: 0px 15px 0px 15px;		
-				a {
-				text-transform: uppercase;
-				color: @grayDk;
-				text-decoration: none;
+			display: none;	
+			}
+		}
+		
+		&#feefo-reviews-carousel {
+			
+			h2.section-header {
+			position: relative;
+			text-align: center;
+			z-index: 2;
+			text-transform: uppercase;
+			font-size: 25px;
+			line-height: 25px;
+			padding: 10px;
+			width: 390px;
+			border: 1px solid @grayDk;
+			margin: -52px auto 20px auto;
+			background-color: white;
+			color: @grayDk;	
+			}	
+		}
+		
+		&#feedback-section {
+			.feedback-quote {
+			padding-left: 205px;
+			min-height: 140px;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAACMCAYAAAAdiGkkAAAACXBIWXMAAAsSAAALEgHS3X78AAANOElEQVR4Xu2dXW7bxhbHvQQvQUvwErwEL8FLyBK8gqJFUCRwnMRGkjZpLm6CAgEKFLhwgfvQokCbPhV9af3W9q0fC1DnR89RKVqi5ozI4czwEGAUWUcS9Z/f+ZgPkgfL5fIg9/2jDz5YuP34/MGDD1+/fPn+k2fPluwf37+/dH8P2rH9z6tX2B7n/nunOD50cfvpyxcv3r58/uIP9L168jhIW2kD7K+ePL10zw/3+Q1ZAul+1NGjhw/PgAiY2BHpi3fvlv/78svlTz/+2Oy///qb++1hG7b//+qr5rOeX12930e00t8LNACIDgIej+iNvt9+/c1K4zB1b61++O77pp1c2wHzUaxO2UDpfsQJIvGD2D9/86YRRwNeiIB///lXEwHmBqbTd4GjC4TAIw4eopvGhnbzWSwKzEmhRCjCvYBIJLz5+RfN74+yBUy+8+L8/F6sN5fyPiKiL1uaSAgw/P6xN4DHAWJ0mgRKJ9Txq08+vXGPTUQkFafeaJxY0WKETvkep+sh9bc4eyoQu23o0/iJ9rcnhRIYpYOCJ6Xw2K5Q7ec4BQ2oFS1Xe34LmUdq8Cmcva0vmY+Ok1avJFA6sRY5wSjCcUw4ila0HO2JjLnAKPoSoenJa/UaFUo89+nF47dEpBwiY9uL+X8NUOJUpEl+y9SRsasvx8NxZQOlE+tExBq6B9398bHPS4YSh392eXlDdCQi5bhlAyViuca+RizGrXLeSoWS6Ii+9Kanrsv72jcLKJ1YR/RoaeycxRIhS4SScqgEh0fjyaFkzA+xqB1L2UqC0megZhgr13Ko2+6TQik9v9zTdVe0UqAkA8ksVwkZSHSeDEqZGkwxE9OFat/nJUAJkKVloEmhlAn9kry3DXLuUAqQufaudwWF5JGydCARNGcoSwcSfZNCWQOQOUNZA5BJoZROTakpO/f07YBc5Dwgvitlt19PEill2KfETs0mMXNL3wz7MOTDyqkattGhlJRS2rBPX+PmBiXThhxTLZusRHe/R7XGIshYPLikgfGQhiVNki61oo1hz6pwxiJrKItEe3j572evr7V6BUHpvPe6Jg9GNFILEGgFG8OeLOT2JKvuBZgUj/7Ui1OtZjuhdGKdEFFq8mAaBCdjQaxWsDHsabzashCp22ci9SLqXihJ20STmupIgKQj4b1YLdjQUDKa4U/L4NCq2OgIA+STRxfqKIm+vVCyIqWmtM1ChtsI2ZzPPDmQ1LM1pW2yqZzGvM9JeVuhFMFyXJGCJzL1Rsoj6gHarp2Ij/cOcbI83jzEzqkCnMeS20abU3OjL/subeV1HIz/u8fjffTZKi4fnkudgwcCoZwqCmA0qAfsHiKE7PsINfR7Od6canUcHQdBW4GLq5G4/5+5/SREX2czSPbZCGUuguGxREIaDychJbhjWwwNyBSfl4vT4+yAyO7Pp9oryg2h5UYopxaMyAiMeKwrlq9rAVEaDKf3w1HuT9NsdF4FRnc8p0PANNRn3IFy6igpQwmk59pglEbD6adajobDUwYB5D6dkaEA3PQ5d6DkyhVT1ZKSqh2M6qsqbPpxOf5tSqen80IpxCovdxyD1H9jaLwGJZHJ7ckHyvFexupyGTscQ2j5zKmcnsgMkLlGx7bma1DSm029QkWAnMNV0IhOOH3qYTYB0n330ZgON9Rnr0FJnUGIT7XNCUgazOnbXHMz5VYakOi0gpI6LnWPkHQ9hwgpEYTfm7KDUyKQa1ACR8rZBZl/lgar/ZF6nZou1Sbzz+57j0vTdhUpiZKpVpTvs4KkNIHleEndqep1KYtY7FGiXg2UFMCpUjeC+SVN1Q77bAIh5dikzFdvOo4S/tZAmdKLiRYx1ywsQcy+Y0w11EbPnu+iXOg7npxfa6CUa2G7/4+61SBYTGNS16VaM3lbq+exeDlGK97TQEk6TTF2hmDMZccebKnvo7ZLUU/Shr40yna2JqQNqSeT9ApbtWSxaSVE0E02lCsphoIYPalhiA0om4vjj73RKP57Vj3+TQ1Y499I3SkmJXyULGLWpq+dD0gtKcYnqVtLmHftEyv2NToeY285nZ0Zq5O874DVxSlWBXkvnl3qZrgtxaC5Hwaqol4/IKWOnVoYlPfjoLNL3anKI9rRfVcVY79JoKSenOPYJOkIUFLU7DVloiTDQaSWXE7837fe0b7fQXmWojzydWsVmQhPHrsGl/Nt7mkbtAZ7OpJjQ0n55QfnDcpQmn29c1wDZNrfwAWeUkBZ03BbkkhpUI57GxcipUEZGiK9nUFpUGoyjEVK10PWCKa1tfSt19egNChHdUqtE2NvUBqU84TSX5jqNMZrSn9PqvRtQ0K+AxP6UNO8rNZJUkBJOzDe7Pai11GKtknS95znvlNB6a8uUkU2SgIlnsyCjDkuXUsFJesLaln0kgzK1mm1C20KLNk+FZQ4PtGy1NNq222cDEpEYzGxTzNV1D4hzpISSrkAQekZKSmUgMkJVKQZV5QXv2w/NyjRV8AseVVWcigRTu4gwGXxalmYug3QlJESbdkAk4wkdbzTuKiSaRIoEY7TQRkq8lGzEZE58rF3HIGLL6SK1FNA6dlcu3kBi4DH1pbPb90ggYv3R5Vpk0EpwskjK11S7DiClBA0lL+q7WiRZEoo2xrLbUjG1phRAD8u3YydxkycZANlF9IUz0lzAAqcvpQYHM5coEyhZ/c7ONcfSNulhLPZOa05ayhFRMRjZAA4Se0hwoXazBnKNqRyNwq/jLHX+Q3KlnIy88R9t2ProS6sBuW/Ared3+l73NVKnhuUbXd2/0c4vHmo8VSDsiOwe0pKp97cNp5qUN7VrPnL7dXL9r+xqEG5WWA6XP604DvnqhuUmzVr/krEJJW7/+4szrfZGJTbBd52TXaDcrtmTSpnHHWfzo9B2SOwe4mJFD9WvRrTNCj7NVtN28XOihiUOwR2L5ORuFmpZBuDcrdmzXAR45gimubRoNwtcPcKzwblbs2aNB57rR6DMkBgZ0LHUhzfoAzTrBEt5iq5BmWYwK1oeWhQhmm2qi01qRtbgzJQYGcm8+QGZbhmUetADcpwgemJs8rIoAzXTFYXqebGDcpwgWWa16AM16xZkqXthRuUCoGdKdOPBqVCs5irmxmUCoGdKWsODEqFZgalQqxIUwbSDUqFeAalQqxIU4NSKZxBqRQswtygVIpmUCoFizA3KJWiGZRKwSLMDUqlaAalUrAIc4NSKZpBqRQswtygVIpmUCoFizA3KJWiGZRKwSLMDUqlaAalUrAIc4NSKZpBqRQswtygVIpmUCoFizA3KJWiGZRKwSLMDUqlaAalUrAIc4NSKZpBqRQswtygVIpmUCoFizA3KJWiGZRKwSLMDUqlaAalUrAIc4NSKZpBqRQswtygVIpmUCoFizA3KJWiGZRKwSLMDUqlaAalUrAIc4NSKZpBqRQswtygVIpmUCoFizA3KJWiGZRKwSLMDUqlaAalUrAIc4NSKZpBqRQswtygVIpmUCoFizA3KJWiGZRKwSLMDUqlaAalUrAIc4NSKZpBqRQswtygVIpmUCoFizA3KJWiGZRKwSLMDUqlaAalUrAIc4NSKZpBqRQswtygVIpmUCoFizA3KJWiGZRKwSLMDUqlaAalUrAIc4NSKZpBqRQswtygVIpmUCoFizA3KJWiGZRKwSLMV1ByP2vbdisQA6W7rdsZt8+zLUyBBkr+QWzbdivAXVa192Z0UJ6isW1hCjT3ZuRWtoht224Fvnj3bnn+4MGHzvIgdHciHz96+HD3h5vFkhvRf3z//vLACXb2+Zs3JkmAAtzMEshCgRQ7vB/BbetX4Nuvv2luRM+9GY+g07Z+BcSLtUBij9AIblu/AuhEkGzSEOnlh+++73/HzF+Nude3AExdSZS1bbsCdLbJKG5fNFBenJ/fs2K8XzCySUzqRl/3vkPebx3K7Rrj9PRv0KuB0kTbLhavIJh32uAODrq296snTy/N8TfrTJRsO/1KOKIladzGLNeFk1oyNkoKmDi+lUmboaSWlCiJXmvejCdbT3xdOGrBpxeP33YjX8xzB+YJEcF64v9qTF/GR8lD0XQNSknj1lO8FQ0H9cNAK8FiYGy/xzn+NZ9pGWm5vPn5FwHypK3RnRrJgdkMEc0dTIDsevC+QMr7n11e3swdTAGSsrGr6x0oMZg7mC0gj7qCDfGcjOQ6Pn/MFcw+INF3I5RtMGmguaQafid1tU/ZiyEA7PuM51dX7+n80Ehz2ZjSJgNtipCi1VYoPZiHNBLC1T7GRrmCWIBCJOuDacjXmMHge5lXr9n56dwJS7tGMnqhFPGhGuH40JpmfoAAGHE69l1iDQlj+7Pc9y7QFo0ZE62pd04WINu639iMYoQ4fBCUEjVlLBPx+CJCMRG0FA+nsTlejpuxMYQCBvd4OhZwms/FKVgax3FRQgAoQaCk9I6+ODqRH0eHFQ9jcDkUDGXHs49IOwx4+kaVecusHyXa+4Y/JUJpoEllSzRx+wnDR62Ul7W2OJI4E8fMDBZOFqPZP+xmT/tuzFXUAAAAAElFTkSuQmCC');
+		background-repeat: no-repeat;
+		background-position: left top;
+		
+			blockquote {
+			padding: 0px;
+			margin: 0px 0px 20px 0px;
+			font-size: 40px;
+			line-height: 50px;
+			font-family: @lite-font;
+			color: @gray;
+			}
+			
+			.quote-name {
+			text-transform: uppercase;
+			font-size: 25px;
+			line-height: 25px;
+			color: @gray;
+			}
+			
+			}
+		}
+		
+		&#video-section {
+	
+			h2 {	
+			margin-bottom: 10px;
+			}
+			.video-grid {
+			margin-top: -30px;
+			}
 				
-					span.logo {
-					display: block;
-					height: 230px;
-					background-repeat: no-repeat;
-					background-position: center center;
-					-webkit-background-size: contain;
-					-moz-background-size:  contain;
-					-o-background-size:  contain;
-					background-size:  contain;	
-					}
-					span.description {
-					display: block;
-					font-size: 14px;
-					line-height: 14px;
-					text-align: center;	
-					font-family: @reg-font;
-					}
+			.video-wrapper {
+			height: 310px;
+			margin-top: 30px;
+			background-color: @grayLt;
+				video {
+				display: none;
+				}	
+			}
+		}
+		
+		&#downloads-section {
+			
+			.download-grid {
+			margin-top: -30px;	
+			}
+			
+			a.download-link {
+			display: block;
+			height: 400px;
+			width: 100%;	
+			margin-top: 30px;			
+			pointer-events: none;
+			background-color: @grayLt;
+		
+				span.bg-img, span.title {
+				display: none;
 				}
 			}
 		}
@@ -800,9 +832,11 @@ body.atfc-desktop-css {
 	#hp-form {
 	margin-top: 40px;
 	margin-bottom: 40px;
+	min-height: inherit;
 		.gform_wrapper {
-		border: 1px solid @grayDk;	
+		background-color: @grayLt;	
 		min-height: 150px;
+		margin: 0px;
 		}
 		
 		form {
@@ -818,28 +852,11 @@ body.atfc-desktop-css {
 			height: 10px;
 			width: 20%;
 			float: left;
-			border-right: 4px solid #fff	
-			}
-			
-			.col-purple {
-			background-color: #A677B4;
-			}
-			
-			.col-green {
-			background-color: #ACD15C;	
-			}
-			
-			.col-pink {
-			background-color: #EA5677;	
-			}
-			
-			.col-orange {
-			background-color: #FBAD4F;	
-			}
-			
-			.col-blue {
-			background-color: #2D7EA9;
-			border: none;
+			border-right: 4px solid #fff;
+			background-color: @grayLt;	
+				&:last-child {
+				border: none;	
+				}
 			}
 	}
 	
@@ -869,6 +886,8 @@ body.atfc-desktop-css {
 			-o-background-size:  cover;
 			background-size:  cover;	
 			background-position: left center;
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
 			}
 				
 		}
@@ -881,16 +900,29 @@ body.atfc-desktop-css {
 		display: none;	
 		}		
 	}
-	
-	.no-script-wrap {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	bottom: 0px;
-	right: 0px;
-	background-color: #4b4b4b;
-	z-index: 1004003;
+		
+}
 
+html.no-js {
+	body.atfc-desktop-css {
+	
+	&.loading {
+	-webkit-filter: blur(0px);
+	-moz-filter: blur(0px);
+	-o-filter: blur(0px);
+	-ms-filter: blur(0px);
+	filter: blur(0px);	
+	}
+		
+	.no-script-wrap {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+		background-color: #4b4b4b;
+		z-index: 1004003;
+		
 		.no-script-inner-wrap {
 		text-align: center;	
 		padding: 20px;
@@ -904,7 +936,7 @@ body.atfc-desktop-css {
 			margin-right: -0.25em;
 			}
 		}
-
+		
 		.no-script-inner {
 		display: inline-block;
 		vertical-align: middle;
@@ -913,7 +945,7 @@ body.atfc-desktop-css {
 		border: #C60751 5px solid;
 		 box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 		background-color: white;
-		background-image: url("/wp-content/themes/tlwsolicitors-desktop-v5/_/css/img/tlw-logo.png");
+		background-image: url("/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/tlw-logo-wide.png");
 		background-repeat: no-repeat;
 		background-position: center 20px;
 		padding: 20px;
@@ -946,4 +978,5 @@ body.atfc-desktop-css {
 		}
 	}
 	
+	}
 }

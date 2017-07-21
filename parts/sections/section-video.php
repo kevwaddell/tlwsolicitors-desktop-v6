@@ -11,6 +11,7 @@ $download_section_files = $section['download_section_files'];
 $videos = $section['videos'];
 //echo '<pre>';print_r($videos);echo '</pre>';
 ?>
+<div class="rule"></div>
 <section id="<?php echo $section['acf_fc_layout']; ?>" class="pg-section">
 	<div class="container">
 		
