@@ -644,6 +644,12 @@
 		"oAP": "\/_\/functions\/async-scripts-function.php",
 		"oF": 0
 		},
+	"\/_\/functions\/get_browser.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_\/functions\/get_browser.php",
+		"oF": 0
+		},
 	"\/_\/functions\/gform_functions.php": {
 		"ft": 8192,
 		"oA": 2,

@@ -214,6 +214,9 @@ include (TEMPLATEPATH . '/_/functions/afc_save_post.php');
 /* SEND NEWSLETTER TO DOTMAILER */
 include (TEMPLATEPATH . '/_/functions/submit_newsletter.php');
 
+/* GET BROWSER */
+include (TEMPLATEPATH . '/_/functions/get_browser.php');
+
 function new_submenu_class($menu) {    
     $menu = preg_replace('/ class="sub-menu"/','/ class="sub-menu list-unstyled" /',$menu);        
     return $menu;      
