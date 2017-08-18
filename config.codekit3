@@ -1979,16 +1979,28 @@
 		"oAP": "\/parts\/sections\/section-video.php",
 		"oF": 0
 		},
-	"\/parts\/sitemap\/column-left.php": {
+	"\/parts\/sitemap\/column-left-articles.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/parts\/sitemap\/column-left.php",
+		"oAP": "\/parts\/sitemap\/column-left-articles.php",
 		"oF": 0
 		},
-	"\/parts\/sitemap\/column-right.php": {
+	"\/parts\/sitemap\/column-left-pages.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/parts\/sitemap\/column-right.php",
+		"oAP": "\/parts\/sitemap\/column-left-pages.php",
+		"oF": 0
+		},
+	"\/parts\/sitemap\/column-right-articles.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/sitemap\/column-right-articles.php",
+		"oF": 0
+		},
+	"\/parts\/sitemap\/column-right-pages.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/sitemap\/column-right-pages.php",
 		"oF": 0
 		},
 	"\/parts\/vacancies\/section-content.php": {
