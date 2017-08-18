@@ -36,18 +36,20 @@ $legal_pages = get_posts($legal_args);
 
 $videos_pg_id = get_page_id('videos');
 $downloads_pg_id = get_page_id('downloads');
+$toolkits_pg_id = get_page_id('tlw-toolkits');
 
 //echo '<pre>';print_r($topics);echo '</pre>';
 
  ?>
 <div class="col-xs-6">
 		
-	<h3>TLW Media</h3>
+	<h3>TLW Media & Rescources</h3>
 
 	<div class="list-block">
 
 		<ul class="list-unstyled">
-		
+			
+			<li><a href="<?php echo get_permalink($toolkits_pg_id); ?>"><?php echo get_the_title($toolkits_pg_id); ?></a></li>
 			<li><a href="<?php echo get_permalink($videos_pg_id); ?>"><?php echo get_the_title($videos_pg_id); ?></a></li>
 			<li><a href="<?php echo get_permalink($downloads_pg_id); ?>"><?php echo get_the_title($downloads_pg_id); ?></a></li>
 			
