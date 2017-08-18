@@ -3,12 +3,12 @@
 	<div class="row">
 	
 		<div class="col-xs-3">
-			<h3 class="caps txt-col-red font-slab-serif">Main service areas</h3>
+			<h3 class="caps txt-col-red font-slab-serif">Our service areas</h3>
 			<?php wp_nav_menu(array( 'container' => '', 'menu_class' => 'footer-nav list-unstyled', 'theme_location' => 'footer_menu_one', 'fallback_cb' => false ) ); ?>
 		</div>
 		
 		<div class="col-xs-3">
-			<h3 class="caps txt-col-red font-slab-serif">Other service areas</h3>
+			<h3 class="caps txt-col-red font-slab-serif">Other rescources</h3>
 			<?php wp_nav_menu(array( 'container' => '', 'menu_class' => 'footer-nav list-unstyled', 'theme_location' => 'footer_menu_two', 'fallback_cb' => false ) ); ?>
 		</div>
 		
