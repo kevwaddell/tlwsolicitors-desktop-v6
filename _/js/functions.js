@@ -56,6 +56,10 @@
 		 $('.main-txt > p,h1,h2,h3,h4,h5,h6').widowFix({
 			 letterLimit: 10
 		 });
+		 
+		 $('a.services-nav-link > span.title span').widowFix({
+			 letterLimit: 10
+		 });
 
 			
 		//console.log($(window).scrollTop());
