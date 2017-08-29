@@ -9,7 +9,7 @@ $map_active = $section['map_active'];
 	$address = get_field('global_address', 'options');
 	$section_title = $section['section_title'];
 	$options = $section['map_section_options'];
-	echo '<pre>';print_r($options);echo '</pre>';
+	//echo '<pre>';print_r($options);echo '</pre>';
 	
 	if (empty($section_title)) {
 	$section_title = "Location map";
@@ -69,10 +69,10 @@ marker = new google.maps.Marker({position: myLatLang,map: wide_map,icon: image,t
 					<span class="company bold caps col-red font-size-25"><?php bloginfo('name'); ?></span><br>
 					<?php echo $address; ?>
 					</address>	
-					<?php if ($op == 'route') { ?>
-					<button id="route-finder-btn" class="btn btn-block"><i class="fa fa-car"></i> Route finder</button>			
-					<?php } ?>	
 				<?php } ?>
+				<?php if ($op == 'route') { ?>
+				<button id="route-finder-btn" class="btn btn-block"><i class="fa fa-car"></i> Route finder</button>			
+				<?php } ?>	
 			<?php } ?>
 		</div>
 		
