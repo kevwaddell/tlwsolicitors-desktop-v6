@@ -18,6 +18,10 @@ $more_btn_text = "Continue Reading";
 	<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
 	
 	<div class="container">
+					
+		<?php if ($post->post_parent == 0 && $banner_type == 'services') { ?>
+		<div class="service-label font-slab-serif caps txt-col-gray"><?php the_title(); ?></div>		
+		<?php } ?>
 			
 		<div class="row">
 
