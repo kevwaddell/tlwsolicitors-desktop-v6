@@ -7,14 +7,15 @@ $map_active = $section['map_active'];
 <?php
 	$location = get_field('global_location', 'options');	
 	$address = get_field('global_address', 'options');
-	$section_title = get_field('map_section_title');
-	$options = get_field('map_section_options');
+	$section_title = $section['section_title'];
+	$options = $section['map_section_options'];
+	//echo '<pre>';print_r($options);echo '</pre>';
+	
 	if (empty($section_title)) {
 	$section_title = "Location map";
 	}
 //echo '<pre>';print_r($address);echo '</pre>';
 	$map_marker = get_stylesheet_directory_uri()."/_/img/map-marker.png";
-	$quick_links[] = ['link_title' => $section_title, 'link_anchor' => 'find-us'];	
 ?>
 <script>
 function wide_map_init() {
@@ -59,16 +60,21 @@ marker = new google.maps.Marker({position: myLatLang,map: wide_map,icon: image,t
 		<h2 class="section-header"><?php echo $section_title; ?></h2>
 	
 		<div id="wide-map-canvas"></div>
-
+		
+		
 		<div class="location-box">
+			<?php foreach ($options as $op) { ?>
+				<?php if ($op == 'address') { ?>
 					<address>
-						<span class="company bold caps col-red font-size-25"><?php bloginfo('name'); ?></span><br>
-						<?php echo $address; ?>
-					</address>
-					
-					<button id="route-finder-btn" class="btn btn-block"><i class="fa fa-car"></i> Route finder</button>
-						
-				</div>
+					<span class="company bold caps col-red font-size-25"><?php bloginfo('name'); ?></span><br>
+					<?php echo $address; ?>
+					</address>	
+					<?php if ($op == 'route') { ?>
+					<button id="route-finder-btn" class="btn btn-block"><i class="fa fa-car"></i> Route finder</button>			
+					<?php } ?>	
+				<?php } ?>
+			<?php } ?>
+		</div>
 		
 	</div>
 
