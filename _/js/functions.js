@@ -510,6 +510,11 @@
 			
 			setTimeout(function(){
 				$('body').removeClass('loading');
+				
+				if ($('#wide-map-canvas').length === 1) {
+				initMap();	
+				}
+			
 			}, 2000);
 			
 			$('.has-bg-img').each(function(index, Element) {
