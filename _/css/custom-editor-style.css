@@ -7131,30 +7131,28 @@ body.mce-content-body h5 {
   color: #4b4b4b;
 }
 body.mce-content-body h1 {
-  font-size: 35px;
-  line-height: 40px;
-  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 body.mce-content-body h1 small {
-  font-size: 30px;
+  font-size: 16px;
 }
 body.mce-content-body h2,
 body.mce-content-body h3,
 body.mce-content-body h4,
 body.mce-content-body h5 {
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 25px;
   margin-bottom: 20px;
-  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-stretch: normal;
-  color: #918F8F;
+  color: #4b4b4b;
+  font-weight: bold;
 }
 body.mce-content-body p,
 body.mce-content-body ul,
 body.mce-content-body ol {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 20px;
 }
 body.mce-content-body hr {
   border: none;

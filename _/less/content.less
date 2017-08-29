@@ -4,16 +4,16 @@
 
 h1, h2, h3, h4, h5 {
 .mag-top(0);
-.col(@grayDk);
+.txt-col-grayDk;
 overflow-wrap: break-word;
 }
 
 h1, h2 {
-.font-size(3.5);	
-.line-h(4);
-.mag-bot(3);	
+.font-size(2.5);	
+.line-h(3);
+.mag-bot(2);	
 	small {
-	.font-size(3);	
+	.font-size(1.6);	
 	}
 }
 
@@ -32,8 +32,6 @@ p {
 	&.lead {
 	.bold;
 	.txt-col-grayDk;	
-	.font-size(2);
-	.line-h(3);
 	}
 }
 	
@@ -43,20 +41,20 @@ article.tlw_vacancies_cpt,
 article.tlw_landing_page {
 	
 	.service-label {
-	.font-size(2.5);
-	.line-h(4);	
-	.mag-bot(2);
+	.font-size(2);
+	.line-h(3);	
+	.mag-bot(1.5);
 	.border(@grayDk; 0.1);	
 	.in-block;
-	.pad-right(2);
-	.pad-left(2);
+	.pad-right(1.5);
+	.pad-left(1.5);
 	}
 	
 	.label {
 	.in-block;
-	.font-size(2);	
+	.font-size(1.6);	
 	.pad(0;1.5;0;1.5);
-	.line-h(3);
+	.line-h(2.5);
 	.mag-bot(1.5);
 		&.label-success {
 		.bg-col-green;	
@@ -300,14 +298,10 @@ article.tlw_landing_page {
 		}
 		
 		h2, h3, h4, h5 {
-		.font-slab-serif;	
-		}
-		
-		h2, h3, h4, h5 {
-		.font-size(2.5);
-		.line-h(3);
+		.bold;
+		.font-size(2);
+		.line-h(2.5);
 		.mag-bot(2);
-		.txt-col-gray;
 		}
 		
 	}

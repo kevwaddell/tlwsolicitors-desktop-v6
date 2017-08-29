@@ -13114,13 +13114,13 @@ h5 {
 }
 h1,
 h2 {
-  font-size: 35px;
-  line-height: 40px;
-  margin-bottom: 30px;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 h1 small,
 h2 small {
-  font-size: 30px;
+  font-size: 16px;
 }
 p,
 ul,
@@ -13137,29 +13137,27 @@ p:last-child {
 p.lead {
   font-weight: bold;
   color: #4b4b4b;
-  font-size: 20px;
-  line-height: 30px;
 }
 article.page .service-label,
 article.post .service-label,
 article.tlw_vacancies_cpt .service-label,
 article.tlw_landing_page .service-label {
-  font-size: 25px;
-  line-height: 40px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
   border: 1px solid #4b4b4b;
   display: inline-block;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 article.page .label,
 article.post .label,
 article.tlw_vacancies_cpt .label,
 article.tlw_landing_page .label {
   display: inline-block;
-  font-size: 20px;
+  font-size: 16px;
   padding: 0px 15px 0px 15px;
-  line-height: 30px;
+  line-height: 25px;
   margin-bottom: 15px;
 }
 article.page .label.label-success,
@@ -13660,30 +13658,10 @@ article.page .main-txt h5,
 article.post .main-txt h5,
 article.tlw_vacancies_cpt .main-txt h5,
 article.tlw_landing_page .main-txt h5 {
-  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-stretch: normal;
-}
-article.page .main-txt h2,
-article.post .main-txt h2,
-article.tlw_vacancies_cpt .main-txt h2,
-article.tlw_landing_page .main-txt h2,
-article.page .main-txt h3,
-article.post .main-txt h3,
-article.tlw_vacancies_cpt .main-txt h3,
-article.tlw_landing_page .main-txt h3,
-article.page .main-txt h4,
-article.post .main-txt h4,
-article.tlw_vacancies_cpt .main-txt h4,
-article.tlw_landing_page .main-txt h4,
-article.page .main-txt h5,
-article.post .main-txt h5,
-article.tlw_vacancies_cpt .main-txt h5,
-article.tlw_landing_page .main-txt h5 {
-  font-size: 25px;
-  line-height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
   margin-bottom: 20px;
-  color: #918F8F;
 }
 article.page #content-extra.closed,
 article.post #content-extra.closed,
