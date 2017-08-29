@@ -7151,8 +7151,8 @@ body.mce-content-body h5 {
 body.mce-content-body p,
 body.mce-content-body ul,
 body.mce-content-body ol {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 30px;
 }
 body.mce-content-body hr {
   border: none;
