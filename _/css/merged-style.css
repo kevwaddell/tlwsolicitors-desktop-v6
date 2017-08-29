@@ -13086,19 +13086,25 @@ header[role="banner"] .tel-num {
   -moz-border-radius: 100%;
   border-radius: 100%;
   position: absolute;
-  right: -90px;
+  right: -187px;
   bottom: 0px;
   width: 60px;
   height: 60px;
+  padding: 0px;
   border: 1px solid #4b4b4b;
   color: #4b4b4b;
-  font-size: 30px;
+  font-size: 25px;
 }
 #close-content-extra-btn:hover,
 #close-content-extra-btn:active,
 #close-content-extra-btn:focus {
   background-color: #4b4b4b;
   color: white;
+}
+#close-content-extra-btn i {
+  display: block;
+  line-height: 58px;
+  text-align: center;
 }
 .main-content {
   position: relative;
@@ -15101,11 +15107,13 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   color: #4b4b4b;
   width: 60px;
   height: 60px;
+  padding: 0px;
 }
 #faqs-section .faq-nav button:first-child {
   margin-bottom: 40px;
 }
 #faqs-section .faq-nav button i {
+  line-height: 58px;
   font-size: 30px;
   display: block;
   text-align: center;
