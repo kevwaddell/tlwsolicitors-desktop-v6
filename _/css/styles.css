@@ -15548,16 +15548,13 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   position: relative;
 }
 #wide-map #wide-map-canvas {
-  height: 440px;
+  height: 277px;
   width: 100%;
 }
 #wide-map .google-maps {
   width: 100%;
 }
 #wide-map .location-box {
-  position: absolute;
-  right: 40px;
-  top: 0px;
   background-color: white;
   border: 1px solid #4b4b4b;
 }

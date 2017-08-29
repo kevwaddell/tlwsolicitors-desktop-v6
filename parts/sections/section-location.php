@@ -58,24 +58,26 @@ marker = new google.maps.Marker({position: myLatLang,map: wide_map,icon: image,t
 	<div class="container">
 		
 		<h2 class="section-header"><?php echo $section_title; ?></h2>
-	
-		<div id="wide-map-canvas"></div>
-		
-		
-		<div class="location-box">
-			<?php foreach ($options as $op) { ?>
-				<?php if ($op == 'address') { ?>
-					<address>
-					<span class="company bold caps col-red font-size-25"><?php bloginfo('name'); ?></span><br>
-					<?php echo $address; ?>
-					</address>	
-				<?php } ?>
-				<?php if ($op == 'route') { ?>
-				<button id="route-finder-btn" class="btn btn-block"><i class="fa fa-car"></i> Route finder</button>			
-				<?php } ?>	
-			<?php } ?>
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="location-box">
+					<?php foreach ($options as $op) { ?>
+						<?php if ($op == 'address') { ?>
+							<address>
+							<span class="company bold caps col-red font-size-25"><?php bloginfo('name'); ?></span><br>
+							<?php echo $address; ?>
+							</address>	
+						<?php } ?>
+						<?php if ($op == 'route') { ?>
+						<button id="route-finder-btn" class="btn btn-block"><i class="fa fa-car"></i> Route finder</button>			
+						<?php } ?>	
+					<?php } ?>
+				</div>
+			</div>
+			<div class="col-xs-9">
+				<div id="wide-map-canvas"></div>
+			</div>
 		</div>
-		
 	</div>
 
 </section>
