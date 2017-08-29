@@ -10,7 +10,7 @@ $contact_pg = get_page_by_title("Contact us");
 		<div class="route-finder-pop-up-inner">	
 			<button type="button" id="close-route-finder" class="btn btn-default pull-right"><i class="fa fa-close"></i></button>
 			<div class="pop-up-header">Route Finder</div>  			
-			<form action="http://maps.google.com/maps" method="get" target="_blank" class="route-finder">
+			<form action="https://maps.google.com/maps" method="get" target="_blank" class="route-finder">
 				<div class="form-group">
 					<label for="daddr">Enter Your Post code:</label>
 					<input type="hidden" name="daddr" value="NE29 7ST">
