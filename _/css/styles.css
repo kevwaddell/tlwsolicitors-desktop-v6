@@ -13099,6 +13099,7 @@ h2 {
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 h1 small,
 h2 small {
@@ -13126,7 +13127,7 @@ article.tlw_vacancies_cpt .service-label,
 article.tlw_landing_page .service-label {
   font-size: 20px;
   line-height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border: 1px solid #4b4b4b;
   display: inline-block;
   padding-right: 15px;
