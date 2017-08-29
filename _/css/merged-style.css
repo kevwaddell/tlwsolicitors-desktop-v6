@@ -13144,7 +13144,7 @@ article.tlw_vacancies_cpt .service-label,
 article.tlw_landing_page .service-label {
   font-size: 20px;
   line-height: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   border: 1px solid #4b4b4b;
   display: inline-block;
   padding-right: 15px;
@@ -13236,7 +13236,7 @@ article.tlw_vacancies_cpt .entry ol,
 article.tlw_landing_page .entry ol {
   font-size: 20px;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 article.page .entry p:last-child,
 article.post .entry p:last-child,
