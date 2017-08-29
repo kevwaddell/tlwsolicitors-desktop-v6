@@ -49,7 +49,7 @@ $map_active = $section['map_active'];
 </section>
 
 <script>
-function wide_map_init() {
+function initMap() {
 var TLW_MAP_ID = 'TLW_style';
 	
 var wide_map;
@@ -78,9 +78,9 @@ var mapOptions = {
 	
 wide_map = new google.maps.Map(document.getElementById('wide-map-canvas'), mapOptions);
 	
-marker = new google.maps.Marker({position: myLatLang,map: wide_map,icon: image,title: "TLW Solicitors"});
+marker = new google.maps.Marker({position: myLatLang, map: wide_map, icon: image, title: "TLW Solicitors"});
 };
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo&callback=wide_map_init" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo&callback=initMap" async defer></script>
 
 <?php } ?>
