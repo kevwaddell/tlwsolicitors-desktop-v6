@@ -14128,6 +14128,7 @@ article.tlw_landing_page #content-extra #content-extra-inner {
   border-radius: 100%;
   position: relative;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .toolkit-info .tk-img:before {
   content: "";
