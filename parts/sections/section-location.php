@@ -9,7 +9,7 @@ $map_active = $section['map_active'];
 	$address = get_field('global_address', 'options');
 	$section_title = $section['section_title'];
 	$options = $section['map_section_options'];
-	//echo '<pre>';print_r($options);echo '</pre>';
+	echo '<pre>';print_r($options);echo '</pre>';
 	
 	if (empty($section_title)) {
 	$section_title = "Location map";
