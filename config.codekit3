@@ -213,39 +213,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/_\/css\/img\/bg-icon-logo-grey.png": {
-		"ft": 32768,
-		"iS": 43504,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/bg-icon-logo-grey.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_\/css\/img\/bg-icon-logo-mini.png": {
-		"ft": 32768,
-		"iS": 2407,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/bg-icon-logo-mini.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_\/css\/img\/bg-icon-logo-wht.png": {
-		"ft": 32768,
-		"iS": 42391,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/bg-icon-logo-wht.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/_\/css\/img\/bg-icon-logo-wht.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -255,28 +222,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"\/_\/css\/img\/color-icon.png": {
-		"ft": 32768,
-		"iS": 2614,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/color-icon.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_\/css\/img\/drawn-arrow.png": {
-		"ft": 32768,
-		"iS": 6577,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/drawn-arrow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/_\/css\/img\/feefo-stars.png": {
 		"ft": 32768,
@@ -294,17 +239,6 @@
 		"iS": 11184,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/feefo_logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_\/css\/img\/headway-logo-2016.png": {
-		"ft": 32768,
-		"iS": 31172,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/headway-logo-2016.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -355,39 +289,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/_\/css\/img\/law-awards-bg.png": {
-		"ft": 32768,
-		"iS": 5084,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/law-awards-bg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_\/css\/img\/law-awards-text-right-2016.png": {
-		"ft": 32768,
-		"iS": 3940,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/law-awards-text-right-2016.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_\/css\/img\/northern-Law-Awards-logo.png": {
-		"ft": 32768,
-		"iS": 4476,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/northern-Law-Awards-logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/_\/css\/img\/snowflake-1.png": {
 		"ft": 32768,
 		"iS": 5311,
@@ -431,83 +332,11 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/_\/css\/img\/striped-img-overlay.png": {
-		"ft": 32768,
-		"iS": 112,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/striped-img-overlay.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_\/css\/img\/thin-stripe-wht.png": {
-		"ft": 32768,
-		"iS": 87,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/thin-stripe-wht.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_\/css\/img\/tlw-animated-icon.gif": {
-		"ft": 4194304,
-		"iS": 68722,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/tlw-animated-icon.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/_\/css\/img\/tlw-animated-icon.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/_\/css\/img\/tlw-animated-icon.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/_\/css\/img\/tlw-banner-logo-lrg.png": {
 		"ft": 32768,
 		"iS": 9504,
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/tlw-banner-logo-lrg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_\/css\/img\/tlw-logo-icon.png": {
-		"ft": 32768,
-		"iS": 2119,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/tlw-logo-icon.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_\/css\/img\/tlw-logo-icon.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/_\/css\/img\/tlw-logo-icon.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/_\/css\/img\/tlw-logo-white.png": {
-		"ft": 32768,
-		"iS": 2839,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/tlw-logo-white.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -535,26 +364,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/_\/css\/img\/tlw-logo.png": {
+	"\/_\/css\/img\/TLW-offline-bg.png": {
 		"ft": 32768,
-		"iS": 3654,
+		"iS": 752950,
 		"oA": 0,
-		"oAP": "\/_\/css\/img\/tlw-logo.png",
+		"oAP": "\/_\/css\/img\/TLW-offline-bg.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
-		},
-	"\/_\/css\/img\/tlw-logo.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/_\/css\/img\/tlw-logo.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/_\/css\/img\/user-bg.png": {
 		"ft": 32768,

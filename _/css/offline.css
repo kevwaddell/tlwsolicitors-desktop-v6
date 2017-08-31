@@ -111,26 +111,25 @@ body {
   font-style: normal;
 }
 body {
-  background-color: #918F8F;
+  background-color: white;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 #wrapper {
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url('img/striped-img-overlay.png');
 }
 .col-strip {
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 20px;
+  height: 10px;
   border-bottom: 4px solid white;
   z-index: 2;
 }
 .col-strip .col-block {
-  height: 20px;
+  height: 10px;
   width: 20%;
   float: left;
   border-right: 4px solid white;
@@ -160,21 +159,13 @@ body {
 .wrap-center {
   text-align: center;
   height: 100%;
-  background-image: url('img/user-bg.png');
+  background-image: url('img/TLW-offline-bg.png');
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-@media (min-width: 768px) {
-  .wrap-center {
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-  }
 }
 .wrap-center:before {
   content: "";
@@ -184,8 +175,9 @@ body {
   margin-right: -0.25em;
 }
 .content-inner {
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  left: 10%;
+  top: 20%;
   padding: 10px;
   background-color: white;
   width: 80%;
@@ -255,9 +247,6 @@ body {
   background-color: #C60751;
   bottom: 0;
   width: 100%;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.75);
   text-align: center;
   padding: 10px 0px;
 }
