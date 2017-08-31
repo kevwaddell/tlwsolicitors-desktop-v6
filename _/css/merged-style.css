@@ -12587,20 +12587,21 @@ body #feefo-service-review-floating-widgetId {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+body.loading {
+  overflow: hidden;
+}
 body.nav-open,
 body.modal-open,
 body.search-open,
 body.route-finder-open,
-body.video-open,
-body.loading {
+body.video-open {
   overflow: hidden;
 }
 body.nav-open .tlw-wrapper > *,
 body.modal-open .tlw-wrapper > *,
 body.search-open .tlw-wrapper > *,
 body.route-finder-open .tlw-wrapper > *,
-body.video-open .tlw-wrapper > *,
-body.loading .tlw-wrapper > * {
+body.video-open .tlw-wrapper > * {
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
@@ -12613,8 +12614,7 @@ body.nav-open #feefo-service-review-floating-widgetId,
 body.modal-open #feefo-service-review-floating-widgetId,
 body.search-open #feefo-service-review-floating-widgetId,
 body.route-finder-open #feefo-service-review-floating-widgetId,
-body.video-open #feefo-service-review-floating-widgetId,
-body.loading #feefo-service-review-floating-widgetId {
+body.video-open #feefo-service-review-floating-widgetId {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
 }
