@@ -15087,11 +15087,9 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 #faqs-section .faq-item .question {
   font-size: 25px;
   line-height: 30px;
-  color: #918F8F;
+  color: #4b4b4b;
   margin-bottom: 20px;
-  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-stretch: normal;
+  font-weight: bold;
 }
 #faqs-section .faq-item .answer p {
   font-size: 20px;
