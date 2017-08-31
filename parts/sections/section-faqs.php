@@ -26,13 +26,21 @@ $faq_qestions = get_field( 'faq_qestions', $questions_ID);
 					<?php } ?>
 			
 				</div>
+				
+				<nav class="faq-nav">
+				<?php foreach ($faq_qestions as $k => $b) { ?>
+				<button data-src="faq-item-<?php echo $k+1; ?>" class="btn btn-default<?php echo ($k == 0) ? ' btn-active':''; ?>"><?php echo $k+1; ?></button>
+				<?php } ?>
+				</nav>
 			</div>
+<!--
 			<div class="col-xs-1">
 				<nav class="faq-nav fright">
 					<button id="prev-faq" data-src="faq-item-<?php echo count($faq_qestions); ?>" class="btn btn-default"><span class="sr-only">Previous</span><i class="fa fa-angle-up"></i></button>
 					<button id="next-faq" data-src="faq-item-2" class="btn btn-default"><span class="sr-only">Next</span><i class="fa fa-angle-down"></i></button>
 				</nav>
 			</div>
+-->
 		</div>
 	</div>	
 </section>

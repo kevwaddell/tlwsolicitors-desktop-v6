@@ -745,29 +745,28 @@ section#contact-us-banner {
 	}
 	
 	.faq-nav {
+	.pad-top(2);
 		button {
 		.rounded(100%);
 		.border(@grayDk; 0.1);
 		.txt-col-grayDk;
-		.w(6);
-		.h(6);	
-		.pad-all(0);
-			&:first-child {
-			.mag-bot(4);	
+		.bg-col(@wht);
+		.w(5);
+		.h(5);	
+		.mag-right(0.5);
+		.font-size(2);
+			
+			&.btn-active {
+			.bg-col-grayDk;
+			.txt-col-wht;	
+			pointer-events: none;
 			}
 			
-			i {
-			.block;
-			.line-h(5.8);
-			.font-size(3);	
-			.block;
-			.text-center;
-			}
-			
-			&:hover, &:active, &:focus {
+			&:active {
 			.bg-col-grayDk;
 			.txt-col-wht;
 			}
+			
 		}	
 	}
 }

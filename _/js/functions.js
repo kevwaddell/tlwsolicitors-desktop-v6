@@ -388,6 +388,7 @@
 		which shows and hides the answer to the question
 	    */
 	    
+/*
 	     $('body').on(event_type,'.faq-nav > button', function(){  
 		     
 		    var faq_id = $(this).data().src;
@@ -418,17 +419,31 @@
 		    $('button#prev-faq').data('src', prev_id); 
 		    $('button#next-faq').attr('data-src', next_id); 
 			$('button#next-faq').data('src', next_id); 
+
+			return false;
+			
+		});
+*/
+		
+		 $('body').on(event_type,'.faq-nav > button', function(){  
+		     
+		    var faq_id = $(this).data().src;
+		   
+		    $(this).siblings().removeClass('btn-active');
+		    $(this).addClass('btn-active');
+	
+		    $('.faq-item.active').animate({top: '100%', opacity: 0}, 300, function(){
+				$(this).removeClass('active'); 
+		    });
 		    
-			/*
-			console.log($('#'+faq_id).prev().length);
-		    console.log(prev_id); 
-		    console.log($('#'+faq_id).next().length);
-		    console.log(next_id); 
-			*/
+		    $('#'+faq_id).animate({top: '0%', opacity: 1}, 500, function(){
+				$('#'+faq_id).addClass('active');     
+		    });
 			
 			return false;
 			
 		});
+
 		/* END FAQ's BUTTON ACTIONS
 
 		/* VIDEO LINK FUNCTION */

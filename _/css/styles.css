@@ -15075,28 +15075,27 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 #faqs-section .faq-item .answer p:last-child {
   margin-bottom: 0px;
 }
+#faqs-section .faq-nav {
+  padding-top: 20px;
+}
 #faqs-section .faq-nav button {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   border: 1px solid #4b4b4b;
   color: #4b4b4b;
-  width: 60px;
-  height: 60px;
-  padding: 0px;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  font-size: 20px;
 }
-#faqs-section .faq-nav button:first-child {
-  margin-bottom: 40px;
+#faqs-section .faq-nav button.btn-active {
+  background-color: #4b4b4b;
+  color: white;
+  pointer-events: none;
 }
-#faqs-section .faq-nav button i {
-  line-height: 58px;
-  font-size: 30px;
-  display: block;
-  text-align: center;
-}
-#faqs-section .faq-nav button:hover,
-#faqs-section .faq-nav button:active,
-#faqs-section .faq-nav button:focus {
+#faqs-section .faq-nav button:active {
   background-color: #4b4b4b;
   color: white;
 }
