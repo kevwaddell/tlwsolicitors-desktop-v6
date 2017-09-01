@@ -32,6 +32,10 @@
 			      $('input#input_26_24').val(hash[1]);  
 		        }	
 		        
+		         if (hash[0] === "gclid" && $('#input_25_24').length === 1) {
+			      $('input#input_25_24').val(hash[1]);  
+		        }	
+		        
 		        if (hash[0] === "gclid" ) { 
 			    $.cookie(hash[0], hash[1], {expires: 1, path: '/'});  
 		        }   
