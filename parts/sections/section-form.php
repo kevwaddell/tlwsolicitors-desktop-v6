@@ -5,6 +5,11 @@ $form_active = $section['form_activated'];
 $form = $section['form'];	
 $section_title = $section['section_title'];	
 $col_bg = $section['section_bg_col_active'];
+$enquiry_type = $post->post_title;
+
+if ($post->post_parent != 0) {
+$enquiry_type = get_the_title($post->post_parent);	
+} 
 
 if (empty($section_title)) {
 $section_title = $form->title;
@@ -19,7 +24,7 @@ $section_title = $form->title;
 		<h2 class="section-header"><?php echo $section_title; ?></h2>
 		
 		<?php 
-			gravity_form($form->id, false, true, false, '', false);
+			gravity_form($form->id, false, true, false, array('enquiry-type' => $enquiry_type), false);
 			gravity_form_enqueue_scripts( $form->id );	
 		?>
 		
