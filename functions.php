@@ -29,11 +29,6 @@ if (!is_admin()) {
 		wp_dequeue_style('theme-my-login');
 		}
 		
-		
-		if (is_front_page()) {
-		wp_dequeue_style('gforms_css-css');
-		}
-		
 		// Load JS
 		$functions_dep = array(
 		'jquery',
