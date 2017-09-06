@@ -31,10 +31,7 @@ if (!is_admin()) {
 		
 		
 		if (is_front_page()) {
-		wp_dequeue_style('gforms_reset_css-css');
-		wp_dequeue_style('gforms_formsmain_css-css');	
-		wp_dequeue_style('gforms_ready_class_css-css');
-		wp_dequeue_style('gforms_browsers_css-css');
+		wp_dequeue_style('gforms_css-css');
 		}
 		
 		// Load JS
