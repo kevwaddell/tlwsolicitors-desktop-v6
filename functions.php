@@ -29,6 +29,14 @@ if (!is_admin()) {
 		wp_dequeue_style('theme-my-login');
 		}
 		
+		
+		if (is_front_page()) {
+		wp_dequeue_style('gforms_reset_css-css');
+		wp_dequeue_style('gforms_formsmain_css-css');	
+		wp_dequeue_style('gforms_ready_class_css-css');
+		wp_dequeue_style('gforms_browsers_css-css');
+		}
+		
 		// Load JS
 		$functions_dep = array(
 		'jquery',
