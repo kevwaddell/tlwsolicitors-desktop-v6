@@ -2359,13 +2359,6 @@ html {
   width: 100%;
   height: 100%;
 }
-body.loading {
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  filter: blur(10px);
-}
 body.atfc-desktop-css {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #4b4b4b;
