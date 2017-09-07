@@ -36,7 +36,6 @@
 	<link rel="shortcut icon" href="/favicon.ico?v=zXdkgBvmkj">
 	<meta name="theme-color" content="#ffffff">
 	
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<style><?php readfile(get_stylesheet_directory() . '/_/css/criticalCSS.css'); ?></style>
 	
