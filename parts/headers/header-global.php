@@ -11,7 +11,7 @@
 	})(window,document,'script','dataLayer','GTM-PLBR4F');</script>
 	<!-- End Google Tag Manager -->
 	<?php } ?>
-	<style id="critical-css"><?php readfile(get_stylesheet_directory() . '/_/css/criticalCSS.css'); ?></style>
+	<style id="critical-css"><?php readfile(get_stylesheet_directory() . '/_/css/merged-style-min.css'); ?></style>
 	
 	<meta charset="UTF-8">
 	<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
