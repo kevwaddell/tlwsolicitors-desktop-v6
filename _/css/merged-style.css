@@ -15859,7 +15859,7 @@ body#login .login .tml-action-links a:focus {
   height: 60px;
   width: 330px;
   margin: 0px auto 10px auto;
-  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/tlw-logo-wide.png);
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/tlw-logo-wide.svg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -15921,9 +15921,6 @@ body#login .login .tml-action-links a:focus {
 #footer-info .social-links a:active i,
 #footer-info .social-links a:focus i {
   color: #4b4b4b;
-}
-html.svg #footer-info .copyright #footer-logo {
-  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/tlw-logo-wide.svg);
 }
 /** --------------------------- /
 /* Accessability */
