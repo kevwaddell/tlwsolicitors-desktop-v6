@@ -1614,52 +1614,10 @@
 		"oAP": "\/parts\/headers\/header-global.php",
 		"oF": 0
 		},
-	"\/parts\/headers\/header-landing-page.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/headers\/header-landing-page.php",
-		"oF": 0
-		},
 	"\/parts\/headers\/header-user.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/headers\/header-user.php",
-		"oF": 0
-		},
-	"\/parts\/landingPage\/banner-img.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/landingPage\/banner-img.php",
-		"oF": 0
-		},
-	"\/parts\/landingPage\/banner-video.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/landingPage\/banner-video.php",
-		"oF": 0
-		},
-	"\/parts\/landingPage\/contact-form.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/landingPage\/contact-form.php",
-		"oF": 0
-		},
-	"\/parts\/landingPage\/main-masthead.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/landingPage\/main-masthead.php",
-		"oF": 0
-		},
-	"\/parts\/landingPage\/panels-sidebar.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/landingPage\/panels-sidebar.php",
-		"oF": 0
-		},
-	"\/parts\/landingPage\/section-content.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/parts\/landingPage\/section-content.php",
 		"oF": 0
 		},
 	"\/parts\/navigation\/nav-main.php": {
@@ -1899,12 +1857,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/sidebar.php",
-		"oF": 0
-		},
-	"\/single-tlw_landing_page.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/single-tlw_landing_page.php",
 		"oF": 0
 		},
 	"\/single-tlw_vacancies_cpt.php": {
