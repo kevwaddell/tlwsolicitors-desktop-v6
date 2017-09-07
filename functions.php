@@ -148,8 +148,10 @@ function add_banner_feat_img( $post ) {
 		
 	$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
 	$wide_banner_img = wp_get_attachment_image_src($post_thumbnail_id, 'feat-img-ex-wide' );
-	
-	echo $wide_banner_img[0];
+	$image_data = file_get_contents($wide_banner_img[0]);
+	$encoded_image = base64_encode($image_data);
+		
+	echo 'data:image/png;base64,'. $encoded_image;
 	
 	//echo '<pre>';print_r( $wide_banner_img[0] );echo '</pre>';
 	
