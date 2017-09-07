@@ -29,7 +29,6 @@
 	<link rel="icon" type="image/png" href="/favicon-16x16.png?v=zXdkgBvmkj" sizes="16x16">
 	<link rel="manifest" href="/manifest.json?v=zXdkgBvmkj">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=zXdkgBvmkj" color="#cc015a">
-	<link rel="shortcut icon" href="/favicon.ico?v=zXdkgBvmkj">
 	<meta name="theme-color" content="#ffffff">
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
