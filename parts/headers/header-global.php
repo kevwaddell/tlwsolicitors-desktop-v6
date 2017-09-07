@@ -11,7 +11,6 @@
 	})(window,document,'script','dataLayer','GTM-PLBR4F');</script>
 	<!-- End Google Tag Manager -->
 	<?php } ?>
-	<style>body{opacity: 0;}</style>
 	<style id="critical-css"><?php readfile(get_stylesheet_directory() . '/_/css/criticalCSS.css'); ?></style>
 	
 	<meta charset="UTF-8">
