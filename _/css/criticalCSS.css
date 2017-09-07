@@ -2413,6 +2413,10 @@ body.atfc-desktop-css .tlw-wrapper h5 {
   color: #4b4b4b;
   overflow-wrap: break-word;
 }
+body.atfc-desktop-css #top-nav {
+  height: 0px;
+  overflow: hidden;
+}
 body.atfc-desktop-css #top-nav,
 body.atfc-desktop-css #txt-only-content,
 body.atfc-desktop-css #search-pop-up,
