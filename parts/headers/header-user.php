@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB" class="no-js">
 <head id="www-tlwsolicitors-co-uk" data-template-set="tlw-solicitors-theme">
-	<style>body{opacity: 0;}</style>
+
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
 	

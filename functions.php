@@ -38,13 +38,8 @@ if (!is_admin()) {
 		'slim-scroll',
 		'widow-fix'
 		);
-		//wp_enqueue_script( 'jquery' );
-		//wp_deregister_script('gform_json');
-		//wp_deregister_script('gform_gravityforms');
 		wp_deregister_script('jquery-core');
 		wp_deregister_script('jquery');
-		wp_deregister_script('autoptimize-toolbar');
-		//wp_enqueue_script( 'jquery-ui-core' );
 	    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', array(), '2.2.4', true);
 		wp_enqueue_script( 'modernizr-min', get_template_directory_uri() . '/_/js/modernizr-min.js', array(), '2.8.3', true );
 		wp_enqueue_script( 'bootstrap-min', get_template_directory_uri() . '/_/js/bootstrap-min.js', array('jquery'), '2.8.3', true );
@@ -59,13 +54,13 @@ if (!is_admin()) {
 }
 
 // MERGE ALL CSS INTO ONE FILE FUNCTIOM
-include (TEMPLATEPATH . '/_/functions/merge-styles-function.php');
+//include (TEMPLATEPATH . '/_/functions/merge-styles-function.php');
 
 // Custom deque to force remove unwanted css
 include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
 
 //LoadCSS script function
-include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
+//include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
 
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 	function ewp_remove_script_version( $src ){

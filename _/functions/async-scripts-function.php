@@ -1,18 +1,5 @@
 <?php 
 if (!is_admin()) {
-	
-	function custom_dequeue() {
-		
-		if (!is_admin()) {
-	    wp_dequeue_style('autoptimize-toolbar');
-	    wp_deregister_style('autoptimize-toolbar');
-	    wp_dequeue_script('autoptimize-toolbar');
-	    wp_deregister_script('autoptimize-toolbar');
-	    }
-	}
-	
-	add_action( 'wp_enqueue_scripts', 'custom_dequeue', 9999 );
-	add_action( 'wp_head', 'custom_dequeue', 9999 );
 
 	add_filter( 'gform_init_scripts_footer', '__return_true' );
 	
