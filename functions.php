@@ -62,6 +62,17 @@ include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
 //LoadCSS script function
 //include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
 
+if(!is_admin()) {
+add_action('wp_print_styles', 'show_all_styles', 5);
+	
+	function show_all_styles() {
+	global $wp_styles;
+	$wp_styles->all_deps($wp_styles->queue);
+	$handles = $wp_styles->to_do;
+	echo '<pre>';print_r($wp_styles->queue);echo '</pre>';	
+	};
+}
+
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 	function ewp_remove_script_version( $src ){
 		return remove_query_arg( 'ver', $src );
@@ -160,17 +171,6 @@ function get_page_id($page_name){
 	$page_name = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = '".$page_name."'");
 	return $page_name;
 }
-
-function add_gravityforms_style() {
-	global $post;
-	$form = get_field('form', $post->ID);
-	
-	if (!empty($form)) {
-		wp_enqueue_style("gforms_css", GFCommon::get_base_url() . "/css/forms.css", null, GFCommon::$version);
-	}
-	
-}
-add_action('wp_print_styles', 'add_gravityforms_style');
 
 function custom_excerpt_length( $length ) {
 	return 25;
