@@ -68,6 +68,7 @@ if(!is_admin()) {
 	
 	function dequeue_gf_stylesheets() {
     wp_dequeue_style( 'gforms_datepicker_css' );
+    //wp_dequeue_style( 'gforms_reset_css' );
 	}
 }
 
