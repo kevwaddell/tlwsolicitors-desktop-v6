@@ -9,7 +9,7 @@ $body_classes = array('atfc-desktop-css','nav-closed', 'loading');
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PLBR4F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager -->
 <?php } ?>
-<a class="sr-only" href="#main-content">Skip to main content</a>	
+<a class="sr-only fouc" href="#main-content">Skip to main content</a>	
 <?php get_template_part( 'parts/navigation/nav', 'main' ); ?>	
 
 <div class="tlw-wrapper">
