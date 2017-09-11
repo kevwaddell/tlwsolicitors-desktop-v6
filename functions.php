@@ -63,29 +63,6 @@ include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
 //include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
 
 if(!is_admin()) {
-/*
-add_action('wp_print_styles', 'show_all_styles');
-	
-	function show_all_styles() {
-	global $wp_styles;
-	$wp_styles->all_deps($wp_styles->queue);
-	$handles = $wp_styles->to_do;
-	$print_styles_key = array_search('print-styles', $handles);
-	unset($handles[$print_styles_key]);
-	
-	if (is_user_logged_in()) {
-	$dashicons_key = array_search('dashicons', $handles);
-	unset($handles[$dashicons_key]);
-	$admin_bar_key = array_search('admin-bar', $handles);
-	unset($handles[$admin_bar_key]);
-	$yoast_seo_adminbar_key = array_search('yoast-seo-adminbar', $handles);
-	unset($handles[$yoast_seo_adminbar_key]);
-	$autoptimize_toolbar_key = array_search('autoptimize-toolbar', $handles);	
-	unset($handles[$autoptimize_toolbar_key]);
-	}
-	echo '<pre>';print_r($handles);echo '</pre>';	
-	};
-*/
 	
 	add_action( 'gform_enqueue_scripts', 'dequeue_gf_stylesheets', 11 );
 	
