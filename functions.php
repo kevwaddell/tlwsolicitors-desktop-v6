@@ -63,7 +63,7 @@ include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
 //include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
 
 if(!is_admin()) {
-add_action('wp_print_styles', 'show_all_styles', 5);
+add_action('wp_print_styles', 'show_all_styles');
 	
 	function show_all_styles() {
 	global $wp_styles;
