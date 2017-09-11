@@ -1,7 +1,7 @@
 <?php 
 if(!is_admin()) {
 	
-	add_action('wp_print_styles', 'show_all_styles');
+	add_action('wp_print_styles', 'show_all_styles', 5);
 	function show_all_styles() {
 		// use global to call variable outside function
 		
@@ -20,6 +20,18 @@ if(!is_admin()) {
 		$merged_file = file_get_contents($merged_file_location);
 		$print_styles_key = array_search('print-styles', $handles);
 		unset($handles[$print_styles_key]);
+		
+		if (is_user_logged_in()) {
+		$dashicons_key = array_search('dashicons', $handles);
+		unset($handles[$dashicons_key]);
+		$admin_bar_key = array_search('admin-bar', $handles);
+		unset($handles[$admin_bar_key]);
+		$yoast_seo_adminbar_key = array_search('yoast-seo-adminbar', $handles);
+		unset($handles[$yoast_seo_adminbar_key]);
+		$autoptimize_toolbar_key = array_search('autoptimize-toolbar', $handles);	
+		unset($handles[$autoptimize_toolbar_key]);
+		}
+		
 		// loop all styles
 		foreach ($handles as $handle)
 		{
@@ -74,6 +86,7 @@ if(!is_admin()) {
 		// #3. Deregister all handles
 		foreach ($handles as $handle)
 		{
+			wp_dequeue_style($handle);
 			wp_deregister_style($handle);
 		}
 	}

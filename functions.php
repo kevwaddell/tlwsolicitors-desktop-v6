@@ -54,7 +54,7 @@ if (!is_admin()) {
 }
 
 // MERGE ALL CSS INTO ONE FILE FUNCTIOM
-//include (TEMPLATEPATH . '/_/functions/merge-styles-function.php');
+include (TEMPLATEPATH . '/_/functions/merge-styles-function.php');
 
 // Custom deque to force remove unwanted css
 include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
@@ -63,14 +63,35 @@ include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
 //include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
 
 if(!is_admin()) {
+/*
 add_action('wp_print_styles', 'show_all_styles');
 	
 	function show_all_styles() {
 	global $wp_styles;
 	$wp_styles->all_deps($wp_styles->queue);
 	$handles = $wp_styles->to_do;
-	echo '<pre>';print_r($wp_styles->queue);echo '</pre>';	
+	$print_styles_key = array_search('print-styles', $handles);
+	unset($handles[$print_styles_key]);
+	
+	if (is_user_logged_in()) {
+	$dashicons_key = array_search('dashicons', $handles);
+	unset($handles[$dashicons_key]);
+	$admin_bar_key = array_search('admin-bar', $handles);
+	unset($handles[$admin_bar_key]);
+	$yoast_seo_adminbar_key = array_search('yoast-seo-adminbar', $handles);
+	unset($handles[$yoast_seo_adminbar_key]);
+	$autoptimize_toolbar_key = array_search('autoptimize-toolbar', $handles);	
+	unset($handles[$autoptimize_toolbar_key]);
+	}
+	echo '<pre>';print_r($handles);echo '</pre>';	
 	};
+*/
+	
+	add_action( 'gform_enqueue_scripts', 'dequeue_gf_stylesheets', 11 );
+	
+	function dequeue_gf_stylesheets() {
+    wp_dequeue_style( 'gforms_datepicker_css' );
+	}
 }
 
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
