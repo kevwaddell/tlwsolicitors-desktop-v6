@@ -547,7 +547,7 @@
 				$(Element).css('background-image', 'url(' +src+ ')');
 	  			}
 			});
-			$.getScript("https://api.feefo.com/api/javascript/tlw-solicitors");
+			//$.getScript("https://api.feefo.com/api/javascript/tlw-solicitors");
 			
 		});
 		
