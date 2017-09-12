@@ -528,7 +528,8 @@
 		$(window).bind('load',function(){
 			
 			setTimeout(function(){
-				$('body').removeClass('loading');
+				$('body').removeClass('loading atfc-desktop-css');
+				$('document').find("#critical-css").remove();
 				
 				if ($('#wide-map-canvas').length === 1) {
 				initMap();	
