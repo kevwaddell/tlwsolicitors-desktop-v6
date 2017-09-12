@@ -13,14 +13,14 @@ $banner_parts = get_field('banner_parts');
 		<ul class="text-center list-unstyled banner-links-imgs links-total-<?php echo $links_total; ?>">
 			<?php foreach ($banner_service_links as $bl) { 
 			$thumb_id = get_post_thumbnail_id($bl['link_page']);
-			$bg_full_src = wp_get_attachment_image_src($thumb_id, 'full' );
+			$bg_full_src = wp_get_attachment_image_src($thumb_id, 'medium' );
 			$bg_thumb_src = wp_get_attachment_image_src($thumb_id, 'thumbnail' );	
 			$image_data = file_get_contents($bg_full_src[0]);
 			$encoded_image = base64_encode($image_data);
 			?>
 			<li>
 				<a href="<?php echo get_permalink($bl['link_page']); ?>" class="services-nav-link">
-					<span class="img" style="background-image: url(data:image/png;base64,<?php echo $encoded_image; ?>)"></span>
+					<span class="img has-bg-img" data-src="<?php echo $bg_full_src[0]; ?>" style="background-image: url(<?php echo $bg_thumb_src[0]; ?>)"></span>
 					<span class="title"><span><?php echo get_the_title($bl['link_page']); ?></span></span>
 				</a>
 			</li>
