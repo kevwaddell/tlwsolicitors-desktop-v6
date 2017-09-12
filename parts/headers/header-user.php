@@ -19,23 +19,32 @@
 	<link rel="manifest" href="/manifest.json?v=zXdkgBvmkj">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=zXdkgBvmkj" color="#cc015a">
 	<meta name="theme-color" content="#ffffff">
-
+	<style>
+		body.js {opacity: 0}
+	</style>
 	<style><?php readfile(get_stylesheet_directory() . '/_/css/criticalCSS.css'); ?></style>
 	
 	<?php wp_head(); ?>
 	
 	<script>
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement);
-        addStylesNode.parentElement.removeChild(addStylesNode);
-        document.body.classList.remove("atfc-desktop-css");
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) { raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-     } else { window.addEventListener('load', loadDeferredStyles); }
+	  var loadDeferredStyles = function() {
+	    var addStylesNode = document.getElementById("deferred-styles");
+	    var replacement = document.createElement("div");
+	    var criticalCSS = document.getElementById("critical-css");
+	    //replacement.innerHTML = addStylesNode.textContent;
+	   //document.body.appendChild(replacement);
+	    //addStylesNode.parentElement.removeChild(addStylesNode);
+	    document.body.classList.remove("atfc-desktop-css");
+	   criticalCSS.parentNode.removeChild(criticalCSS);
+	  };
+	  var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+	  if (raf) { 
+		  raf(function() { 
+		   window.setTimeout(loadDeferredStyles, 0); 
+			});
+	 	} else { 
+		 	window.addEventListener('load', loadDeferredStyles); 
+		 }
 	</script>
 
 </head>
