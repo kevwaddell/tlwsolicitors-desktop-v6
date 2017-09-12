@@ -13,6 +13,8 @@ if(!is_admin()) {
 		// The result
 		$handles = $wp_styles->to_do;
 		
+		//echo '<pre>';print_r($wp_styles);echo '</pre>';
+		
 		$css_code = '';
 	
 		// New file location: E:xampp\htdocs\wordpress\wp-content\theme\wdc\merged-style.css

@@ -53,16 +53,6 @@ include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
 //LoadCSS script function
 //include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
 
-if(!is_admin()) {
-	
-	add_action( 'gform_enqueue_scripts', 'dequeue_gf_stylesheets', 11 );
-	
-	function dequeue_gf_stylesheets() {
-    wp_dequeue_style( 'gforms_datepicker_css' );
-    //wp_dequeue_style( 'gforms_reset_css' );
-	}
-}
-
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 	function ewp_remove_script_version( $src ){
 		return remove_query_arg( 'ver', $src );
