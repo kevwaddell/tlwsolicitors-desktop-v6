@@ -724,6 +724,23 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/_\/less\/bootstrap-basic.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_\/css\/bootstrap-basic.css",
+		"oF": 1,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
 	"\/_\/less\/bootstrap-select.less": {
 		"aP": 0,
 		"bl": 0,

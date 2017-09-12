@@ -529,6 +529,7 @@
 			
 			setTimeout(function(){
 				$('body').removeClass('loading atfc-desktop-css');
+				//$('body').removeClass('loading');
 				$('document').find("#critical-css").remove();
 				
 				if ($('#wide-map-canvas').length === 1) {
