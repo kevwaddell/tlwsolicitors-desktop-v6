@@ -46,7 +46,9 @@
 		getUrlVars();
 		
 		$(document).ready(function(){	
+		/*
 		$.getScript("https://api.feefo.com/api/javascript/tlw-solicitors");
+		*/
 		
 		if (window.location.hash) {
 			var container = $('html, body');
@@ -545,7 +547,8 @@
 				$(Element).css('background-image', 'url(' +src+ ')');
 	  			}
 			});
-	
+			$.getScript("https://api.feefo.com/api/javascript/tlw-solicitors");
+			
 		});
 		
 		
