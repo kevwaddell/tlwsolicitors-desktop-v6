@@ -105,7 +105,7 @@ if(!is_admin()) {
 		$merged_file_location = get_stylesheet_directory() .'/_/css/gf-merged.css';
 		$merged_file = file_get_contents($merged_file_location);
 	
-		echo '<pre>';print_r($handles);echo '</pre>';
+		//echo '<pre>';print_r($handles);echo '</pre>';
     
 	    // loop all styles
 		foreach ($handles as $handle) {
