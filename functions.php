@@ -51,7 +51,7 @@ include (TEMPLATEPATH . '/_/functions/merge-styles-function.php');
 include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
 
 //LoadCSS script function
-//include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
+include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
 
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 	function ewp_remove_script_version( $src ){
