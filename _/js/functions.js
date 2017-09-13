@@ -28,8 +28,8 @@
 			      $('input#input_22_27').val(hash[1]);  
 		        }	   
 		       
-		        if (hash[0] === "gclid" && $('#input_26_24').length === 1) {
-			      $('input#input_26_24').val(hash[1]);  
+		        if (hash[0] === "gclid" && $('#input_26_5').length === 1) {
+			      $('input#input_26_5').val(hash[1]);  
 		        }	
 		        
 		         if (hash[0] === "gclid" && $('#input_25_24').length === 1) {
