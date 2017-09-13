@@ -12615,8 +12615,83 @@ h4,
 h5 {
   font-weight: normal;
 }
-#site-loader .loaded {
-  display: none;
+#loader {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1004002;
+}
+#loader .sk-wave {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 10px;
+}
+#loader .sk-wave .sk-rect {
+  background-color: #333;
+  height: 100%;
+  width: 15px;
+  display: inline-block;
+  margin: 0px 2px;
+  -webkit-animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
+  animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
+}
+#loader .sk-wave .sk-rect1 {
+  background-color: #A677B4;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+#loader .sk-wave .sk-rect2 {
+  background-color: #ACD15C;
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+#loader .sk-wave .sk-rect3 {
+  background-color: #EA5677;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+#loader .sk-wave .sk-rect4 {
+  background-color: #FBAD4F;
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+#loader .sk-wave .sk-rect5 {
+  background-color: #2D7EA9;
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+@-webkit-keyframes sk-waveStretchDelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+@keyframes sk-waveStretchDelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+    transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
 }
 .tlw-wrapper {
   position: relative;

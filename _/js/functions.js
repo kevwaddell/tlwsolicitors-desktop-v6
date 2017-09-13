@@ -530,9 +530,12 @@
 		$(window).bind('load',function(){
 			
 			setTimeout(function(){
-				$('body').removeClass('loading atfc-desktop-css');
-				//$('body').removeClass('loading');
-				$('document').find("#critical-css").remove();
+								
+				$('#loader').fadeOut('300', function(){
+					$('body').removeClass('loading atfc-desktop-css');
+					//$('body').removeClass('loading');
+					$('document').find("#critical-css").remove();
+				});
 				
 				if ($('#wide-map-canvas').length === 1) {
 				initMap();	

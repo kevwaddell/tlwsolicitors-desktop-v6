@@ -24,6 +24,7 @@
 	<div id="feefo-service-review-floating-widgetId"></div>			
 	<?php } ?>
 	
+	<?php get_template_part( 'parts/global/site', 'loader' ); ?>	
 	
 	<?php wp_footer(); ?>
 

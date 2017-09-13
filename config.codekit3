@@ -342,16 +342,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/_\/css\/img\/spinner.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/_\/css\/img\/spinner.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/_\/css\/img\/tlw-banner-logo-lrg.png": {
 		"ft": 32768,
 		"iS": 9504,
@@ -1631,6 +1621,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/global\/popups\/xmas-popup.php",
+		"oF": 0
+		},
+	"\/parts\/global\/site-loader.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/global\/site-loader.php",
 		"oF": 0
 		},
 	"\/parts\/headers\/header-global.php": {
