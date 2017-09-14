@@ -413,17 +413,17 @@ border-radius: 0px;
 	&:before {
 	bottom: -1px;
 	left: 0px;
-	background-image: -webkit-linear-gradient(to right, transparent, @gray);
-	background-image: -moz-linear-gradient(to right, transparent, @gray);
-	background-image: linear-gradient(to right, transparent, @gray);
+	background-image: -webkit-linear-gradient(to left, @gray, transparent);
+	background-image: -moz-linear-gradient(to left, @gray, transparent);
+	background-image: linear-gradient(to left, @gray, transparent);
 	}
 
 	&:after {
 	right: 0px;
 	bottom: -1px;
-	background-image: -webkit-linear-gradient(to left, @gray, transparent);
-	background-image: -moz-linear-gradient(to left, @gray, transparent);
-	background-image: linear-gradient(to left, @gray, transparent);
+	background-image: -webkit-linear-gradient(to left, transparent, @gray);
+	background-image: -moz-linear-gradient(to left, transparent, @gray);
+	background-image: linear-gradient(to left, transparent, @gray);
 	}
 
 }
