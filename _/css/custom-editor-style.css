@@ -7093,16 +7093,16 @@ button.close {
 .rule:before {
   bottom: -1px;
   left: 0px;
-  background-image: -webkit-linear-gradient(to left, #918F8F, transparent);
-  background-image: -moz-linear-gradient(to left, #918F8F, transparent);
-  background-image: linear-gradient(to left, #918F8F, transparent);
+  background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
+  background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
 }
 .rule:after {
   right: 0px;
   bottom: -1px;
-  background-image: -webkit-linear-gradient(to left, transparent, #918F8F);
-  background-image: -moz-linear-gradient(to left, transparent, #918F8F);
-  background-image: linear-gradient(to left, transparent, #918F8F);
+  background: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
+  background: -moz-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
 }
 .clearfix:before,
 .clearfix:after {
@@ -7171,16 +7171,16 @@ body.mce-content-body hr:after {
 body.mce-content-body hr:before {
   bottom: -1px;
   left: 0px;
-  background-image: -webkit-linear-gradient(to left, #918F8F, transparent);
-  background-image: -moz-linear-gradient(to left, #918F8F, transparent);
-  background-image: linear-gradient(to left, #918F8F, transparent);
+  background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
+  background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
 }
 body.mce-content-body hr:after {
   right: 0px;
   bottom: -1px;
-  background-image: -webkit-linear-gradient(to left, transparent, #918F8F);
-  background-image: -moz-linear-gradient(to left, transparent, #918F8F);
-  background-image: linear-gradient(to left, transparent, #918F8F);
+  background: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
+  background: -moz-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
 }
 body.mce-content-body p {
   margin-bottom: 20px;
