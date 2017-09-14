@@ -102,9 +102,13 @@ if(!is_admin()) {
 	
 		$css_code = '';
 	
-		$merged_file_location = get_stylesheet_directory() .'/_/css/gf-merged.css';
+		$merged_file_location = get_template_directory() .'/_/css/gf-merged.css';
 		$merged_file = file_get_contents($merged_file_location);
-	
+		$all_styles_key = array_search('merged-style', $handles);
+		$gf_merged_styles_key = array_search('gf-merged-style', $handles);
+		unset($handles[$all_styles_key]);
+		unset($handles[$gf_merged_styles_key]);
+		
 		//echo '<pre>';print_r($handles);echo '</pre>';
     
 	    // loop all styles
