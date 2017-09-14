@@ -12721,16 +12721,16 @@ Copyright (c) 2014 Daniel Eden
 .rule:before {
   bottom: -1px;
   left: 0px;
-  background-image: -webkit-linear-gradient(left, transparent, #918F8F);
-  background-image: -moz-linear-gradient(left, transparent, #918F8F);
-  background-image: linear-gradient(left, transparent, #918F8F);
+  background-image: -webkit-linear-gradient(to right, transparent, #918F8F);
+  background-image: -moz-linear-gradient(to right, transparent, #918F8F);
+  background-image: linear-gradient(to right, transparent, #918F8F);
 }
 .rule:after {
   right: 0px;
   bottom: -1px;
-  background-image: -webkit-linear-gradient(left, #918F8F, transparent);
-  background-image: -moz-linear-gradient(left, #918F8F, transparent);
-  background-image: linear-gradient(left, #918F8F, transparent);
+  background-image: -webkit-linear-gradient(to left, #918F8F, transparent);
+  background-image: -moz-linear-gradient(to left, #918F8F, transparent);
+  background-image: linear-gradient(to left, #918F8F, transparent);
 }
 .clearfix:before,
 .clearfix:after {
@@ -13582,9 +13582,9 @@ article.tlw_vacancies_cpt hr:before,
 article.tlw_landing_page hr:before {
   bottom: -1px;
   left: 0px;
-  background-image: -webkit-linear-gradient(left, transparent, #918F8F);
-  background-image: -moz-linear-gradient(left, transparent, #918F8F);
-  background-image: linear-gradient(left, transparent, #918F8F);
+  background-image: -webkit-linear-gradient(to right, transparent, #918F8F);
+  background-image: -moz-linear-gradient(to right, transparent, #918F8F);
+  background-image: linear-gradient(to right, transparent, #918F8F);
 }
 article.page hr:after,
 article.post hr:after,
@@ -13592,9 +13592,9 @@ article.tlw_vacancies_cpt hr:after,
 article.tlw_landing_page hr:after {
   right: 0px;
   bottom: -1px;
-  background-image: -webkit-linear-gradient(left, #918F8F, transparent);
-  background-image: -moz-linear-gradient(left, #918F8F, transparent);
-  background-image: linear-gradient(left, #918F8F, transparent);
+  background-image: -webkit-linear-gradient(to left, #918F8F, transparent);
+  background-image: -moz-linear-gradient(to left, #918F8F, transparent);
+  background-image: linear-gradient(to left, #918F8F, transparent);
 }
 article.page .main-txt p:last-child,
 article.post .main-txt p:last-child,
@@ -15171,16 +15171,16 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 .pg-section .lg-intro hr:before {
   bottom: -1px;
   left: 0px;
-  background-image: -webkit-linear-gradient(left, transparent, #918F8F);
-  background-image: -moz-linear-gradient(left, transparent, #918F8F);
-  background-image: linear-gradient(left, transparent, #918F8F);
+  background-image: -webkit-linear-gradient(to right, transparent, #918F8F);
+  background-image: -moz-linear-gradient(to right, transparent, #918F8F);
+  background-image: linear-gradient(to right, transparent, #918F8F);
 }
 .pg-section .lg-intro hr:after {
   right: 0px;
   bottom: -1px;
-  background-image: -webkit-linear-gradient(left, #918F8F, transparent);
-  background-image: -moz-linear-gradient(left, #918F8F, transparent);
-  background-image: linear-gradient(left, #918F8F, transparent);
+  background-image: -webkit-linear-gradient(to left, #918F8F, transparent);
+  background-image: -moz-linear-gradient(to left, #918F8F, transparent);
+  background-image: linear-gradient(to left, #918F8F, transparent);
 }
 .pg-section .well {
   background-color: #E9E9E9;
