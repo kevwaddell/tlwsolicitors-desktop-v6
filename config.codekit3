@@ -1749,10 +1749,10 @@
 		"oAP": "\/parts\/sections\/section-feedback.php",
 		"oF": 0
 		},
-	"\/parts\/sections\/section-feefo-carousel.php": {
+	"\/parts\/sections\/section-feefo-reviews.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/parts\/sections\/section-feefo-carousel.php",
+		"oAP": "\/parts\/sections\/section-feefo-reviews.php",
 		"oF": 0
 		},
 	"\/parts\/sections\/section-form.php": {
