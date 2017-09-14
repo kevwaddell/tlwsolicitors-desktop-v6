@@ -19,7 +19,7 @@ $review_count = $feefo->meta->count;
 $rating = $feefo->rating->rating;
 $rating_max = $feefo->rating->max;
 $percentage = ($rating * 100) / $rating_max;
-//echo '<pre>';print_r($percentage);echo '</pre>';
+//echo '<pre>';print_r($feefo);echo '</pre>';
 ?>
 <article <?php post_class("content-section"); ?>>	
 	

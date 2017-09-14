@@ -623,7 +623,12 @@ section#contact-us-banner {
 	}
 
 //FEEFO CAROUSEL
-#feefo-reviews-carousel {
+#feefo-reviews {
+.bg-img('feefo_logo.png');
+.bg-repeat(no-repeat);
+background-position: center 20px;
+.bg-size(15%);	
+		
 	h2.section-header {
 	position: relative;
 	text-align: center;
@@ -637,6 +642,44 @@ section#contact-us-banner {
 	margin: -52px auto 20px auto;
 	.bg-col(@wht);
 	.txt-col-grayDk;
+	}
+	.feefo-reviews {
+	.pad-top(8);	
+	}
+	.feefo-review {
+		.rating {
+		.col(@feefoCol);
+		.mag-bot(1);
+		}
+		a.summary {
+		.block;
+		.font-size(2.5);
+		.line-h(3.5);	
+		.font-lite;
+		.txt-col-gray;
+		.no-text-dec;
+		.max-h(3.5*3);
+		.over-hide;
+		.transition();
+			&:after {
+			  content: "...";
+			  text-align: center;
+			  .abs;
+			  .bottom (0);
+			  .right (0);
+			  width: 50%;
+			  .h(3.5);
+			  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+			}
+			
+			&:hover, &:active, &:focus {
+			.txt-col-grayDk;
+			max-height: none;
+				&:after {
+				.none;	
+				}
+			}
+		}
 	}
 }
 	
