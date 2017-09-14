@@ -1,3 +1,6 @@
+		<!-- FEEFO REVIEWS -->
+		<?php get_template_part( 'parts/sections/section', 'feefo-carousel' ); ?>	
+		
 		<?php 
 		$awards_section_active = get_field( 'awards_section_active', 'options' );	
 		?>
@@ -19,10 +22,6 @@
 	</div><!-- MAIN WRAPPER END -->
 
 	<?php get_template_part( 'parts/global/popups/all', 'popups' ); ?>	
-	
-	<?php if (!is_front_page()) { ?>
-	<div id="feefo-service-review-floating-widgetId"></div>			
-	<?php } ?>
 	
 	<?php get_template_part( 'parts/global/site', 'loader' ); ?>	
 	

@@ -53,9 +53,6 @@
 			<?php } ?>
 		<?php } ?>
 		
-		<!-- FEEFO REVIEWS -->
-		<?php get_template_part( 'parts/sections/section', 'feefo-carousel' ); ?>	
-		
 	</main>	
 	<?php endwhile; ?>
 	<?php endif; ?>
