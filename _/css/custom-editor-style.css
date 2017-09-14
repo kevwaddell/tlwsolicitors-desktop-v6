@@ -7092,18 +7092,17 @@ button.close {
 }
 .rule:before {
   bottom: -1px;
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(#918F8F));
+  left: 0px;
   background-image: -webkit-linear-gradient(left, transparent, #918F8F);
   background-image: -moz-linear-gradient(left, transparent, #918F8F);
-  background-image: -o-linear-gradient(left, transparent, #918F8F);
+  background-image: linear-gradient(left, transparent, #918F8F);
 }
 .rule:after {
   right: 0px;
   bottom: -1px;
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#918F8F), to(transparent));
   background-image: -webkit-linear-gradient(left, #918F8F, transparent);
   background-image: -moz-linear-gradient(left, #918F8F, transparent);
-  background-image: -o-linear-gradient(left, #918F8F, transparent);
+  background-image: linear-gradient(left, #918F8F, transparent);
 }
 .clearfix:before,
 .clearfix:after {
@@ -7171,18 +7170,17 @@ body.mce-content-body hr:after {
 }
 body.mce-content-body hr:before {
   bottom: -1px;
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(#918F8F));
+  left: 0px;
   background-image: -webkit-linear-gradient(left, transparent, #918F8F);
   background-image: -moz-linear-gradient(left, transparent, #918F8F);
-  background-image: -o-linear-gradient(left, transparent, #918F8F);
+  background-image: linear-gradient(left, transparent, #918F8F);
 }
 body.mce-content-body hr:after {
   right: 0px;
   bottom: -1px;
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#918F8F), to(transparent));
   background-image: -webkit-linear-gradient(left, #918F8F, transparent);
   background-image: -moz-linear-gradient(left, #918F8F, transparent);
-  background-image: -o-linear-gradient(left, #918F8F, transparent);
+  background-image: linear-gradient(left, #918F8F, transparent);
 }
 body.mce-content-body p {
   margin-bottom: 20px;
