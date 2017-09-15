@@ -41,46 +41,24 @@ $map_active = $section['map_active'];
 				</div>
 			</div>
 			<div class="col-xs-9">
-				<div id="wide-map-canvas"></div>
+				<div id="map-canvas"></div>
+				<script>
+		      function initMap() {
+		        var uluru = {lat: <?php echo $location['lat']; ?>, lng: <?php echo $location['lng']; ?>};
+		        var map = new google.maps.Map(document.getElementById('map-canvas'), {
+		          zoom: 14,
+		          center: uluru
+		        });
+		        var marker = new google.maps.Marker({
+		          position: uluru,
+		          map: map
+		        });
+		      }
+		    </script>
+		    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo&callback=initMap"></script>
 			</div>
 		</div>
 	</div>
 
 </section>
-
-<script>
-function initMap() {
-var TLW_MAP_ID = 'TLW_style';
-	
-var wide_map;
-var TLW_MAPTYPE_ID = 'wide_map';
-var myLatLang = new google.maps.LatLng( "<?php echo $location['lat']; ?>", "<?php echo $location['lng']; ?>");
-var img_url = "<?php echo $map_marker; ?>";
-var marker;
-
- var image = {
-	 url: img_url,
-	 // This marker is 20 pixels wide by 32 pixels tall.
-	 size: new google.maps.Size(60, 70),
-	 // The origin for this image is 0,0.
-	 origin: new google.maps.Point(0,0),
-	 // The anchor for this image is the base of the flagpole at 0,32.
-	 anchor: new google.maps.Point(30, 60)
-	 };
-	 
-var mapOptions = {
-	zoom: 12, 
-	center: myLatLang, 
-	mapTypeControlOptions: {
-		 mapTypeIds: [google.maps.MapTypeId.ROADMAP, TLW_MAPTYPE_ID]
-	}
-	};
-	
-wide_map = new google.maps.Map(document.getElementById('wide-map-canvas'), mapOptions);
-	
-marker = new google.maps.Marker({position: myLatLang, map: wide_map, icon: image, title: "TLW Solicitors"});
-};
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWfwM9bo9zsSfrpXwMZ0bDZbhvgiP1tKo&callback=initMap" async defer></script>
-
 <?php } ?>

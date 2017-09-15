@@ -15893,9 +15893,9 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 #wide-map .container {
   position: relative;
 }
-#wide-map #wide-map-canvas {
-  height: 277px;
+#wide-map #map-canvas {
   width: 100%;
+  height: 277px;
 }
 #wide-map .google-maps {
   width: 100%;
