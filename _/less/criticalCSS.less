@@ -146,40 +146,6 @@ body.atfc-desktop-css {
 	display: none;	
 	}
 	
-	.rule {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	height: 1px;
-	position: relative;
-		&.mag-top-60 {
-		margin-top: 60px;	
-		}
-		&:before, &:after {
-		content: "";
-		position: absolute;
-		height: 1px;
-		width: 50%;
-		}
-	
-		&:before {
-		bottom: -1px;
-		background-image: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(@gray));
-		background-image: -webkit-linear-gradient(left, transparent, @gray);
-		background-image: -moz-linear-gradient(left, transparent, @gray);
-		background-image: -o-linear-gradient(left, transparent, @gray);
-		}
-	
-		&:after {
-		right: 0px;
-		bottom: -1px;
-		background-image: -webkit-gradient(linear, 0 0, 100% 0, from(@gray), to(transparent));
-		background-image: -webkit-linear-gradient(left, @gray, transparent);
-		background-image: -moz-linear-gradient(left, @gray, transparent);
-		background-image: -o-linear-gradient(left, @gray, transparent);
-		}
-
-	}
-	
 	#breadcrumbs {
 	color: @grayDk;
 	font-size: 16px;

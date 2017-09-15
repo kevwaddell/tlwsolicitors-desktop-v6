@@ -233,16 +233,6 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/_\/css\/img\/bg-icon-logo-wht.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/_\/css\/img\/bg-icon-logo-wht.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/_\/css\/img\/feefo-stars.png": {
 		"ft": 32768,
 		"iS": 3881,
@@ -342,17 +332,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/_\/css\/img\/tlw-banner-logo-lrg.png": {
-		"ft": 32768,
-		"iS": 9504,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/tlw-banner-logo-lrg.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/_\/css\/img\/tlw-logo-wide.png": {
 		"ft": 32768,
 		"iS": 8274,
@@ -393,17 +372,6 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_\/css\/img\/video-banner-bg.png": {
-		"ft": 32768,
-		"iS": 24403,
-		"oA": 0,
-		"oAP": "\/_\/css\/img\/video-banner-bg.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
