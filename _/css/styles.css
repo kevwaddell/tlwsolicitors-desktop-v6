@@ -14958,6 +14958,14 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   background: -moz-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
   background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
 }
+.pg-section .lg-intro img.alignleft {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.pg-section .lg-intro img.alignright {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
 .pg-section .well {
   background-color: #E9E9E9;
   border-color: #C60751;
