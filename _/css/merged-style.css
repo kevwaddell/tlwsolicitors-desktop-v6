@@ -15321,6 +15321,9 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   height: 35px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 50%);
 }
+#feefo-reviews .feefo-review a.summary.no-elipse:after {
+  display: none;
+}
 #feefo-reviews .feefo-review a.summary:hover,
 #feefo-reviews .feefo-review a.summary:active,
 #feefo-reviews .feefo-review a.summary:focus {

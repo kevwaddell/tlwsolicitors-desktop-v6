@@ -23,6 +23,15 @@ $total_reviews = count($feefo->reviews);
 			$rating = $feefo->reviews[$review]->service->rating->rating;
 			$summary = $feefo->reviews[$review]->service->review;
 			$url = $feefo->reviews[$review]->url;
+			if(substr($summary, -1) === ','){$summary = rtrim($summary, ",");}
+			if(substr($summary, -1) != '.'){
+				if (substr($summary, -1) === '!') {
+				break;
+				} else {
+				$summary.= '.';	
+				}
+			}
+			//echo '<pre>';print_r(strlen($summary));echo '</pre>';
 			?>
 			<div class="col-xs-4">
 				<?php //echo '<pre>';print_r($feefo->reviews[$review]);echo '</pre>'; ?>
@@ -32,7 +41,9 @@ $total_reviews = count($feefo->reviews);
 						    <i class="fa fa-star fa-2x"></i>
 						<?php } ?>
 					</div>
-					<a href="<?php echo $url; ?>" target="_blank" rel="nofollow" class="summary text-center"><?php echo $summary; ?></a>
+					<a href="<?php echo $url; ?>" target="_blank" rel="nofollow" class="summary text-center<?php echo (strlen($summary) > 92) ? '':' no-elipse'; ?>">
+						<?php echo $summary; ?>
+						</a>
 				</div>
 			</div>
 			<?php } ?>
