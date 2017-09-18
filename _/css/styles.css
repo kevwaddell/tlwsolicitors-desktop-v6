@@ -14849,29 +14849,8 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   color: #918F8F;
 }
 .hp-sidebar .feefo-panel .star-rating {
-  position: relative;
-  height: 40px;
-}
-.hp-sidebar .feefo-panel .star-rating .col-bar {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  background-color: #ffde0f;
-}
-.hp-sidebar .feefo-panel .star-rating .stars {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/feefo-stars.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  text-align: center;
+  color: #ffde0f;
 }
 .hp-sidebar a.btn {
   -webkit-border-radius: 0px;

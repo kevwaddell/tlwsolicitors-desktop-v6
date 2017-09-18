@@ -18,7 +18,7 @@ $feefo = json_decode($result);
 $review_count = $feefo->meta->count;
 $rating = $feefo->rating->rating;
 $rating_max = $feefo->rating->max;
-$percentage = ($rating * 100) / $rating_max;
+$stars = round($rating);
 //echo '<pre>';print_r($feefo);echo '</pre>';
 ?>
 <article <?php post_class("content-section"); ?>>	
@@ -42,8 +42,9 @@ $percentage = ($rating * 100) / $rating_max;
 						<div class="title caps text-center">Service Rating <strong><?php echo $rating; ?></strong></div>
 						<div class="review-count text-center"><?php echo $review_count; ?> Service reviews</div>
 						<div class="star-rating">
-							<div class="col-bar" style="width: <?php echo $percentage; ?>%;"></div>
-							<div class="stars"></div>
+							<?php for ($i = 1; $i <= $stars; $i++) { ?>
+							<span class="fa fa-star fa-2x"></span>
+							<?php } ?>
 						</div>
 					</div>	
 					<a href="<?php echo get_permalink($about_pg->ID); ?>" class="btn btn-default btn-block"><i class="fa <?php echo $about_pg_icon; ?> fa-lg"></i>About us</a>	
