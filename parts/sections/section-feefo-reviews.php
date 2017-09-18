@@ -1,4 +1,8 @@
 <?php 
+$feedback_pg = get_page_by_title( "Why Choose TLW" );	
+if ($post->ID != $feedback_pg->ID) { ?>
+
+<?php 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -51,3 +55,5 @@ $total_reviews = count($feefo->reviews);
 		</div>
 	</div>
 </section>
+			
+<?php } ?>
