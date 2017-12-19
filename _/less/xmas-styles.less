@@ -207,18 +207,8 @@ z-index: 1000;
 .bg-repeat(no-repeat);
 .bg-size(contain);
 background-position: center center;
--webkit-animation-timing-function: linear;
--moz-animation-timing-function: linear;
--ms-animation-timing-function: linear;
 animation-timing-function: linear;
--webkit-animation-fill-mode: forwards;
--moz-animation-fill-mode: forwards;
--ms-animation-fill-mode: forwards;
 animation-fill-mode: forwards;
--webkit-animation-iteration-count: infinite;
--moz-animation-iteration-count: infinite;
--ms-animation-iteration-count: infinite;
-animation-iteration-count: infinite;
 z-index: 1;
 left: 50%;
 
@@ -226,62 +216,67 @@ left: 50%;
 	.bg-img('snowflake-1.png');	
 	top: -50px;
 	margin-left: -20%;
-	animation: move-snow-1 10s, infinite-spinning 10s;
+	animation: move-snow-1 10s infinite, infinite-spinning 10s infinite;
+	animation-delay: 1s;
 	}
 	
 	&.snowflake_style2 {
 	.bg-img('snowflake-2.png');	
 	top: -30px;
 	margin-left: -30%;
-	animation: move-snow-2 7s 2s, infinite-spinning 7s;
+	animation: move-snow-2 17s infinite, infinite-spinning 7s infinite;
+	animation-delay: 2s;
 	}
 	
 	&.snowflake_style3 {
 	top: -70px;
 	margin-left: -40%;
 	.bg-img('snowflake-3.png');	
-	animation: move-snow-3 5s 3s, infinite-spinning 5s;
+	animation: move-snow-3 15s infinite, infinite-spinning 5s infinite;
+	animation-delay: 3s;
 	}
 	
 	&.snowflake_style4 {
 	top: -50px;
 	margin-left: -50%;
 	.bg-img('snowflake-1.png');	
-	animation: move-snow-4 10s 2s, infinite-spinning-back 10s;
+	animation: move-snow-4 10s infinite, infinite-spinning-back 10s infinite;
+	animation-delay: 1s;
 	}
 	
 	&.snowflake_style5 {
 	.bg-img('snowflake-2.png');	
 	top: -30px;
-	animation: move-snow-5 8s 3s, infinite-spinning 7s;
+	animation: move-snow-5 18s infinite, infinite-spinning 7s infinite;
+	animation-delay: 2s;
 	}
 	
 	&.snowflake_style6 {
 	top: -70px;
 	margin-left: 50%;
 	.bg-img('snowflake-3.png');	
-	animation: move-snow-6 11s 2s, infinite-spinning-back 5s;
+	animation: move-snow-6 11s infinite, infinite-spinning-back 5s infinite;
 	}
 	
 	&.snowflake_style7 {
 	top: -50px;
 	margin-left: 40%;
 	.bg-img('snowflake-1.png');	
-	animation: move-snow-7 6s 4s, infinite-spinning 10s;
+	animation: move-snow-7 16s infinite, infinite-spinning 10s infinite;
 	}
 	
 	&.snowflake_style8 {
 	.bg-img('snowflake-2.png');	
 	top: -30px;
 	margin-left: 30%;
-	animation: move-snow-8 7s 1s, infinite-spinning-back 7s;
+	animation: move-snow-8 17s infinite, infinite-spinning-back 7s infinite;
 	}
 	
 	&.snowflake_style9 {
 	top: -50px;
 	margin-left: 20%;
 	.bg-img('snowflake-1.png');	
-	animation: move-snow-9 7s 1s, infinite-spinning 10s;
+	animation: move-snow-9 17s infinite, infinite-spinning 10s infinite;
 	}
 	
 	&.lg {
@@ -302,39 +297,39 @@ left: 50%;
 
 @keyframes move-snow-1 {
     from { top: -50px; left: 50%; }
-	to   { top: 1000px; left: 60%; }
+	to   { top: 120%; left: 60%; }
 }
 @keyframes move-snow-2 {
     from { top: -30px; left: 50%; }
-	to   { top: 1000px; left: 60%; }
+	to   { top: 140%; left: 60%; }
 }
 @keyframes move-snow-3 {
     from { top: -70px; left: 50%; }
-	to   { top: 1000px; left: 60%; }
+	to   { top: 150%; left: 60%; }
 }
 @keyframes move-snow-4 {
     from { top: -50px; left: 50%; }
-	to   { top: 1000px; left: 60%; }
+	to   { top: 120%; left: 60%; }
 }
 @keyframes move-snow-5 {
     from { top: -30px; left: 50%; }
-	to   { top: 1000px; left: 60%; }
+	to   { top: 130%; left: 60%; }
 }
 @keyframes move-snow-6 {
     from { top: -70px; left: 50%; }
-	to   { top: 1000px; left: 60%; }
+	to   { top: 150%; left: 60%; }
 }
 @keyframes move-snow-7 {
     from { top: -70px; left: 50%; }
-	to   { top: 1000px; left: 60%; }
+	to   { top: 120%; left: 60%; }
 }
 @keyframes move-snow-8 {
     from { top: -70px; left: 50%; }
-	to   { top: 1000px; left: 60%; }
+	to   { top: 140%; left: 60%; }
 }
 @keyframes move-snow-9 {
     from { top: -70px; left: 50%; }
-	to   { top: 1000px; left: 60%; }
+	to   { top: 150%; left: 60%; }
 }
 
 @keyframes infinite-spinning {

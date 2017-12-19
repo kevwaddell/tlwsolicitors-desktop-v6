@@ -16322,18 +16322,8 @@ body#login .login .tml-action-links a:focus {
   -o-background-size: contain;
   background-size: contain;
   background-position: center center;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-timing-function: linear;
-  -ms-animation-timing-function: linear;
   animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -ms-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
   z-index: 1;
   left: 50%;
 }
@@ -16341,54 +16331,59 @@ body#login .login .tml-action-links a:focus {
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/snowflake-1.png);
   top: -50px;
   margin-left: -20%;
-  animation: move-snow-1 10s, infinite-spinning 10s;
+  animation: move-snow-1 10s infinite, infinite-spinning 10s infinite;
+  animation-delay: 1s;
 }
 .snowflake.snowflake_style2 {
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/snowflake-2.png);
   top: -30px;
   margin-left: -30%;
-  animation: move-snow-2 7s 2s, infinite-spinning 7s;
+  animation: move-snow-2 17s infinite, infinite-spinning 7s infinite;
+  animation-delay: 2s;
 }
 .snowflake.snowflake_style3 {
   top: -70px;
   margin-left: -40%;
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/snowflake-3.png);
-  animation: move-snow-3 5s 3s, infinite-spinning 5s;
+  animation: move-snow-3 15s infinite, infinite-spinning 5s infinite;
+  animation-delay: 3s;
 }
 .snowflake.snowflake_style4 {
   top: -50px;
   margin-left: -50%;
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/snowflake-1.png);
-  animation: move-snow-4 10s 2s, infinite-spinning-back 10s;
+  animation: move-snow-4 10s infinite, infinite-spinning-back 10s infinite;
+  animation-delay: 1s;
 }
 .snowflake.snowflake_style5 {
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/snowflake-2.png);
   top: -30px;
-  animation: move-snow-5 8s 3s, infinite-spinning 7s;
+  animation: move-snow-5 18s infinite, infinite-spinning 7s infinite;
+  animation-delay: 2s;
 }
 .snowflake.snowflake_style6 {
   top: -70px;
   margin-left: 50%;
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/snowflake-3.png);
-  animation: move-snow-6 11s 2s, infinite-spinning-back 5s;
+  animation: move-snow-6 11s infinite, infinite-spinning-back 5s infinite;
 }
 .snowflake.snowflake_style7 {
   top: -50px;
   margin-left: 40%;
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/snowflake-1.png);
-  animation: move-snow-7 6s 4s, infinite-spinning 10s;
+  animation: move-snow-7 16s infinite, infinite-spinning 10s infinite;
 }
 .snowflake.snowflake_style8 {
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/snowflake-2.png);
   top: -30px;
   margin-left: 30%;
-  animation: move-snow-8 7s 1s, infinite-spinning-back 7s;
+  animation: move-snow-8 17s infinite, infinite-spinning-back 7s infinite;
 }
 .snowflake.snowflake_style9 {
   top: -50px;
   margin-left: 20%;
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/snowflake-1.png);
-  animation: move-snow-9 7s 1s, infinite-spinning 10s;
+  animation: move-snow-9 17s infinite, infinite-spinning 10s infinite;
 }
 .snowflake.lg {
   width: 70px;
@@ -16408,7 +16403,7 @@ body#login .login .tml-action-links a:focus {
     left: 50%;
   }
   to {
-    top: 1000px;
+    top: 120%;
     left: 60%;
   }
 }
@@ -16418,7 +16413,7 @@ body#login .login .tml-action-links a:focus {
     left: 50%;
   }
   to {
-    top: 1000px;
+    top: 140%;
     left: 60%;
   }
 }
@@ -16428,7 +16423,7 @@ body#login .login .tml-action-links a:focus {
     left: 50%;
   }
   to {
-    top: 1000px;
+    top: 150%;
     left: 60%;
   }
 }
@@ -16438,7 +16433,7 @@ body#login .login .tml-action-links a:focus {
     left: 50%;
   }
   to {
-    top: 1000px;
+    top: 120%;
     left: 60%;
   }
 }
@@ -16448,7 +16443,7 @@ body#login .login .tml-action-links a:focus {
     left: 50%;
   }
   to {
-    top: 1000px;
+    top: 130%;
     left: 60%;
   }
 }
@@ -16458,7 +16453,7 @@ body#login .login .tml-action-links a:focus {
     left: 50%;
   }
   to {
-    top: 1000px;
+    top: 150%;
     left: 60%;
   }
 }
@@ -16468,7 +16463,7 @@ body#login .login .tml-action-links a:focus {
     left: 50%;
   }
   to {
-    top: 1000px;
+    top: 120%;
     left: 60%;
   }
 }
@@ -16478,7 +16473,7 @@ body#login .login .tml-action-links a:focus {
     left: 50%;
   }
   to {
-    top: 1000px;
+    top: 140%;
     left: 60%;
   }
 }
@@ -16488,7 +16483,7 @@ body#login .login .tml-action-links a:focus {
     left: 50%;
   }
   to {
-    top: 1000px;
+    top: 150%;
     left: 60%;
   }
 }
