@@ -16131,18 +16131,20 @@ body#login .login .tml-action-links a:focus {
 }
 #xmas-popup-btn-wrap .btn {
   margin-left: 10px;
-  padding: 0px 15px 0px 20px;
+  padding: 0px 30px 0px 20px;
   line-height: 30px;
   border: none;
   background-color: #cc0000;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
+  position: relative;
 }
 #xmas-popup-btn-wrap .btn i {
-  float: right;
+  position: absolute;
+  right: 10px;
+  top: 0px;
   line-height: 30px;
-  padding-left: 10px;
   color: #ACD15C;
 }
 #xmas-popup-btn-wrap .btn:hover,
@@ -16261,12 +16263,14 @@ body#login .login .tml-action-links a:focus {
   background-color: #cc0000;
   color: white;
   text-transform: uppercase;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 30px 0px 20px;
   line-height: 50px;
   font-weight: bold;
 }
 #xmas-popup-wrap .xmas-popup-inner button#close-xmas-popup i {
-  float: right;
+  position: absolute;
+  right: 20px;
+  top: 0px;
   line-height: 50px;
   color: #ACD15C;
 }

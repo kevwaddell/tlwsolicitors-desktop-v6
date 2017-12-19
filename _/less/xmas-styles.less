@@ -31,18 +31,21 @@ text-align: center;
 	
 	.btn {
 	.mag-left(1);
-	.pad(0;1.5;0;2);
+	.pad(0;3;0;2);
 	.line-h(3);
 	.no-border;
 	.bg-col(darken(red, 10%));
 	.col(white);
 	.bold;
 	.caps;
+	.rel;
 	
 		i {
-		.fright;
+		.abs;
+		.right(1);
+		.top(0);
+		//.fright;
 		.line-h(3);
-		.pad-left(1);
 		.col(@green);
 		}	
 		
@@ -145,11 +148,13 @@ z-index: 1000;
 		.bg-col(darken(red, 10%));
 		.col(white);
 		.caps;
-		.pad(0;2;0;2);
+		.pad(0;3;0;2);
 		.line-h(5);
 		.bold;
 			i {
-			.fright;
+			.abs;
+			.right(2);
+			.top(0);
 			.line-h(5);	
 			.col(@green);
 			}
