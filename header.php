@@ -8,6 +8,10 @@ $body_classes = array('atfc-desktop-css','nav-closed', 'loading');
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PLBR4F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager -->
+<!-- Trinity Mirror Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHL78WL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Trinity Mirror Google Tag Manager (noscript) -->
 <?php } ?>
 <a class="sr-only fouc" href="#main-content">Skip to main content</a>	
 <?php get_template_part( 'parts/navigation/nav', 'main' ); ?>	

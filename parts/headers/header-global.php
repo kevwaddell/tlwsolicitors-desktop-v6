@@ -3,6 +3,10 @@
 <head id="www-tlwsolicitors-co-uk" data-template-set="tlw-solicitors-theme">
 	
 	<?php if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') { ?>
+	<!-- Trinity Mirror script -->
+	<script>
+!function(t,e){e||(e=e||{},window.permutive=e,e.q=[],_pv="1.0",e.init=function(n,r,o){e.config={projectId:n,apiKey:r,environment:o||"production"};for(var i=["track","identify","events","query","addon","trigger","ready","defineEntities"],a=0;a<i.length;a++){var c=i[a];e[c]=function(t){return function(){var n=Array.prototype.slice.call(arguments,0);e.q.push({functionName:t,arguments:n})}}(c)}var p=t.createElement("script");p.type="text/javascript",p.async=!0;var s="https:"==t.location.protocol?"https://d3alqb8vzo7fun.cloudfront.net":"http://cdn.permutive.com";p.src=s+"/"+n+"-"+_pv+".js";var u=t.getElementsByTagName("script")[0];u.parentNode.insertBefore(p,u)})}(document,window.permutive),permutive.init("8a2c2f13-f564-4fff-8d22-177534028b95","68303c0c-2e2e-4b14-8d14-245e59740f1a");
+	</script>
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -10,6 +14,13 @@
 	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-PLBR4F');</script>
 	<!-- End Google Tag Manager -->
+	<!-- Trinity Mirror Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-KHL78WL');</script>
+	<!-- End Trinity Mirror Google Tag Manager -->
 	<?php } ?>
 
 	<style id="critical-css">
