@@ -1,5 +1,5 @@
 		<!-- FEEFO REVIEWS -->
-		<?php get_template_part( 'parts/sections/section', 'feefo-reviews' ); ?>	
+		<?php //get_template_part( 'parts/sections/section', 'feefo-reviews' ); ?>	
 		
 		<?php 
 		$awards_section_active = get_field( 'awards_section_active', 'options' );	
@@ -24,6 +24,9 @@
 	<?php get_template_part( 'parts/global/popups/all', 'popups' ); ?>	
 	
 	<?php get_template_part( 'parts/global/site', 'loader' ); ?>	
+	
+	<!-- FEEFO REVIEWS -->
+	<?php get_template_part( 'parts/global/popups/feefo', 'widget' ); ?>	
 	
 	<?php wp_footer(); ?>
 

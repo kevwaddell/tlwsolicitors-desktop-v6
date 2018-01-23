@@ -1636,6 +1636,13 @@
 		"oAP": "\/parts\/global\/popups\/all-popups.php",
 		"oF": 0
 		},
+	"\/parts\/global\/popups\/feefo-widget.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/global\/popups\/feefo-widget.php",
+		"oF": 0
+		},
 	"\/parts\/global\/popups\/no-script.php": {
 		"cB": 0,
 		"ft": 8192,
