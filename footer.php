@@ -1,6 +1,3 @@
-		<!-- FEEFO REVIEWS -->
-		<?php //get_template_part( 'parts/sections/section', 'feefo-reviews' ); ?>	
-		
 		<?php 
 		$awards_section_active = get_field( 'awards_section_active', 'options' );	
 		?>
