@@ -7,7 +7,7 @@
 		"uuidString": "4EC56C99-8C1E-44EC-A45D-4066DD67E233"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26667",
 "files": {
 	"\/404.php": {
 		"cB": 0,
@@ -2016,7 +2016,8 @@
 	"creationDate": 518437403,
 	"displayValue": "tlwsolicitors-desktop-v6",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-cocaine"
+	"iconImageName": "meme-cocaine",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2024,6 +2025,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -2587,6 +2589,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -3814,6 +3820,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {

@@ -57,7 +57,7 @@ if($field['type'] == 'section') {
 
     // check for the presence of section break column classes
     $field_class = explode(' ', $field['cssClass']);
-    $field_class_matches = array_intersect($field_class, array('gform_column'));
+    $field_class_matches = array_intersect($field_class, array('gform_column', 'full-width'));
 
     // if field is a column break in a multi-column form, perform the list split
     if(!empty($form_class_matches) && !empty($field_class_matches)) { // make sure to target only multi-column forms

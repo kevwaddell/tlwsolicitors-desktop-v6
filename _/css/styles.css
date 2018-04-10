@@ -16768,6 +16768,10 @@ figure.alignnone {
   float: left;
   width: 50%;
 }
+.gform_wrapper.two-column_wrapper ul.gform_fields.full-width {
+  display: block;
+  clear: both;
+}
 .gform_wrapper.two-column_wrapper ul.gform_column li.gsection:first-child {
   display: none;
 }
@@ -17180,7 +17184,7 @@ figure.alignnone {
   margin-bottom: 10px;
 }
 #form-section .gform_wrapper textarea.large {
-  height: 290px;
+  height: 175px;
   padding: 20px;
   font-size: 20px;
   border-color: #4b4b4b;
@@ -17220,11 +17224,21 @@ figure.alignnone {
 }
 #form-section .gfield_no_follows_desc {
   margin-bottom: 0px;
+  text-align: center;
 }
 #form-section .gform_wrapper .gsection {
   border: none;
   padding: 0px;
   margin: 0px;
+}
+#form-section .gfield_description {
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+#form-section .consent-message {
+  padding-top: 30px;
 }
 #form-section .gform_wrapper .gform_body:before,
 #form-section .gform_wrapper .gform_body:after {
@@ -17519,26 +17533,30 @@ figure.alignnone {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-#hp-form .gform_wrapper .gform_body,
-#hp-form .gform_wrapper .gform_footer {
-  float: left;
-}
 #hp-form .gform_wrapper .gform_body {
-  width: 95%;
+  padding-bottom: 15px;
 }
 #hp-form .gform_wrapper ul.gform_fields li {
   display: inline-block;
-  padding-right: 30px;
-  width: 370px;
+  padding-right: 0px;
+  width: 33%;
   margin-bottom: 0px;
   margin-top: 0px;
 }
-#hp-form .gform_wrapper ul.gform_fields li:nth-child(3) {
-  width: 285px;
-  padding-right: 0px;
+#hp-form .gform_wrapper ul.gform_fields li:nth-child(2) {
+  width: 34%;
+  padding: 0px 2%;
 }
 #hp-form .gform_wrapper ul.gform_fields li .ginput_container {
   margin-top: 0px;
+}
+#hp-form .gform_wrapper ul.gform_fields li.consent_message {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
 }
 #hp-form .gform_wrapper ul.gform_fields input[type="text"],
 #hp-form .gform_wrapper ul.gform_fields input[type="email"],
@@ -17555,29 +17573,31 @@ figure.alignnone {
 #hp-form .gform_wrapper .gform_footer {
   margin: 0px;
   padding: 0px;
-  width: 5%;
-  overflow: hidden;
-  clear: none;
 }
 #hp-form .gform_wrapper .gform_footer button {
   border: none;
   height: 60px;
-  padding: 0px;
+  padding: 0px 0px 0px 20px;
   width: 100%;
   background-color: #C60751;
   color: white;
+  position: relative;
+  text-align: left;
 }
 #hp-form .gform_wrapper .gform_footer button span {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  text-transform: uppercase;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-size: 25px;
+  line-height: 60px;
 }
 #hp-form .gform_wrapper .gform_footer button i:after {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  line-height: 60px;
+  padding-right: 20px;
   font-style: normal;
   display: block;
   font-family: FontAwesome;
