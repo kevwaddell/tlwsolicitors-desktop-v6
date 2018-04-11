@@ -13825,26 +13825,35 @@ article.tlw_vacancies_cpt .main-txt .thank-you-message a.btn:focus:after,
 article.tlw_landing_page .main-txt .thank-you-message a.btn:focus:after {
   color: #C60751;
 }
-article.page .main-txt a,
-article.post .main-txt a,
-article.tlw_vacancies_cpt .main-txt a,
-article.tlw_landing_page .main-txt a {
+article.page .main-txt a:not(.btn),
+article.post .main-txt a:not(.btn),
+article.tlw_vacancies_cpt .main-txt a:not(.btn),
+article.tlw_landing_page .main-txt a:not(.btn) {
   color: #C60751;
   font-weight: bold;
 }
-article.page .main-txt a:hover,
-article.post .main-txt a:hover,
-article.tlw_vacancies_cpt .main-txt a:hover,
-article.tlw_landing_page .main-txt a:hover,
-article.page .main-txt a:active,
-article.post .main-txt a:active,
-article.tlw_vacancies_cpt .main-txt a:active,
-article.tlw_landing_page .main-txt a:active,
-article.page .main-txt a:focus,
-article.post .main-txt a:focus,
-article.tlw_vacancies_cpt .main-txt a:focus,
-article.tlw_landing_page .main-txt a:focus {
+article.page .main-txt a:not(.btn):hover,
+article.post .main-txt a:not(.btn):hover,
+article.tlw_vacancies_cpt .main-txt a:not(.btn):hover,
+article.tlw_landing_page .main-txt a:not(.btn):hover,
+article.page .main-txt a:not(.btn):active,
+article.post .main-txt a:not(.btn):active,
+article.tlw_vacancies_cpt .main-txt a:not(.btn):active,
+article.tlw_landing_page .main-txt a:not(.btn):active,
+article.page .main-txt a:not(.btn):focus,
+article.post .main-txt a:not(.btn):focus,
+article.tlw_vacancies_cpt .main-txt a:not(.btn):focus,
+article.tlw_landing_page .main-txt a:not(.btn):focus {
   color: #7A1039;
+}
+article.page .main-txt a.btn,
+article.post .main-txt a.btn,
+article.tlw_vacancies_cpt .main-txt a.btn,
+article.tlw_landing_page .main-txt a.btn {
+  text-transform: uppercase;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
 }
 article.page .main-txt ul,
 article.post .main-txt ul,

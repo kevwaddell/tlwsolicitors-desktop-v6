@@ -230,13 +230,19 @@ article.tlw_landing_page {
 			}
 		}
 		
-		a {
+		a:not(.btn) {
 		.col(@red);
 		.bold;
 			&:hover, &:active, &:focus {
 			.col(@redMid);
 			}
 		}
+		
+		a.btn {
+		.caps;
+		.font-slab-serif;	
+		}
+		
 	
 		//Unordered list
 		ul {
