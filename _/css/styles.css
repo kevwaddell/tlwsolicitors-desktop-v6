@@ -254,8 +254,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('/wp-content/themes/tlwsolicitors-desktop-v5/_/css/fonts/glyphicons-halflings-regular.eot');
-  src: url('/wp-content/themes/tlwsolicitors-desktop-v5/_/css/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/tlwsolicitors-desktop-v5/_/css/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('/wp-content/themes/tlwsolicitors-desktop-v5/_/css/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/wp-content/themes/tlwsolicitors-desktop-v5/_/css/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/wp-content/themes/tlwsolicitors-desktop-v5/_/css/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('/wp-content/themes/tlwsolicitors-desktop-v6/_/css/fonts/glyphicons-halflings-regular.eot');
+  src: url('/wp-content/themes/tlwsolicitors-desktop-v6/_/css/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/wp-content/themes/tlwsolicitors-desktop-v6/_/css/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('/wp-content/themes/tlwsolicitors-desktop-v6/_/css/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/wp-content/themes/tlwsolicitors-desktop-v6/_/css/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/wp-content/themes/tlwsolicitors-desktop-v6/_/css/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -17247,7 +17247,10 @@ figure.alignnone {
   padding-bottom: 10px;
 }
 #form-section .consent-message {
-  padding-top: 30px;
+  background-color: #E9E9E9;
+  padding: 15px 15px 5px 15px;
+  font-size: 20px;
+  line-height: 24px;
 }
 #form-section .gform_wrapper .gform_body:before,
 #form-section .gform_wrapper .gform_body:after {
@@ -17560,12 +17563,14 @@ figure.alignnone {
   margin-top: 0px;
 }
 #hp-form .gform_wrapper ul.gform_fields li.consent_message {
+  margin-top: 15px;
   display: block;
   width: 100%;
-  padding-top: 15px;
+  text-align: center;
+  background-color: #E9E9E9;
+  padding: 15px 15px 5px 15px;
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
 }
 #hp-form .gform_wrapper ul.gform_fields input[type="text"],
 #hp-form .gform_wrapper ul.gform_fields input[type="email"],
