@@ -1405,6 +1405,13 @@
 		"oAP": "\/page-templates\/toolkits-page.php",
 		"oF": 0
 		},
+	"\/page-templates\/unsubscribe-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-templates\/unsubscribe-page.php",
+		"oF": 0
+		},
 	"\/page-templates\/user-page.php": {
 		"cB": 0,
 		"ft": 8192,
