@@ -9909,7 +9909,6 @@ Copyright (c) 2014 Daniel Eden
 }
 /* BASE SIZES */
 /* COLORS */
-/* MP COLORS */
 /* SOCIAL COLOURS */
 /* SCREEN SIZES */
 /* FONTS */
@@ -14544,6 +14543,52 @@ article.tlw_landing_page #content-extra #content-extra-inner {
 #txt-only-content .main-txt.txt-lg h5 {
   font-size: 30px;
   line-height: 30px;
+}
+#awards-banner {
+  margin-bottom: 30px;
+}
+#awards-banner #awards-banner-inner {
+  height: 80px;
+  background-color: #036937;
+}
+#awards-banner .inner-left,
+#awards-banner .inner-right {
+  width: 50%;
+  height: 80px;
+}
+#awards-banner .inner-left {
+  float: left;
+  background-color: white;
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/law-awards-left-bg.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+#awards-banner .inner-left .nla-logo {
+  float: left;
+  height: 80px;
+  width: 195px;
+  margin-left: 200px;
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/northern-law-awards-logo.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+#awards-banner .inner-left .year {
+  float: left;
+  color: #036937;
+  font-size: 60px;
+  font-family: impact;
+  line-height: 60px;
+  padding: 12px 0px 0px 20px;
+}
+#awards-banner .inner-right {
+  float: right;
+  padding: 10px 20px 10px 20px;
+}
+#awards-banner .inner-right .description {
+  line-height: 60px;
+  font-size: 40px;
+  color: white;
+  font-family: impact;
 }
 section#slim-top-banner {
   height: 300px;

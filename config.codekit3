@@ -318,6 +318,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/_\/css\/img\/law-awards-left-bg.png": {
+		"ft": 32768,
+		"iS": 7302,
+		"oA": 0,
+		"oAP": "\/_\/css\/img\/law-awards-left-bg.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_\/css\/img\/northern-law-awards-logo.png": {
+		"ft": 32768,
+		"iS": 4863,
+		"oA": 0,
+		"oAP": "\/_\/css\/img\/northern-law-awards-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/_\/css\/img\/snowflake-1.png": {
 		"ft": 32768,
 		"iS": 5311,
@@ -1578,6 +1600,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/parts\/footers\/footer-user.php",
+		"oF": 0
+		},
+	"\/parts\/global\/awards-banner.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/parts\/global\/awards-banner.php",
 		"oF": 0
 		},
 	"\/parts\/global\/awards-popup.php": {

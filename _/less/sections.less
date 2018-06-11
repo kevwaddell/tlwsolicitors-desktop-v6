@@ -160,6 +160,57 @@ z-index: 9999996;
 	}
 }
 
+#awards-banner {
+.mag-bot(3);
+	
+	#awards-banner-inner {
+	.h(8);
+	.bg-col(@awardsGreen);	
+	}
+	
+	.inner-left, .inner-right {
+	width: 50%;	
+	.h(8);
+	}
+	
+	.inner-left {
+	.fleft;	
+	.bg-col(@wht);
+	.bg-img('law-awards-left-bg.png');
+	.bg-repeat(no-repeat);
+	background-position: left center;
+	
+		.nla-logo {
+		.fleft;
+		.h(8);
+		.w(19.5);
+		.mag-left(20);
+		.bg-img('northern-law-awards-logo.png');
+		.bg-repeat(no-repeat);
+		background-position: left center;
+		}
+		
+		.year {
+		.fleft;
+		.col(@awardsGreen);	
+		.font-size(6);	
+		font-family: impact;
+		.line-h(6);
+		.pad(1.2;0;0;2);
+		}
+	}
+	.inner-right {
+	.fright;	
+	.pad(1;2;1;2);
+		.description {
+		.line-h(6);
+		.font-size(4);
+		.col(@wht);	
+		font-family: impact;
+		}
+	}
+}
+
 //BANNERS
 section#slim-top-banner {
 .h(30);
