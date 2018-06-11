@@ -20,7 +20,7 @@
 	<meta name="description" content="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>" />
 
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/_/css/offline.css" type="text/css" media="all">
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/_/css/offline.css?v=<?php echo filemtime( get_stylesheet_directory()).'/_/css/offline.css' ?>" type="text/css" media="all">
 
 <?php 
  ?>
