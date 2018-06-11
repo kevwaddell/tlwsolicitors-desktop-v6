@@ -20,7 +20,7 @@
 
 	<?php get_template_part( 'parts/global/popups/all', 'popups' ); ?>	
 	
-	<?php get_template_part( 'parts/global/site', 'loader' ); ?>	
+	<?php //get_template_part( 'parts/global/site', 'loader' ); ?>	
 	
 	<!-- FEEFO REVIEWS -->
 	<?php get_template_part( 'parts/global/popups/feefo', 'widget' ); ?>	

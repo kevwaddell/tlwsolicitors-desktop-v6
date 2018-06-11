@@ -1,6 +1,6 @@
 <?php
 get_template_part( 'parts/headers/header', 'global' );
-$body_classes = array('atfc-desktop-css','nav-closed', 'loading');
+$body_classes = array('atfc-desktop-css','nav-closed');
 ?>	
 
 <body <?php body_class($body_classes); ?>>

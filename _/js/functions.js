@@ -528,7 +528,14 @@
 		/* END DOC READY FUNCTION */
 		
 		$(window).bind('load',function(){
+			$('body').removeClass('loading atfc-desktop-css');
+			$('head').find("#critical-css").remove();
 			
+			if ($('#wide-map-canvas').length === 1) {
+			initMap();	
+			}
+			
+/*
 			setTimeout(function(){
 								
 				$('#loader').fadeOut('300', function(){
@@ -542,6 +549,7 @@
 				}
 			
 			}, 2000);
+*/
 			
 			$('.has-bg-img').each(function(index, Element) {
 				var src = $(Element).data('src');
