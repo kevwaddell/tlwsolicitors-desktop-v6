@@ -95,8 +95,8 @@ if(!is_admin()) {
 		}
 		
 		// #2. Load the URL of merged file
-		wp_enqueue_style('merged-style',  get_stylesheet_directory_uri() . '/_/css/merged-style-min.css', array(), filemtime( get_stylesheet_directory().'/_/css/merged-style-min.css'), 'all');
-		wp_enqueue_style('gf-merged-style',  get_template_directory_uri() . '/_/css/gf-merged-min.css', array(), filemtime( get_template_directory().'/_/css/gf-merged-min.css'), 'all');
+		wp_enqueue_style('merged-style',  get_stylesheet_directory_uri() . '/_/css/merged-style-min.css', array(), filemtime( get_stylesheet_directory().'/_/css/merged-style.css'), 'all');
+		wp_enqueue_style('gf-merged-style',  get_template_directory_uri() . '/_/css/gf-merged-min.css', array(), filemtime( get_template_directory().'/_/css/gf-merged.css'), 'all');
 		
 		// #3. Deregister all handles
 		foreach ($handles as $handle)

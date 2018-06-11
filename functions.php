@@ -59,7 +59,7 @@ if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 		return remove_query_arg( 'ver', $src );
 	}
 	add_filter( 'script_loader_src', 'ewp_remove_script_version', 15, 1 );
-	add_filter( 'style_loader_src', 'ewp_remove_script_version', 15, 1 );
+	//add_filter( 'style_loader_src', 'ewp_remove_script_version', 15, 1 );
 }
 
 add_theme_support('html5', array('search-form'));
