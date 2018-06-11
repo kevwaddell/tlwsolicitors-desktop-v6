@@ -21,5 +21,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- HEADER LOGO AND NAVIGATION -->	
 	
 	<?php get_template_part( 'parts/global/main', 'masthead' ); ?>	
-	
-	<?php get_template_part( 'parts/global/awards', 'banner' ); ?>	

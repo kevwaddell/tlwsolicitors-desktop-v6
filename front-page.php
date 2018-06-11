@@ -1,4 +1,6 @@
 <?php get_header(); ?>	
+		
+	<?php get_template_part( 'parts/global/awards', 'banner' ); ?>	
 	
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 	<?php 
