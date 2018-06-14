@@ -1,5 +1,5 @@
 <?php 
-if(!is_admin() && ($GLOBALS['pagenow'] !== 'wp-login.php') ) {
+if(!is_admin() && ($GLOBALS['pagenow'] !== ('wp-login.php' || 'tlwadmin')) ) {
 	add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
 	function link_to_loadCSS_script($html, $handle, $href ) {
 		
