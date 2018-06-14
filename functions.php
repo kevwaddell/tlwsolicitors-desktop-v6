@@ -45,6 +45,13 @@ if (!is_admin()) {
 	add_action( 'wp_enqueue_scripts', 'tlw_scripts' );
 }
 
+function my_login() {
+wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/_/css/user-styles.css' );  
+}
+
+add_action( 'login_enqueue_scripts', 'my_login');
+
+
 // MERGE ALL CSS INTO ONE FILE FUNCTIOM
 include (TEMPLATEPATH . '/_/functions/merge-styles-function.php');
 
