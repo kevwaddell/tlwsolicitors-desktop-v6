@@ -6,10 +6,7 @@ if(!is_admin()) {
 	//echo '<pre>';print_r($html);echo '</pre>';
 	
 			if ($handle == 'custom-login') {
-			$dom = new DOMDocument();
-		    $dom->loadHTML($html);
-		    $a = $dom->getElementById($handle.'-css');	
-			return "<link rel=\"". $a->getAttribute('rel') ."\" type=\"text/css\" href=\"".$a->getAttribute('href')."\" media=\"all\"/>";
+			return $html;
 			}
 	
 			if ($handle == 'merged-style') {
