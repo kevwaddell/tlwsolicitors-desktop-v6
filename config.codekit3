@@ -474,6 +474,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/_\/css\/user-styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_\/css\/user-styles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/_\/functions\/afc_options_functions.php": {
 		"cB": 0,
 		"ft": 8192,

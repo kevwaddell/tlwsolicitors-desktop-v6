@@ -3,7 +3,7 @@ if(!is_admin()) {
 	add_filter('style_loader_tag', 'link_to_loadCSS_script',10,3);
 	function link_to_loadCSS_script($html, $handle, $href ) {
 		
-	echo '<pre>';print_r($handle);echo '</pre>';
+	//echo '<pre>';print_r($handle);echo '</pre>';
 	
 			if ($handle == 'custom-login') {
 			return $html;
