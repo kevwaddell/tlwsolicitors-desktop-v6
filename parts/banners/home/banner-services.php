@@ -10,8 +10,6 @@ $hp_banner_quick_links = get_field('hp_banner_quick_links', 'option');
 		$thumb_id = get_post_thumbnail_id($bl['link_page']);
 		$bg_full_src = wp_get_attachment_image_src($thumb_id, 'medium' );
 		$bg_thumb_src = wp_get_attachment_image_src($thumb_id, 'thumbnail' );	
-		$image_data = file_get_contents($bg_full_src[0]);
-		$encoded_image = base64_encode($image_data);
 		?>
 			<li>
 				<a href="<?php echo get_permalink($bl['link_page']); ?>" class="services-nav-link">
