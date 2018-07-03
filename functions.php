@@ -45,6 +45,14 @@ if (!is_admin()) {
 	add_action( 'wp_enqueue_scripts', 'tlw_scripts' );
 }
 
+//* Adding DNS Prefetching
+function ism_dns_prefetch() {
+echo '<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel="dns-prefetch" href="//api.feefo.com" />';
+}
+add_action('wp_head', 'ism_dns_prefetch', 0);
+
 function my_login() {
 wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/_/css/user-styles.css' );  
 }
