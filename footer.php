@@ -26,9 +26,5 @@
 	<?php get_template_part( 'parts/global/popups/feefo', 'widget' ); ?>	
 	
 	<?php wp_footer(); ?>
-	<script type="text/javascript">
-    var elm=document.getElementsByTagName("html")[0];
-    document.addEventListener("DOMContentLoaded",function(event) { elm.style.display="block"; });
-	</script>
 	</body>
 </html>

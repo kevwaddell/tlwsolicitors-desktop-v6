@@ -258,8 +258,8 @@
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/feefo-stars.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -269,8 +269,8 @@
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/feefo_logo.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -324,8 +324,8 @@
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/law-awards-left-bg.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -335,8 +335,8 @@
 		"oA": 0,
 		"oAP": "\/_\/css\/img\/northern-law-awards-logo.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

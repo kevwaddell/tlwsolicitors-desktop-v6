@@ -57,10 +57,12 @@
 		var addStylesNode = document.getElementById("deferred-styles");
 		var gfStylesNode = document.getElementById("gf-deferred-styles");
 		var replacement = document.createElement("div");
+		var elm=document.getElementsByTagName("html")[0];
 		replacement.innerHTML = gfStylesNode.textContent + addStylesNode.textContent;
 		document.body.appendChild(replacement);
 		gfStylesNode.parentElement.removeChild(gfStylesNode);
 		addStylesNode.parentElement.removeChild(addStylesNode);
+		elm.style.display="block";
 		};
 	 
 		var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
