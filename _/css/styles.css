@@ -9709,6 +9709,7 @@ select.selectpicker {
   position: absolute;
   height: 1px;
   width: 50%;
+  z-index: 2;
 }
 .rule:before {
   bottom: -1px;
@@ -10543,6 +10544,7 @@ article.page hr,
 article.post hr,
 article.tlw_vacancies_cpt hr,
 article.tlw_landing_page hr {
+  display: block;
   border: none;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -10567,6 +10569,7 @@ article.tlw_landing_page hr:after {
   position: absolute;
   height: 1px;
   width: 50%;
+  z-index: 2;
 }
 article.page hr:before,
 article.post hr:before,
@@ -10587,6 +10590,16 @@ article.tlw_landing_page hr:after {
   background: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
   background: -moz-linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
   background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #918f8f 30%);
+}
+article.page hr:before,
+article.post hr:before,
+article.tlw_vacancies_cpt hr:before,
+article.tlw_landing_page hr:before,
+article.page hr:after,
+article.post hr:after,
+article.tlw_vacancies_cpt hr:after,
+article.tlw_landing_page hr:after {
+  bottom: 0px;
 }
 article.page .main-txt p:last-child,
 article.post .main-txt p:last-child,
@@ -12194,6 +12207,7 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   position: absolute;
   height: 1px;
   width: 50%;
+  z-index: 2;
 }
 .pg-section .lg-intro hr:before {
   bottom: -1px;

@@ -7088,6 +7088,7 @@ button.close {
   position: absolute;
   height: 1px;
   width: 50%;
+  z-index: 2;
 }
 .rule:before {
   bottom: -1px;
@@ -7166,6 +7167,7 @@ body.mce-content-body hr:after {
   position: absolute;
   height: 1px;
   width: 50%;
+  z-index: 2;
 }
 body.mce-content-body hr:before {
   bottom: -1px;
