@@ -19,7 +19,7 @@ $args = array(
 	
 $wp_query = new WP_Query( $args );
 
-$section_title = "TLW Vacancies";	
+$section_title = "Join our team";	
 $post_count = $wp_query->post_count;
 $found_posts = $wp_query->found_posts;
 ?>

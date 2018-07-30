@@ -13,7 +13,13 @@ $form_active = get_field('add_form', $jobs_pg->ID);
 
 <!-- MAIN CONTENT START -->
 <main id="main-content">	
-	
+	<!-- BANNER SECTION -->
+	<?php if (has_post_thumbnail($jobs_pg->ID)) { ?>
+
+		<?php get_template_part( 'parts/banners/banner', 'img' ); ?>			
+
+	<?php } ?>	
+		
 	<?php get_template_part( 'parts/global/page', 'breadcrumbs' ); ?>
 	
 	<!-- VACANCIES LIST SECTION -->
