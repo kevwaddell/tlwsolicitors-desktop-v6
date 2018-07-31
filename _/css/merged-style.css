@@ -14583,7 +14583,7 @@ figure.alignnone {
   line-height: 25px;
 }
 #form-section .client-care-form table.gsurvey-likert {
-  width: 50%;
+  width: 70%;
   border: 2px solid white;
 }
 #form-section .client-care-form table.gsurvey-likert th.gsurvey-likert-choice-label {
@@ -14604,6 +14604,7 @@ figure.alignnone {
   background-color: #918F8F;
   cursor: pointer;
   text-align: center;
+  width: 25%;
 }
 #form-section .client-care-form table.gsurvey-likert td.gsurvey-likert-choice.gsurvey-likert-selected {
   background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/active1.svg);
