@@ -684,8 +684,20 @@ max-width: 100% !important;
 		.txt-col-grayDk;	
 		}
 	}
+		
+	.gf_list_inline {
+		.gfield_radio li {
+		min-width: 200px;	
+			label {
+				.pad-left(2);
+			}
+		}
+	}
 	
-	.gform_wrapper .gsurvey-survey-field {
+}
+
+#form-section .client-care-form {
+	.gsurvey-survey-field {
 	.pad-right(0);
 	.mag-bot(3);
 		.gfield_label {
@@ -696,37 +708,41 @@ max-width: 100% !important;
 		}
 	}
 	
-	.gform_wrapper table.gsurvey-likert {
-		.border(@wht; 0.2);
+	table.gsurvey-likert {
+	width: 50%;
+	.border(@wht; 0.2);
+	
 		th.gsurvey-likert-choice-label {
 		.bg-col-red-dk;
 		.txt-col-wht;	
 		.border-left(@wht; 0.2);
+		text-align: center;
+		.pad-all(1);
 		}
 		
 		td.gsurvey-likert-choice {
 		.bg-img('active0.svg');	
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
 		.border-top(@wht; 0.2);
 		.border-right(@wht; 0.2);
 		.h(5);
 		.bg-col-gray;
 		cursor: pointer;
+		text-align: center;
 			&.gsurvey-likert-selected {
 			.bg-img('active1.svg');
 			.bg-col-green;	
 			}
-		}
-	}
-	
-	.gf_list_inline {
-		.gfield_radio li {
-		min-width: 200px;	
-			label {
-				.pad-left(2);
+			input[type=radio] {
+			.in-block;	
+			width: auto;
+			height: auto;
+			.opacity(0);
 			}
 		}
 	}
-	
 }
 
 #hp-form {
