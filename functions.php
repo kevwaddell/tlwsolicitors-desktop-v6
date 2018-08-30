@@ -179,10 +179,10 @@ include (TEMPLATEPATH . '/_/functions/tlw_feedback_cpt.php');
 include (TEMPLATEPATH . '/_/functions/tlw_team_cpt.php');
 
 /* REGISTER LANDING PAGE CPT */
-include (TEMPLATEPATH . '/_/functions/tlw_landing_pages_cpt.php');
+//include (TEMPLATEPATH . '/_/functions/tlw_landing_pages_cpt.php');
 
 /* REGISTER HOW IT WORKS CPT */
-include (TEMPLATEPATH . '/_/functions/tlw_how_it_works_cpt.php');
+//include (TEMPLATEPATH . '/_/functions/tlw_how_it_works_cpt.php');
 
 /* REGISTER FAQ's CPT */
 include (TEMPLATEPATH . '/_/functions/tlw_faqs_cpt.php');
