@@ -26,5 +26,11 @@
 	<?php get_template_part( 'parts/global/popups/feefo', 'widget' ); ?>	
 	
 	<?php wp_footer(); ?>
+	
+	<?php if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') { ?>
+	<!-- begin chat box code -->
+	<script type='text/javascript' src='https://storage.googleapis.com/chatheroes.com/tlwsolicitors/tlwsolicitors.js' async></script>
+	<!-- end chat box code -->
+	<?php } ?>
 	</body>
 </html>
