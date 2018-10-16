@@ -11898,6 +11898,13 @@ section#top-banner .banner-links-imgs {
   position: relative;
   overflow: hidden;
   margin-bottom: 0px;
+  /*
+&.links-total-8 {
+			li:first-child, li:nth-child(2) {
+			width: calc(~"100% / 2");	
+			}	
+		}
+*/
 }
 section#top-banner .banner-links-imgs li {
   width: calc(100% / 3);
@@ -11913,6 +11920,9 @@ section#top-banner .banner-links-imgs.links-total-4 li {
 section#top-banner .banner-links-imgs.links-total-5 li:first-child,
 section#top-banner .banner-links-imgs.links-total-5 li:nth-child(2) {
   width: calc(100% / 2);
+}
+section#top-banner .banner-links-imgs.links-total-8 li {
+  width: calc(100% / 4);
 }
 section#top-banner .banner-links-imgs span.img {
   position: absolute;
@@ -11989,6 +11999,13 @@ section#top-banner .banner-links-imgs a:focus span.title {
   background-color: #C60751;
   background-color: rgba(198, 7, 81, 0.8);
   color: white;
+}
+section#top-banner .banner-links-imgs.links-total-8 li a {
+  font-size: 16px;
+}
+section#top-banner .banner-links-imgs.links-total-8 li span.title span {
+  font-size: 16px;
+  line-height: 16px;
 }
 section#contact-us-banner {
   margin-bottom: 40px;
