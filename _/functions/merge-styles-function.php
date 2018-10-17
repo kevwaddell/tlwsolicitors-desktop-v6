@@ -93,8 +93,8 @@ if(!is_admin()) {
 				$css_code .=  file_get_contents($css_file_path);
 			}
 		}
-	echo '<pre>';print_r(filemtime($css_file_path));echo '</pre>';
-	echo '<pre>';print_r(filemtime($merged_file_location));echo '</pre>';
+	//echo '<pre>';print_r(filemtime($css_file_path));echo '</pre>';
+	//echo '<pre>';print_r(filemtime($merged_file_location));echo '</pre>';
 		
 		// write the merged styles into current theme directory
 		if (filemtime($css_file_path) > filemtime($merged_file_location) && $merged_file !== $css_code) {
