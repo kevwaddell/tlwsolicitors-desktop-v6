@@ -13179,10 +13179,12 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 .page-tools {
   width: 40px;
   float: right;
-}
-.page-tools .tool-btns-wrap {
-  padding-left: 4px;
-  padding-right: 4px;
+  /*
+	.tool-btns-wrap {
+	.pad-left(0.4);
+	.pad-right(0.4);	
+	}	
+*/
 }
 .page-tools .btn {
   padding: 0px;
@@ -13202,6 +13204,10 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 .page-tools .btn:focus {
   background-color: #4b4b4b;
   color: white;
+}
+.page-tools .a2a_kit {
+  width: 40px;
+  float: right;
 }
 /** --------------------------- /
 /* Xmas styles */
