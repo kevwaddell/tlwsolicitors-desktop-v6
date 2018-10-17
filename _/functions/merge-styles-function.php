@@ -23,8 +23,10 @@ if(!is_admin()) {
 		$print_styles_key = array_search('print-styles', $handles);
 		unset($handles[$print_styles_key]);
 		
-		//echo '<pre>';print_r($handles);echo '</pre>';
+		//cho '<pre>';print_r($handles);echo '</pre>';
 		
+		if (is_user_logged_in()) {
+
 		$dashicons_key = array_search('dashicons', $handles);
 		if (isset($dashicons_key)) {
 		unset($handles[$dashicons_key]);	
@@ -44,11 +46,13 @@ if(!is_admin()) {
 		if (isset($autoptimize_toolbar_key)) {	
 		unset($handles[$autoptimize_toolbar_key]);
 		}
-		
+					
+		}
 		//echo '<pre>';print_r($handles);echo '</pre>';
 		// loop all styles
 		foreach ($handles as $handle)
 		{
+		//echo '<pre>';print_r($handles);echo '</pre>';
 			/*
 				Clean up the url, for example: wp-content/themes/wdc/style.min.css?v=4.6
 				become wp-content/themes/wdc/style.min.css
@@ -83,14 +87,16 @@ if(!is_admin()) {
 				$css_file_path = ltrim($src, '/');
 			}
 			
+			//echo '<pre>';print_r($css_file_path);echo '</pre>';
 			// Check wether file exists then merge
 			if  (file_exists($css_file_path)) {
 				$css_code .=  file_get_contents($css_file_path);
 			}
 		}
-	
+	//echo '<pre>';print_r(get_stylesheet_directory_uri() );echo '</pre>';
+		
 		// write the merged styles into current theme directory
-		if ($merged_file != $css_code) {
+		if ($merged_file !== $css_code) {
 		file_put_contents ($merged_file_location , $css_code);
 		}
 		
