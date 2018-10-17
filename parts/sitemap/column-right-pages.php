@@ -36,9 +36,9 @@ $legal_pages = get_posts($legal_args);
 
 $videos_pg_id = get_page_id('videos');
 $downloads_pg_id = get_page_id('downloads');
-$toolkits_pg_id = get_page_id('tlw-toolkits');
+$toolkits_pg = get_page_by_path( 'tlw-toolkits');
 
-//echo '<pre>';print_r($topics);echo '</pre>';
+//echo '<pre>';print_r($toolkits_pg);echo '</pre>';
 
  ?>
 <div class="col-xs-6">
@@ -49,7 +49,7 @@ $toolkits_pg_id = get_page_id('tlw-toolkits');
 
 		<ul class="list-unstyled">
 			
-			<li><a href="<?php echo get_permalink($toolkits_pg_id); ?>"><?php echo get_the_title($toolkits_pg_id); ?></a></li>
+			<li><a href="<?php echo get_permalink($toolkits_pg->ID); ?>"><?php echo get_the_title($toolkits_pg->ID); ?></a></li>
 			<li><a href="<?php echo get_permalink($videos_pg_id); ?>"><?php echo get_the_title($videos_pg_id); ?></a></li>
 			<li><a href="<?php echo get_permalink($downloads_pg_id); ?>"><?php echo get_the_title($downloads_pg_id); ?></a></li>
 			
