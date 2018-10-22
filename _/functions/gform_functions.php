@@ -139,7 +139,7 @@ if(!is_admin()) {
 		}
 		
 		// write the merged styles into current theme directory
-		if ($merged_file != $css_code) {
+		if ($merged_file !== $css_code) {
 		file_put_contents ($merged_file_location , $css_code);
 		}
 			

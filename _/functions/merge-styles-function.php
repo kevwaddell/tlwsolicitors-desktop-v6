@@ -50,8 +50,7 @@ if(!is_admin()) {
 		}
 		//echo '<pre>';print_r($handles);echo '</pre>';
 		// loop all styles
-		foreach ($handles as $handle)
-		{
+		foreach ($handles as $handle){
 		//echo '<pre>';print_r($handles);echo '</pre>';
 			/*
 				Clean up the url, for example: wp-content/themes/wdc/style.min.css?v=4.6
@@ -97,7 +96,7 @@ if(!is_admin()) {
 	//echo '<pre>';print_r(filemtime($merged_file_location));echo '</pre>';
 		
 		// write the merged styles into current theme directory
-		if (filemtime($css_file_path) > filemtime($merged_file_location) && $merged_file !== $css_code) {
+		if ($merged_file !== $css_code) {
 		file_put_contents ($merged_file_location , $css_code);
 		}
 		
@@ -106,8 +105,7 @@ if(!is_admin()) {
 		wp_enqueue_style('gf-merged-style',  get_template_directory_uri() . '/_/css/gf-merged-min.css', array(), filemtime( get_template_directory().'/_/css/gf-merged.css'), 'all');
 		
 		// #3. Deregister all handles
-		foreach ($handles as $handle)
-		{
+		foreach ($handles as $handle){
 			wp_dequeue_style($handle);
 			wp_deregister_style($handle);
 		}
