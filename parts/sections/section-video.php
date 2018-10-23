@@ -32,7 +32,7 @@ $videos = $section['videos'];
 			$video_poster_id = $video['poster_img'];
 			$poster_src = wp_get_attachment_image_src($video_poster_id, 'full' );
 			?>
-			<div class="<?php echo (count($videos) > 1) ? 'col-xs-6':'col-xs-10 col-xs-offset-1'; ?>">
+			<div class="<?php echo (count($videos) > 1) ? 'col-xs-6':'col-xs-12'; ?>">
 			<div id="video-<?php echo ($k+1); ?>" class="video-wrapper">
 				<video controls preload="auto" id="service-video-<?php echo ($k+1); ?>" poster="<?php echo $poster_src[0];?>">
 					<source src="<?php echo $video_webm; ?>" type="video/webm" />
