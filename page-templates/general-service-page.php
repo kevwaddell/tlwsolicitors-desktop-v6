@@ -47,6 +47,11 @@ Template Name: General Service page
 					<?php get_template_part( 'parts/sections/section', 'faqs' ); ?>	
 				<?php } ?>
 				
+				<?php if ($section['acf_fc_layout'] == 'video-section') { ?>
+				<!-- FAQ'S SECTION -->
+					<?php get_template_part( 'parts/sections/section', 'video' ); ?>	
+				<?php } ?>
+				
 				<?php if ($section['acf_fc_layout'] == 'form-section') { ?>
 				<!-- FORM SECTION -->
 					<?php get_template_part( 'parts/sections/section', 'form' ); ?>		
