@@ -25,6 +25,15 @@
 	<!-- FEEFO REVIEWS -->
 	<?php get_template_part( 'parts/global/popups/feefo', 'widget' ); ?>	
 	
+	<script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+	<script>
+	var myLandbotPopup = new LandbotPopup({
+    index: 'https://landbot.io/u/H-94039-8JG3T5FCHHMSK1I7/index.html',
+	});
+	</script>
+
+
+	
 	<?php wp_footer(); ?>
 	
 	</body>
