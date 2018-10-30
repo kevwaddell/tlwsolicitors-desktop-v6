@@ -11898,13 +11898,6 @@ section#top-banner .banner-links-imgs {
   position: relative;
   overflow: hidden;
   margin-bottom: 0px;
-  /*
-&.links-total-8 {
-			li:first-child, li:nth-child(2) {
-			width: calc(~"100% / 2");	
-			}	
-		}
-*/
 }
 section#top-banner .banner-links-imgs li {
   width: calc(100% / 3);
