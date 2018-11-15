@@ -337,33 +337,24 @@ body.atfc-desktop-css {
 	}
 	
 	section#video-banner {
-		
 		.video-wrapper {
 		.border(@grayDk; 0.1);	
+		.bg-col(@grayLt);
 		.rel;
-		.h(45.1);
+		.h(64);
 		.over-hide;
-			@media screen and (orientation: landscape) {
-			.h(50.3);	
-			}
 		}
 		
 		video#service-video { 
-		.abs;
-		.top(0);
-		.left(0);
-	    width: 100%;
-		height: auto;
+		.none;
 		}
 		
 		.banner-title {
 		.bg-col-red;
 		.mag-top(3.5);
-		.font-size(3);
-		.line-h(10);
-		.txt-col-wht;
+		.h(10);
 			span {
-			.line-h(3);	
+			.none;
 			}
 		}
 	}

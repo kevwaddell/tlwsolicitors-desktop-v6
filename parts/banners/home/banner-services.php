@@ -1,11 +1,12 @@
 <?php  
 //echo '<pre class="debug">';print_r($banner_bg_img);echo '</pre>';
 $hp_banner_quick_links = get_field('hp_banner_quick_links', 'option');	
+$links_total = count($hp_banner_quick_links);
 ?>
 <section id="top-banner" class="hp-banner">
 
 	<div class="container">
-		<ul class="text-center list-unstyled banner-links-imgs">
+		<ul class="text-center list-unstyled banner-links-imgs links-total-<?php echo $links_total; ?>">
 		<?php foreach ($hp_banner_quick_links as $bl) { 
 		$thumb_id = get_post_thumbnail_id($bl['link_page']);
 		$bg_full_src = wp_get_attachment_image_src($thumb_id, 'medium' );
