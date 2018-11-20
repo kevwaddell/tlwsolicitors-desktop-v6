@@ -10314,7 +10314,13 @@ header[role="banner"] .tel-num {
   margin-bottom: 30px;
 }
 #breadcrumbs a {
+  display: inline-block;
   color: #4b4b4b;
+  text-decoration: none;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #breadcrumbs a:hover,
 #breadcrumbs a:active,
