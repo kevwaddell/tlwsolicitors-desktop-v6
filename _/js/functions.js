@@ -379,7 +379,9 @@
 		});
 	
 	    
-	    $('body').on(event_type,'button#close-xmas-popup', function(){
+	    $('#xmas-popup-wrap').on(event_type,'button#close-xmas-popup', function(e){
+		    
+		    console.log(e);
 		    
 		   $('.xmas-popup-inner').removeClass('slideInUp').addClass('bounceOutDown');   
 	    	      			
