@@ -16388,9 +16388,13 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
     transform: rotate(-360deg);
   }
 }
-body.logged-in #xmas-popup-btn-wrap .holly.left {
-  left: 60px;
+/*
+body.logged-in #xmas-popup-btn-wrap .holly {
+	&.left {
+	.left(6);	
+	}
 }
+*/
 /** --------------------------- /
 /* GRAVITY FORMS BOOTSTRAP STYLES */
 /* --------------------------- */
