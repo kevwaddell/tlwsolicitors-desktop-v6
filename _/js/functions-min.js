@@ -54,7 +54,7 @@ s("body").on(a,"button#txt-only-btn",function(){var t=s(".content-section").find
 	    */
 var e=function(){1===s("#xmas-popup-wrap").length&&s("#xmas-popup-wrap").hasClass("pop-up-inactive")&&(s("#xmas-popup-btn-wrap").removeClass("pop-up-inactive").addClass("pop-up-active"),s("#xmas-popup-wrap").removeClass("pop-up-inactive").addClass("pop-up-active"),s("#xmas-popup-wrap").fadeIn("slow",function(){s(".xmas-popup-inner").removeClass("hidden").addClass("animated slideInUp")}))};
 //Transition end actions
-s("body").on("animationend",".xmas-popup-inner",function(){s(".xmas-popup-inner").hasClass("bounceOutDown")&&(
+s("body").on("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",".xmas-popup-inner",function(){s(".xmas-popup-inner").hasClass("bounceOutDown")&&(
 //console.log(e);
 s("#xmas-popup-wrap").fadeOut("fast").removeClass("pop-up-active").addClass("pop-up-inactive"),s("#xmas-popup-btn-wrap").removeClass("pop-up-active").addClass("pop-up-inactive"),s(".xmas-popup-inner").removeClass("animated bounceOutDown").addClass("hidden"))}),
 //Button actions

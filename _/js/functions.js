@@ -370,7 +370,7 @@
 				
 		
 		//Transition end actions
-	    $('body').on('animationend', '.xmas-popup-inner', function(){
+	    $('body').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', '.xmas-popup-inner', function(){
 			
 			if ($('.xmas-popup-inner').hasClass('bounceOutDown')) {
 			 //console.log(e);
