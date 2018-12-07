@@ -119,6 +119,6 @@ s("body").on(a,"a.jump-2-link",function(){var t=s(this).attr("href"),n=s(t).offs
 //console.log($(hash));
 return s("html, body").animate({scrollTop:n},500),!1})}),
 /* END DOC READY FUNCTION */
-s(window).bind("load",function(){s("body").removeClass("loading atfc-desktop-css"),s("head").find("#critical-css").remove(),1===s("#wide-map-canvas").length&&initMap(),1===s("#recent-blog-sb").length&&(s("#recent-blog-sb").show(),setTimeout(function(){s("#recent-blog-sb").toggleClass("sb-closed sb-open")},2e3),s("#recent-blog-sb").hasClass("sb-closed")&&setTimeout(function(){s("#recent-blog-sb").removeClass("sb-open").addClass("sb-closed")},7e3)),s(".has-bg-img").each(function(t,n){var e=s(n).data("src");
+s(window).bind("load",function(){s("body").removeClass("loading atfc-desktop-css"),s("head").find("#critical-css").remove(),1===s("#wide-map-canvas").length&&initMap(),1===s("#recent-blog-sb").length&&(s("#recent-blog-sb").show(),setTimeout(function(){s("#recent-blog-sb").toggleClass("sb-closed sb-open")},3e3),s("#recent-blog-sb").hasClass("sb-closed")&&setTimeout(function(){s("#recent-blog-sb").removeClass("sb-open").addClass("sb-closed")},7e3)),s(".has-bg-img").each(function(t,n){var e=s(n).data("src");
 //console.log(src);
 void 0!==e&&s(n).css("background-image","url("+e+")")})})}(window.jQuery);

@@ -556,7 +556,7 @@
 				
 				setTimeout(function(){
 				$('#recent-blog-sb').toggleClass('sb-closed sb-open');
-				}, 2000);
+				}, 3000);
 				
 				if ($('#recent-blog-sb').hasClass('sb-closed')) {
 					setTimeout(function(){

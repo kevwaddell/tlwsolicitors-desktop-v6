@@ -15995,7 +15995,12 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 #recent-blog-sb:hover,
 #recent-blog-sb:active,
 #recent-blog-sb:focus {
-  left: -410px;
+  left: -370px;
+}
+#recent-blog-sb:hover:before,
+#recent-blog-sb:active:before,
+#recent-blog-sb:focus:before {
+  content: "\f061";
 }
 #recent-blog-sb.sb-closed {
   transform: translateX(0%);
@@ -16005,6 +16010,11 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#recent-blog-sb.sb-open:hover,
+#recent-blog-sb.sb-open:active,
+#recent-blog-sb.sb-open:focus {
+  left: -410px;
 }
 #recent-blog-sb.sb-open:before {
   content: "\f00d";

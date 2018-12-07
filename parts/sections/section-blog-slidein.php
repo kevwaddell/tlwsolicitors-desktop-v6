@@ -1,4 +1,4 @@
-<?php if (!is_single()) { ?>
+<?php if (is_page() || is_front_page() ) { ?>
 			
 <?php
 $recent_posts_args = array (
