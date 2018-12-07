@@ -15798,6 +15798,217 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
   background-color: #4b4b4b;
   color: white;
 }
+#recent-blog-sb {
+  position: fixed;
+  left: -400px;
+  top: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  margin-top: -200px;
+  border: 3px solid #C60751;
+  border-left: none;
+  transition: all 0.2s;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#recent-blog-sb:before {
+  content: "\f0a1";
+  font-family: FontAwesome;
+  font-size: 20px;
+  line-height: 34px;
+  color: #7A1039;
+  position: absolute;
+  right: -50px;
+  top: 60px;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 3px solid #C60751;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 3;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+#recent-blog-sb .posts-list {
+  padding: 30px;
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  z-index: 2;
+  background-color: white;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#recent-blog-sb .posts-list a {
+  display: block;
+  height: 33%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #918F8F;
+  overflow: hidden;
+  text-decoration: none;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #918F8F;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+#recent-blog-sb .posts-list a:first-child {
+  border-top: 1px solid #918F8F;
+}
+#recent-blog-sb .posts-list a span {
+  display: block;
+  float: left;
+  height: 100%;
+}
+#recent-blog-sb .posts-list a span.link-img {
+  width: 88px;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid white;
+  transition: border 0.2s ease-in-out;
+}
+#recent-blog-sb .posts-list a span.title {
+  width: 245px;
+  padding-left: 15px;
+}
+#recent-blog-sb .posts-list a:hover,
+#recent-blog-sb .posts-list a:active,
+#recent-blog-sb .posts-list a:focus {
+  background-color: #E9E9E9;
+  color: #C60751;
+}
+#recent-blog-sb .posts-list a:hover span.link-img,
+#recent-blog-sb .posts-list a:active span.link-img,
+#recent-blog-sb .posts-list a:focus span.link-img {
+  border: 1px solid #4b4b4b;
+}
+#recent-blog-sb .sb-btn {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+#recent-blog-sb .sb-btn button {
+  position: absolute;
+  left: 50%;
+  width: 70%;
+  text-align: left;
+  top: 0px;
+  border: none;
+  height: 60px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #C60751;
+  transform: translateY(-100%) translateX(-50%);
+  -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 10px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-family: "aleoreg", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  padding: 0px 40px 0px 30px;
+  transition: height 0.2s ease-in-out;
+}
+#recent-blog-sb .sb-btn button span {
+  font-weight: bold;
+}
+#recent-blog-sb .sb-btn button:after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-image: url(/wp-content/themes/tlwsolicitors-desktop-v6/_/css/img/icon-sml.svg);
+  -webkit-background-size: 70%;
+  -moz-background-size: 70%;
+  -o-background-size: 70%;
+  background-size: 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  transition: top 0.2s ease-in-out;
+}
+#recent-blog-sb:hover,
+#recent-blog-sb:active,
+#recent-blog-sb:focus {
+  left: -410px;
+}
+#recent-blog-sb.sb-closed {
+  transform: translateX(0%);
+}
+#recent-blog-sb.sb-open {
+  transform: translateX(100%);
+  -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#recent-blog-sb.sb-open:before {
+  content: "\f00d";
+}
 /** --------------------------- /
 /* User styles */
 /* --------------------------- */

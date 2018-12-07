@@ -17,6 +17,8 @@
 			</section>
 			
 	</div><!-- MAIN WRAPPER END -->
+	
+	<?php get_template_part( 'parts/sections/section', 'blog-slidein' ); ?>
 
 	<?php get_template_part( 'parts/global/popups/all', 'popups' ); ?>	
 	

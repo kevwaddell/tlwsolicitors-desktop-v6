@@ -1383,3 +1383,157 @@ background-position: center 20px;
 		}
 	}
 }
+
+#recent-blog-sb {
+.fixed;
+.left(-40);
+top: 50%;
+.w(40);
+.h(40);
+.bg-col(@wht);	
+.mag-top(-20);
+.border(@red; 0.3);
+border-left: none;
+transition: all 0.2s;
+.border-radius(20px, 20px, 0, 0);
+
+	&:before {
+	content: "\f0a1";	
+	font-family: FontAwesome;		
+	.font-size(2);
+	.line-h(3.4);
+	.col(@redMid);		
+	.abs;
+	.right(-5);
+	.top(6);
+	.mag-top(-2);
+	.w(4);
+	.h(4);
+	.bg-col(@wht);
+	.border(@red; 0.3);
+	.rounded(50%);
+	text-align: center;	
+	z-index: 3;
+	.animated;
+	.bounce;
+	}
+	
+	.posts-list {
+	.pad-all(3);
+	.rel;
+	height: 100%;
+	overflow: auto;	
+	z-index: 2;
+	.bg-col(@wht);
+	.border-radius(20px, 20px, 0, 0);
+		a {
+		.block;
+		height: 33%;	
+		.pad-top(1);
+		.pad-bot(1);
+		.border-bot(@gray; 0.1);
+		.over-hide;
+		.no-text-dec;
+		.font-slab-serif;
+		.col(@gray);
+		.font-size(1.6);
+		.line-h(2);
+		.bold;
+			&:first-child {
+			.border-top(@gray; 0.1);	
+			}
+			
+			span {
+			.block;
+			.fleft;
+			height: 100%;	
+			}
+			
+			span.link-img {
+			.w(8.8);
+			background-position: center center;
+			.bg-size;
+			.bg-repeat(no-repeat);
+			.border(@wht; 0.1);
+			transition: border 0.2s ease-in-out;
+			}
+			
+			span.title {
+			.w(24.5);	
+			.pad-left(1.5);
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col-grayLt;
+			.col(@red);
+				span.link-img {
+				.border(@grayDk; 0.1);	
+				}
+			}
+		}
+	}
+	
+	.sb-btn {
+	.abs;
+	.top(0);
+	.left(0);
+	.right(0);
+	.bottom(0);
+	transform: rotate(90deg);	
+	z-index: 1;
+		button {
+		.abs;
+		left: 50%;
+		width: 70%;
+		text-align: left;
+		.top(0);
+		.no-border;
+		.h(6);
+		.caps;
+		.col(@wht);
+		.bg-col(@red);
+		transform: translateY(-100%) translateX(-50%);	
+		.drop-shadow(5px,0px, 10px, 0.5);
+		.border-radius(10px, 0, 0, 10px);
+		.font-slab-serif;
+		.pad(0;4;0;3);
+		transition: height 0.2s ease-in-out;
+			span {
+			.bold;	
+			}
+			
+			&:after {
+			content: "";
+			.w(6);
+			.h(6);	
+			.abs;
+			.right(0);
+			.top(0);
+			.bg-img('icon-sml.svg');
+			.bg-size(70%);
+			background-position: center center;
+			.bg-repeat(no-repeat);
+			transform: rotate(-90deg);
+			transition: top 0.2s ease-in-out;
+			}
+		}
+	}
+	
+	&:hover, &:active, &:focus {
+	.left(-41);
+	}
+	
+	&.sb-closed {
+	transform: translateX(0%);
+	}
+
+	&.sb-open {
+	transform: translateX(100%);	
+	.drop-shadow(5px,0px, 10px, 0.5);
+	
+		&:before {
+		content: "\f00d";		
+		}
+		
+	}
+}

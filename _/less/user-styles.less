@@ -1,7 +1,62 @@
 @import (reference) 'elements.less';
 @import (reference) 'vars.less';
 @import (reference) 'mixins.less';
+body.login .ml-container #login {
+.pad-left(3);
 
+h1 a {
+margin: 0 auto 10px;	
+}
+
+form#loginform {
+.mag-top(0);	
+padding: 26px 24px 26px;
+}
+
+p#nav, p#backtoblog {
+.mag(2;0;0;0);
+.pad-all(0);
+	a {
+	.block;
+	text-align: center;
+	.line-h(5);
+	.bg-col(@wht);
+	.rounded(10px);
+	.drop-shadow(0, 5px, 10px, 0.4);
+		&:hover, &:active, &:focus {
+		.col(@wht);
+		.bg-col(@red);
+		}
+	}
+	
+}
+
+.privacy-policy-page-link {
+.fixed;
+.right(0);
+.bottom(0);
+.w(20);
+.mag-all(0);
+	a {
+	.block;
+	text-align: center;
+	.line-h(5);
+	.bg-col(@wht);
+	.col(@red);
+	//.rounded(10px);
+	.border-radius(0, 0,0, 10px);
+	.drop-shadow(0, 5px, 10px, 0.4);
+	.no-text-dec;
+	.caps;
+		&:hover, &:active, &:focus {
+		.col(@wht);
+		.bg-col(@red);
+		}
+	}
+}
+
+}
+/*
 body.login {
 .bg-img('TLW-offline-bg.png');
 background-position: center center;
@@ -59,3 +114,4 @@ line-height: 1.4em;
 		}
 	}	
 }
+*/
