@@ -16005,6 +16005,9 @@ section#contact-us-banner .contact-info a.contact-info-link:focus {
 #recent-blog-sb.sb-closed {
   transform: translateX(0%);
 }
+#recent-blog-sb.sb-hidden {
+  transform: translateX(-30%);
+}
 #recent-blog-sb.sb-open {
   transform: translateX(100%);
   -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);

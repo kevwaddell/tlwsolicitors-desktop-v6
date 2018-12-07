@@ -13,7 +13,7 @@ $recent_posts = get_posts($recent_posts_args);
 
 //echo '<pre>';print_r($recent_posts);echo '</pre>';
 ?>
-<section id="recent-blog-sb" class="slide-in-right sb-closed" style="display: none;">
+<section id="recent-blog-sb" class="slide-in-right sb-closed animated slideInLeft" style="display: none;">
 		<div class="posts-list">
 			<?php foreach ($recent_posts as $k => $rpost) { 
 			$ID = $rpost->ID;
