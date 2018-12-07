@@ -367,23 +367,7 @@
 			}
 	
 		};
-		
-		var xmasBoxClose = function(){
-	
-			if ($('#xmas-popup-wrap').length === 1 && $('#xmas-popup-wrap').hasClass('pop-up-active')) {
 				
-				$('#xmas-popup-btn-wrap').removeClass('pop-up-active').addClass('pop-up-inactive');
-		
-				$('#xmas-popup-wrap').fadeOut('slow', function(){
-				
-					$('.xmas-popup-inner').addClass('hidden').removeClass('animated slideInUp');
-				
-				});
-			
-			}
-	
-		};
-		
 		
 		//Transition end actions
 	    $('body').on('animationend', '.xmas-popup-inner', function(){
