@@ -8,7 +8,12 @@
 		
 		<!-- FOOTER START -->
 			<div class="rule"></div>
-			<section id="footer-info">
+			<?php 
+			$xmas_opening_hrs_active = get_field('xmas_hrs_active', 'options');	
+			$turn_off_date = get_field('turn_off_date', 'options');	
+			$today = date('Ymd');
+			?>
+			<section id="footer-info"<?php echo ( $xmas_opening_hrs_active && ($today < $turn_off_date) ) ? ' class="xmas-pop-up-on"':''; ?>>
 			
 				<?php get_template_part( 'parts/footers/footer', 'links' ); ?>	
 								
