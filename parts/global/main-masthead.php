@@ -1,6 +1,9 @@
 <?php 
 $freephone_num = get_field('freephone_num', 'option');	
 $blog_page = get_option('page_for_posts');	
+$contact_page = get_page_by_title("Contact us");
+$about_page = get_page_by_title("About TLW Solicitors");		
+//echo '<pre class="debug">';print_r($contact_page);echo '</pre>';
 ?>
 <header class="header" role="banner">
 	
@@ -18,9 +21,11 @@ $blog_page = get_option('page_for_posts');
 				
 				<div class="col-xs-5">
 					<div class="header-action-btns pull-right">
-						<a href="<?php echo get_permalink($blog_page); ?>" id="blog-btn" class="btn btn-default"><span><?php bloginfo('name'); ?> <b><?php echo get_the_title($blog_page); ?></b></span><i class="fa fa-bullhorn fa-lg"></i></a>
-						<button id="search-btn" class="btn btn-default"><span class="sr-only">Search</span><i class="fa fa-search fa-lg"></i></button>
-						<button id="nav-btn" class="btn btn-default in-active"><span class="sr-only">Menu</span><i class="fa fa-bars fa-lg"></i></button>
+						<a href="<?php echo get_permalink($blog_page); ?>" id="blog-btn" class="btn btn-default link-btn"><span>TLW <b><?php echo get_the_title($blog_page); ?></b></span><i class="fa fa-bullhorn"></i></a>
+						<a href="<?php echo get_permalink($contact_page); ?>" id="contact-btn" title="<?php echo get_the_title($contact_page); ?>"  class="btn btn-default"><span class="sr-only"><?php echo get_the_title($contact_page); ?></b></span><i class="fa fa-envelope"></i></a>
+						<a href="<?php echo get_permalink($about_page); ?>" id="about-btn" title="<?php echo get_the_title($about_page); ?>" class="btn btn-default"><span class="sr-only"><?php echo get_the_title($about_page); ?></b></span><i class="fa fa-info-circle"></i></a>
+						<button id="search-btn" class="btn btn-default"><span class="sr-only">Search</span><i class="fa fa-search"></i></button>
+						<button id="nav-btn" class="btn btn-default in-active"><span class="sr-only">Menu</span><i class="fa fa-bars"></i></button>
 					</div>
 				</div>
 			

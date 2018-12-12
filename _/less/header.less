@@ -23,25 +23,28 @@ header[role="banner"] {
 	.header-action-btns {
 	.block;
 	.fright;
+	.pad-top(.5);
 	
 		.btn {
 		.no-rounded;
 		.border(@grayDk; 0.1);
 		.col(@grayDk);
 		.bg-col(@trans);	
-		.h(5.8);
-		.w(5.8);
+		.h(5);
+		.w(5);
 		.pad-all(0);
 		outline: none;
 		.font-size(1.6);
-		.line-h(5.8);
-		.mag-left(2);
+		.line-h(4.8);
+		.mag-left(1);
+		.rounded(50%);
 		.rel;
 		
 			i {	
 			.block;
-			.line-h(5.8);
+			.line-h(4.8);
 			text-align: center;
+			.font-size(2);
 			}
 			
 			&:hover, &:active, &:focus {
@@ -61,15 +64,15 @@ header[role="banner"] {
 			transition: 0.2s ease-in-out;
 				span {
 				.in-block;
-				.line-h(5.8);	
+				.line-h(4.8);	
 				.caps;
 				}
 				i {
 				.abs;
 				.right(-0.3);
 				.top(-0.1);
-				.w(5.8);
-				.line-h(5.2);
+				.w(5);
+				.line-h(4.4);
 				.border(@red; 0.3);	
 				.rounded(50%);
 				.bg-col(@wht);
@@ -79,13 +82,15 @@ header[role="banner"] {
 				}
 				
 				&:hover, &:active, &:focus {
-				.bg-col(@redMid);
+				.bg-col(@grayDk);
+				.border-col(@grayDk);
 					i {
 					.bounce;
-					.border-col(@redMid);
+					.border-col(@grayDk);
 					.col(@grayDk);	
 					}
 				}
+				
 			}
 		}
 		
