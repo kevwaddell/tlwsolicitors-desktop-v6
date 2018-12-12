@@ -12874,6 +12874,58 @@ header[role="banner"] .header-action-btns .btn:focus {
   background-color: #4b4b4b;
   color: white;
 }
+header[role="banner"] .header-action-btns .btn#blog-btn {
+  width: auto;
+  padding: 0px 60px 0px 20px;
+  color: white;
+  background-color: #C60751;
+  border: 1px solid #C60751;
+  margin-left: 0px;
+  margin-right: 0px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  border-radius: 32px;
+  transition: 0.2s ease-in-out;
+}
+header[role="banner"] .header-action-btns .btn#blog-btn span {
+  display: inline-block;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+header[role="banner"] .header-action-btns .btn#blog-btn i {
+  position: absolute;
+  right: -3px;
+  top: -1px;
+  width: 58px;
+  line-height: 52px;
+  border: 3px solid #C60751;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+  color: #C60751;
+  vertical-align: baseline;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+header[role="banner"] .header-action-btns .btn#blog-btn:hover,
+header[role="banner"] .header-action-btns .btn#blog-btn:active,
+header[role="banner"] .header-action-btns .btn#blog-btn:focus {
+  background-color: #7A1039;
+}
+header[role="banner"] .header-action-btns .btn#blog-btn:hover i,
+header[role="banner"] .header-action-btns .btn#blog-btn:active i,
+header[role="banner"] .header-action-btns .btn#blog-btn:focus i {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+  border-color: #7A1039;
+  color: #4b4b4b;
+}
 header[role="banner"] .info-links {
   text-align: center;
   margin-bottom: 0px;

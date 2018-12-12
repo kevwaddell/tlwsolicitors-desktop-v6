@@ -48,7 +48,48 @@ header[role="banner"] {
 			.bg-col(@grayDk);
 			.col(@wht);
 			}
+			
+			&#blog-btn {
+			width: auto;
+			.pad(0;6;0;2);
+			.col(@wht);
+			.bg-col(@red);	
+			.border(@red; 0.1);
+			.mag-left(0);
+			.mag-right(0);
+			.rounded(32px);
+			transition: 0.2s ease-in-out;
+				span {
+				.in-block;
+				.line-h(5.8);	
+				.caps;
+				}
+				i {
+				.abs;
+				.right(-0.3);
+				.top(-0.1);
+				.w(5.8);
+				.line-h(5.2);
+				.border(@red; 0.3);	
+				.rounded(50%);
+				.bg-col(@wht);
+				.col(@red);
+				vertical-align: baseline;
+				.animated;
+				}
+				
+				&:hover, &:active, &:focus {
+				.bg-col(@redMid);
+					i {
+					.bounce;
+					.border-col(@redMid);
+					.col(@grayDk);	
+					}
+				}
+			}
 		}
+		
+		
 	}
 	
 	.info-links {

@@ -1,5 +1,6 @@
 <?php 
 $freephone_num = get_field('freephone_num', 'option');	
+$blog_page = get_option('page_for_posts');	
 ?>
 <header class="header" role="banner">
 	
@@ -11,13 +12,13 @@ $freephone_num = get_field('freephone_num', 'option');
 					<div class="text-hide logo"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></div>
 				</div>
 				
-				<div class="col-xs-6">
-					<?php wp_nav_menu(array( 'container' => '', 'theme_location' => 'top_bar_menu', 'menu_class'  => 'pull-left info-links list-inline','fallback_cb' => false ) ); ?>
-					<div class="tel-num bold txt-col-red pull-right inline"><span class="caps txt-col-gray font-lite">Freephone: </span> <?php echo $freephone_num; ?></div>
+				<div class="col-xs-3">
+					<div class="tel-num bold txt-col-red text-center"><span class="caps txt-col-gray font-lite">Freephone: </span> <?php echo $freephone_num; ?></div>
 				</div>
 				
-				<div class="col-xs-2">
+				<div class="col-xs-5">
 					<div class="header-action-btns pull-right">
+						<a href="<?php echo get_permalink($blog_page); ?>" id="blog-btn" class="btn btn-default"><span><?php bloginfo('name'); ?> <b><?php echo get_the_title($blog_page); ?></b></span><i class="fa fa-bullhorn fa-lg"></i></a>
 						<button id="search-btn" class="btn btn-default"><span class="sr-only">Search</span><i class="fa fa-search fa-lg"></i></button>
 						<button id="nav-btn" class="btn btn-default in-active"><span class="sr-only">Menu</span><i class="fa fa-bars fa-lg"></i></button>
 					</div>
