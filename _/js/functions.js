@@ -46,18 +46,18 @@
 		getUrlVars();
 		
 		$(document).ready(function(){	
-		/*
-		$.getScript("https://api.feefo.com/api/javascript/tlw-solicitors");
-		*/
 		
+/*
 		if (window.location.hash) {
-			var container = $('html, body');
+			console.log(window.location.hash);
+			var container = [document.documentElement, document.body];
 			var scrollTo = $("section#form-section");	
 				
 			container.animate({
-				scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
-			});	
+				scrollTop: scrollTo.offset().top
+			}, 2000);	
 		}
+*/
 		
 		 $('.main-txt > p,h1,h2,h3,h4,h5,h6').widowFix({
 			 letterLimit: 10
@@ -538,22 +538,6 @@
 		return false;
 		
 		});
-		
-		/* SCROLL TO SECTION BUTTON */
-			
-		$('body').on(event_type,'a.jump-2-link', function(){
-			
-			
-    		 
-    		var hash = $(this).attr('href');
-    		var scrollTarget = $(hash).offset().top - 40;
-    		//console.log($(hash));
-    		
-    		$('html, body').animate({ scrollTop: scrollTarget }, 500);	   
-    		  			
-			return false;
-		
-		});
 	
 	});
 	
@@ -595,7 +579,6 @@
 				$(Element).css('background-image', 'url(' +src+ ')');
 	  			}
 			});
-			//$.getScript("https://api.feefo.com/api/javascript/tlw-solicitors");
 			
 		});
 		
