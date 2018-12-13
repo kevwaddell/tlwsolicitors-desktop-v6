@@ -563,6 +563,10 @@
 			$('body').removeClass('loading atfc-desktop-css');
 			$('head').find("#critical-css").remove();
 			
+			if ($('.gform_wrapper').length === 1 && $('.gform_wrapper').is(":hidden")) {
+			$('.gform_wrapper').show();		
+			}
+			
 			if ($('#wide-map-canvas').length === 1) {
 			initMap();	
 			}
