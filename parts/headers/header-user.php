@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-GB" class="no-js">
 <head id="www-tlwsolicitors-co-uk" data-template-set="tlw-solicitors-theme">
-
+	
+	<style><?php readfile(get_stylesheet_directory() . '/_/css/criticalCSS.css'); ?></style>
+	
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
 	
@@ -19,13 +21,10 @@
 	<link rel="manifest" href="/manifest.json?v=zXdkgBvmkj">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=zXdkgBvmkj" color="#cc015a">
 	<meta name="theme-color" content="#ffffff">
-	<style>
-		body.js {opacity: 0}
-	</style>
-	<style><?php readfile(get_stylesheet_directory() . '/_/css/criticalCSS.css'); ?></style>
 	
 	<?php wp_head(); ?>
 	
+<!--
 	<script>
 		var loadDeferredStyles = function() {
 		var addStylesNode = document.getElementById("deferred-styles");
@@ -47,6 +46,7 @@
 		 	window.addEventListener('load', loadDeferredStyles); 
 		 }
 	</script>
+-->
 
 </head>
 
