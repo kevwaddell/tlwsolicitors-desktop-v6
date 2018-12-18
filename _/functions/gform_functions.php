@@ -98,6 +98,7 @@ function custom_gf_class($classes, $field, $form) {
 add_filter("gform_field_css_class", "custom_gf_class", 10, 3);
 
 //MERGED STYLES
+/*
 if(!is_admin()) {
 	
 	add_action( 'gform_enqueue_scripts', 'dequeue_gf_stylesheets', 5 );
@@ -163,4 +164,5 @@ if(!is_admin()) {
 	}
 	
 }
+*/
 ?>

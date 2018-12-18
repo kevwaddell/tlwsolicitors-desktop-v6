@@ -10,7 +10,7 @@ if (!is_admin()) {
 	   // add script handles to the array below
 	   
 	   //return $tag;
-	   return str_replace(' src', ' defer src', $tag);
+	   return str_replace(' src', ' async src', $tag);
 	  
 	}
 	
