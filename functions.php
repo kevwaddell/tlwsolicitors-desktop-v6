@@ -18,7 +18,9 @@ if (!is_admin()) {
 		global $post;
 		// Load stylesheets.
 		wp_enqueue_style( 'print-styles', get_template_directory_uri().'/_/css/print-styles.css', null, filemtime( get_template_directory().'/_/css/print-styles.css' ), 'print' );
+		//wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', null, '4.7.0', 'screen' );
 		wp_enqueue_style( 'styles', get_stylesheet_directory_uri().'/_/css/styles.css', null, filemtime( get_stylesheet_directory().'/_/css/styles.css' ), 'screen' );
+		
 		
 		// Load JS
 		$functions_dep = array(
@@ -33,7 +35,6 @@ if (!is_admin()) {
 		wp_deregister_script('jquery');
 	    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', array(), '2.2.4', true);
 	    wp_enqueue_script( 'modernizr-min', get_template_directory_uri() . '/_/js/modernizr-min.js', array(), '2.8.3', true );
-		//wp_enqueue_script( 'feefo', 'https://api.feefo.com/api/javascript/tlw-solicitors', array(), '1.0.0', true );
 		wp_enqueue_script( 'bootstrap-min', get_template_directory_uri() . '/_/js/bootstrap-min.js', array('jquery'), '2.8.3', true );
 		wp_enqueue_script( 'jquery-cookie', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js', array('jquery'), '1.4.1', true );
 		wp_enqueue_script( 'slim-scroll', 'https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.6/jquery.slimscroll.min.js', array('jquery'), '1.3.6', true );
@@ -61,13 +62,13 @@ add_action( 'login_enqueue_scripts', 'my_login');
 
 
 // MERGE ALL CSS INTO ONE FILE FUNCTIOM
-include (TEMPLATEPATH . '/_/functions/merge-styles-function.php');
+//include (TEMPLATEPATH . '/_/functions/merge-styles-function.php');
 
 // Custom deque to force remove unwanted css
-include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
+//include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
 
 //LoadCSS script function
-include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
+//include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
 
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 	function ewp_remove_script_version( $src ){
@@ -309,4 +310,9 @@ add_filter('ysacf_exclude_fields', function(){
 /* Disable WordPress Admin Bar for all users but admins. */
  add_filter('show_admin_bar', '__return_false');
 
+add_filter( 'login_headerurl', 'custom_loginlogo_url' );
+
+function custom_loginlogo_url($url) {
+    return get_option('home');
+}
  ?>
