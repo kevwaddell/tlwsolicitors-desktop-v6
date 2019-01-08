@@ -1,21 +1,63 @@
 @import (reference) 'elements.less';
 @import (reference) 'vars.less';
 @import (reference) 'mixins.less';
-body.login .ml-container #login {
-.pad-left(3);
 
-h1 a {
-margin: 0 auto 10px;	
+html {
+height: 100%;	
 }
 
-form#loginform {
-.mag-top(0);	
-padding: 26px 24px 26px;
-}
-
-p#nav, p#backtoblog {
-.mag(2;0;0;0);
-.pad-all(0);
+body.login {
+	height: 100%;
+	.bg-img('TLW-offline-bg.png');
+	background-position: center center;
+	.bg-repeat(no-repeat);
+	.bg-size;
+	.rel;	
+	}
+	
+	#login {
+	.pad-top(0);
+	.abs;
+	.top(3);
+	.left(5);
+	
+	h1 {
+	.mag-bot(1);	
+	}
+	
+	h1 a {
+	margin: auto;	
+	display: block;
+	width: auto;
+	.h(8);
+	.bg-img('tlw-logo-wide.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	.bg-size('contain');
+	}
+	
+	form#loginform {
+	.mag-top(0);	
+	padding: 26px 24px 26px;
+	.rounded(10px);
+	.drop-shadow(0, 5px, 10px, 0.4);
+	
+		p.submit #wp-submit {
+		.no-border;
+		.bg-col(@red);
+		box-shadow: none;
+		text-shadow: none;
+		.caps;	
+			&:hover, &:active, &:focus {
+			.bg-col(@redMid);
+			}	
+		}
+	}
+	
+	p#nav, p#backtoblog, .privacy-policy-page-link {
+	.mag(2;0;0;0);
+	.pad-all(0);
+	
 	a {
 	.block;
 	text-align: center;
@@ -23,95 +65,14 @@ p#nav, p#backtoblog {
 	.bg-col(@wht);
 	.rounded(10px);
 	.drop-shadow(0, 5px, 10px, 0.4);
-		&:hover, &:active, &:focus {
-		.col(@wht);
-		.bg-col(@red);
-		}
-	}
-	
-}
-
-.privacy-policy-page-link {
-.fixed;
-.right(0);
-.bottom(0);
-.w(20);
-.mag-all(0);
-	a {
-	.block;
-	text-align: center;
-	.line-h(5);
-	.bg-col(@wht);
-	.col(@red);
-	//.rounded(10px);
-	.border-radius(0, 0,0, 10px);
-	.drop-shadow(0, 5px, 10px, 0.4);
+	.col(@grayDk);
 	.no-text-dec;
-	.caps;
 		&:hover, &:active, &:focus {
 		.col(@wht);
 		.bg-col(@red);
 		}
 	}
-}
+	
+	}
 
 }
-/*
-body.login {
-.bg-img('TLW-offline-bg.png');
-background-position: center center;
-.bg-repeat(no-repeat);
-.bg-size;
-.rel;
-min-width: 0;
-color: #444;
-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-font-size: 13px;
-line-height: 1.4em;
-
-	* {
-	box-sizing: border-box;	
-	}
-	
-	#login {
-	.abs;
-	.top(10);
-	.left(10);	
-	.pad-all(2);
-	.mag-left(0);
-	.bg-col(@wht);
-	.rounded(20px);
-	.drop-shadow(0, 0, 20px, 0.5);
-	.w(36);
-	
-		h1 {
-		.h(8);
-		.bg-img('tlw-logo-wide.svg');
-		background-position: center top;
-		.bg-repeat(no-repeat);
-		.bg-size(contain);
-			a {
-			.none;	
-			}
-		}
-		
-		form {
-		.pad-all(0);	
-		}
-	}
-	
-	&.wp-core-ui {
-		.button-primary {
-		background: @red;
-		border: none;
-		box-shadow: none;
-		color: #fff;
-		text-decoration: none;
-		text-shadow: none;
-			&:hover, &:active, &:focus {
-			background: @redDk;
-			}	
-		}
-	}	
-}
-*/

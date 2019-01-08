@@ -12,7 +12,7 @@ $body_classes = array('atfc-desktop-css','nav-closed');
 <a class="sr-only fouc" href="#main-content">Skip to main content</a>	
 <?php get_template_part( 'parts/navigation/nav', 'main' ); ?>	
 
-<div class="tlw-wrapper">
+<div class="tlw-wrapper" style="filter: blur(10px) grayscale(100%);">
 
 	<!-- HEADER LOGO AND NAVIGATION -->	
 	

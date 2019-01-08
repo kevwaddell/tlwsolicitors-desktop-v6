@@ -22,7 +22,46 @@ $section_title = $form->title;
 	<div class="container">
 		<h2 class="section-header"><?php echo $section_title; ?></h2>
 		
-		<?php gravity_form($form->id, false, true, true, null, true); ?>
+			<?php 
+			gravity_form($form->id, false, true, true, null, true);
+			gravity_form_enqueue_scripts($form->id, true); 
+			?>
+			
+			<script>
+			( function( $, window, document, undefined )
+				{
+					$( 'input[type=file]' ).each( function()
+					{
+						var $input	 = $( this ),
+							$label	 = $input.parents( '.gfield' ).find('label'),
+							labelVal = $label.html();
+							
+							//console.log(labelVal);
+				
+						$input.on( 'change', function( e ) {
+							
+							var fileName = '';
+				
+							if( this.files && this.files.length > 1 ) {
+								fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+							} else if( e.target.value ) {
+								fileName = e.target.value.split( '\\' ).pop();
+							}
+							
+							console.log(fileName);
+							
+							if( fileName ) {
+							$label.empty().html( fileName );
+							} else {
+							$label.html( labelVal );
+							}
+						});
+				
+						// Firefox bug fix
+						$input.on( 'focus', function(){ $label.addClass( 'has-focus' ); }).on( 'blur', function(){ $label.removeClass( 'has-focus' ); });
+					});
+				})( jQuery, window, document );
+			</script>
 	</div>
 </section>
 <?php } ?>

@@ -13,7 +13,7 @@ curl_setopt($ch, CURLOPT_URL, 'https://api.feefo.com/api/10/reviews/service?merc
 $result = curl_exec($ch);
 curl_close($ch);
 $feefo = json_decode($result);	
-$rand_reviews = array_rand($feefo->reviews, 5);
+$rand_reviews = array_rand($feefo->reviews, 10);
 
 $total_reviews = count($feefo->reviews);
  ?>
@@ -51,7 +51,7 @@ $total_reviews = count($feefo->reviews);
 				<?php echo $summary; ?>
 			</a>
 		</div>
-		<?php if ($k+1 < 5) { ?>
+		<?php if ($k+1 < 10) { ?>
 		<div class="rule"></div>
 		<?php } ?>
 		

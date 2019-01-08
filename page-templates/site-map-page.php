@@ -31,7 +31,7 @@ Template Name: Sitemap page
 			</div>
 			
 			<div class="rule"></div>
-			<section id="site-map-lists">
+			<section id="site-map-lists" class="pg-section">
 				<div class="container">
 					<h2 class="section-header">Pages</h2>
 					<div class="row">

@@ -4,7 +4,7 @@
 				
 				<div id="footer-logo" class="hidden-xs text-hide"><?php bloginfo('name'); ?></div>
 				<div class="compliance-notice text-center">
-				&copy; <?php bloginfo( 'name' ); ?> <?php echo date("Y"); ?>. All rights reserved.
+				<p>&copy; <?php bloginfo( 'name' ); ?> <?php echo date("Y"); ?>. All rights reserved.</p>
 				<?php $compliance_notice = get_field('compliance_notice', 'option');?>
 				<?php if (isset($compliance_notice)) { ?>
 				<?php echo $compliance_notice; ?>

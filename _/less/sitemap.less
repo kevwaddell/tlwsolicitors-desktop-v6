@@ -1,7 +1,8 @@
 .search-form-wrap {
 text-align: center;
 .pad-top(2);
-
+.max-w(40);
+margin: auto;
 	input.form-control {
 	.no-rounded;
 	.border-col(@grayDk);	
@@ -84,6 +85,9 @@ text-align: center;
 	
 	.list-block ul {
 	.mag-bot(2);
+		&.cols-2 {
+		.columns(50%, 2, 30px, @trans, none, 0px);	
+		}
 		a {
 		.font-size(2);	
 		.line-h(3);	

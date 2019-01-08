@@ -61,15 +61,6 @@ wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/_/css/user-
 add_action( 'login_enqueue_scripts', 'my_login');
 
 
-// MERGE ALL CSS INTO ONE FILE FUNCTIOM
-//include (TEMPLATEPATH . '/_/functions/merge-styles-function.php');
-
-// Custom deque to force remove unwanted css
-//include (TEMPLATEPATH . '/_/functions/async-scripts-function.php');
-
-//LoadCSS script function
-//include (TEMPLATEPATH . '/_/functions/loadCSS-function.php');
-
 if ($_SERVER['SERVER_NAME']=='www.tlwsolicitors.co.uk') {
 	function ewp_remove_script_version( $src ){
 		return remove_query_arg( 'ver', $src );
@@ -178,12 +169,6 @@ include (TEMPLATEPATH . '/_/functions/tlw_feedback_cpt.php');
 
 /* REGISTER TEAMS CPT */
 include (TEMPLATEPATH . '/_/functions/tlw_team_cpt.php');
-
-/* REGISTER LANDING PAGE CPT */
-//include (TEMPLATEPATH . '/_/functions/tlw_landing_pages_cpt.php');
-
-/* REGISTER HOW IT WORKS CPT */
-//include (TEMPLATEPATH . '/_/functions/tlw_how_it_works_cpt.php');
 
 /* REGISTER FAQ's CPT */
 include (TEMPLATEPATH . '/_/functions/tlw_faqs_cpt.php');

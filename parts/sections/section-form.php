@@ -23,7 +23,10 @@ $section_title = $form->title;
 		
 		<h2 class="section-header"><?php echo $section_title; ?></h2>
 		
-		<?php gravity_form($form->id, false, true, false, array('enquiry-type' => $enquiry_type), false); ?>
+		<?php 
+			gravity_form($form->id, false, true, false, array('enquiry-type' => $enquiry_type), false); 
+			gravity_form_enqueue_scripts($form->id, true); 
+		?>
 		
 	</div>
 

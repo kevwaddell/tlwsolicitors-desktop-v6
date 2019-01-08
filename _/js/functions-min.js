@@ -1,19 +1,7 @@
 !function(s){function n(){return window.print(),
 //workaround for Chrome bug - https://code.google.com/p/chromium/issues/detail?id=141633
 window.stop&&(location.reload(),//triggering unload (e.g. reloading the page) makes the print dialog appear
-window.stop()),!1}function t(){for(var t,n=window.location.href.slice(window.location.href.indexOf("?")+1).split("&"),e=0;e<n.length;e++)"gclid"===(t=n[e].split("="))[0]&&1===s("#input_23_12").length&&s("input#input_23_12").val(t[1]),"gclid"===t[0]&&1===s("#input_22_27").length&&s("input#input_22_27").val(t[1]),"gclid"===t[0]&&1===s("#input_26_5").length&&s("input#input_26_5").val(t[1]),"gclid"===t[0]&&1===s("#input_25_24").length&&s("input#input_25_24").val(t[1]),"gclid"===t[0]&&s.cookie(t[0],t[1],{expires:1,path:"/"})}var e="click";t(),s(document).ready(function(){
-/*
-		if (window.location.hash) {
-			console.log(window.location.hash);
-			var container = [document.documentElement, document.body];
-			var scrollTo = $("section#form-section");	
-				
-			container.animate({
-				scrollTop: scrollTo.offset().top
-			}, 2000);	
-		}
-*/
-s(".main-txt > p,h1,h2,h3,h4,h5,h6").widowFix({letterLimit:10}),s("a.services-nav-link > span.title span").widowFix({letterLimit:10}),
+window.stop()),!1}function t(){for(var t,n=window.location.href.slice(window.location.href.indexOf("?")+1).split("&"),e=0;e<n.length;e++)"gclid"===(t=n[e].split("="))[0]&&1===s("#input_23_12").length&&s("input#input_23_12").val(t[1]),"gclid"===t[0]&&1===s("#input_22_27").length&&s("input#input_22_27").val(t[1]),"gclid"===t[0]&&1===s("#input_26_5").length&&s("input#input_26_5").val(t[1]),"gclid"===t[0]&&1===s("#input_25_24").length&&s("input#input_25_24").val(t[1]),"gclid"===t[0]&&s.cookie(t[0],t[1],{expires:1,path:"/"})}var e="click";t(),s(document).ready(function(){s(".main-txt > p,h1,h2,h3,h4,h5,h6").widowFix({letterLimit:10}),s("a.services-nav-link > span.title span").widowFix({letterLimit:10}),
 //console.log($(window).scrollTop());
 s(".selectpicker").selectpicker({style:"btn-lg hp-select",size:5}),s(".selectpicker").find("select").selectpicker({style:"btn btn-group btn-default",width:"100%"}),
 //Scroll to button
@@ -123,6 +111,6 @@ s("a.video-link").on(e,function(){var t=s(this).attr("href"),n=s(t).find("video"
 /* POST GALLERY FUNCTION */
 s("body").on(e,"a.gallery-img-link",function(){s(this).parent().siblings().removeClass("active"),s(this).parent().addClass("active");var t=s(this).attr("href"),n=s(".gallery-items-viewer"),e=new Image;return s(n).empty(),s(e).attr("src",t).addClass("animated fadeIn").appendTo(n),console.log(e),!1})}),
 /* END DOC READY FUNCTION */
-s(window).bind("load",function(){s("body").removeClass("loading atfc-desktop-css"),s("head").find("#critical-css").remove(),1===s(".gform_wrapper").length&&s(".gform_wrapper").is(":hidden")&&s(".gform_wrapper").show(),1===s("#wide-map-canvas").length&&initMap(),1===s("#recent-blog-sb").length&&(s("#recent-blog-sb").show(),setTimeout(function(){s("#recent-blog-sb").removeClass("animated slideInLeft").toggleClass("sb-closed sb-open")},3e3),s("#recent-blog-sb").hasClass("sb-closed")&&setTimeout(function(){s("#recent-blog-sb").removeClass("sb-open").addClass("sb-closed")},7e3)),s(".has-bg-img").each(function(t,n){var e=s(n).data("src");
+s(window).bind("load",function(){s("body").removeClass("atfc-desktop-css"),s("head").find("#critical-css").remove(),s(".tlw-wrapper").removeAttr("style"),1===s(".gform_wrapper").length&&s(".gform_wrapper").is(":hidden")&&s(".gform_wrapper").show(),1===s("#wide-map-canvas").length&&initMap(),1===s("#recent-blog-sb").length&&(s("#recent-blog-sb").show(),setTimeout(function(){s("#recent-blog-sb").removeClass("animated slideInLeft").toggleClass("sb-closed sb-open")},3e3),s("#recent-blog-sb").hasClass("sb-closed")&&setTimeout(function(){s("#recent-blog-sb").removeClass("sb-open").addClass("sb-closed")},7e3)),s(".has-bg-img").each(function(t,n){var e=s(n).data("src");
 //console.log(src);
 void 0!==e&&s(n).css("background-image","url("+e+")")})})}(window.jQuery);

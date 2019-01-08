@@ -14,9 +14,10 @@ $subjects = get_tags($subjects_args);
 <div class="col-xs-6">
 	
 	<?php if ($subjects) { ?>
-		<h3><?php echo get_the_title($news_page_ID); ?>: Tags</h3>
 		
-		<div class="list-block" style="text-transform: capitalize;">
+		
+		<div class="list-block">
+		<h3><?php echo get_the_title($news_page_ID); ?>: Tags</h3>
 			<?php wp_tag_cloud('smallest=20&largest=20&unit=px&separator= | '); ?>
 		</div>
 			

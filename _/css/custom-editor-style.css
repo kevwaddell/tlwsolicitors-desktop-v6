@@ -49,7 +49,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  margin: .67em 0;
+  margin: 0.67em 0;
   font-size: 2em;
 }
 mark {
@@ -154,7 +154,7 @@ input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 fieldset {
-  padding: .35em .625em .75em;
+  padding: 0.35em 0.625em 0.75em;
   margin: 0 2px;
   border: 1px solid silver;
 }
@@ -181,7 +181,7 @@ th {
   *,
   :after,
   :before {
-    color: #000!important;
+    color: #000 !important;
     text-shadow: none!important;
     background: 0 0!important;
     -webkit-box-shadow: none!important;
@@ -231,7 +231,7 @@ th {
   }
   .btn > .caret,
   .dropup > .btn > .caret {
-    border-top-color: #000!important;
+    border-top-color: #000 !important;
   }
   .label {
     border: 1px solid #000;
@@ -241,11 +241,11 @@ th {
   }
   .table td,
   .table th {
-    background-color: #fff!important;
+    background-color: #fff !important;
   }
   .table-bordered td,
   .table-bordered th {
-    border: 1px solid #ddd!important;
+    border: 1px solid #ddd !important;
   }
 }
 @font-face {
@@ -1291,7 +1291,7 @@ small {
 }
 .mark,
 mark {
-  padding: .2em;
+  padding: 0.2em;
   background-color: #fcf8e3;
 }
 .text-left {
@@ -2516,7 +2516,7 @@ table th[class*=col-] {
   background-color: #ebcccc;
 }
 .table-responsive {
-  min-height: .01%;
+  min-height: 0.01%;
   overflow-x: auto;
 }
 @media screen and (max-width: 767px) {
@@ -3126,7 +3126,7 @@ fieldset[disabled] .btn {
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
   box-shadow: none;
-  opacity: .65;
+  opacity: 0.65;
 }
 a.btn.disabled,
 fieldset[disabled] a.btn {
@@ -3542,9 +3542,9 @@ input[type=submit].btn-block {
 }
 .fade {
   opacity: 0;
-  -webkit-transition: opacity .15s linear;
-  -o-transition: opacity .15s linear;
-  transition: opacity .15s linear;
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
 }
 .fade.in {
   opacity: 1;
@@ -3568,9 +3568,9 @@ tbody.collapse.in {
   -webkit-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
-  -webkit-transition-duration: .35s;
-  -o-transition-duration: .35s;
-  transition-duration: .35s;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  transition-duration: 0.35s;
   -webkit-transition-property: height,visibility;
   -o-transition-property: height,visibility;
   transition-property: height,visibility;
@@ -4920,7 +4920,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
 }
 .label {
   display: inline;
-  padding: .2em .6em .3em;
+  padding: 0.2em 0.6em 0.3em;
   font-size: 75%;
   font-weight: 700;
   line-height: 1;
@@ -4928,7 +4928,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 a.label:focus,
 a.label:hover {
@@ -5219,9 +5219,9 @@ a.thumbnail:hover {
   background-color: #337ab7;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: width .6s ease;
-  -o-transition: width .6s ease;
-  transition: width .6s ease;
+  -webkit-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease;
 }
 .progress-bar-striped,
 .progress-striped .progress-bar {
@@ -5922,7 +5922,7 @@ button.list-group-item-danger.active:hover {
   color: #000;
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
-  opacity: .2;
+  opacity: 0.2;
 }
 .close:focus,
 .close:hover {
@@ -5930,7 +5930,7 @@ button.list-group-item-danger.active:hover {
   text-decoration: none;
   cursor: pointer;
   filter: alpha(opacity=50);
-  opacity: .5;
+  opacity: 0.5;
 }
 button.close {
   -webkit-appearance: none;
@@ -6005,7 +6005,7 @@ button.close {
 }
 .modal-backdrop.in {
   filter: alpha(opacity=50);
-  opacity: .5;
+  opacity: 0.5;
 }
 .modal-header {
   padding: 15px;
@@ -6087,7 +6087,7 @@ button.close {
 }
 .tooltip.in {
   filter: alpha(opacity=90);
-  opacity: .9;
+  opacity: 0.9;
 }
 .tooltip.top {
   padding: 5px 0;
@@ -6399,7 +6399,7 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   background-color: rgba(0, 0, 0, 0);
   filter: alpha(opacity=50);
-  opacity: .5;
+  opacity: 0.5;
 }
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
@@ -6425,7 +6425,7 @@ button.close {
   text-decoration: none;
   filter: alpha(opacity=90);
   outline: 0;
-  opacity: .9;
+  opacity: 0.9;
 }
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .glyphicon-chevron-right,
@@ -6478,7 +6478,7 @@ button.close {
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #000\9;
+  background-color: #000 \9;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #fff;
   border-radius: 10px;
@@ -6846,7 +6846,7 @@ button.close {
 }
 @font-face {
   font-family: 'FontAwesome';
-  src: local('FontAwesome normal'), url('/wp-content/themes/tlwsolicitors-desktop-v6/_/css/fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('/wp-content/themes/tlwsolicitors-desktop-v6/_/css/fonts/fontawesome-webfont.woff') format('woff'), url('/wp-content/themes/tlwsolicitors-desktop-v6/_/css/fonts/fontawesome-webfont.woff2') format('woff2'), url('/wp-content/themes/tlwsolicitors-desktop-v6/_/css/fonts/fontawesome-webfont.ttf') format('truetype'), url('/wp-content/themes/tlwsolicitors-desktop-v6/_/css/fonts/fontawesome-webfont.svg') format('svg');
+  src: local('FontAwesome normal'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/FontAwesome.otf') format('opentype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff') format('woff'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf') format('truetype'), url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -7078,6 +7078,7 @@ button.close {
   margin-bottom: 30px;
   height: 1px;
   position: relative;
+  clear: both;
 }
 .rule.mag-top-60 {
   margin-top: 60px;
@@ -7157,6 +7158,7 @@ body.mce-content-body hr {
   margin-bottom: 30px;
   height: 1px;
   position: relative;
+  clear: both;
 }
 body.mce-content-body hr.mag-top-60 {
   margin-top: 60px;

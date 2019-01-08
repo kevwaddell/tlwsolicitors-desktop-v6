@@ -3,7 +3,7 @@ $gbl_services_2018 = get_field( 'gbl_services_2018', 'options' );
 //echo '<pre>';print_r($gbl_services_2018);echo '</pre>';
 ?>
 
-<div class="col-xs-6">
+<div class="col-xs-8">
 <?php if (!empty($gbl_services_2018)) { ?>
 	
 	<?php foreach ($gbl_services_2018 as $s) { 
@@ -27,7 +27,7 @@ $gbl_services_2018 = get_field( 'gbl_services_2018', 'options' );
 			$sub_services = $s['services'];
 			?>
 			
-			<ul class="list-unstyled">
+			<ul class="list-unstyled cols-2">
 			
 			<?php foreach ($sub_services as $sc) { 
 			$sc_id = $sc['service'];

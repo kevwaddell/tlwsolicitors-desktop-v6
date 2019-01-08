@@ -37,7 +37,6 @@ $stars = round($rating);
 			<div class="col-xs-3 col-xs-offset-1">
 				<aside class="hp-sidebar">	
 					<div class="feefo-panel">
-						<i class="fa fa-star"></i>
 						<h3>Feefo</h3>
 						<div class="title caps text-center">Service Rating <strong><?php echo $rating; ?></strong></div>
 						<div class="review-count text-center"><?php echo $review_count; ?> Service reviews</div>

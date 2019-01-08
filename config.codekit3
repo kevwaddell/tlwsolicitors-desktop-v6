@@ -212,26 +212,6 @@
 		"oAP": "/_/css/fonts/OpenSans-Light-webfont.woff2",
 		"oF": 0
 		},
-	"/_/css/gf-merged-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/_/css/gf-merged-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/_/css/gf-merged.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/_/css/gf-merged-min.css",
-		"oF": 3,
-		"oS": 3
-		},
 	"/_/css/img/active0.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -434,26 +414,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"/_/css/merged-style-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/_/css/merged-style-min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/_/css/merged-style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/_/css/merged-style-min.css",
-		"oF": 3,
-		"oS": 3
-		},
 	"/_/css/offline.css": {
 		"aP": 1,
 		"bl": 0,
@@ -508,13 +468,6 @@
 		"oAP": "/_/functions/afc_save_post.php",
 		"oF": 0
 		},
-	"/_/functions/async-scripts-function.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "/_/functions/async-scripts-function.php",
-		"oF": 0
-		},
 	"/_/functions/get_browser.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -527,20 +480,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "/_/functions/gform_functions.php",
-		"oF": 0
-		},
-	"/_/functions/loadCSS-function.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "/_/functions/loadCSS-function.php",
-		"oF": 0
-		},
-	"/_/functions/merge-styles-function.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "/_/functions/merge-styles-function.php",
 		"oF": 0
 		},
 	"/_/functions/submit_newsletter.php": {
@@ -1162,7 +1101,7 @@
 		"oA": 0,
 		"oAP": "/_/css/styles.css",
 		"oF": 3,
-		"oS": 0,
+		"oS": 1,
 		"rwU": 0,
 		"sI": 0,
 		"sU": 0
@@ -1748,13 +1687,6 @@
 		"oAP": "/parts/headers/header-global.php",
 		"oF": 0
 		},
-	"/parts/headers/header-user.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "/parts/headers/header-user.php",
-		"oF": 0
-		},
 	"/parts/navigation/nav-main.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2078,7 +2010,7 @@
 "projectAttributes": {
 	"creationDate": 518437403,
 	"displayValue": "tlwsolicitors-desktop-v6",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-cocaine",
 	"iconImageWasSetByUser": 0
 	},

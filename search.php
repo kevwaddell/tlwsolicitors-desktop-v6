@@ -9,13 +9,20 @@
 	?>
 	<main id="main-content">
 
-			<article class="page search-results">
-				<h1 class="text-center" style="margin-top: 20px;">Search Results</h1>
-				<p class="intro text-center">You Searched for: "<?php the_search_query(); ?>"<br> Results: <?php echo $search_count; ?></p>
-				
-				<div class="search-form-wrap">
-				<?php get_search_form(); ?>
+			<article class="page search-results content-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-xs-offset-3">
+						<div class="main-txt">	
+							<h1 class="text-center" style="margin-top: 20px;">Search Results</h1>
+							<p class="intro text-center">You Searched for: "<?php the_search_query(); ?>"<br> Results: <?php echo $search_count; ?></p>
+						</div>
+						<div class="search-form-wrap">
+						<?php get_search_form(); ?>
+						</div>
+					</div>
 				</div>
+			</div>
 			</article>
 			<div class="rule"></div>
 			<section class="search-list">

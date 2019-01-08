@@ -47,18 +47,6 @@
 		
 		$(document).ready(function(){	
 		
-/*
-		if (window.location.hash) {
-			console.log(window.location.hash);
-			var container = [document.documentElement, document.body];
-			var scrollTo = $("section#form-section");	
-				
-			container.animate({
-				scrollTop: scrollTo.offset().top
-			}, 2000);	
-		}
-*/
-		
 		 $('.main-txt > p,h1,h2,h3,h4,h5,h6').widowFix({
 			 letterLimit: 10
 		 });
@@ -544,8 +532,9 @@
 		/* END DOC READY FUNCTION */
 		
 		$(window).bind('load',function(){
-			$('body').removeClass('loading atfc-desktop-css');
+			$('body').removeClass('atfc-desktop-css');
 			$('head').find("#critical-css").remove();
+			$('.tlw-wrapper').removeAttr('style');
 			
 			if ($('.gform_wrapper').length === 1 && $('.gform_wrapper').is(":hidden")) {
 			$('.gform_wrapper').show();		
